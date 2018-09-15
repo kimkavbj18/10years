@@ -1,0 +1,208 @@
+@media (min-width: 992px) {
+    /* HEADER Styles */
+    header.header {
+        position: fixed;
+        z-index: 99999;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: black;
+        box-shadow: 1px 1px 5px black;
+    }
+
+    .header .logo {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        max-width: 140px;
+        float: left;
+    }
+
+    .header .navigation {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    ul.secondary-menu {
+        margin-top: 10px;
+    }
+
+    ul.secondary-menu li {
+        margin-left: 5px;
+        margin-right: 0;
+        padding-left: 5px;
+        padding-right: 0;
+        line-height: 1;
+        border-left: 1px solid #aaa;
+    }
+
+    ul.secondary-menu li:nth-child(2) {
+        border-left: none;
+    }
+
+    ul.secondary-menu li span {
+        font-size: .9em;
+        color: #999;
+        border-bottom: 1px solid transparent;
+        transition: .3s;
+        cursor: pointer;
+    }
+
+    ul.secondary-menu li span:hover {
+        border-bottom: 1px solid #aaa;
+    }
+
+    ul.main-menu {
+        position: relative;
+        top: auto;
+        bottom: auto;
+        left: auto;
+        right: auto;
+        display: block;
+        margin-top: 10px;
+        max-width: auto;
+        background: transparent;
+    }
+
+    ul.main-menu li {
+        display: inline-block;
+        margin-left: 10px;
+        padding: 0;
+        width: auto;
+        background-color: transparent;
+        border-bottom: none;
+        cursor: auto;
+    }
+
+    ul.main-menu li:hover,
+    ul.main-menu li.is-active {
+        background-color: transparent;
+    }
+
+    ul.main-menu li span {
+        color: #ccc;
+        cursor: pointer;
+    }
+
+    ul.main-menu li > .sub-menu {
+        display: none;
+    }
+
+    ul.main-menu>li .sub-menu,
+    ul.main-menu>li .sub-menu .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    ul.main-menu li.nav-item.is-active > .sub-menu {
+        display: block;
+        position: fixed;
+        top: 82px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding-top: 0;
+        padding-bottom: 20px;
+        background-color: white;
+    }
+
+    .sub-menu ul.menu {
+        float: left;
+        width: 100%;
+        background-color: transparent !important;
+    }
+
+    .sub-menu ul.menu li {
+        position: relative;
+        margin-left: 0;
+        margin-bottom: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
+        float: left;
+        width: 33.33333%;
+        background-color: transparent;
+    }
+
+    .sub-menu ul.menu li:after {
+        content: "";
+        position: absolute;
+        bottom: -15px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: calc(100% - 30px);
+        border-bottom: 1px solid #ddd;
+        transition: .3s;
+    }
+
+    .sub-menu ul.menu li:hover:after {
+        border-bottom: 1px solid #333;
+    }
+
+    .sub-menu ul.menu li a {
+        display: block;
+        color: #333;
+        text-decoration: none;
+    }
+
+    .sub-menu ul.menu li a.link-title {
+        font-size: 1.2em;
+        font-weight: 700;
+        border-right: none !important;
+    }
+
+    .sub-menu ul.menu li a.link-description {
+        display: block !important;
+        font-size: 1em;
+    }
+
+    .hide-mobile {
+        display: block;
+    }
+
+    .hide-desktop {
+        display: none;
+    }
+
+    /* COMMUNICATION CHANNEL Styles */
+    .communication-channel-wrapper {
+        padding: 50px 100px 50px 50px;
+        background-color: rgba(210, 210, 210, .9);
+    }
+
+    .support-community .sc-feature {
+        border-right: 1px solid white !important;
+        border-bottom: 1px solid white !important;
+    }
+
+    .support-community .sc-feature:nth-child(3),
+    .support-community .sc-feature:nth-child(6) {
+        border-right: 1px solid white !important;
+    }
+
+    .support-community .sc-feature:nth-child(4),
+    .support-community .sc-feature:nth-child(8) {
+        border-right: none !important;
+    }
+
+    .support-community .sc-feature:nth-child(5),
+    .support-community .sc-feature:nth-child(6),
+    .support-community .sc-feature:nth-child(7),
+    .support-community .sc-feature:nth-child(8) {
+        border-bottom: none !important;
+    }
+
+    /* FOOTER Styles */
+    .footer-info .logo {
+        margin: 0;
+    }
+
+    ul.footer-menu-icons {
+        margin: 0 0 5px 0;
+        justify-content: end;
+    }
+
+    ul.footer-menu-links {
+        margin: 0;
+        justify-content: end;
+    }
+}
