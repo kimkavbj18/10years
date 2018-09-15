@@ -3,11 +3,11 @@
     $('.main-menu .nav-item').on( 'click', function(){
         if ( $(this).hasClass('is-active') ) {
             $('.main-menu .nav-item').removeClass('is-active');
-            $("body").css("overflow", "auto");
+            $('body').removeClass('no-scroll');
         } else {
             $('.main-menu .nav-item').removeClass('is-active');
             $(this).addClass('is-active');
-            $("body").css("overflow", "hidden");
+            $('body').addClass('no-scroll');
         }
     });
 
