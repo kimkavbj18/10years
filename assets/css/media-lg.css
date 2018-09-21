@@ -291,12 +291,32 @@
 
     .hide-desktop {
         display: none;
-    }   
+    }
+    
+     /* DOMAIN OFFERS Styles */
+
+     .domain-offers .carousel-domain-offers .slick-arrow {
+        position: absolute;
+        z-index: 1;
+        top: 36%;
+        display: block;
+        padding: 0;
+        color: transparent;
+        background: transparent;
+        border: none;
+        font-size: 2em;
+        line-height: 0;
+        cursor: pointer;
+        outline: none;
+        -webkit-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+        transform: translate(0, -50%);
+    }
 
     /* COMMUNICATION CHANNEL Styles */
     .communication-channel-wrapper {
         padding: 50px 100px 50px 50px;
-        background-color: rgba(210, 210, 210, .9);
+        background-color: transparent;
     }
 
     .communication-channel-bg {

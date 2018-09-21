@@ -66,11 +66,14 @@
 
     /* DOMAIN OFFERS Styles */
     .domain-offers .domain-offer-content .domain-offer-domain {
-        font-size: 2em;
+        font-size: 1.2em;
+        color: #337ab7;
+        text-align: right;
     }
 
     .domain-offers .domain-offer-content .domain-offer-price {
         font-size: .9em;
+        text-align: right;
     }
 
     .domain-offers .domain-offer-price span {
@@ -81,8 +84,7 @@
     .communication-channel {
         padding-top: 50px;
         padding-bottom: 50px;
-        background: url(https://cdn2.hubspot.net/hubfs/53/assets/hubspot.com/_style-guide/sword-sprocket/new-2017__state3-circles-bg.svg) 0 0 no-repeat;/*, 
-            url(../images/communication-channel.png) right center no-repeat;*/
+        background: url(https://cdn2.hubspot.net/hubfs/53/assets/hubspot.com/_style-guide/sword-sprocket/new-2017__state3-circles-bg.svg) 0 0 no-repeat;
         background-color: #f2f5f8;
     }
 
