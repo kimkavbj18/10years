@@ -8,4 +8,8 @@
     ul.main-menu li span {
         font-size: 1em
     }
+
+    .footer-menus-wrapper {
+        padding: 0 20px;
+    }
 }

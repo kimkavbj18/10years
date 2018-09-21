@@ -6,14 +6,14 @@
         nextArrow: '<i class="carousel-next-btn fa fa-chevron-right"></i>',
         responsive: [
             {
-                breakpoint: 768,
+                breakpoint: 992,
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 1,
                 }
             },
             {
-                breakpoint: 420,
+                breakpoint: 768,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,

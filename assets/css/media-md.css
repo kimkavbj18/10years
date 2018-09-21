@@ -123,3 +123,7 @@
         border-bottom: none !important;
     }
 }
+
+.footer-menus-wrapper {
+    padding: 0 20px;
+}

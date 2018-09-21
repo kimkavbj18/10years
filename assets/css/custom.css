@@ -28,7 +28,34 @@ body {
 .hamburger-inner,
 .hamburger-inner:before,
 .hamburger-inner:after {
+    width: 25px;
+    height: 1.5px;
     background-color: white;
+}
+
+.hamburger--collapse .hamburger-inner::after {
+    top: -16px;
+}
+
+.hamburger-inner::before {
+    top: -8px;
+}
+
+.btn-xl {
+    padding: .7rem 4rem;
+    font-size: 1.5rem;
+    line-height: 1.7;
+    border-radius: .5rem;
+}
+
+.btn-primary-orange {
+    color: white;
+    background: linear-gradient(131.61deg, #FF9052 0%, #FF6B17 100%);
+    transition: .3s;
+}
+
+.btn-primary-orange:hover {
+    background: linear-gradient(131.61deg, #CC6012 0%, #CC3814 100%);
 }
 
 .btn-orange {
@@ -39,6 +66,26 @@ body {
 
 .btn-orange:hover {
     background: linear-gradient(to bottom, #dd4702 0%, #b12415 100%);
+}
+
+.btn-black {
+    color: white;
+    background: black;
+    transition: .3s;
+}
+
+.btn-black:hover {
+    background: #630606;
+}
+
+.btn-red {
+    color: white;
+    background: #db1b1b;
+    transition: .3s;
+}
+
+.btn-red:hover {
+    background: #950505;
 }
 
 /* HEADER Styles */
@@ -157,7 +204,7 @@ ul.main-menu li .sub-menu ul.menu li {
 }
 
 ul.main-menu li .sub-menu ul.menu li > a.link-title,
-a.link-title-center{
+ul.main-menu li .sub-menu ul.menu li > a.link-title-center {
     display: block;
     color: #555;
     text-decoration: none;
@@ -165,8 +212,8 @@ a.link-title-center{
     transition: .3s;
 }
 
-ul.main-menu li .sub-menu ul.menu li a.link-title:hover,
-a.link-title-center:hover {
+ul.main-menu li .sub-menu ul.menu li > a.link-title:hover,
+ul.main-menu li .sub-menu ul.menu li > a.link-title-center:hover {
     border-right-color: #bbb;
 }
 
@@ -480,7 +527,7 @@ ul.main-menu li .sub-menu ul.menu li a.link-description {
 /* BUSINESS Styles */
 .business {
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
     background-image: url(../images/business.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -493,8 +540,21 @@ ul.main-menu li .sub-menu ul.menu li a.link-description {
     text-shadow: 1px 1px 1px #333;
 }
 
+.business-admin {
+    position: relative;
+    height: 350px;
+    background-image: url(../images/business-admin.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
 .business .business-description {
-    padding: 15px 30px;
+    position: absolute;
+    top: 50px;
+    left: 70%;
+    width: 75%;
+    height: 100%;
+    padding: 50px 30px;
     background-color: rgba(250, 250, 250, .9);
 }
 
@@ -504,8 +564,8 @@ ul.main-menu li .sub-menu ul.menu li a.link-description {
 
 .business .business-description .business-description--title {
     margin-bottom: 15px;
-    font-size: 1.8em;
-    font-weight: 700
+    font-size: 2.3em;
+    font-weight: 400
 }
 
 .business .business-description .business-description--content {
@@ -625,7 +685,7 @@ footer {
 }
 
 .footer-menus-wrapper {
-    padding: 0 50px;
+    padding: 0 10px;
 }
 
 ul.footer-menu {
