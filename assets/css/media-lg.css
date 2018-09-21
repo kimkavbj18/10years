@@ -269,7 +269,7 @@
     }
 
     .hide-mobile {
-        display: block;
+        display: initial !important;
     }
 
     .hide-desktop {
