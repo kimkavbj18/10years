@@ -21,16 +21,7 @@
 
     <div class="container-fluid">
         <!-- Header section -->
-        <!-- <header class="row header d-block d-lg-none">
-            <div class="container">
-                <div class="row">
-                    <div class="container-fluid"></div>
-                </div>
-            </div>
-        </header>
-        <header class="row header d-none d-lg-block"> -->
-
-        <header class="row header mobile-header">
+         <header class="row header mobile-header">
             <div class="container">
                 <div class="row">
                     <div class="container-fluid">
@@ -42,18 +33,12 @@
                         <div class="logo">
                             <img src="./assets/images/logon.png" alt="" class="img-fluid">
                         </div>
-                        <nav class="navigation">
+                        <nav class="navigation nav-item hide-desktop">
                             <ul class="secondary-menu list-unstyled nav">
                                 <li class="nav-item hide-desktop"><span><i class="fa fa-phone"></i></span></li>
-                                <li class="nav-item hide-mobile"><span>Ayuda y Soporte</span></li>
                                 <li class="nav-item hide-desktop"><span><i class="fa fa-question-circle"></i></span></li>
-                                <li class="nav-item hide-mobile"><span>Realiza una Pregunta</span></li>
-                                <li class="nav-item hide-mobile"><span>Preguntas Frecuentes</span></li>
-                                <li class="nav-item hide-mobile"><span>Ofertas</span></li>
-                                <li class="nav-item hide-mobile"><span><i class="fa fa-lock fa-fw"></i> Control Panel</span></li>
                                 <li class="nav-item hide-desktop"><span><i class="fa fa-user"></i></span></li>
-                                <li class="nav-item hide-desktop"><span><i class="fa fa-shopping-cart fa-fw"></i></span></li>
-                                <li class="nav-item hide-mobile"><span><i class="fa fa-globe-americas fa-fw"></i></span></li>
+                                <li class="nav-item hide-desktop"><span><i class="fa fa-shopping-cart fa-fw"></i></span></li>   
                             </ul>
                             <ul class="main-menu list-unstyled nav">
                                 <li class="nav-item">
@@ -102,6 +87,9 @@
                                                         <a class="link-title" href="#">GSuite</a>
                                                         <a class="link-description" href="#">Web hosting + Dominio + WorPress + 1 Especialista enfocado para tu web.</a>
                                                     </li>
+                                                    <li>
+                                                        <a class="link-title-center" href="#"><i class="fa fa-lock fa-fw"></i>Rápido Acceso a Control Panel</a>
+                                                    </li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -121,9 +109,15 @@
                                                         <a class="link-title" href="#">Revendedor de Dominios</a>
                                                         <a class="link-description" href="#">Comienza a vender dominios sin inversión previa, benefíciate de nuestra oferta y genera ganancias.</a>
                                                     </li>
+                                                    <li class="hide-mobile">
+                                                        <a class="link-title" href="#">Incluye</a>
+                                                        <a class="link-description" href="#">Manejo de DNS<span class="sm-icon-submenu free">Gratis</span></a>
+                                                        <a class="link-description" href="#">Bloqueo de Transferencia<span class="sm-icon-submenu free">Gratis</span></a>
+                                                        <a class="link-description" href="#">Privacidad<span class="sm-icon-submenu cost">$7.95</span></a>
+                                                        <a class="link-description" href="#">Auto Renovación<span class="sm-icon-submenu free">Gratis</span></a>
+                                                    </li>
                                                     <li>
-                                                        <a class="link-title" href="#">Dominios</a>
-                                                        <a class="link-description" href="#">tu empresa en línea inicia con un dominio. El nombre con el que darás a conocer tu marca en la web.</a>
+                                                        <a class="link-title-center" href="#"><i class="fa fa-lock fa-fw"></i>Control Panel de Dominios</a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -138,15 +132,18 @@
                                                 <ul class="menu list-unstyled">
                                                     <li>
                                                         <a class="link-title" href="#">Nerdcom PRO</a>
-                                                        <a class="link-description" href="#">Comienza a vender dominios sin inversión previa, benefíciate de nuestra oferta y genera ganancias.</a>
+                                                        <a class="link-description" href="#">Plataforma de facturación y contabilidad, orientada a clientes, te permite optimizar la administrar tu empresa ahorrando tiempo y ampliando tus ganancias.</a>
                                                     </li>
                                                     <li>
-                                                        <a class="link-title" href="#">Revendedor de Dominios</a>
-                                                        <a class="link-description" href="#">Comienza a vender dominios sin inversión previa, benefíciate de nuestra oferta y genera ganancias.</a>
+                                                        <a class="link-title" href="#">Nerdcom DOC</a>
+                                                        <a class="link-description" href="#">Plataforma médica dirigida a facilitar la administración de consultorios y mejorar la atención personalizada a tus pacientes que te protege contra demandas.</a>
                                                     </li>
                                                     <li>
-                                                        <a class="link-title" href="#">Revendedor de Dominios</a>
-                                                        <a class="link-description" href="#">Comienza a vender dominios sin inversión previa, benefíciate de nuestra oferta y genera ganancias.</a>
+                                                        <a class="link-title" href="#">Nerdcom LAW</a>
+                                                        <a class="link-description" href="#">Diseñada para la administración de bufetes de abogados, que permite hacer una distribución eficiente de tiempo y esfuerzo mejorando la atención al cliente.</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="link-title-center" href="#"><i class="fa fa-lock fa-fw"></i>Nerdcom Academy<span class="sm-icon-submenu cost">Certificate</span></a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -160,54 +157,19 @@
                                             <div class="container">
                                                 <ul class="menu list-unstyled">
                                                     <li>
-                                                        <a class="link-title" href="#">Alojamiento Web</a>
-                                                        <a class="link-description" href="#">El mejor espacio para alojar tus páginas web, Seguro y
-                                                            disponible 24 horas.</a>
+                                                        <a class="link-title" href="#">Revendedor Hosting</a>
+                                                        <a class="link-description" href="#">Invierte y comienza a producir ganancias con tu plan reseller hosting desde 19.95$ y disfruta de WHMCS Gratis.</a>
                                                     </li>
                                                     <li>
-                                                        <a class="link-title" href="#">Cloud Hosting</a>
-                                                        <a class="link-description" href="#">Ofrecemos una expansión en la capacidad de recursos ilimitados
-                                                            de almacenamiento.</a>
+                                                        <a class="link-title" href="#">Revendedor de Dominios</a>
+                                                        <a class="link-description" href="#">Conviértete en socio Nerdcom y genera ingresos substánciales en tu cuenta bancaria. ¡Conoce nuestra oferta!</a>
                                                     </li>
                                                     <li>
-                                                        <a class="link-title" href="#">Wordpress Hosting</a>
-                                                        <a class="link-description" href="#">Plan diseñado para sitios WordPress que cuenta con un equipo
-                                                            especializado.</a>
+                                                        <a class="link-title" href="#">Socio Estrategico "Partner"</a>
+                                                        <a class="link-description" href="#">Conviértete en socio Nerdcom y genera ingresos substánciales en tu cuenta bancaria. ¡Conoce nuestra oferta!</a>
                                                     </li>
                                                     <li>
-                                                        <a class="link-title" href="#">Servidores Dedicados</a>
-                                                        <a class="link-description" href="#">Web's de tráfico alto o con necesidad de amplios recursos de
-                                                            transferencia.</a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="link-title" href="#">Streaming Hosting</a>
-                                                        <a class="link-description" href="#">Tecnología que lleva tu emisora en línea a tu público de
-                                                            manera eficiente.</a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="link-title" href="#">Virtual Private Server "VPS"</a>
-                                                        <a class="link-description" href="#">Dispone recursos que conceden más potencia que un hosting
-                                                            compartido.</a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="link-title" href="#">Web Hosting Design</a>
-                                                        <a class="link-description" href="#">Web hosting + Dominio + WorPress + 1 Especialista enfocado en
-                                                            tu web.</a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="link-title" href="#">Business Email</a>
-                                                        <a class="link-description" href="#">Web hosting + Dominio + WorPress + 1 Especialista enfocado
-                                                            para tu web.</a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="link-title" href="#">Enterprise Email</a>
-                                                        <a class="link-description" href="#">Web hosting + Dominio + WorPress + 1 Especialista enfocado
-                                                            para tu web.</a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="link-title" href="#">GSuite</a>
-                                                        <a class="link-description" href="#">Web hosting + Dominio + WorPress + 1 Especialista enfocado
-                                                            para tu web.</a>
+                                                        <a class="link-title-center" href="#"><i class="fa fa-lock fa-fw"></i>Acceso a Panel de Revendedor</a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -221,16 +183,32 @@
                                             <div class="container">
                                                 <ul class="menu list-unstyled">
                                                     <li>
-                                                        <a class="link-title" href="#">Nerdcom PRO</a>
-                                                        <a class="link-description" href="#">Comienza a vender dominios sin inversión previa, benefíciate de nuestra oferta y genera ganancias.</a>
+                                                        <a class="link-title" href="#">Verificacion de Identidad</a>
+                                                        <a class="link-description" href="#">Te brindamos un servicio especializado en incrementar la seguridad de tu empresa en línea. (República Dominicana)</a>
                                                     </li>
                                                     <li>
-                                                        <a class="link-title" href="#">Revendedor de Dominios</a>
-                                                        <a class="link-description" href="#">Comienza a vender dominios sin inversión previa, benefíciate de nuestra oferta y genera ganancias.</a>
+                                                        <a class="link-title" href="#">Diseño Web</a>
+                                                        <a class="link-description" href="#">Paquetes de diseño realizados por profesionales que te permiten llegar a tus clientes en la web de manera exitosa.</a>
                                                     </li>
                                                     <li>
-                                                        <a class="link-title" href="#">Revendedor de Dominios</a>
-                                                        <a class="link-description" href="#">Comienza a vender dominios sin inversión previa, benefíciate de nuestra oferta y genera ganancias.</a>
+                                                        <a class="link-title" href="#">Identidad Corporativa</a>
+                                                        <a class="link-description" href="#">Trabajamos en quipo aplicando estrategias que te permiten hacer de tus ideas una marca reconocida para el público.</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="link-title" href="#">Site Lock</a>
+                                                        <a class="link-description" href="#">Sistema de protección anti malware que asegura tu sitio web contra virus, ataques con un certificado de garantía visible.</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="link-title" href="#">SSL</a>
+                                                        <a class="link-description" href="#">Certificado de seguridad (https://) protege  tu web y tu SEO dando tranquilidad en la compra de productos a visitantes.</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="security-desing" href="#">
+                                                            <span class="text-link text-create">Creamos</span>                                                                
+                                                            <span class="text-link text-page">Tu página</span><br>                                                                
+                                                            <span class="text-link text-since">Desde</span>                                                                
+                                                            <span class="text-link text-price">US$ 450.00</span>                                                                
+                                                        </a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -244,24 +222,31 @@
                                             <div class="container">
                                                 <ul class="menu list-unstyled">
                                                     <li>
-                                                        <a class="link-title" href="#">Alojamiento Web</a>
-                                                        <a class="link-description" href="#">El mejor espacio para alojar tus páginas web, Seguro y disponible 24 horas.</a>
+                                                        <a class="link-title" href="#">Impulsa con Éxito</a>
+                                                        <a class="link-description" href="#">Programa que permite a emprendedores impulsar sus negocios desde los inicios, con cientos herramientas integradas al mejor costo del mercado.</a>
                                                     </li>
                                                     <li>
-                                                        <a class="link-title" href="#">Cloud Hosting</a>
-                                                        <a class="link-description" href="#">Ofrecemos una expansión en la capacidad de recursos ilimitados de almacenamiento.</a>
+                                                        <a class="link-title" href="#">Web SEO</a>
+                                                        <a class="link-description" href="#">Hacemos el contenido de tu web orgánico y  atractivo a los motores de búsqueda que envían personas a tu sitio aumentando visibilidad de tu sitio.</a>
                                                     </li>
                                                     <li>
-                                                        <a class="link-title" href="#">Wordpress Hosting</a>
-                                                        <a class="link-description" href="#">Plan diseñado para sitios WordPress que cuenta con un equipo especializado.</a>
+                                                        <a class="link-title" href="#">Community Manager</a>
+                                                        <a class="link-description" href="#">Un profesional  dedicado a hacer que el contenido en tus redes sociales sea irresistible a tus futuros clientes. ¡Atráelos desde su lugar favorito!</a>
                                                     </li>
                                                     <li>
-                                                        <a class="link-title" href="#">Servidores Dedicados</a>
-                                                        <a class="link-description" href="#">Web's de tráfico alto o con necesidad de amplios recursos de transferencia.</a>
+                                                        <a class="link-title" href="#">Cooperativas</a>
+                                                        <a class="link-description" href="#">Plan diseñado para brindar las mejores herramientas que proyectan y promueven tu cooperativa como un fuerte competidor dentro y fuera de la industria.</a>
                                                     </li>
                                                     <li>
-                                                        <a class="link-title" href="#">Streaming Hosting</a>
-                                                        <a class="link-description" href="#">Tecnología que lleva tu emisora en línea a tu público de manera eficiente.</a>
+                                                        <a class="link-title" href="#">Marketing</a>
+                                                        <a class="link-description" href="#">Incrementa tus ventas con estrategias creadas para aumentar la visibilidad y el atractivo de tu producto .¡Conoce los planes que ideamos pensando en ti!</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="link-title" href="#">Inteligencia de Negocios</a>
+                                                        <a class="link-description" href="#">Un especialista en medios digitales te guiara a lograr el esquema funcional, de posicionamiento y ventas para que puedas llevar a tu marca donde deseas.</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="link-title-center" href="#"><i class="fa fa-lock fa-fw"></i>Acceso a tus Servicios</a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -275,54 +260,92 @@
                                             <div class="container">
                                                 <ul class="menu list-unstyled">
                                                     <li>
-                                                        <a class="link-title" href="#">Alojamiento Web</a>
-                                                        <a class="link-description" href="#">El mejor espacio para alojar tus páginas web, Seguro y
-                                                            disponible 24 horas.</a>
+                                                        <a class="link-title" href="#">Empresa</a>
+                                                        <a class="link-description" href="#">Equipo  <i class="fa fa-users"></i></a>
+                                                        <a class="link-description" href="#">Contacto</a>
+                                                        <a class="link-description" href="#">Clientes  <i class="fa fa-users"></i></a>
+                                                        <a class="link-description" href="#">Trabaja con nosotros  <i class="fab fa-dropbox"></i></a>
+                                                        <a class="link-description" href="#">Media Kit</a>
+                                                        <a class="link-description" href="#">KAI  <img src="./assets/images/kai.png" alt=""></a>
                                                     </li>
                                                     <li>
-                                                        <a class="link-title" href="#">Cloud Hosting</a>
-                                                        <a class="link-description" href="#">Ofrecemos una expansión en la capacidad de recursos ilimitados
-                                                            de almacenamiento.</a>
+                                                        <a class="link-title" href="#">Noticias y Comunidad</a>
+                                                        <a class="link-description" href="#">Blog  <i class="fa fa-comments"></i></a>
+                                                        <a class="link-description" href="#">Foro</a>
+                                                        <a class="link-description" href="#">Kaizen Event <i class="fa fa-calendar"></i></a>
+                                                        <a class="link-description" href="#">Webinars  <i class="fas fa-tv"></i></a>
                                                     </li>
                                                     <li>
-                                                        <a class="link-title" href="#">Wordpress Hosting</a>
-                                                        <a class="link-description" href="#">Plan diseñado para sitios WordPress que cuenta con un equipo
-                                                            especializado.</a>
+                                                        <a class="link-title" href="#">Ayuda</a>
+                                                        <a class="link-description" href="#">Área de Clientes</a>
+                                                        <a class="link-description" href="#">Base de Conocimientos  <i class="fa fa-book"></i></a>
+                                                        <a class="link-description" href="#">Abrir un Ticket</a>
+                                                        <a class="link-description" href="#"><i class="fas fa-phone"></i>  +1.929.273.0923</a>
+                                                        <a class="link-description" href="#"></a><i class="fas fa-phone"></i>  +1.877.280.9295</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <span>Contacto <i class="fa fa-caret-down fa-fw"></i></span>
+                                    <div class="container-fluid sub-menu">
+                                        <div class="row">
+                                            <div class="container">
+                                                <ul class="menu list-unstyled">
+                                                    <li class="text-left  text-lg-center">
+                                                        <a class="link-title-center" href="#">Ayuda y Soporte</a>
+                                                        <img class="nav-img-contact hide-mobile" src="/assets/images/supp.svg" alt="text">
+                                                    </li>
+                                                    <li class="text-left text-lg-center">
+                                                        <a class="link-title-center" href="#">Realiza una pregunta</a>
+                                                        <img class="nav-img-contact hide-mobile" src="/assets/images/quest.svg" alt="text">
+                                                    </li>
+                                                    <li class="text-left text-lg-center">
+                                                        <a class="link-title-center" href="#">Preguntas frecuentes</a>
+                                                        <img class="nav-img-contact hide-mobile" src="/assets/images/faq.svg" alt="text">
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-cp" href="https://panel.nerdcom.host"><i class="fa fa-lock fa-fw"></i><span>Control Panel</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <button class="btn nav-offers btn-sm">Ofertas</button>
+                                </li>
+                                <li class="nav-item hide-mobile">
+                                    <span><i class="fa fa-globe-americas"></i></span>
+                                    <div class="container-fluid sub-menu worldwide-menu">
+                                        <div class="row">
+                                            <div class="container">
+                                                <ul class="menu list-unstyled">
+                                                    <li>
+                                                        <span>América</span>
+                                                        <ul class="list-unstyled">
+                                                            <li><a href="#"><img class="flags" src="/assets/images/usa.png" alt="text"> USA</a></li>
+                                                            <li><a href="#"><img class="flags" src="/assets/images/republicadominicana.png" alt="text"> R. Dominicana</a></li>
+                                                            <li><a href="#"><img class="flags" src="/assets/images/argentina.png" alt="text"> Argentina</a></li>
+                                                            <li><a href="#"><img class="flags" src="/assets/images/mex.png" alt="text"> México</a></li>
+                                                            <li><a href="#"><img class="flags" src="/assets/images/chile.png" alt="text"> Chile</a></li>
+                                                            <li><a href="#"><img class="flags" src="/assets/images/venezuela.png" alt="text"> Venezuela</a></li>
+                                                        </ul>
+                                                        <!-- <a class="link-title" href="#">América</a>
+                                                        <img class="flags" src="/assets/images/usa.png" alt="">
+                                                        <span class="text-flag link-description">USA</span>
+                                                        <img class="flags" src="/assets/images/republicadominicana.png" alt="">
+                                                        <span class="text-flag link-description">República Dominicana</span> -->
                                                     </li>
                                                     <li>
-                                                        <a class="link-title" href="#">Servidores Dedicados</a>
-                                                        <a class="link-description" href="#">Web's de tráfico alto o con necesidad de amplios recursos de
-                                                            transferencia.</a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="link-title" href="#">Streaming Hosting</a>
-                                                        <a class="link-description" href="#">Tecnología que lleva tu emisora en línea a tu público de
-                                                            manera eficiente.</a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="link-title" href="#">Virtual Private Server "VPS"</a>
-                                                        <a class="link-description" href="#">Dispone recursos que conceden más potencia que un hosting
-                                                            compartido.</a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="link-title" href="#">Web Hosting Design</a>
-                                                        <a class="link-description" href="#">Web hosting + Dominio + WorPress + 1 Especialista enfocado en
-                                                            tu web.</a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="link-title" href="#">Business Email</a>
-                                                        <a class="link-description" href="#">Web hosting + Dominio + WorPress + 1 Especialista enfocado
-                                                            para tu web.</a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="link-title" href="#">Enterprise Email</a>
-                                                        <a class="link-description" href="#">Web hosting + Dominio + WorPress + 1 Especialista enfocado
-                                                            para tu web.</a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="link-title" href="#">GSuite</a>
-                                                        <a class="link-description" href="#">Web hosting + Dominio + WorPress + 1 Especialista enfocado
-                                                            para tu web.</a>
+                                                        <span>Europa</span>
+                                                        <ul class="list-unstyled">
+                                                            <li><a href="#"><img class="flags" src="/assets/images/es.svg" alt=""> España</a></li>
+                                                        </ul>
+                                                        <!-- <a class="link-title" href="#">Europa</a>
+                                                        <img class="nav-img-contact" src="/assets/images/quest.svg" alt=""> -->
                                                     </li>
                                                 </ul>
                                             </div>
@@ -341,15 +364,15 @@
                 <h1 class="text-center">Powerful Web Hosting</h1>
                 <p class="description text-center">Web hosting made EASY and AFFORDABLE.</p>
                 <p class="price text-center">Starting at only <span class="text-orange">$2.75/mo*</span></p>
-                <p class="text-center"><button class="btn btn-primary btn-lg">Get Started!</button></p>
+                <p class="text-center"><button class="btn btn-primary-orange btn-xl">Get Started!</button></p>
             </div>
         </section>
         <!-- Services section -->
-        <section class="row services">
+        <section class="row services"> 
             <div class="container services--wrapper">
                 <div class="row no-gutters">
-                    <div class="col-sm-6 col-md-4 service">
-                        <div class="container-fluid service-image">
+                    <div class="col-sm-12 col-md-6 col-lg-4 service">
+                        <div class="container-fluid service-image hide-mobile">
                             <a href="#"><img class="img-fluid" src="./assets/images/img-services-1.jpg" alt="text"></a>
                         </div>
                         <div class="container-fluid service-content">
@@ -364,118 +387,134 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-4 service">
-                        <div class="container-fluid service-image">
+                    <div class="col-sm-12 col-md-6 col-lg-4 service">
+                        <div class="container-fluid service-image hide-mobile">
                             <a href="#"><img class="img-fluid" src="./assets/images/img-services-2.jpg" alt="text"></a>
                         </div>
                         <div class="container-fluid service-content">
                             <div class="row no-gutters">
                                 <div class="col-10">
                                     <p class="service-content--title">Linux Shared Hosting</p>
-                                    <p class="service-content--description">Fast and easy, web hosting for everyone</p>
+                                    <p class="service-content--description">Simple, reliable and affordable Cloud Hosting</p>
                                 </div>
                                 <div class="col-2">
-                                    <p class="service-content--price">starts at<br><span>$0.49</span></p>
+                                    <p class="service-content--price">starts at<br><span>$4.79</span></p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-4 service">
-                        <div class="container-fluid service-image">
+                    <div class="col-sm-12 col-md-6 col-lg-4 service">
+                        <div class="container-fluid service-image hide-mobile">
                             <a href="#"><img class="img-fluid" src="./assets/images/img-services-3.jpg" alt="text"></a>
                         </div>
                         <div class="container-fluid service-content">
                             <div class="row no-gutters">
                                 <div class="col-10">
-                                    <p class="service-content--title">Linux Shared Hosting</p>
-                                    <p class="service-content--description">Fast and easy, web hosting for everyone</p>
+                                    <p class="service-content--title">Linux Reseller Hosting</p>
+                                    <p class="service-content--description">Start your own web hosting business</p>
                                 </div>
                                 <div class="col-2">
-                                    <p class="service-content--price">starts at<br><span>$0.49</span></p>
+                                    <p class="service-content--price">starts at<br><span>$12.99</span></p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-4 service">
-                        <div class="container-fluid service-image">
+                    <div class="col-sm-12 col-md-6 col-lg-4 service">
+                        <div class="container-fluid service-image hide-mobile">
                             <a href="#"><img class="img-fluid" src="./assets/images/img-services-4.jpg" alt="text"></a>
                         </div>
                         <div class="container-fluid service-content">
                             <div class="row no-gutters">
                                 <div class="col-10">
-                                    <p class="service-content--title">Linux Shared Hosting</p>
-                                    <p class="service-content--description">Fast and easy, web hosting for everyone</p>
+                                    <p class="service-content--title">Wordpress Hosting</p>
+                                    <p class="service-content--description">Affordable solutions for WordPress Websites</p>
                                 </div>
                                 <div class="col-2">
-                                    <p class="service-content--price">starts at<br><span>$0.49</span></p>
+                                    <p class="service-content--price">starts at<br><span>$2.49</span></p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-4 service">
-                        <div class="container-fluid service-image">
+                    <div class="col-sm-12 col-md-6 col-lg-4 service">
+                        <div class="container-fluid service-image hide-mobile">
                             <a href="#"><img class="img-fluid" src="./assets/images/img-services-5.jpg" alt="text"></a>
                         </div>
                         <div class="container-fluid service-content">
                             <div class="row no-gutters">
                                 <div class="col-10">
-                                    <p class="service-content--title">Linux Shared Hosting</p>
-                                    <p class="service-content--description">Fast and easy, web hosting for everyone</p>
+                                    <p class="service-content--title">VPS hosting</p>
+                                    <p class="service-content--description">Power-packed Performance with Linux VPS</p>
                                 </div>
                                 <div class="col-2">
-                                    <p class="service-content--price">starts at<br><span>$0.49</span></p>
+                                    <p class="service-content--price">starts at<br><span>$15.39</span></p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-4 service">
-                        <div class="container-fluid service-image">
+                    <div class="col-sm-12 col-md-6 col-lg-4 service">
+                        <div class="container-fluid service-image hide-mobile">
                             <a href="#"><img class="img-fluid" src="./assets/images/img-services-6.jpg" alt="text"></a>
                         </div>
                         <div class="container-fluid service-content">
                             <div class="row no-gutters">
                                 <div class="col-10">
-                                    <p class="service-content--title">Linux Shared Hosting</p>
-                                    <p class="service-content--description">Fast and easy, web hosting for everyone</p>
+                                    <p class="service-content--title">Dedicated Servers</p>
+                                    <p class="service-content--description">Powerful & Scalable with Complete Root Access</p>
                                 </div>
                                 <div class="col-2">
-                                    <p class="service-content--price">starts at<br><span>$0.49</span></p>
+                                    <p class="service-content--price">starts at<br><span>$90.00</span></p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-4 service">
-                        <div class="container-fluid service-image">
+                    <div class="col-sm-12 col-md-6 col-lg-4 service">
+                        <div class="container-fluid service-image hide-mobile">
                             <a href="#"><img class="img-fluid" src="./assets/images/img-services-7.jpg" alt="text"></a>
                         </div>
                         <div class="container-fluid service-content">
                             <div class="row no-gutters">
                                 <div class="col-10">
-                                    <p class="service-content--title">Linux Shared Hosting</p>
-                                    <p class="service-content--description">Fast and easy, web hosting for everyone</p>
+                                    <p class="service-content--title">Bluehost VPS Hosting</p>
+                                    <p class="service-content--description">Flexibility, Control & Power like no other</p>
                                 </div>
                                 <div class="col-2">
-                                    <p class="service-content--price">starts at<br><span>$0.49</span></p>
+                                    <p class="service-content--price">starts at<br><span>$13.50</span></p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-4 service">
-                        <div class="container-fluid service-image">
+                    <div class="col-sm-12 col-md-6 col-lg-4 service">
+                        <div class="container-fluid service-image hide-mobile">
                             <a href="#"><img class="img-fluid" src="./assets/images/img-services-8.jpg" alt="text"></a>
                         </div>
                         <div class="container-fluid service-content">
                             <div class="row no-gutters">
                                 <div class="col-10">
-                                    <p class="service-content--title">Linux Shared Hosting</p>
-                                    <p class="service-content--description">Fast and easy, web hosting for everyone</p>
+                                    <p class="service-content--title">GSuite</p>
+                                    <p class="service-content--description">Robust Email Solution Designed for Performance</p>
                                 </div>
                                 <div class="col-2">
-                                    <p class="service-content--price">starts at<br><span>$0.49</span></p>
+                                    <p class="service-content--price">starts at<br><span>$3.33</span></p>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 service">
+                            <div class="container-fluid service-image hide-mobile">
+                                <a href="#"><img class="img-fluid" src="./assets/images/img-services-4.jpg" alt="text"></a>
+                            </div>
+                            <div class="container-fluid service-content">
+                                <div class="row no-gutters">
+                                    <div class="col-10">
+                                        <p class="service-content--title">Wordpress Hosting</p>
+                                        <p class="service-content--description">Affordable solutions for WordPress Websites</p>
+                                    </div>
+                                    <div class="col-2">
+                                        <p class="service-content--price">starts at<br><span>$2.49</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                 </div>
             </div>
         </section>
@@ -485,15 +524,15 @@
                 <h2 class="text-center">Busque su nombre de dominio</h2>
                 <p class="text-center">Mueva su dominio a NerdCom por $ 3.98 y ayude a proteger la libertad de Internet</p>
                 <div class="search-box">
-                    <button type="button" class="btn btn-dark btn-dropdown dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Search... </button>
+                    <button type="button" class="btn btn-dropdown dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Search... </button>
                     <div class="dropdown-menu">
                         <a class="dropdown-item" href="#">Action</a>
                         <a class="dropdown-item" href="#">Another action</a>
                         <a class="dropdown-item" href="#">Something else here</a>
                         <a class="dropdown-item" href="#">Separated link</a>
                     </div>
-                    <input type="text" class="form-control input-search" aria-label="Text input with segmented dropdown button">
-                    <button type="button" class="btn btn-danger btn-search"><i class="fa fa-search"></i></button>
+                    <input type="text" class="form-control input-search" aria-label="Text input with segmented dropdown button" placeholder="Go">
+                    <button type="button" class="btn btn-orange btn-search"><i class="fa fa-search"></i></button>
                 </div>
             </div>
         </section>
@@ -511,7 +550,7 @@
                                 <div class="container-fluid domain-offer-content">
                                     <div class="row">
                                         <div class="col-12 col-sm-8">
-                                            <p class="domain-offer-domain"><span>.store</span> domains</p>
+                                            <p class="domain-offer-domain">.store domains</p>
                                         </div>
                                         <div class="col-12 col-sm-4">
                                             <p class="domain-offer-price">at just<br><span>$3.49</span></p>
@@ -530,7 +569,7 @@
                                 <div class="container-fluid domain-offer-content">
                                     <div class="row">
                                         <div class="col-12 col-sm-8">
-                                            <p class="domain-offer-domain"><span>.shop</span> domains</p>
+                                            <p class="domain-offer-domain">.shop domains</p>
                                         </div>
                                         <div class="col-12 col-sm-4">
                                             <p class="domain-offer-price">at just<br><span>$2.99</span></p>
@@ -549,7 +588,7 @@
                                 <div class="container-fluid domain-offer-content">
                                     <div class="row">
                                         <div class="col-12 col-sm-8">
-                                            <p class="domain-offer-domain"><span>.top</span> domains</p>
+                                            <p class="domain-offer-domain">.top domains</p>
                                         </div>
                                         <div class="col-12 col-sm-4">
                                             <p class="domain-offer-price">at just<br><span>$0.99</span></p>
@@ -568,7 +607,7 @@
                                 <div class="container-fluid domain-offer-content">
                                     <div class="row">
                                         <div class="col-12 col-sm-8">
-                                            <p class="domain-offer-domain"><span>.vip</span> domains</p>
+                                            <p class="domain-offer-domain">.vip domains</p>
                                         </div>
                                         <div class="col-12 col-sm-4">
                                             <p class="domain-offer-price">at just<br><span>$4.49</span></p>
@@ -587,7 +626,7 @@
                                 <div class="container-fluid domain-offer-content">
                                     <div class="row">
                                         <div class="col-12 col-sm-8">
-                                            <p class="domain-offer-domain"><span>.mx</span> domains</p>
+                                            <p class="domain-offer-domain">.mx domains</p>
                                         </div>
                                         <div class="col-12 col-sm-4">
                                             <p class="domain-offer-price">at just<br><span>$9.99</span></p>
@@ -606,7 +645,7 @@
                                 <div class="container-fluid domain-offer-content">
                                     <div class="row">
                                         <div class="col-12 col-sm-8">
-                                            <p class="domain-offer-domain"><span>.space</span> domains</p>
+                                            <p class="domain-offer-domain">.space domains</p>
                                         </div>
                                         <div class="col-12 col-sm-4">
                                             <p class="domain-offer-price">at just<br><span>$4.99</span></p>
@@ -625,7 +664,7 @@
                                 <div class="container-fluid domain-offer-content">
                                     <div class="row">
                                         <div class="col-12 col-sm-8">
-                                            <p class="domain-offer-domain"><span>.online</span> domains</p>
+                                            <p class="domain-offer-domain">.online domains</p>
                                         </div>
                                         <div class="col-12 col-sm-4">
                                             <p class="domain-offer-price">at just<br><span>$7.99</span></p>
@@ -644,7 +683,7 @@
                                 <div class="container-fluid domain-offer-content">
                                     <div class="row">
                                         <div class="col-12 col-sm-8">
-                                            <p class="domain-offer-domain"><span>.xyz</span> domains</p>
+                                            <p class="domain-offer-domain">.xyz domains</p>
                                         </div>
                                         <div class="col-12 col-sm-4">
                                             <p class="domain-offer-price">at just<br><span>$0.99</span></p>
@@ -663,7 +702,7 @@
                                 <div class="container-fluid domain-offer-content">
                                     <div class="row">
                                         <div class="col-12 col-sm-8">
-                                            <p class="domain-offer-domain"><span>.website</span> domains</p>
+                                            <p class="domain-offer-domain">.website domains</p>
                                         </div>
                                         <div class="col-12 col-sm-4">
                                             <p class="domain-offer-price">at just<br><span>$4.99</span></p>
@@ -682,7 +721,7 @@
                                 <div class="container-fluid domain-offer-content">
                                     <div class="row">
                                         <div class="col-12 col-sm-8">
-                                            <p class="domain-offer-domain"><span>.me</span> domains</p>
+                                            <p class="domain-offer-domain">.me domains</p>
                                         </div>
                                         <div class="col-12 col-sm-4">
                                             <p class="domain-offer-price">at just<br><span>$4.49</span></p>
@@ -701,7 +740,7 @@
                                 <div class="container-fluid domain-offer-content">
                                     <div class="row">
                                         <div class="col-12 col-sm-8">
-                                            <p class="domain-offer-domain"><span>.asia</span> domains</p>
+                                            <p class="domain-offer-domain">.asia domains</p>
                                         </div>
                                         <div class="col-12 col-sm-4">
                                             <p class="domain-offer-price">at just<br><span>$2.99</span></p>
@@ -720,7 +759,7 @@
                                 <div class="container-fluid domain-offer-content">
                                     <div class="row">
                                         <div class="col-12 col-sm-8">
-                                            <p class="domain-offer-domain"><span>.pw</span> domains</p>
+                                            <p class="domain-offer-domain">.pw domains</p>
                                         </div>
                                         <div class="col-12 col-sm-4">
                                             <p class="domain-offer-price">at just<br><span>$0.99</span></p>
@@ -739,7 +778,7 @@
                                 <div class="container-fluid domain-offer-content">
                                     <div class="row">
                                         <div class="col-12 col-sm-8">
-                                            <p class="domain-offer-domain"><span>.cn.com</span> domains</p>
+                                            <p class="domain-offer-domain">.cn.com domains</p>
                                         </div>
                                         <div class="col-12 col-sm-4">
                                             <p class="domain-offer-price">at just<br><span>$2.99</span></p>
@@ -758,7 +797,7 @@
                                 <div class="container-fluid domain-offer-content">
                                     <div class="row">
                                         <div class="col-12 col-sm-8">
-                                            <p class="domain-offer-domain"><span>.co</span> domains</p>
+                                            <p class="domain-offer-domain">.co domains</p>
                                         </div>
                                         <div class="col-12 col-sm-4">
                                             <p class="domain-offer-price">at just<br><span>$8.99</span></p>
@@ -776,15 +815,15 @@
         <section class="row communication-channel">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12 col-lg-9 col-xl-6 communication-channel-wrapper">
+                    <div class="col-12 col-lg-6 col-xl-4">
                         <h4>Conversaciones personales sin esfuerzo</h4>
                         <p><strong>Reune todos tus canales</strong></p>
                         <p>Apoya a nuestros cliente donde sea que se encuentre, unifica tus conversaciones de correo electrónico, redes sociales y conversaciones en vivo de forma ordenada.</p>
                         <p><strong>Ayuda a nuestros clientes rápidamente en tiempo real.</strong></p>
                         <p>Una experiencia de chat en vivo, incluso cuando no estás en línea. Tener conversaciones personales con mensajes modernos en tiempo real.</p>
-                        <p class="text-left"><button class="btn btn-primary">Ordenar ahora</button></p>
+                        <p class="text-left"><button class="btn btn-black">Ordenar ahora</button></p>
                     </div>
-                    <!-- <div class="col-md-7"><img src="./assets/images/communication-channel.png" alt="text"></div> -->
+                    <div class="col-12 col-lg-6 col-xl-8 communication-channel-bg hide-mobile"></div>
                 </div>
             </div>
         </section>
@@ -795,12 +834,14 @@
                     <div class="container-fluid">
                         <h5 class="text-center">CIERRA MÁS NEGOCIOS CON MENOS ESFUERZO</h5>
                     </div>
-                    <div class="col-lg-6"><img class="img-fluid" src="./assets/images/business-admin.jpg" alt="text"></div>
-                    <div class="col-lg-6 business-description">
-                        <p class="business-description--title text-center">Potencia la productividad de las ventas</h5>
-                        <p class="business-description--content text-center">NerdComPro te ofrece El mejor sistema de facturacion, sin retrasar a tu equipo de ventas.</p>
-                        <p class="text-center"><button class="btn btn-primary">Ordenar ahora</button></p>
-                        <p class="business-description--info text-center">Versiones gratuitas de todos los productos de NerdcomPRO.</p>
+                    <div class="col-lg-8 business-admin">
+                        <div class="business-description">
+                            <p class="business-description--title text-center">Potencia la productividad de las ventas</p>
+                            <p class="business-description--content text-center">NerdComPro te ofrece El mejor sistema de facturacion, sin
+                                retrasar a tu equipo de ventas.</p>
+                            <p class="text-center"><button class="btn btn-black">Ordenar ahora</button></p>
+                            <p class="business-description--info text-center">Versiones gratuitas de todos los productos de NerdcomPRO.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -860,7 +901,7 @@
                         <h5>Empieza a crecer <span>¡HOY!</span></h5>
                         <p>Gracias a las múltiples herramientas de Nerdcom pro que te ayudan a centralizar cada aspecto de tu empresa y al incondicional apoyo de un equipo comprometido con tu crecimiento, Administrar tu negocio nunca había sido tan fácil.</p>
                         <p>Da el primer paso invierte el éxito de tu empresa</p>
-                        <button class="btn btn-primary">Comienza ahora</button>
+                        <button class="btn btn-red">Comienza ahora</button>
                         <p class="text-small">Versiones gratuitas de todos los productos de NerdcomPRO. Comienza ahora y actualiza cada versión en función de tu crecimiento.</p>
                     </div>
                     <div class="col-md-6 text-center"><img class="img-fluid" src="./assets/images/nerdcom-tools.png" alt=""></div>
@@ -871,7 +912,7 @@
         <footer class="row footer">
             <div class="container">
                 <div class="row footer-menus">
-                    <div class="footer-menus-wrapper col-sm-6 col-lg-4">
+                    <div class="footer-menus-wrapper col-6 col-md-4 col-lg-3 col-xl-2">
                         <p>Productos</p>
                         <ul class="footer-menu list-unstyled">
                             <li><a href="#">Nerdcom PRO</a></li>
@@ -881,7 +922,7 @@
                             <li><a href="#">SSL</a></li>
                         </ul>
                     </div>
-                    <div class="footer-menus-wrapper col-sm-6 col-lg-4">
+                    <div class="footer-menus-wrapper col-6 col-md-4 col-lg-3 col-xl-2">
                         <p>Servicios</p>
                         <ul class="footer-menu list-unstyled">
                             <li><a href="#">Diseño Web</a></li>
@@ -892,7 +933,7 @@
                             <li><a href="#">G Suite</a></li>
                         </ul>
                     </div>
-                    <div class="footer-menus-wrapper col-sm-6 col-lg-4">
+                    <div class="footer-menus-wrapper col-6 col-md-4 col-lg-3 col-xl-2">
                         <p>Soporte</p>
                         <ul class="footer-menu list-unstyled">
                             <li><a href="#">Área de Clientes</a></li>
@@ -903,7 +944,7 @@
                             <li><a href="#">Abrir Ticket</a></li>
                         </ul>
                     </div>
-                    <div class="footer-menus-wrapper col-sm-6 col-lg-4">
+                    <div class="footer-menus-wrapper col-6 col-md-4 col-lg-3 col-xl-2">
                         <p>Recursos</p>
                         <ul class="footer-menu list-unstyled">
                             <li><a href="#">Herramientas Gratis</a></li>
@@ -914,7 +955,7 @@
                             <li><a href="#">Panel de Proyectos</a></li>
                         </ul>
                     </div>
-                    <div class="footer-menus-wrapper col-sm-6 col-lg-4">
+                    <div class="footer-menus-wrapper col-6 col-md-4 col-lg-3 col-xl-2">
                         <p>Programas</p>
                         <ul class="footer-menu list-unstyled">
                             <li><a href="#">Impulsa</a></li>
@@ -922,7 +963,7 @@
                             <li><a href="#">Cooperativas</a></li>
                         </ul>
                     </div>
-                    <div class="footer-menus-wrapper col-sm-6 col-lg-4">
+                    <div class="footer-menus-wrapper col-6 col-md-4 col-lg-3 col-xl-2">
                         <p>Compañía</p>
                         <ul class="footer-menu list-unstyled">
                             <li><a href="#">Quienes Somos</a></li>
