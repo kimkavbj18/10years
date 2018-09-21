@@ -333,14 +333,12 @@ ul.main-menu li .sub-menu ul.menu li a.link-description {
     margin-bottom: 50px;
     padding-top: 15px;
     padding-bottom: 15px;
-    background-color: #eee;
-    border: 1px solid #eee;
 }
 
 .domain-offers .carousel-domain-offers .slick-arrow {
     position: absolute;
     z-index: 1;
-    top: 50%;
+    top: 27%;
     display: block;
     padding: 0;
     color: transparent;
@@ -386,6 +384,8 @@ ul.main-menu li .sub-menu ul.menu li a.link-description {
 .domain-offers .domain-offer-content .domain-offer-domain  {
     font-size: 7.8125vw;
     font-weight: 300;
+    color: #337ab7;
+    text-align: center;
 }
 
 .domain-offers .domain-offer-domain span {
@@ -396,6 +396,7 @@ ul.main-menu li .sub-menu ul.menu li a.link-description {
 .domain-offers .domain-offer-content .domain-offer-price {
     font-size: 4.0625vw;
     font-weight: 300;
+    text-align: center;
 }
 
 .domain-offers .domain-offer-price span {
