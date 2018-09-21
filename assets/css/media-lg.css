@@ -179,6 +179,7 @@
         font-size: 1.2em;
         font-weight: 700;
         border-right: none !important;
+        border-bottom: none;
     }
 
     .sub-menu ul.menu li a.link-description {
@@ -269,7 +270,7 @@
     }
 
     .hide-mobile {
-        display: block;
+        display: initial !important;
     }
 
     .hide-desktop {

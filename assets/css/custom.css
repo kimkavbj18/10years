@@ -140,8 +140,7 @@ ul.main-menu li.is-active .sub-menu ul.menu {
     display: block;
 }
 
-ul.main-menu li .sub-menu ul.menu li,
-a.link-title-center {
+ul.main-menu li .sub-menu ul.menu li {
     display: block;
     padding: 15px;
     border-bottom: 1px solid #fff;
@@ -163,6 +162,40 @@ a.link-title-center:hover {
 
 ul.main-menu li .sub-menu ul.menu li a.link-description {
     display: none;
+}
+
+.worldwide-menu {
+    left: 50% !important;
+    width: auto;
+}
+
+.worldwide-menu ul.menu {
+    display: flex !important;
+    flex-direction: column;
+}
+
+.worldwide-menu ul.menu > li {
+    margin: 0 !important;
+    padding: 0 !important;
+    float: unset;
+    width: auto !important;
+}
+
+.worldwide-menu ul.menu li:after {
+    content: "";
+    width: auto !important;
+}
+
+.worldwide-menu ul.menu li ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.worldwide-menu ul.menu li ul li {
+    margin-bottom: 5px !important;
+    padding: 5px !important;
+    width: 50%;
 }
 
 /* HERO Styles */
@@ -260,7 +293,7 @@ ul.main-menu li .sub-menu ul.menu li a.link-description {
 }
 
 .hide-mobile {
-    display: none;
+    display: none !important;
 }
 
 /* DOMAIN SEARCH Styles */
