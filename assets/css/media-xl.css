@@ -1,0 +1,15 @@
+@media (min-width: 1200px) {
+    .header .logo {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        max-width: 140px;
+    }
+
+    ul.main-menu li {
+        margin-left: 3px;
+    }
+
+    ul.main-menu li span {
+        font-size: 1em
+    }
+}

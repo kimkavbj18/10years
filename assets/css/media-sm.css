@@ -1,0 +1,120 @@
+@media (min-width: 576px) {
+    /* GENERAL Styles */
+    .extra-padding {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    /* HERO Styles */
+    .hero {
+        height: 112.84722222222223vw;
+    }
+
+    .hero--home h1 {
+        font-size: 8.680555555555555vw;
+    }
+
+    .hero--home .description {
+        margin-bottom: 6.25vw;
+        font-size: 5.208333333333334vw;
+        font-weight: 300;
+    }
+
+    /* Services Styles */
+    .services--wrapper {
+        margin-top: -100px;
+    }
+
+    .services .service-content .service-content--title {
+        font-size: 16px;
+    }
+
+    .services .service-content .service-content--description {
+        font-size: 12px;
+    }
+
+    .services .service-content .service-content--price {
+        font-size: 10px;
+        text-align: right;
+    }
+
+    .services .service-content--price span {
+        font-size: 15px;
+    }
+
+    /* DOMAIN SEARCH Styles */
+    .domain-search h2 {
+        font-size: 6.076388888888889vw;
+    }
+
+    .domain-search p {
+        font-size: 3.4722222222222223vw;
+    }
+
+    .search-box {
+        margin-top: 30px;
+    }
+
+    .search-box .btn-dropdown,
+    .search-box .input-search,
+    .search-box .btn-search {
+        border-radius: 0;
+        float: left;
+    }
+
+    .search-box .btn-dropdown {
+        width: 20%;
+    }
+
+    .search-box .input-search {
+        width: 65%;
+    }
+
+    .search-box .btn-search {
+        width: 15%;
+    }
+
+    /* DOMAIN OFFERS Styles */
+    .domain-offers .domain-offer-content .domain-offer-domain {
+        font-size: 3.4722222222222223vw;
+    }
+
+    .domain-offers .domain-offer-content .domain-offer-price {
+        font-size: 2.0833333333333335vw;
+    }
+
+    .domain-offers .domain-offer-price span {
+        font-size: 3.03vw;
+    }
+
+    /* COMMUNICATION CHANNEL Styles */
+    .communication-channel-wrapper {
+        padding: 50px ;
+        background-color: rgba(210, 210, 210, .7);
+    }
+
+    /* SUPPORT AND COMMUNITY Styles*/
+    .support-community h5 {
+        font-size: 5.208333333333334vw;
+    }
+
+    .support-community p {
+        font-size: 3.4722222222222223vw;
+    }
+
+    .support-community .sc-feature {
+        border-right: 1px solid white;
+        border-bottom: 1px solid white;
+    }
+
+    .support-community .sc-feature:nth-child(2),
+    .support-community .sc-feature:nth-child(4),
+    .support-community .sc-feature:nth-child(6),
+    .support-community .sc-feature:nth-child(8) {
+        border-right: none;
+    }
+
+    .support-community .sc-feature:nth-child(7),
+    .support-community .sc-feature:nth-child(8) {
+        border-bottom: none;
+    }
+}
