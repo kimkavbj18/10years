@@ -88,6 +88,15 @@ body {
     background: #950505;
 }
 
+.btn-blk-mobile {
+    display: block !important;
+    width: 100%;
+}
+
+.btn-fat {
+    padding: 20px 30px;
+}
+
 /* HEADER Styles */
 header.header {
     position: fixed;
@@ -396,9 +405,11 @@ ul.main-menu li .sub-menu ul.menu li a.link-description {
 .search-box .btn-dropdown,
 .search-box .input-search,
 .search-box .btn-search {
-    display: block;
+    /* display: block;
     margin: 10px auto 0;
-    width: 35%;
+    width: 35%; */
+    display: unset;
+    float: left;
     border-radius: 0;
 }
 
@@ -408,7 +419,11 @@ ul.main-menu li .sub-menu ul.menu li a.link-description {
 }
 
 .search-box .input-search {
-    width: 80%;
+    width: 85%;
+}
+
+.search-box .btn-search {
+    width: 15%;
 }
  
 /* DOMAIN OFFERS Styles */
@@ -511,6 +526,14 @@ ul.main-menu li .sub-menu ul.menu li a.link-description {
     background-color: rgba(210, 210, 210, .7);
 }
 
+.communication-channel-bg {
+    height: 150px;
+    background-image: url(../images/communication-channel.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .communication-channel h4 {
     margin-bottom: 50px;
     font-size: 2.5em;
@@ -540,22 +563,9 @@ ul.main-menu li .sub-menu ul.menu li a.link-description {
     text-shadow: 1px 1px 1px #333;
 }
 
-.business-admin {
-    position: relative;
-    height: 350px;
-    background-image: url(../images/business-admin.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
 .business .business-description {
-    position: absolute;
-    top: 50px;
-    left: 70%;
-    width: 75%;
-    height: 100%;
-    padding: 50px 30px;
-    background-color: rgba(250, 250, 250, .9);
+    padding: 40px 15px;
+    background-color: white;
 }
 
 .business .business-description p {
@@ -564,16 +574,16 @@ ul.main-menu li .sub-menu ul.menu li a.link-description {
 
 .business .business-description .business-description--title {
     margin-bottom: 15px;
-    font-size: 2.3em;
+    font-size: 1.5em;
     font-weight: 400
 }
 
 .business .business-description .business-description--content {
-    font-size: 1.3em;
+    font-size: 1em;
 }
 
 .business .business-description .business-description--info {
-    font-size: 1em;
+    font-size: .8em;
 }
 
 /* SUPPORT AND COMMUNITY Styles*/

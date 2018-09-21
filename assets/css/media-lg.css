@@ -1,4 +1,13 @@
 @media (min-width: 992px) {
+    /* GENERAL Styles */
+    .hide-mobile {
+        display: initial !important;
+    }
+
+    .hide-desktop {
+        display: none;
+    }
+
     /* HEADER Styles */
     header.header {
         position: fixed;
@@ -57,7 +66,7 @@
     }
 
     ul.main-menu {
-        position: initial;
+        position: relative;
         top: auto;
         bottom: auto;
         left: auto;
@@ -92,13 +101,13 @@
         font-size: .85em
     }
 
-    ul.main-menu li.is-active span:after {
+    ul.main-menu > li.is-active > span:after {
         content: "";
         position: absolute;
-        top: 45px;
-        left: 50%;
+        top: 30px;
+        right: -22px;
         transform: translateX(-50%);
-        border-bottom: 6px solid white;
+        border-bottom: 7px solid white;
         border-left: 7px solid transparent;
         border-right: 7px solid transparent;
     }
@@ -116,7 +125,7 @@
     ul.main-menu li.nav-item.is-active > .sub-menu {
         display: block;
         position: absolute;
-        top: 82px;
+        top: 45px;
         left: 0;
         right: 0;
         padding-top: 0;
@@ -153,35 +162,25 @@
     }
 
     .sub-menu ul.menu {
-        float: left;
-        width: 100%;
+        display: flex !important;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 15px;
         background-color: transparent !important;
     }
 
     .sub-menu ul.menu li {
         position: relative;
         margin-left: 0;
-        margin-bottom: 30px;
-        padding-left: 15px;
-        padding-right: 15px;
-        float: left;
+        margin-bottom: 10px;
+        padding: 10px !important;
         width: 33.33333%;
         background-color: transparent;
-    }
-
-    .sub-menu ul.menu li:after {
-        content: "";
-        position: absolute;
-        bottom: -15px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: calc(100% - 30px);
-        border-bottom: 1px solid #ddd;
         transition: .3s;
     }
 
-    .sub-menu ul.menu li:hover:after {
-        border-bottom: 1px solid #333;
+    .sub-menu ul.menu li:hover {
+        background-color: #eee;
     }
 
     .sub-menu ul.menu li a {
@@ -283,14 +282,15 @@
 
     .sub-menu a.link-title-center {
         text-align: center;
+        text-decoration: none;
+        color:#555;
     }
 
-    .hide-mobile {
-        display: initial !important;
-    }
-
-    .hide-desktop {
-        display: none;
+    .sub-menu-foot {
+        display: block !important;
+        padding: 20px 15px 0;
+        text-align: center;
+        border-top: 1px solid #ccc;
     }
     
      /* DOMAIN OFFERS Styles */
@@ -320,7 +320,7 @@
     }
 
     .communication-channel-bg {
-        background-image: url(../images/communication-channel.png);
+        height: auto;
         background-size: contain;
     }
 
@@ -344,6 +344,43 @@
     .support-community .sc-feature:nth-child(7),
     .support-community .sc-feature:nth-child(8) {
         border-bottom: none !important;
+    }
+
+    /* BUSINESS Styles */
+    .business-admin {
+        position: relative;
+        height: 350px;
+        background-image: url(../images/business-admin.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .business .business-description {
+        position: absolute;
+        top: 50px;
+        left: 70%;
+        width: 75%;
+        height: 100%;
+        padding: 50px 30px;
+        background-color: rgba(250, 250, 250, .9);
+    }
+
+    .business .business-description p {
+        color: #333;
+    }
+
+    .business .business-description .business-description--title {
+        margin-bottom: 15px;
+        font-size: 2.3em;
+        font-weight: 400
+    }
+
+    .business .business-description .business-description--content {
+        font-size: 1.3em;
+    }
+
+    .business .business-description .business-description--info {
+        font-size: 1em;
     }
 
     /* FOOTER Styles */
