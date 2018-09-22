@@ -230,6 +230,19 @@ ul.main-menu li .sub-menu ul.menu li a.link-description {
     display: none;
 }
 
+ul.main-menu .nav-offers{
+    color: #ffff;
+    background-color: rgba(226,61,49);
+    border-color: #fe0606;
+    padding: 5px 10px;
+    font-size: 13px;
+    margin-top:-5px;
+}
+
+ul.main-menu .nav-offers:hover{
+    background-color: rgba(172,30,20);
+}
+
 .worldwide-menu {
     left: 65% !important;
     width: auto;
@@ -269,6 +282,30 @@ ul.main-menu li .sub-menu ul.menu li a.link-description {
     margin-bottom: 5px !important;
     padding: 5px !important;
     width: 50%;
+}
+
+.worldwide-menu ul.menu li:hover {
+    background-color: transparent !important;
+}    
+
+.company-menu ul.menu li span{
+    color:#555 !important;
+    
+}
+
+.company-menu ul.menu li:hover{
+    background-color: transparent !important;
+}
+
+.sub-menu ul.menu-company li{
+    width: 100%;
+    margin-bottom: 0px;      
+}
+
+.sub-menu ul.menu-company a.link-title-company,
+.sub-menu ul.menu-company a.link-title-company:hover{
+    color:#555 !important;
+    text-decoration: none;    
 }
 
 /* HERO Styles */
@@ -613,7 +650,7 @@ ul.main-menu li .sub-menu ul.menu li a.link-description {
 }
 
 .support-community .sc-feature {
-    border-bottom: 1px solid white;
+    /*border-bottom: 1px solid white;*/
 }
 
 .support-community .sc-feature:last-child {

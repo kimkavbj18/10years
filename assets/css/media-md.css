@@ -1,8 +1,15 @@
 @media (min-width: 768px) {
     /* GENERAL Styles */
-    .extra-padding {
-        padding-left: 120px;
-        padding-right: 120px;
+    .extra-padding-title {
+        padding-left: 95px;
+        padding-right: 95px;
+        max-width: 86%;
+    }
+
+    .extra-padding-diagram{
+        padding-left: 50px;
+        padding-right: 50px;
+        max-width: 100%;
     }
 
     /* HERO Styles */
@@ -163,8 +170,10 @@
         border-bottom: 1px solid white !important;
     }
 
-    .support-community .sc-feature:nth-child(3),
-    .support-community .sc-feature:nth-child(6) {
+    .support-community .sc-feature:nth-child(2),
+    .support-community .sc-feature:nth-child(4), 
+    .support-community .sc-feature:nth-child(6),
+    .support-community .sc-feature:nth-child(8){
         border-right: none !important;
     }
 
