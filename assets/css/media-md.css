@@ -1,17 +1,4 @@
 @media (min-width: 768px) {
-    /* GENERAL Styles */
-    .extra-padding-title {
-        padding-left: 95px;
-        padding-right: 95px;
-        max-width: 86%;
-    }
-
-    .extra-padding-diagram{
-        padding-left: 50px;
-        padding-right: 50px;
-        max-width: 100%;
-    }
-
     /* HERO Styles */
     .hero {
         height: 800px;
@@ -180,6 +167,23 @@
     .support-community .sc-feature:nth-child(7),
     .support-community .sc-feature:nth-child(8) {
         border-bottom: none !important;
+    }
+
+    .nerdcom-tools h5 {
+        text-align: left;
+    }
+
+    .nerdcom-tools p {
+        text-align: left;
+    }
+
+    .nerdcom-tools img:first-child {
+        max-width: 100%;
+    }
+    
+    .nerdcom-tools img:last-child {
+        bottom: 120px;
+        max-width: 100%;
     }
 }
 

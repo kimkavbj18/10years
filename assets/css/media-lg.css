@@ -8,6 +8,11 @@
         display: none;
     }
 
+    .extra-padding {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
     /* HEADER Styles */
     header.header {
         position: fixed;
@@ -402,6 +407,11 @@
 
     .business .business-description .business-description--info {
         font-size: 1em;
+    }
+   
+    .nerdcom-tools img:last-child {
+        bottom: -45px;
+        max-width: 80%;
     }
 
     /* FOOTER Styles */

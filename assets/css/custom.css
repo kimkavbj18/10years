@@ -634,6 +634,8 @@ ul.main-menu .nav-offers:hover{
 .support-community p {
     margin-bottom: 20px;
     color: white;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .support-community h5 {
@@ -661,7 +663,7 @@ ul.main-menu .nav-offers:hover{
     position: relative;
     margin-top: 30px;
     margin-bottom: 30px;
-    font-size: 4em;
+    font-size: 3em;
 }
 
 .support-community .sc-feature .sc-feature-icon:after {
@@ -671,15 +673,26 @@ ul.main-menu .nav-offers:hover{
     left: 50%;
     transform: translateX(-50%);
     width: 80%;
-    border-bottom: 2px solid white;
 }
 
-.support-community .sc-feature .sc-feature-description {
+.support-community .sc-feature .sc-feature-description-big {
+    /*margin-bottom: 30px;*/
+    margin-bottom: 5px;
+    margin-top: -20px;
+    font-size: 3.2em;
+    font-weight: bold;
+}
+
+.support-community .sc-feature .sc-feature-description-small{
+    color: #fff;
+    font-size: 0.9em;
+    font-weight: 400;
     margin-bottom: 30px;
 }
 
 /* NERDCOM TOOLS Styles */
 .nerdcom-tools {
+    position: relative;
     padding-top: 50px;
     padding-bottom: 50px;
 }
@@ -688,6 +701,8 @@ ul.main-menu .nav-offers:hover{
     color: #44B4C4;
     font-size: 2.5em;
     font-weight: 400;
+    margin-top: 40px;
+    text-align: center;
 }
 
 .nerdcom-tools h5 span {
@@ -698,15 +713,25 @@ ul.main-menu .nav-offers:hover{
     font-size: 1.2em;
     font-weight: 300;
     line-height: 1.5;
+    text-align: center;
 }
 
 .nerdcom-tools button {
     margin-bottom: 30px;
 }
 
-.nerdcom-tools img {
+.nerdcom-tools img:first-child {
     background-color: black;
     border-radius: 100%;
+    max-width: 200px;
+}
+
+.nerdcom-tools img:last-child {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 200px;
 }
 
 .nerdcom-tools .text-small {
