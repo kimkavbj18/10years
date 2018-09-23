@@ -6,6 +6,10 @@ body {
     font-size: 13px;
 }
 
+body.no-scroll {
+    overflow: hidden;
+}
+
 .fa-lock{
     color: #5bc758 !important;
 }
@@ -112,6 +116,10 @@ header.header {
     margin-bottom: 5px;
     max-width: 90px;
     float: left;
+}
+
+.header .logo-white {
+    display: none;
 }
 
 .header .navigation {
@@ -681,10 +689,6 @@ ul.menu li a {
 
 .support-community i {
     color: white;
-}
-
-.support-community .sc-feature {
-    /*border-bottom: 1px solid white;*/
 }
 
 .support-community .sc-feature:last-child {

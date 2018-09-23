@@ -8,7 +8,8 @@
 
     /* HEADER STYLES */
 
-    .header .logo {
+    .header .logo,
+    .header .logo-white {
         margin-top: 5px;
         margin-bottom: 5px;
         max-width: 140px;
