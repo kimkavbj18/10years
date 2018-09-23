@@ -6,6 +6,10 @@ body {
     font-size: 13px;
 }
 
+a {
+    text-decoration: none !important;
+}
+
 .fa-lock{
     color: #5bc758 !important;
 }
@@ -223,8 +227,7 @@ ul.main-menu li .sub-menu ul.menu li span {
     font-weight: 700;
 }
 
-ul.main-menu li .sub-menu ul.menu li > a.link-title,
-ul.main-menu li .sub-menu ul.menu li > a.link-title-center {
+ul.main-menu li .sub-menu ul.menu li > a.link-title{
     display: block;
     border-right: 3px solid #ddd;
     transition: .3s;
@@ -318,26 +321,6 @@ ul.main-menu .nav-offers:hover{
 .worldwide-menu ul.menu li:hover {
     background-color: transparent !important;
 }
-
-/* .company-menu ul.menu li span{
-    color:#555 !important;
-    
-}
-
-.company-menu ul.menu li:hover{
-    background-color: transparent !important;
-}
-
-.sub-menu ul.menu-company li{
-    width: 100%;
-    margin-bottom: 0px;      
-}
-
-.sub-menu ul.menu-company a.link-title-company,
-.sub-menu ul.menu-company a.link-title-company:hover{
-    color:#555 !important;
-    text-decoration: none;    
-} */
 
 ul.main-menu li span,
 ul.menu li a {
@@ -502,7 +485,6 @@ ul.menu li a {
 /* DOMAIN OFFERS Styles */
 .domain-offers {
     padding-top: 50px;
-    padding-bottom: 30px;
     background-color: white;
 }
 
@@ -590,7 +572,6 @@ ul.menu li a {
 
 /* COMMUNICATION CHANNEL Styles */
 .communication-channel {
-    padding-top: 50px;
     padding-bottom: 50px;
 }
 

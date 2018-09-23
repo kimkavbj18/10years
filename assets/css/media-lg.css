@@ -184,7 +184,8 @@
         transition: .3s;
     }
 
-    .sub-menu ul.menu li:hover {
+    .sub-menu ul.menu li:hover,
+    .sub-menu-foot:hover {
         background-color: #e5f5f8;
     }
 
@@ -214,20 +215,25 @@
         font-size: .85em;
     }
 
+    .sub-menu ul.menu li ul li span {
+        width: 15% !important;
+    }
+
     .sub-menu .sm-icon-submenu::before, .free, .cost{
         background-color: transparent;
-        position: relative;
+        position: relative !important;
         color: #fff !important;
-        font-size: 0.625rem;
+        font-size: 0.625rem !important;
         font-weight: 700;
         line-height: 7px;
         border-radius: .1875rem;
         box-sizing: content-box;
         transition: opacity 0.15s ease-out;
         height: 0.5rem;
-        padding: 0.14rem 0.25rem;
+        padding: 0.3rem 0.1rem !important;
         opacity: 1;
-        margin-left:5px;
+        left:5px !important;
+        text-align: center;
     }
 
     .sub-menu .free{
@@ -296,6 +302,7 @@
         text-align: center;
         text-decoration: none;
         color:#555;
+        font-size: 13px;
     }
 
     ul.main-menu li .sub-menu ul.menu li ul {
@@ -325,27 +332,9 @@
         background-color: #daf1f6;
     }
 
-    /*.company-menu ul.menu li span{
-        color:#555 !important;
-        
-    }
-
-    .company-menu ul.menu li:hover{
-        background-color: transparent !important;
-    }
-
-    .sub-menu ul.menu-company li{
-        width: 100%;
-        margin-bottom: 0px;      
-    }
-
-    .sub-menu ul.menu-company li:hover{
-        background-color:#eee !important;
-    } */
-
     .sub-menu-foot {
         display: block !important;
-        padding: 20px 15px 0;
+        padding: 15px 15px 15px;
         text-align: center;
         border-top: 1px solid #ccc;
     }
