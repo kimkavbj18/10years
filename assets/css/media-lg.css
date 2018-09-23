@@ -76,7 +76,7 @@
         overflow: unset;
     }
 
-    ul.main-menu li {
+    ul.main-menu > li {
         display: initial;
         margin-left: 3px;
         padding: 5px 0 20px 0;
@@ -107,7 +107,7 @@
         content: "";
         position: absolute;
         top: 32px;
-        right: -22px;
+        right: -20px;
         z-index: 9;
         transform: translateX(-50%);
         border-bottom: 8px solid white;
@@ -116,8 +116,13 @@
         transition: .3s;
     }
 
+    ul.main-menu>li.nav-item:last-child:hover > span:after {
+        right: -14px;
+        border-right: none;
+    }
+
     .header.header-white ul.main-menu > li.nav-item:hover > span:after {
-        border-bottom-color: #ccc;
+        border-bottom: 6px solid #ccc;
     }
 
     ul.main-menu li > .sub-menu {
@@ -188,7 +193,8 @@
         transition: .3s;
     }
 
-    .sub-menu ul.menu li:hover {
+    .sub-menu ul.menu li:hover,
+    .sub-menu-foot:hover {
         background-color: #e5f5f8;
     }
 
@@ -205,8 +211,7 @@
         border-bottom: none;
     }
 
-    .company-menu ul.menu li span,
-    a.link-title-center {
+    .sub-menu-foot a.link-title-center {
         font-size: 1.2em;
         font-weight: 700;
         border-right: none !important;
@@ -218,20 +223,25 @@
         font-size: .85em;
     }
 
+    .sub-menu ul.menu li ul li span {
+        width: 15% !important;
+    }
+
     .sub-menu .sm-icon-submenu::before, .free, .cost{
         background-color: transparent;
-        position: relative;
+        position: relative !important;
         color: #fff !important;
-        font-size: 0.625rem;
+        font-size: 0.625rem !important;
         font-weight: 700;
         line-height: 7px;
         border-radius: .1875rem;
         box-sizing: content-box;
         transition: opacity 0.15s ease-out;
         height: 0.5rem;
-        padding: 0.14rem 0.25rem;
+        padding: 0.3rem 0.1rem !important;
         opacity: 1;
-        margin-left:5px;
+        left:5px !important;
+        text-align: center;
     }
 
     .sub-menu .free{
@@ -242,13 +252,17 @@
         background-color: rgba(219,27,27);
     }
 
-    .sub-menu .security-desing{
+    .sub-menu .security-design {
         font-size: 22px;
         font-weight: bold;
         text-transform: uppercase;
         line-height: 35px;
         text-align: center;
-        background: #e6f5f8;
+        background-color: #e6f5f8 !important;
+    }
+
+    .sub-menu .security-design span {
+        display: initial !important;
     }
 
     .sub-menu .text-link{  
@@ -300,18 +314,11 @@
         text-align: center;
         text-decoration: none;
         color:#555;
+        font-size: 13px;
     }
 
     ul.main-menu li .sub-menu ul.menu li ul {
         display: block;
-    }
-
-    ul.main-menu li .sub-menu ul.menu li ul li {
-        display: block;
-        margin-bottom: 0;
-        padding: 0 !important;
-        width: auto;
-        border-bottom: none;
     }
 
     ul.main-menu li .sub-menu ul.menu li span,
@@ -319,6 +326,14 @@
         display: block;
         margin: 0;
         padding: 5px 10px;
+    }
+
+    ul.main-menu li .sub-menu ul.menu li.domain-include > span {
+        padding-top: 0;
+    }
+
+    ul.main-menu li .sub-menu ul.menu li.domain-include ul li a span {
+        display: initial;
     }
 
     ul.main-menu li .sub-menu ul.menu li ul li a {
@@ -329,27 +344,9 @@
         background-color: #daf1f6;
     }
 
-    /*.company-menu ul.menu li span{
-        color:#555 !important;
-        
-    }
-
-    .company-menu ul.menu li:hover{
-        background-color: transparent !important;
-    }
-
-    .sub-menu ul.menu-company li{
-        width: 100%;
-        margin-bottom: 0px;      
-    }
-
-    .sub-menu ul.menu-company li:hover{
-        background-color:#eee !important;
-    } */
-
     .sub-menu-foot {
         display: block !important;
-        padding: 20px 15px 0;
+        padding: 15px 15px 15px;
         text-align: center;
         border-top: 1px solid #ccc;
     }
