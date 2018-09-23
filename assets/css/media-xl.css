@@ -1,13 +1,29 @@
 @media (min-width: 1200px) {
-    .header .logo {
+    /* GENERAL STYLES */
+
+    .extra-padding {
+        padding-left: 160px;
+        padding-right: 160px;
+    }
+
+    /* HEADER STYLES */
+
+    .header .logo,
+    .header .logo-white {
         margin-top: 5px;
         margin-bottom: 5px;
         max-width: 140px;
     }
 
+    ul.main-menu li {
+        margin-left: 5px;
+    }
+
     ul.main-menu li span {
         font-size: 1em
     }
+
+    /* FOOTER STYLES */
 
     .footer-menus-wrapper {
         padding: 0 20px;

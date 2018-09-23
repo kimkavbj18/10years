@@ -1,15 +1,22 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i|Raleway:700');
+
 /* GENERAL Styles */
 body {
     font-size: 13px;
 }
 
+body.no-scroll {
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none !important;
+}
+
 .fa-lock{
     color: #5bc758 !important;
 }
-
-/*body.no-scroll {
-    overflow: hidden !important;
-}*/
 
 .text-orange {
     color: #ECA93F
@@ -75,7 +82,7 @@ body {
 }
 
 .btn-black:hover {
-    background: #630606;
+    background: #5bc758;
 }
 
 .btn-red {
@@ -113,6 +120,10 @@ header.header {
     margin-bottom: 5px;
     max-width: 90px;
     float: left;
+}
+
+.header .logo-white {
+    display: none;
 }
 
 .header .navigation {
@@ -212,11 +223,20 @@ ul.main-menu li .sub-menu ul.menu li {
     border-bottom: 1px solid white;
 }
 
-ul.main-menu li .sub-menu ul.menu li > a.link-title,
-ul.main-menu li .sub-menu ul.menu li > a.link-title-center {
-    display: block;
+ul.main-menu li .sub-menu ul.menu li a,
+ul.main-menu li .sub-menu ul.menu li span {
     color: #555;
     text-decoration: none;
+}
+
+ul.main-menu li .sub-menu ul.menu li span {
+    display: block;
+    margin-top: -22px;
+    font-weight: 700;
+}
+
+ul.main-menu li .sub-menu ul.menu li > a.link-title{
+    display: block;
     border-right: 3px solid #ddd;
     transition: .3s;
 }
@@ -228,6 +248,28 @@ ul.main-menu li .sub-menu ul.menu li > a.link-title-center:hover {
 
 ul.main-menu li .sub-menu ul.menu li a.link-description {
     display: none;
+}
+
+ul.main-menu li .sub-menu ul.menu li ul {
+    display: block;
+}
+
+ul.main-menu li .sub-menu ul.menu li ul li {
+    display: block;
+    margin-bottom: 0;
+    padding: 0 !important;
+    width: auto;
+    border-bottom: none;
+}
+
+ul.main-menu li .sub-menu ul.menu li span,
+ul.main-menu li .sub-menu ul.menu li ul li a {
+    display: block;
+    padding: 5px 10px;
+}
+
+ul.main-menu li .sub-menu ul.menu li ul li a {
+    transition: .3s;
 }
 
 ul.main-menu .nav-offers{
@@ -286,26 +328,11 @@ ul.main-menu .nav-offers:hover{
 
 .worldwide-menu ul.menu li:hover {
     background-color: transparent !important;
-}    
-
-.company-menu ul.menu li span{
-    color:#555 !important;
-    
 }
 
-.company-menu ul.menu li:hover{
-    background-color: transparent !important;
-}
-
-.sub-menu ul.menu-company li{
-    width: 100%;
-    margin-bottom: 0px;      
-}
-
-.sub-menu ul.menu-company a.link-title-company,
-.sub-menu ul.menu-company a.link-title-company:hover{
-    color:#555 !important;
-    text-decoration: none;    
+ul.main-menu li span,
+ul.menu li a {
+    font-family: 'Open Sans', sans-serif;
 }
 
 /* HERO Styles */
@@ -466,7 +493,6 @@ ul.main-menu .nav-offers:hover{
 /* DOMAIN OFFERS Styles */
 .domain-offers {
     padding-top: 50px;
-    padding-bottom: 30px;
     background-color: white;
 }
 
@@ -554,7 +580,6 @@ ul.main-menu .nav-offers:hover{
 
 /* COMMUNICATION CHANNEL Styles */
 .communication-channel {
-    padding-top: 50px;
     padding-bottom: 50px;
 }
 
@@ -564,11 +589,7 @@ ul.main-menu .nav-offers:hover{
 }
 
 .communication-channel-bg {
-    height: 150px;
-    background-image: url(../images/communication-channel.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+    margin-top: 30px;
 }
 
 .communication-channel h4 {
@@ -634,6 +655,8 @@ ul.main-menu .nav-offers:hover{
 .support-community p {
     margin-bottom: 20px;
     color: white;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .support-community h5 {
@@ -649,10 +672,6 @@ ul.main-menu .nav-offers:hover{
     color: white;
 }
 
-.support-community .sc-feature {
-    /*border-bottom: 1px solid white;*/
-}
-
 .support-community .sc-feature:last-child {
     border-bottom: none;
 }
@@ -661,7 +680,7 @@ ul.main-menu .nav-offers:hover{
     position: relative;
     margin-top: 30px;
     margin-bottom: 30px;
-    font-size: 4em;
+    font-size: 3em;
 }
 
 .support-community .sc-feature .sc-feature-icon:after {
@@ -671,15 +690,26 @@ ul.main-menu .nav-offers:hover{
     left: 50%;
     transform: translateX(-50%);
     width: 80%;
-    border-bottom: 2px solid white;
 }
 
-.support-community .sc-feature .sc-feature-description {
+.support-community .sc-feature .sc-feature-description-big {
+    /*margin-bottom: 30px;*/
+    margin-bottom: 5px;
+    margin-top: -20px;
+    font-size: 3.2em;
+    font-weight: bold;
+}
+
+.support-community .sc-feature .sc-feature-description-small{
+    color: #fff;
+    font-size: 0.9em;
+    font-weight: 400;
     margin-bottom: 30px;
 }
 
 /* NERDCOM TOOLS Styles */
 .nerdcom-tools {
+    position: relative;
     padding-top: 50px;
     padding-bottom: 50px;
 }
@@ -688,6 +718,8 @@ ul.main-menu .nav-offers:hover{
     color: #44B4C4;
     font-size: 2.5em;
     font-weight: 400;
+    margin-top: 40px;
+    text-align: center;
 }
 
 .nerdcom-tools h5 span {
@@ -698,15 +730,25 @@ ul.main-menu .nav-offers:hover{
     font-size: 1.2em;
     font-weight: 300;
     line-height: 1.5;
+    text-align: center;
 }
 
 .nerdcom-tools button {
     margin-bottom: 30px;
 }
 
-.nerdcom-tools img {
+.nerdcom-tools img:first-child {
     background-color: black;
     border-radius: 100%;
+    max-width: 200px;
+}
+
+.nerdcom-tools img:last-child {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 200px;
 }
 
 .nerdcom-tools .text-small {
@@ -725,8 +767,11 @@ footer {
 }
 
 .footer-menus p {
+    margin-bottom: 5px;
+    padding-bottom: 5px;
     color: #ccc;
-    font-size: 1.2em;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1em;
     font-weight: 700;
     border-bottom: 1px solid #ccc;
 }
@@ -739,12 +784,9 @@ ul.footer-menu {
     margin-bottom: 30px;
 }
 
-ul.footer-menu li {
-    margin-bottom: 5px;
-}
-
 ul.footer-menu li a {
     color: #bbb;
+    font-family: 'Open Sans', sans-serif;
     text-decoration: none;
     transition: .3s;
 }
@@ -782,6 +824,10 @@ ul.footer-menu-icons li img {
     max-width: 50px;
 }
 
+ul.footer-menu-icons li:first-child img {
+    max-width: 70px;
+}
+
 ul.footer-menu-links {
     margin-top: 10px;
     justify-content: center;
@@ -805,3 +851,4 @@ ul.footer-menu-links li a {
     color: white;
     font-size: .9em;
 }
+
