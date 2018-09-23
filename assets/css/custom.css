@@ -1,3 +1,6 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i|Raleway:700');
+
 /* GENERAL Styles */
 body {
     font-size: 13px;
@@ -6,10 +9,6 @@ body {
 .fa-lock{
     color: #5bc758 !important;
 }
-
-/*body.no-scroll {
-    overflow: hidden !important;
-}*/
 
 .text-orange {
     color: #ECA93F
@@ -75,7 +74,7 @@ body {
 }
 
 .btn-black:hover {
-    background: #630606;
+    background: #5bc758;
 }
 
 .btn-red {
@@ -212,11 +211,21 @@ ul.main-menu li .sub-menu ul.menu li {
     border-bottom: 1px solid white;
 }
 
+ul.main-menu li .sub-menu ul.menu li a,
+ul.main-menu li .sub-menu ul.menu li span {
+    color: #555;
+    text-decoration: none;
+}
+
+ul.main-menu li .sub-menu ul.menu li span {
+    display: block;
+    margin-top: -22px;
+    font-weight: 700;
+}
+
 ul.main-menu li .sub-menu ul.menu li > a.link-title,
 ul.main-menu li .sub-menu ul.menu li > a.link-title-center {
     display: block;
-    color: #555;
-    text-decoration: none;
     border-right: 3px solid #ddd;
     transition: .3s;
 }
@@ -228,6 +237,28 @@ ul.main-menu li .sub-menu ul.menu li > a.link-title-center:hover {
 
 ul.main-menu li .sub-menu ul.menu li a.link-description {
     display: none;
+}
+
+ul.main-menu li .sub-menu ul.menu li ul {
+    display: block;
+}
+
+ul.main-menu li .sub-menu ul.menu li ul li {
+    display: block;
+    margin-bottom: 0;
+    padding: 0 !important;
+    width: auto;
+    border-bottom: none;
+}
+
+ul.main-menu li .sub-menu ul.menu li span,
+ul.main-menu li .sub-menu ul.menu li ul li a {
+    display: block;
+    padding: 5px 10px;
+}
+
+ul.main-menu li .sub-menu ul.menu li ul li a {
+    transition: .3s;
 }
 
 ul.main-menu .nav-offers{
@@ -286,9 +317,9 @@ ul.main-menu .nav-offers:hover{
 
 .worldwide-menu ul.menu li:hover {
     background-color: transparent !important;
-}    
+}
 
-.company-menu ul.menu li span{
+/* .company-menu ul.menu li span{
     color:#555 !important;
     
 }
@@ -306,6 +337,11 @@ ul.main-menu .nav-offers:hover{
 .sub-menu ul.menu-company a.link-title-company:hover{
     color:#555 !important;
     text-decoration: none;    
+} */
+
+ul.main-menu li span,
+ul.menu li a {
+    font-family: 'Open Sans', sans-serif;
 }
 
 /* HERO Styles */
@@ -564,11 +600,7 @@ ul.main-menu .nav-offers:hover{
 }
 
 .communication-channel-bg {
-    height: 150px;
-    background-image: url(../images/communication-channel.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+    margin-top: 30px;
 }
 
 .communication-channel h4 {
@@ -750,8 +782,11 @@ footer {
 }
 
 .footer-menus p {
+    margin-bottom: 5px;
+    padding-bottom: 5px;
     color: #ccc;
-    font-size: 1.2em;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1em;
     font-weight: 700;
     border-bottom: 1px solid #ccc;
 }
@@ -764,12 +799,9 @@ ul.footer-menu {
     margin-bottom: 30px;
 }
 
-ul.footer-menu li {
-    margin-bottom: 5px;
-}
-
 ul.footer-menu li a {
     color: #bbb;
+    font-family: 'Open Sans', sans-serif;
     text-decoration: none;
     transition: .3s;
 }
@@ -807,6 +839,10 @@ ul.footer-menu-icons li img {
     max-width: 50px;
 }
 
+ul.footer-menu-icons li:first-child img {
+    max-width: 70px;
+}
+
 ul.footer-menu-links {
     margin-top: 10px;
     justify-content: center;
@@ -830,3 +866,4 @@ ul.footer-menu-links li a {
     color: white;
     font-size: .9em;
 }
+

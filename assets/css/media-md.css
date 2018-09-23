@@ -100,11 +100,6 @@
         background-color: rgba(210, 210, 210, 1);
     }
 
-    .communication-channel-bg {
-        height: auto;
-        background-position: center top;
-    }
-
     /* BUSINESS Styles */
     .business-admin {
         position: relative;

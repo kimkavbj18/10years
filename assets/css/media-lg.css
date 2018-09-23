@@ -77,7 +77,7 @@
         left: auto;
         right: auto;
         display: block;
-        margin-top: 13px;
+        margin-top: 18px;
         max-width: auto;
         background: transparent;
         padding-top:5px;
@@ -86,7 +86,7 @@
 
     ul.main-menu li {
         display: inline-block;
-        margin-left: 5px;
+        margin-left: 3px;
         padding: 0;
         width: auto;
         background-color: transparent;
@@ -112,7 +112,7 @@
         top: 30px;
         right: -22px;
         transform: translateX(-50%);
-        border-bottom: 7px solid white;
+        border-bottom: 8px solid white;
         border-left: 7px solid transparent;
         border-right: 7px solid transparent;
     }
@@ -121,8 +121,8 @@
         display: none;
     }
 
-    ul.main-menu>li .sub-menu,
-    ul.main-menu>li .sub-menu .container {
+    ul.main-menu > li .sub-menu,
+    ul.main-menu > li .sub-menu .container {
         padding-left: 15px;
         padding-right: 15px;
     }
@@ -185,7 +185,7 @@
     }
 
     .sub-menu ul.menu li:hover {
-        background-color: #eee;
+        background-color: #e5f5f8;
     }
 
     .sub-menu ul.menu li a {
@@ -194,7 +194,13 @@
         text-decoration: none;
     }
 
-    .sub-menu ul.menu li a.link-title,
+    .sub-menu ul.menu li a.link-title {
+        font-size: 1em;
+        font-weight: 700;
+        border-right: none !important;
+        border-bottom: none;
+    }
+
     .company-menu ul.menu li span,
     a.link-title-center {
         font-size: 1.2em;
@@ -205,7 +211,7 @@
 
     .sub-menu ul.menu li a.link-description {
         display: block !important;
-        font-size: 1em;
+        font-size: .85em;
     }
 
     .sub-menu .sm-icon-submenu::before, .free, .cost{
@@ -292,7 +298,34 @@
         color:#555;
     }
 
-    .company-menu ul.menu li span{
+    ul.main-menu li .sub-menu ul.menu li ul {
+        display: block;
+    }
+
+    ul.main-menu li .sub-menu ul.menu li ul li {
+        display: block;
+        margin-bottom: 0;
+        padding: 0 !important;
+        width: auto;
+        border-bottom: none;
+    }
+
+    ul.main-menu li .sub-menu ul.menu li span,
+    ul.main-menu li .sub-menu ul.menu li ul li a {
+        display: block;
+        margin: 0;
+        padding: 5px 10px;
+    }
+
+    ul.main-menu li .sub-menu ul.menu li ul li a {
+        transition: .3s;
+    }
+
+    ul.main-menu li .sub-menu ul.menu li ul li a:hover {
+        background-color: #daf1f6;
+    }
+
+    /*.company-menu ul.menu li span{
         color:#555 !important;
         
     }
@@ -308,7 +341,7 @@
 
     .sub-menu ul.menu-company li:hover{
         background-color:#eee !important;
-    }
+    } */
 
     .sub-menu-foot {
         display: block !important;
@@ -341,11 +374,6 @@
     .communication-channel-wrapper {
         padding: 50px 100px 50px 50px;
         background-color: transparent;
-    }
-
-    .communication-channel-bg {
-        height: auto;
-        background-size: contain;
     }
 
     .support-community .sc-feature {
