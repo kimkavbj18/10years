@@ -734,7 +734,8 @@ ul.menu li a {
 }
 
 .nerdcom-tools button {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
+    margin-top: 15px;
 }
 
 .nerdcom-tools img:first-child {
