@@ -6,7 +6,6 @@
 
         if ( w.width() >= 992 ) {
             w.scroll(function(){
-                console.log( w.scrollTop() );
 
                 if ( w.scrollTop() > 0 )
                     $('header').addClass('header-white');
