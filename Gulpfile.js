@@ -15,7 +15,6 @@ const gulp = require('gulp');
 const sass = require('gulp-sass');
 const concat = require('gulp-concat');
 const minify = require('gulp-minify');
-//const babel = require('gulp-babel');
 const order = require('gulp-order');
 const sourcemaps = require('gulp-sourcemaps');
 
@@ -80,11 +79,6 @@ gulp.task( 'scripts', function(){
             '*.custom.js',
         ]))
         .pipe( concat( 'scripts.js' ) )
-        // .pipe(babel({
-        //     presets: [ '@babel/env' ],
-        //     minified: false,
-        //     comments: false,
-        // }))
         .pipe(minify({
             ext: {
                 src: '.min.js',
