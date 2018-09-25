@@ -57,7 +57,7 @@ gulp.task( 'compile-sass', function () {
     gulp.src( `${path.sass}/**/*.{sass, scss}` )
         .pipe( sourcemaps.init() )
         .pipe(sass({
-            outputStyle: 'compressed',
+            // outputStyle: 'compressed',
             precision: 8
         }))
         .on( 'error', sass.logError )
