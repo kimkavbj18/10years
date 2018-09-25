@@ -81,8 +81,8 @@ gulp.task( 'scripts', function(){
         .pipe( concat( 'scripts.js' ) )
         .pipe(minify({
             ext: {
-                src: '.min.js',
-                min: '.js'
+                src: '.js',
+                min: '.min.js'
             }
         }))
         .pipe( sourcemaps.write( './maps' ) )
