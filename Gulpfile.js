@@ -16,7 +16,9 @@ const sass = require('gulp-sass');
 const concat = require('gulp-concat');
 const minify = require('gulp-minify');
 const order = require('gulp-order');
+const image = require('gulp-image');
 const sourcemaps = require('gulp-sourcemaps');
+// const runSequence = require('run-sequence');
 
 // Moving third-party lib
 gulp.task( 'third-party', function () {
@@ -47,6 +49,7 @@ gulp.task( 'third-party', function () {
 gulp.task( 'assets-images', function () {
 
     gulp.src( `${path.images}/**/*.*` )
+        .pipe( image() )
         .pipe( gulp.dest( `${path.dist}/images` ));
 
 });
@@ -57,7 +60,7 @@ gulp.task( 'compile-sass', function () {
     gulp.src( `${path.sass}/**/*.{sass, scss}` )
         .pipe( sourcemaps.init() )
         .pipe(sass({
-            // outputStyle: 'compressed',
+            outputStyle: 'compressed',
             precision: 8
         }))
         .on( 'error', sass.logError )
@@ -98,7 +101,13 @@ gulp.task('watch', function () {
 });
 
 // Build Dist
-gulp.task('build', [ 'third-party', 'assets-images', 'compile-sass', 'scripts' ] );
+// gulp.task('build', gulp.series( 'scripts', gulp.parallel( 'assets-images', 'compile-sass', 'third-party' ) ) );
+// gulp.task('build', gulp.series( 'third-party', 'assets-images', 'compile-sass', 'scripts' ] );
+// gulp.task('build', function (done) {
+//     runSequence('third-party', 'assets-images', 'compile-sass', 'scripts', function () {
+//         done();
+//     });
+// });
 
 // Default task
-gulp.task('default', ['watch']);
+gulp.task( 'default', [ 'watch' ] );
