@@ -16,7 +16,11 @@
     <!-- STYLES -->
     <link rel="canonical" href="https://k.nerdcom.host/">
     <link rel="shortcut icon" href="./dist/images/favicon.ico">
-    <link rel="stylesheet" href="./dist/main.css" media="screen and (min-width:768px)">
+    <style>
+        @import ".assets/sass/_custom.sass";
+        @import ".assets/sass/_setup.sass";
+        @import ".assets/sass/_variables.sass";
+    </style>
 </head>
 <body>
 
@@ -993,7 +997,10 @@
             </div>
         </footer>
     </div>
-    <link rel="stylesheet" href="./dist/main.css" media="screen and (max-width:767px)">
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="./dist/main.css">
+
     <!-- SCRIPTS -->
     <script src="./dist/scripts.min.js" async></script>
 </body>
