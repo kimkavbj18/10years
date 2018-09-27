@@ -54,6 +54,14 @@ gulp.task( 'assets-images', function () {
 
 });
 
+// Moving Fonts
+gulp.task( 'assets-fonts', function () {
+
+    gulp.src( `${path.fonts}/**/*.*` )
+        .pipe( gulp.dest( `${path.dist}/fonts` ));
+
+});
+
 // Compiling Sass files
 gulp.task( 'compile-sass', function () {
 
@@ -98,6 +106,7 @@ gulp.task('watch', function () {
     gulp.watch( `${path.sass}/**/*.{sass, scss}`, [ 'compile-sass' ] );
     gulp.watch( `${path.js}/**/*.js`, [ 'scripts' ]);
     gulp.watch( `${path.images}/**/*.*`, [ 'assets-images' ]);
+    gulp.watch( `${path.fonts}/**/*.*`, [ 'assets-fonts' ]);
 });
 
 // Build Dist
