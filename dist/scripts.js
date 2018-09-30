@@ -19991,7 +19991,7 @@ var footerTemplate = `<div class="container">
                 </div>
                 <div class="row footer-info">
                     <div class="col-lg-6">
-                        <div class="logo"><img src="./dist/images/logon.png" alt="anerdcom" class="img-fluid"></div>
+                        <div class="logo"><img src="./images/logon.png" alt="anerdcom" class="img-fluid"></div>
                         <p class="text-center text-lg-left">Suplidor de tecnología, servicios Hosting, Cloud y desarrollo líder en el mundo.</p>
                         <p class="text-center text-lg-left">Registardo con el Numero RNC: 1.31.17191.5</p>
                     </div>
@@ -20001,16 +20001,16 @@ var footerTemplate = `<div class="container">
                                 <a href="javascript:if(window.open('https://www.trustlogo.com/ttb_searcher/trustlogo?v_querytype=W&amp;v_shortname=SC5&amp;v_search=https://k.nerdcom.host/&amp;x=6&amp;y=5','tl_wnd_credentials'+(new Date()).getTime(),'toolbar=0,scrollbars=1,location=1,status=1,menubar=1,resizable=1,width=374,height=660,left=60,top=120')){};tLlB(tLTB);"
                                     onmouseover="tLeB(event,'https://www.trustlogo.com/ttb_searcher/trustlogo?v_querytype=C&amp;v_shortname=SC5&amp;v_search=https://k.nerdcom.host/&amp;x=6&amp;y=5','tl_popupSC5')"
                                     onmousemove="tLXB(event)" onmouseout="tLTC('tl_popupSC5')" ondragstart="return false;">
-                                    <img src="./dist/images/comodo_secure_seal_113x59_transp.png"
+                                    <img src="./images/comodo_secure_seal_113x59_transp.png"
                                     onmousedown="return tLKB(event,'https://www.trustlogo.com/ttb_searcher/trustlogo?v_querytype=W&amp;v_shortname=SC5&amp;v_search=https://k.nerdcom.host/&amp;x=6&amp;y=5');"
                                     oncontextmenu="return tLLB(event);" alt="trustlogo">
                                 </a>
                                 <div id="tl_popupSC5" class="ssl-popup"
                                     onmouseover="tLoB('tl_popupSC5')" onmousemove="tLpC('tl_popupSC5')" onmouseout="tLpB('tl_popupSC5')">&nbsp;</div>
                             </li>
-                            <li class="nav-item"><a href="#"><img src="./dist/images/visa.svg" alt="pay"></a></li>
-                            <li class="nav-item"><a href="#"><img src="./dist/images/mastercard.svg" alt="pay"></a></li>
-                            <li class="nav-item"><a href="#"><img src="./dist/images/amex.svg" alt="pay"></a></li>
+                            <li class="nav-item"><a href="#"><img src="./images/visa.svg" alt="pay"></a></li>
+                            <li class="nav-item"><a href="#"><img src="./images/mastercard.svg" alt="pay"></a></li>
+                            <li class="nav-item"><a href="#"><img src="./images/amex.svg" alt="pay"></a></li>
                         </ul>
                         <ul class="footer-menu-links nav list-unstyled">
                             <li class="nav-item"><a href="#">Nosotros</a></li>
@@ -20034,10 +20034,10 @@ var headerTemplate = `<div class="container">
                             </span>
                         </button>
                         <div class="logo">
-                            <img src="./dist/images/logon.png" alt="anerdcom" class="img-fluid">
+                            <img src="./images/logon.png" alt="anerdcom" class="img-fluid">
                         </div>
                         <div class="logo-white">
-                            <img src="./dist/images/logob.png" alt="bnerdcom" class="img-fluid">
+                            <img src="./images/logob.png" alt="bnerdcom" class="img-fluid">
                         </div>
                         <nav class="navigation nav-item hide-desktop">
                             <ul class="secondary-menu list-unstyled nav">
@@ -20249,7 +20249,7 @@ var headerTemplate = `<div class="container">
                                                     <li><a class="link-title-company" href="#">Clientes <i class="fa fa-users fa-fw"></i></a></li>
                                                     <li><a class="link-title-company" href="#">Trabaja con nosotros <i class="fab fa-dropbox fa-fw"></i></a></li>
                                                     <li><a class="link-title-company" href="#">Media Kit</a></li>
-                                                    <li><a class="link-title-company" href="#">KAI  <img src="./dist/images/kai.png" alt="nerdcom_kai"></a></li>
+                                                    <li><a class="link-title-company" href="#">KAI  <img src="./images/kai.png" alt="nerdcom_kai"></a></li>
                                                 </ul>
                                             </li>
                                             <li>
@@ -20280,15 +20280,15 @@ var headerTemplate = `<div class="container">
                                         <ul class="menu list-unstyled">
                                             <li class="text-left  text-lg-center">
                                                 <a class="link-title-center" href="#">Ayuda y Soporte</a>
-                                                <img class="nav-img-contact hide-mobile" src="./dist/images/supp.svg" alt="support">
+                                                <img class="nav-img-contact hide-mobile" src="./images/supp.svg" alt="support">
                                             </li>
                                             <li class="text-left text-lg-center">
                                                 <a class="link-title-center" href="#">Realiza una pregunta</a>
-                                                <img class="nav-img-contact hide-mobile" src="./dist/images/quest.svg" alt="quest">
+                                                <img class="nav-img-contact hide-mobile" src="./images/quest.svg" alt="quest">
                                             </li>
                                             <li class="text-left text-lg-center">
                                                 <a class="link-title-center" href="#">Preguntas frecuentes</a>
-                                                <img class="nav-img-contact hide-mobile" src="./dist/images/faq.svg" alt="faq">
+                                                <img class="nav-img-contact hide-mobile" src="./images/faq.svg" alt="faq">
                                             </li>
                                         </ul>    
                                     </div>
@@ -20306,18 +20306,18 @@ var headerTemplate = `<div class="container">
                                             <li>
                                                 <span>América</span>
                                                 <ul class="list-unstyled">
-                                                    <li><a href="#"><img class="flags" src="./dist/images/usa.png" alt="usa"> USA</a></li>
-                                                    <li><a href="#"><img class="flags" src="./dist/images/republicadominicana.png" alt="rep_dominicana"> R. Dominicana</a></li>
-                                                    <li><a href="#"><img class="flags" src="./dist/images/argentina.png" alt="argentina"> Argentina</a></li>
-                                                    <li><a href="#"><img class="flags" src="./dist/images/mex.png" alt="mexico"> México</a></li>
-                                                    <li><a href="#"><img class="flags" src="./dist/images/chile.png" alt="chile"> Chile</a></li>
-                                                    <li><a href="#"><img class="flags" src="./dist/images/venezuela.png" alt="venezuela"> Venezuela</a></li>
+                                                    <li><a href="#"><img class="flags" src="./images/usa.png" alt="usa"> USA</a></li>
+                                                    <li><a href="#"><img class="flags" src="./images/republicadominicana.png" alt="rep_dominicana"> R. Dominicana</a></li>
+                                                    <li><a href="#"><img class="flags" src="./images/argentina.png" alt="argentina"> Argentina</a></li>
+                                                    <li><a href="#"><img class="flags" src="./images/mex.png" alt="mexico"> México</a></li>
+                                                    <li><a href="#"><img class="flags" src="./images/chile.png" alt="chile"> Chile</a></li>
+                                                    <li><a href="#"><img class="flags" src="./images/venezuela.png" alt="venezuela"> Venezuela</a></li>
                                                 </ul>
                                             </li>
                                             <li>
                                                 <span>Europa</span>
                                                 <ul class="list-unstyled">
-                                                    <li><a href="#"><img class="flags" src="./dist/images/es.svg" alt="españa"> España</a></li>
+                                                    <li><a href="#"><img class="flags" src="./images/es.svg" alt="españa"> España</a></li>
                                                 </ul>
                                             </li>
                                         </ul>

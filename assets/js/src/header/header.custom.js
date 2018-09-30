@@ -8,10 +8,10 @@ var headerTemplate = `<div class="container">
                             </span>
                         </button>
                         <div class="logo">
-                            <img src="./dist/images/logon.png" alt="anerdcom" class="img-fluid">
+                            <img src="./images/logon.png" alt="anerdcom" class="img-fluid">
                         </div>
                         <div class="logo-white">
-                            <img src="./dist/images/logob.png" alt="bnerdcom" class="img-fluid">
+                            <img src="./images/logob.png" alt="bnerdcom" class="img-fluid">
                         </div>
                         <nav class="navigation nav-item hide-desktop">
                             <ul class="secondary-menu list-unstyled nav">
@@ -223,7 +223,7 @@ var headerTemplate = `<div class="container">
                                                     <li><a class="link-title-company" href="#">Clientes <i class="fa fa-users fa-fw"></i></a></li>
                                                     <li><a class="link-title-company" href="#">Trabaja con nosotros <i class="fab fa-dropbox fa-fw"></i></a></li>
                                                     <li><a class="link-title-company" href="#">Media Kit</a></li>
-                                                    <li><a class="link-title-company" href="#">KAI  <img src="./dist/images/kai.png" alt="nerdcom_kai"></a></li>
+                                                    <li><a class="link-title-company" href="#">KAI  <img src="./images/kai.png" alt="nerdcom_kai"></a></li>
                                                 </ul>
                                             </li>
                                             <li>
@@ -254,15 +254,15 @@ var headerTemplate = `<div class="container">
                                         <ul class="menu list-unstyled">
                                             <li class="text-left  text-lg-center">
                                                 <a class="link-title-center" href="#">Ayuda y Soporte</a>
-                                                <img class="nav-img-contact hide-mobile" src="./dist/images/supp.svg" alt="support">
+                                                <img class="nav-img-contact hide-mobile" src="./images/supp.svg" alt="support">
                                             </li>
                                             <li class="text-left text-lg-center">
                                                 <a class="link-title-center" href="#">Realiza una pregunta</a>
-                                                <img class="nav-img-contact hide-mobile" src="./dist/images/quest.svg" alt="quest">
+                                                <img class="nav-img-contact hide-mobile" src="./images/quest.svg" alt="quest">
                                             </li>
                                             <li class="text-left text-lg-center">
                                                 <a class="link-title-center" href="#">Preguntas frecuentes</a>
-                                                <img class="nav-img-contact hide-mobile" src="./dist/images/faq.svg" alt="faq">
+                                                <img class="nav-img-contact hide-mobile" src="./images/faq.svg" alt="faq">
                                             </li>
                                         </ul>    
                                     </div>
@@ -280,18 +280,18 @@ var headerTemplate = `<div class="container">
                                             <li>
                                                 <span>América</span>
                                                 <ul class="list-unstyled">
-                                                    <li><a href="#"><img class="flags" src="./dist/images/usa.png" alt="usa"> USA</a></li>
-                                                    <li><a href="#"><img class="flags" src="./dist/images/republicadominicana.png" alt="rep_dominicana"> R. Dominicana</a></li>
-                                                    <li><a href="#"><img class="flags" src="./dist/images/argentina.png" alt="argentina"> Argentina</a></li>
-                                                    <li><a href="#"><img class="flags" src="./dist/images/mex.png" alt="mexico"> México</a></li>
-                                                    <li><a href="#"><img class="flags" src="./dist/images/chile.png" alt="chile"> Chile</a></li>
-                                                    <li><a href="#"><img class="flags" src="./dist/images/venezuela.png" alt="venezuela"> Venezuela</a></li>
+                                                    <li><a href="#"><img class="flags" src="./images/usa.png" alt="usa"> USA</a></li>
+                                                    <li><a href="#"><img class="flags" src="./images/republicadominicana.png" alt="rep_dominicana"> R. Dominicana</a></li>
+                                                    <li><a href="#"><img class="flags" src="./images/argentina.png" alt="argentina"> Argentina</a></li>
+                                                    <li><a href="#"><img class="flags" src="./images/mex.png" alt="mexico"> México</a></li>
+                                                    <li><a href="#"><img class="flags" src="./images/chile.png" alt="chile"> Chile</a></li>
+                                                    <li><a href="#"><img class="flags" src="./images/venezuela.png" alt="venezuela"> Venezuela</a></li>
                                                 </ul>
                                             </li>
                                             <li>
                                                 <span>Europa</span>
                                                 <ul class="list-unstyled">
-                                                    <li><a href="#"><img class="flags" src="./dist/images/es.svg" alt="españa"> España</a></li>
+                                                    <li><a href="#"><img class="flags" src="./images/es.svg" alt="españa"> España</a></li>
                                                 </ul>
                                             </li>
                                         </ul>
