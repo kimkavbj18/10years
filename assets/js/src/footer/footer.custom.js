@@ -66,7 +66,7 @@ var footerTemplate = `<div class="container">
                 </div>
                 <div class="row footer-info">
                     <div class="col-lg-6">
-                        <div class="logo"><img src="./images/logon.png" alt="anerdcom" class="img-fluid"></div>
+                        <div class="logo"><a href="/"><img src="./images/logon.png" alt="anerdcom" class="img-fluid"></a></div>
                         <p class="text-center text-lg-left">Suplidor de tecnología, servicios Hosting, Cloud y desarrollo líder en el mundo.</p>
                         <p class="text-center text-lg-left">Registardo con el Numero RNC: 1.31.17191.5</p>
                     </div>

@@ -8,10 +8,10 @@ var headerTemplate = `<div class="container">
                             </span>
                         </button>
                         <div class="logo">
-                            <img src="./images/logon.png" alt="anerdcom" class="img-fluid">
+                            <a href="/"><img src="./images/logon.png" alt="anerdcom" class="img-fluid"></a>
                         </div>
                         <div class="logo-white">
-                            <img src="./images/logob.png" alt="bnerdcom" class="img-fluid">
+                            <a href="/"><img src="./images/logob.png" alt="bnerdcom" class="img-fluid"></a>
                         </div>
                         <nav class="navigation nav-item hide-desktop">
                             <ul class="secondary-menu list-unstyled nav">
@@ -67,7 +67,7 @@ var headerTemplate = `<div class="container">
                                             </li>
                                         </ul>
                                         <div class="sub-menu-foot hide-mobile">
-                                            <a class="link-title-center" href="#"><i class="fa fa-lock fa-fw"></i>Rápido Acceso a Control Panel</a>
+                                            <a class = "link-title-center" href = "#" ><i class = "fa fa-lock fa-fw text-green"></i> Rápido Acceso a Control Panel</a>
                                         </div>
                                     </div>
                                 </li>
@@ -94,7 +94,7 @@ var headerTemplate = `<div class="container">
                                             </li>
                                         </ul>
                                         <div class="sub-menu-foot hide-mobile">
-                                            <a class="link-title-center" href="#"><i class="fa fa-lock fa-fw"></i>Control Panel de Dominios</a>
+                                            <a class="link-title-center" href="#"><i class="fa fa-lock fa-fw text-green"></i>Control Panel de Dominios</a>
                                         </div>
                                     </div>
                                 </li>
@@ -103,8 +103,8 @@ var headerTemplate = `<div class="container">
                                     <div class="sub-menu">
                                         <ul class="menu list-unstyled">
                                             <li>
-                                                <a class="link-title" href="#">Nerdcom PRO</a>
-                                                <a class="link-description" href="#">Plataforma de facturación y contabilidad, orientada a clientes, te permite optimizar la administrar tu empresa ahorrando tiempo y ampliando tus ganancias.</a>
+                                                <a class="link-title" href="nerdcom-pro.html">Nerdcom PRO</a>
+                                                <a class="link-description" href="nerdcom-pro.html">Plataforma de facturación y contabilidad, orientada a clientes, te permite optimizar la administrar tu empresa ahorrando tiempo y ampliando tus ganancias.</a>
                                             </li>
                                             <li>
                                                 <a class="link-title" href="#">Nerdcom DOC</a>
@@ -116,7 +116,7 @@ var headerTemplate = `<div class="container">
                                             </li>
                                         </ul>
                                         <div class="sub-menu-foot hide-mobile">
-                                            <a class="link-title-center" href="#"><i class="fa fa-lock fa-fw"></i>Nerdcom Academy<span class="sm-icon-submenu cost">Certificate</span></a>
+                                            <a class="link-title-center" href="#"><i class="fa fa-lock fa-fw text-green"></i>Nerdcom Academy<span class="sm-icon-submenu cost">Certificate</span></a>
                                         </div> 
                                     </div>
                                 </li>
@@ -138,7 +138,7 @@ var headerTemplate = `<div class="container">
                                             </li>
                                         </ul>
                                         <div class="sub-menu-foot hide-mobile">
-                                            <a class="link-title-center" href="#"><i class="fa fa-lock fa-fw"></i>Acceso a Panel de Revendedor<span class="sm-icon-submenu cost">Certificate</span></a>
+                                            <a class="link-title-center" href="#"><i class="fa fa-lock fa-fw text-green"></i>Acceso a Panel de Revendedor<span class="sm-icon-submenu cost">Certificate</span></a>
                                         </div>
                                     </div>
                                 </li>
@@ -207,7 +207,7 @@ var headerTemplate = `<div class="container">
                                             </li>
                                         </ul>
                                         <div class="sub-menu-foot hide-mobile">
-                                            <a class="link-title-center" href="#"><i class="fa fa-lock fa-fw"></i>Acceso a tus Servicios<span class="sm-icon-submenu cost">Certificate</span></a>
+                                            <a class="link-title-center" href="#"><i class="fa fa-lock fa-fw text-green"></i>Acceso a tus Servicios<span class="sm-icon-submenu cost">Certificate</span></a>
                                         </div>
                                     </div>
                                 </li>
