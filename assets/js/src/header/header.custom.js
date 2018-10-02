@@ -26,7 +26,7 @@ var headerTemplate = `<div class="container">
                                     <div class="sub-menu">
                                         <ul class="menu list-unstyled">
                                             <li>
-                                                <a class="link-title" href="#">Alojamiento Web</a>
+                                                <a class="link-title" href="comming-soon.html">Alojamiento Web</a>
                                                 <a class="link-description" href="#">El mejor espacio para alojar tus páginas web, Seguro y disponible 24 horas.</a>
                                             </li>
                                             <li>
