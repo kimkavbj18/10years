@@ -17,25 +17,24 @@
     <link rel="canonical" href="https://k.nerdcom.host/">
     <link rel="shortcut icon" href="./images/favicon.ico">
 </head>
-<body class="comming-soon full-height">
+<body class="comming-soon full-height" onload="counter">
     <div class="container-fluid no-padding h-100">
-        <!-- Vídeo -->
         <div class="row no-gutters h-100">
-            <!-- <div class="col-12 col-md-9 p-relative d-flex align-items-center justify-content-around"> -->
             <div class="col-12 col-md-9 p-relative">
                 <!-- Background Vídeo -->
                 <div class="bg-video">
                     <video src="./videos/background_video.mov" autoplay loop muted></video>
                 </div>
-                <!-- Logo -->
-                <div class="logo-home">
-                    <a href="/"><img src="./images/logon.png" alt="anerdcom"></a>
-                </div>
                 <!-- Comming Soon Info -->
                 <div class="content comming-soon--info">
+                    <a href="/"><img class="img-fluid logo-soon" src="./images/logon.png" alt="anerdcom"></a>
                     <h1 class="text-white text-uppercase">Comming Soon</h1>
                     <p class="text-white">10 años Nerdcom</p>
                     <button class="btn btn-orange-to-orange btn-xl">Contáctenos</button>
+                </div>
+                <!-- Counterdown -->
+                <div class="countdown">
+                    <h2 id="countdown" class="text-white"></h2>
                 </div> 
             </div>
             <!-- Aside -->
