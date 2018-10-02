@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
@@ -15,321 +16,17 @@
 
     <!-- STYLES -->
     <link rel="canonical" href="https://k.nerdcom.host/">
-    <link rel="shortcut icon" href="./dist/images/favicon.ico">
+    <link rel="shortcut icon" href="./images/favicon.ico">
     <style>
         @font-face{font-family:'Open Sans';font-style:italic;font-weight:400;src:local("Open Sans Italic"),local("OpenSans-Italic"),url(./fonts/OpenSans-Italic.ttf) format("ttf");unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F}@font-face{font-family:'Open Sans';font-style:italic;font-weight:400;src:local("Open Sans Italic"),local("OpenSans-Italic"),url(./fonts/OpenSans-Italic.ttf) format("ttf");unicode-range:U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}@font-face{font-family:'Open Sans';font-style:italic;font-weight:400;src:local("Open Sans Italic"),local("OpenSans-Italic"),url(./fonts/OpenSans-Italic.ttf) format("ttf");unicode-range:U+1F00-1FFF}@font-face{font-family:'Open Sans';font-style:italic;font-weight:400;src:local("Open Sans Italic"),local("OpenSans-Italic"),url(./fonts/OpenSans-Italic.ttf) format("ttf");unicode-range:U+0370-03FF}@font-face{font-family:'Open Sans';font-style:italic;font-weight:400;src:local("Open Sans Italic"),local("OpenSans-Italic"),url(./fonts/OpenSans-Italic.ttf) format("ttf");unicode-range:U+0102-0103,U+0110-0111,U+1EA0-1EF9,U+20AB}@font-face{font-family:'Open Sans';font-style:italic;font-weight:400;src:local("Open Sans Italic"),local("OpenSans-Italic"),url(./fonts/OpenSans-Italic.ttf) format("ttf");unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Open Sans';font-style:italic;font-weight:400;src:local("Open Sans Italic"),local("OpenSans-Italic"),url(./fonts/OpenSans-Italic.ttf) format("ttf");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Open Sans';font-style:italic;font-weight:700;src:local("Open Sans Bold Italic"),local("OpenSans-BoldItalic"),url(./fonts/OpenSans-BoldItalic.ttf) format("ttf");unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F}@font-face{font-family:'Open Sans';font-style:italic;font-weight:700;src:local("Open Sans Bold Italic"),local("OpenSans-BoldItalic"),url(./fonts/OpenSans-BoldItalic.ttf) format("ttf");unicode-range:U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}@font-face{font-family:'Open Sans';font-style:italic;font-weight:700;src:local("Open Sans Bold Italic"),local("OpenSans-BoldItalic"),url(./fonts/OpenSans-BoldItalic.ttf) format("ttf");unicode-range:U+1F00-1FFF}@font-face{font-family:'Open Sans';font-style:italic;font-weight:700;src:local("Open Sans Bold Italic"),local("OpenSans-BoldItalic"),url(./fonts/OpenSans-BoldItalic.ttf) format("ttf");unicode-range:U+0370-03FF}@font-face{font-family:'Open Sans';font-style:italic;font-weight:700;src:local("Open Sans Bold Italic"),local("OpenSans-BoldItalic"),url(./fonts/OpenSans-BoldItalic.ttf) format("ttf");unicode-range:U+0102-0103,U+0110-0111,U+1EA0-1EF9,U+20AB}@font-face{font-family:'Open Sans';font-style:italic;font-weight:700;src:local("Open Sans Bold Italic"),local("OpenSans-BoldItalic"),url(./fonts/OpenSans-BoldItalic.ttf) format("ttf");unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Open Sans';font-style:italic;font-weight:700;src:local("Open Sans Bold Italic"),local("OpenSans-BoldItalic"),url(./fonts/OpenSans-BoldItalic.ttf) format("ttf");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Open Sans';font-style:normal;font-weight:400;src:local("Open Sans Regular"),local("OpenSans-Regular"),url(./fonts/OpenSans-Regular.ttf) format("ttf");unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F}@font-face{font-family:'Open Sans';font-style:normal;font-weight:400;src:local("Open Sans Regular"),local("OpenSans-Regular"),url(./fonts/OpenSans-Regular.ttf) format("ttf");unicode-range:U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}@font-face{font-family:'Open Sans';font-style:normal;font-weight:400;src:local("Open Sans Regular"),local("OpenSans-Regular"),url(./fonts/OpenSans-Regular.ttf) format("ttf");unicode-range:U+1F00-1FFF}@font-face{font-family:'Open Sans';font-style:normal;font-weight:400;src:local("Open Sans Regular"),local("OpenSans-Regular"),url(./fonts/OpenSans-Regular.ttf) format("ttf");unicode-range:U+0370-03FF}@font-face{font-family:'Open Sans';font-style:normal;font-weight:400;src:local("Open Sans Regular"),local("OpenSans-Regular"),url(./fonts/OpenSans-Regular.ttf) format("ttf");unicode-range:U+0102-0103,U+0110-0111,U+1EA0-1EF9,U+20AB}@font-face{font-family:'Open Sans';font-style:normal;font-weight:400;src:local("Open Sans Regular"),local("OpenSans-Regular"),url(./fonts/OpenSans-Regular.ttf) format("ttf");unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Open Sans';font-style:normal;font-weight:400;src:local("Open Sans Regular"),local("OpenSans-Regular"),url(./fonts/OpenSans-Regular.ttf) format("ttf");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Open Sans';font-style:normal;font-weight:700;src:local("Open Sans Bold"),local("OpenSans-Bold"),url(./fonts/OpenSans-Bold.ttf) format("ttf");unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F}@font-face{font-family:'Open Sans';font-style:normal;font-weight:700;src:local("Open Sans Bold"),local("OpenSans-Bold"),url(./fonts/OpenSans-Bold.ttf) format("ttf");unicode-range:U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}@font-face{font-family:'Open Sans';font-style:normal;font-weight:700;src:local("Open Sans Bold"),local("OpenSans-Bold"),url(./fonts/OpenSans-Bold.ttf) format("ttf");unicode-range:U+1F00-1FFF}@font-face{font-family:'Open Sans';font-style:normal;font-weight:700;src:local("Open Sans Bold"),local("OpenSans-Bold"),url(./fonts/OpenSans-Bold.ttf) format("ttf");unicode-range:U+0370-03FF}@font-face{font-family:'Open Sans';font-style:normal;font-weight:700;src:local("Open Sans Bold"),local("OpenSans-Bold"),url(./fonts/OpenSans-Bold.ttf) format("ttf");unicode-range:U+0102-0103,U+0110-0111,U+1EA0-1EF9,U+20AB}@font-face{font-family:'Open Sans';font-style:normal;font-weight:700;src:local("Open Sans Bold"),local("OpenSans-Bold"),url(./fonts/OpenSans-Bold.ttf) format("ttf");unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Open Sans';font-style:normal;font-weight:700;src:local("Open Sans Bold"),local("OpenSans-Bold"),url(./fonts/OpenSans-Bold.ttf) format("ttf");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}.fa,.fas,.fab{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;display:inline-block;font-style:normal;font-variant:normal;text-rendering:auto;line-height:1}.fa-fw{text-align:center;width:1.25em}.fa-book:before{content:"\f02d"}.fa-calendar:before{content:"\f133"}.fa-caret-down:before{content:"\f0d7"}.fa-comments:before{content:"\f086"}.fa-dropbox:before{content:"\f16b"}.fa-globe-americas:before{content:"\f57d"}.fa-lock:before{content:"\f023"}.fa-phone:before{content:"\f095"}.fa-question-circle:before{content:"\f059"}.fa-shopping-cart:before{content:"\f07a"}.fa-tv:before{content:"\f26c"}.fa-user:before{content:"\f007"}.fa-users:before{content:"\f0c0"}@font-face{font-family:'Font Awesome 5 Free';font-style:normal;font-weight:400;src:url("./fonts/fa-regular-400.eot");src:url("./fonts/fa-regular-400.eot?#iefix") format("embedded-opentype"),url("./fonts/fa-regular-400.woff2") format("woff2"),url("./fonts/fa-regular-400.woff") format("woff"),url("./fonts/fa-regular-400.ttf") format("truetype"),url("./fonts/fa-regular-400.svg#fontawesome") format("svg")}@font-face{font-family:'Font Awesome 5 Free';font-style:normal;font-weight:900;src:url("./fonts/fa-solid-900.eot");src:url("./fonts/fa-solid-900.eot?#iefix") format("embedded-opentype"),url("./fonts/fa-solid-900.woff2") format("woff2"),url("./fonts/fa-solid-900.woff") format("woff"),url("./fonts/fa-solid-900.ttf") format("truetype"),url("./fonts/fa-solid-900.svg#fontawesome") format("svg")}.fa,.fas{font-family:'Font Awesome 5 Free';font-weight:900}@font-face{font-family:'Font Awesome 5 Brands';font-style:normal;font-weight:normal;src:url("./fonts/fa-brands-400.eot");src:url("./fonts/fa-brands-400.eot?#iefix") format("embedded-opentype"),url("./fonts/fa-brands-400.woff2") format("woff2"),url("./fonts/fa-brands-400.woff") format("woff"),url("./fonts/fa-brands-400.ttf") format("truetype"),url("./fonts/fa-brands-400.svg#fontawesome") format("svg")}.fab{font-family:'Font Awesome 5 Brands'}.hamburger{padding:25px 15px;display:inline-block;font:inherit;color:inherit;text-transform:none;background-color:transparent;border:0;margin:0;overflow:visible}.hamburger-box{width:25px;height:18px;display:inline-block;position:relative}.hamburger-inner{display:block;top:50%;margin-top:-1px}.hamburger-inner,.hamburger-inner::before,.hamburger-inner::after{width:25px;height:2px;background-color:#fff;border-radius:4px;position:absolute}.hamburger-inner::before,.hamburger-inner::after{content:"";display:block}.hamburger-inner::before{top:-8px}.hamburger-inner::after{bottom:-8px}.hamburger--collapse .hamburger-inner{top:auto;bottom:0}.hamburger--collapse .hamburger-inner::after{top:-16px}:root{--blue: #007bff;--indigo: #6610f2;--purple: #6f42c1;--pink: #e83e8c;--red: #dc3545;--orange: #fd7e14;--yellow: #ffc107;--green: #28a745;--teal: #20c997;--cyan: #17a2b8;--white: #fff;--gray: #6c757d;--gray-dark: #343a40;--primary: #007bff;--secondary: #6c757d;--success: #28a745;--info: #17a2b8;--warning: #ffc107;--danger: #dc3545;--light: #f8f9fa;--dark: #343a40;--breakpoint-xs: 0;--breakpoint-sm: 576px;--breakpoint-md: 768px;--breakpoint-lg: 992px;--breakpoint-xl: 1200px;--font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";--font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace}*,*::before,*::after{box-sizing:border-box}html{font-family:sans-serif;line-height:1.15;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;-ms-overflow-style:scrollbar}@-ms-viewport{width:device-width}header,nav{display:block}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";font-size:1rem;font-weight:400;line-height:1.5;color:#212529;text-align:left;background-color:#fff}h1{margin-top:0;margin-bottom:.5rem}p{margin-top:0;margin-bottom:1rem}ul{margin-top:0;margin-bottom:1rem}ul ul{margin-bottom:0}a{color:#007bff;text-decoration:none;background-color:transparent;-webkit-text-decoration-skip:objects}img{vertical-align:middle;border-style:none}button{border-radius:0}button{margin:0;font-family:inherit;font-size:inherit;line-height:inherit}button{overflow:visible}button{text-transform:none}button,html [type="button"]{-webkit-appearance:button}button::-moz-focus-inner,[type="button"]::-moz-focus-inner{padding:0;border-style:none}::-webkit-file-upload-button{font:inherit;-webkit-appearance:button}h1{margin-bottom:.5rem;font-family:inherit;font-weight:500;line-height:1.2;color:inherit}h1{font-size:2.5rem}.list-unstyled{padding-left:0;list-style:none}.img-fluid{max-width:100%;height:auto}.container{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}@media (min-width:576px){.container{max-width:540px}}@media (min-width:768px){.container{max-width:720px}}@media (min-width:992px){.container{max-width:960px}}@media (min-width:1200px){.container{max-width:1140px}}.container-fluid{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}.row{display:flex;flex-wrap:wrap;margin-right:-15px;margin-left:-15px}.no-gutters{margin-right:0;margin-left:0}.no-gutters>[class*="col-"]{padding-right:0;padding-left:0}.col-sm-12,.col-md-6,.col-lg-4{position:relative;width:100%;min-height:1px;padding-right:15px;padding-left:15px}@media (min-width:576px){.col-sm-12{flex:0 0 100%;max-width:100%}}@media (min-width:768px){.col-md-6{flex:0 0 50%;max-width:50%}}@media (min-width:992px){.col-lg-4{flex:0 0 33.33333333%;max-width:33.33333333%}}.btn{display:inline-block;font-weight:400;text-align:center;white-space:nowrap;vertical-align:middle;border:1px solid transparent;padding:.375rem .75rem;font-size:1rem;line-height:1.5;border-radius:.25rem}.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}.dropdown-menu{position:absolute;top:100%;left:0;z-index:1000;display:none;float:left;min-width:10rem;padding:.5rem 0;margin:.125rem 0 0;font-size:1rem;color:#212529;text-align:left;list-style:none;background-color:#fff;background-clip:padding-box;border:1px solid rgba(0,0,0,0.15);border-radius:.25rem}.dropdown-item{display:block;width:100%;padding:.25rem 1.5rem;clear:both;font-weight:400;color:#212529;text-align:inherit;white-space:nowrap;background-color:transparent;border:0}.nav{display:flex;flex-wrap:wrap;padding-left:0;margin-bottom:0;list-style:none}.text-left{text-align:left!important}.text-center{text-align:center!important}@media (min-width:992px){.text-lg-center{text-align:center!important}}body{font-size:13px}a{text-decoration:none!important}.fa-lock{color:#5bc758!important}.text-orange{color:#ECA93F}.hamburger{padding-bottom:0;float:left}.btn-xl{padding:.7rem 4rem;font-size:1.5rem;line-height:1.7;border-radius:.5rem}.btn-primary-orange{color:white;background:linear-gradient(131.61deg,#FF9052 0%,#FF6B17 100%)}.btn-blk-mobile{display:block!important;width:100%}header.header{position:fixed;z-index:99999;top:0;left:0;right:0;background-color:black;box-shadow:1px 1px 5px black}.header .logo{margin-top:5px;margin-bottom:5px;max-width:90px;float:left}.header .logo-white{display:none}.header .navigation{float:right}ul.secondary-menu{margin-top:20px}ul.secondary-menu li{padding-right:15px;line-height:1}ul.secondary-menu li span i{font-size:1.3em;color:#999}ul.main-menu{position:fixed;top:56px;bottom:0;left:-100%;right:0;display:flex;flex-direction:row;max-width:100%;background-color:white;overflow:auto}ul.main-menu>li{display:block;padding:22px;width:100%;background-color:transparent;border-bottom:1px solid #ddd}ul.main-menu>li span{margin-top:5px}ul.main-menu>li span i{margin-top:5px;float:right}ul.main-menu>li .sub-menu{padding:0}ul.main-menu li .sub-menu ul.menu{display:none;margin-top:22px;background-color:white}ul.main-menu li .sub-menu ul.menu li{display:block;padding:15px;border-bottom:1px solid white}ul.main-menu li .sub-menu ul.menu li a,ul.main-menu li .sub-menu ul.menu li span{color:#555;text-decoration:none}ul.main-menu li .sub-menu ul.menu li span{display:block;margin-top:-22px;font-weight:700}ul.main-menu li .sub-menu ul.menu li>a.link-title{display:block;border-right:3px solid #ddd}ul.main-menu li .sub-menu ul.menu li a.link-description{display:none}ul.main-menu li .sub-menu ul.menu li ul{display:block}ul.main-menu li .sub-menu ul.menu li ul li{display:block;margin-bottom:0;padding:0!important;width:auto;border-bottom:none}ul.main-menu li .sub-menu ul.menu li span,ul.main-menu li .sub-menu ul.menu li ul li a{display:block;padding:5px 10px}ul.main-menu .nav-offers{color:white;background-color:#e23d31;border-color:#fe0606;padding:5px 10px;font-size:13px;margin-top:-5px}.worldwide-menu{left:65%!important;width:auto}.worldwide-menu ul.menu{display:flex!important;flex-direction:column}.worldwide-menu ul.menu>li{margin:0!important;padding:0!important;float:unset;width:auto!important}.worldwide-menu ul.menu li:after{content:"";width:auto!important}.worldwide-menu ul.menu li span{display:block;margin-bottom:10px;color:#333;font-weight:700}.worldwide-menu ul.menu li ul{display:flex;flex-direction:row;flex-wrap:wrap}.worldwide-menu ul.menu li ul li{margin-bottom:5px!important;padding:5px!important;width:50%}ul.main-menu li span,ul.menu li a{font-family:'Open Sans',sans-serif}.hero{margin-top:55px;height:109.375vw}.hero--home{padding-top:20px;border-bottom:50px solid #0D3250;background-color:#0D3250;background-image:url(./images/hero_art_screens.png);background-repeat:no-repeat;background-size:contain;background-position:center bottom}.hero--home h1,.hero--home p{color:white}.hero--home h1{font-size:9.35vw}.hero--home .description{margin-bottom:6.25vw;font-size:5.625vw;font-weight:300}.hero--home .price{font-size:4.6875vw;font-weight:300}.hero--home .price span{font-weight:900}.services{position:relative;padding-bottom:50px;background-color:white}.services--wrapper{margin-top:-50px;padding-top:30px;background-color:white;border:1px solid #eee}.services .service{margin-bottom:30px;background-color:white}.services .service .service-image{margin-bottom:10px;text-align:center}.hide-mobile{display:none!important}@media (min-width:576px){.hero{height:112.84722222222223vw}.hero--home h1{font-size:8.680555555555555vw}.hero--home .description{margin-bottom:6.25vw;font-size:5.208333333333334vw;font-weight:300}.services--wrapper{margin-top:-100px}}@media (min-width:768px){.hero{height:800px}.hero--home{padding-top:100px;background-size:auto}.hero--home h1{font-size:4em}.hero--home .description{margin-bottom:50px;font-size:2.2em;font-weight:300}.hero--home .price{font-size:1.5em;font-weight:300}.hero--home .price span{font-weight:900}}@media (min-width:992px){.hide-mobile{display:initial!important}.hide-desktop{display:none}header.header{position:fixed;z-index:99999;top:0;left:0;right:0;background-color:black;box-shadow:1px 1px 5px black}.header .logo,.header .logo-white{margin-top:15px;margin-bottom:15px;max-width:100px;float:left}.header .logo-white{display:none}.header .navigation{display:flex;flex-direction:column;align-items:flex-end}.header .container-fluid{position:relative}ul.secondary-menu{display:none}ul.main-menu{position:relative;top:auto;bottom:auto;left:auto;right:auto;display:block;margin-top:30px;max-width:initial;background:transparent;overflow:unset}ul.main-menu>li{display:initial;margin-left:3px;padding:5px 0 20px 0;width:auto;float:left;background-color:transparent;border-bottom:none}ul.main-menu li span{position:relative;color:#ccc;font-size:.85em}ul.main-menu li>.sub-menu{display:none}ul.main-menu>li .sub-menu{padding-left:15px;padding-right:15px}ul.main-menu .nav-cp,ul.main-menu .nav-cp span{color:#5bc758!important;font-weight:700!important;text-decoration:none}ul.main-menu .nav-offers{color:white;background-color:#e23d31;border-color:#fe0606;padding:5px 10px;font-size:13px;margin-top:-5px}ul.main-menu .nav-img-contact{width:10%}.sub-menu ul.menu{display:flex!important;flex-direction:row;flex-wrap:wrap;margin-top:15px;background-color:transparent!important}.sub-menu ul.menu li{position:relative;margin-left:0;margin-bottom:10px;padding:10px!important;width:33.33333%;background-color:transparent}.sub-menu ul.menu li a{display:block;color:#333;text-decoration:none}.sub-menu ul.menu li a.link-title{font-size:1em;font-weight:700;border-right:none!important;border-bottom:none}.sub-menu-foot a.link-title-center{font-size:1.2em;font-weight:700;border-right:none!important;border-bottom:none}.sub-menu ul.menu li a.link-description{display:block!important;font-size:.85em}.sub-menu ul.menu li ul li span{width:15%!important}.sub-menu .sm-icon-submenu::before,.free,.cost{background-color:transparent;position:relative!important;color:#fff!important;font-size:0.625rem!important;font-weight:700;line-height:7px;border-radius:.1875rem;box-sizing:content-box;height:0.5rem;padding:0.3rem 0.1rem!important;opacity:1;left:5px!important;text-align:center}.sub-menu .free{background-color:#5bc758}.sub-menu .cost{background-color:#db1b1b}.sub-menu .security-design{font-size:22px;font-weight:bold;text-transform:uppercase;line-height:35px;text-align:center;background-color:#e6f5f8!important}.sub-menu .security-design span{display:initial!important}.sub-menu .text-link{font-size:inherit;text-transform:inherit}.sub-menu .text-page{background:#00b0ea;color:#fff!important;padding:2px 5px}.sub-menu .text-since{color:#00b0ea!important}.sub-menu .text-price{color:#000334!important;font-style:italic}.sub-menu .flags{height:28px;width:38px;display:inline-block}.sub-menu .flags::before,.sub-menu .flags::after{box-sizing:border-box}.sub-menu a.link-title-center{text-align:center;text-decoration:none;color:#555;font-size:13px}ul.main-menu li .sub-menu ul.menu li ul{display:block}ul.main-menu li .sub-menu ul.menu li span,ul.main-menu li .sub-menu ul.menu li ul li a{display:block;margin:0;padding:5px 10px}ul.main-menu li .sub-menu ul.menu li.domain-include>span{padding-top:0}ul.main-menu li .sub-menu ul.menu li.domain-include ul li a span{display:initial}.sub-menu-foot{display:block!important;padding:15px 15px 15px;text-align:center;border-top:1px solid #ccc}}@media (min-width:1200px){.header .logo,.header .logo-white{margin-top:5px;margin-bottom:5px;max-width:140px}ul.main-menu li{margin-left:5px}ul.main-menu li span{font-size:1em}}
     </style>
 </head>
+
 <body>
 
     <div class="container-fluid">
         <!-- Header section -->
-         <header class="row header mobile-header">
-            <div class="container">
-                <div class="row">
-                    <div class="container-fluid">
-                        <button class="hamburger hamburger--collapse hide-desktop" type="button">
-                            <span class="hamburger-box">
-                                <span class="hamburger-inner"></span>
-                            </span>
-                        </button>
-                        <div class="logo">
-                            <img src="./dist/images/logon.png" alt="anerdcom" class="img-fluid">
-                        </div>
-                        <div class="logo-white">
-                            <img src="./dist/images/logob.png" alt="bnerdcom" class="img-fluid">
-                        </div>
-                        <nav class="navigation nav-item hide-desktop">
-                            <ul class="secondary-menu list-unstyled nav">
-                                <li class="nav-item hide-desktop"><span><i class="fa fa-phone"></i></span></li>
-                                <li class="nav-item hide-desktop"><span><i class="fa fa-question-circle"></i></span></li>
-                                <li class="nav-item hide-desktop"><span><i class="fa fa-user"></i></span></li>
-                                <li class="nav-item hide-desktop"><span><i class="fa fa-shopping-cart fa-fw"></i></span></li>   
-                            </ul>
-                            <ul class="main-menu list-unstyled nav">
-                                <li class="nav-item">
-                                    <span>Alojamiento <i class="fa fa-caret-down fa-fw"></i></span>
-                                    <div class="sub-menu">
-                                        <ul class="menu list-unstyled">
-                                            <li>
-                                                <a class="link-title" href="#">Alojamiento Web</a>
-                                                <a class="link-description" href="#">El mejor espacio para alojar tus páginas web, Seguro y disponible 24 horas.</a>
-                                            </li>
-                                            <li>
-                                                <a class="link-title" href="#">Cloud Hosting</a>
-                                                <a class="link-description" href="#">Ofrecemos una expansión en la capacidad de recursos ilimitados de almacenamiento.</a>
-                                            </li>
-                                            <li>
-                                                <a class="link-title" href="#">Wordpress Hosting</a>
-                                                <a class="link-description" href="#">Plan diseñado para sitios WordPress que cuenta con un equipo especializado.</a>
-                                            </li>
-                                            <li>
-                                                <a class="link-title" href="#">Servidores Dedicados</a>
-                                                <a class="link-description" href="#">Web's de tráfico alto o con necesidad de amplios recursos de transferencia.</a>
-                                            </li>
-                                            <li>
-                                                <a class="link-title" href="#">Streaming Hosting</a>
-                                                <a class="link-description" href="#">Tecnología que lleva tu emisora en línea a tu público de manera eficiente.</a>
-                                            </li>
-                                            <li>
-                                                <a class="link-title" href="#">Virtual Private Server "VPS"</a>
-                                                <a class="link-description" href="#">Dispone recursos que conceden más potencia que un hosting compartido.</a>
-                                            </li>
-                                            <li>
-                                                <a class="link-title" href="#">Web Hosting Design</a>
-                                                <a class="link-description" href="#">Web hosting + Dominio + WorPress + 1 Especialista enfocado en tu web.</a>
-                                            </li>
-                                            <li>
-                                                <a class="link-title" href="#">Business Email</a>
-                                                <a class="link-description" href="#">Web hosting + Dominio + WorPress + 1 Especialista enfocado para tu web.</a>
-                                            </li>
-                                            <li>
-                                                <a class="link-title" href="#">Enterprise Email</a>
-                                                <a class="link-description" href="#">Web hosting + Dominio + WorPress + 1 Especialista enfocado para tu web.</a>
-                                            </li>
-                                            <li>
-                                                <a class="link-title" href="#">GSuite</a>
-                                                <a class="link-description" href="#">Web hosting + Dominio + WorPress + 1 Especialista enfocado para tu web.</a>
-                                            </li>
-                                        </ul>
-                                        <div class="sub-menu-foot hide-mobile">
-                                            <a class="link-title-center" href="#"><i class="fa fa-lock fa-fw"></i>Rápido Acceso a Control Panel</a>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="nav-item">
-                                    <span>Dominios <i class="fa fa-caret-down fa-fw"></i></span>
-                                    <div class="sub-menu">
-                                        <ul class="menu list-unstyled">
-                                            <li>
-                                                <a class="link-title" href="#">Dominios</a>
-                                                <a class="link-description" href="#">tu empresa en línea inicia con un dominio. El nombre con el que darás a conocer tu marca en la web.</a>
-                                            </li>
-                                            <li>
-                                                <a class="link-title" href="#">Revendedor de Dominios</a>
-                                                <a class="link-description" href="#">Comienza a vender dominios sin inversión previa, benefíciate de nuestra oferta y genera ganancias.</a>
-                                            </li>
-                                            <li class="domain-include hide-mobile">
-                                                <span>Incluye</span>
-                                                <ul class="list-unstyled">
-                                                    <li><a class="link-description" href="#">Manejo de DNS<span class="sm-icon-submenu free">Gratis</span></a></li>
-                                                    <li><a class="link-description" href="#">Bloqueo de Transferencia<span class="sm-icon-submenu free">Gratis</span></a></li>
-                                                    <li><a class="link-description" href="#">Privacidad<span class="sm-icon-submenu cost">$7.95</span></a></li>                
-                                                    <li><a class="link-description" href="#">Auto Renovación<span class="sm-icon-submenu free">Gratis</span></a></li>    
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                        <div class="sub-menu-foot hide-mobile">
-                                            <a class="link-title-center" href="#"><i class="fa fa-lock fa-fw"></i>Control Panel de Dominios</a>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="nav-item">
-                                    <span>Plataformas <i class="fa fa-caret-down fa-fw"></i></span>
-                                    <div class="sub-menu">
-                                        <ul class="menu list-unstyled">
-                                            <li>
-                                                <a class="link-title" href="#">Nerdcom PRO</a>
-                                                <a class="link-description" href="#">Plataforma de facturación y contabilidad, orientada a clientes, te permite optimizar la administrar tu empresa ahorrando tiempo y ampliando tus ganancias.</a>
-                                            </li>
-                                            <li>
-                                                <a class="link-title" href="#">Nerdcom DOC</a>
-                                                <a class="link-description" href="#">Plataforma médica dirigida a facilitar la administración de consultorios y mejorar la atención personalizada a tus pacientes que te protege contra demandas.</a>
-                                            </li>
-                                            <li>
-                                                <a class="link-title" href="#">Nerdcom LAW</a>
-                                                <a class="link-description" href="#">Diseñada para la administración de bufetes de abogados, que permite hacer una distribución eficiente de tiempo y esfuerzo mejorando la atención al cliente.</a>
-                                            </li>
-                                        </ul>
-                                        <div class="sub-menu-foot hide-mobile">
-                                            <a class="link-title-center" href="#"><i class="fa fa-lock fa-fw"></i>Nerdcom Academy<span class="sm-icon-submenu cost">Certificate</span></a>
-                                        </div> 
-                                    </div>
-                                </li>
-                                <li class="nav-item">
-                                    <span>Revendedor <i class="fa fa-caret-down fa-fw"></i></span>
-                                    <div class="sub-menu">
-                                        <ul class="menu list-unstyled">
-                                            <li>
-                                                <a class="link-title" href="#">Revendedor Hosting</a>
-                                                <a class="link-description" href="#">Invierte y comienza a producir ganancias con tu plan reseller hosting desde 19.95$ y disfruta de WHMCS Gratis.</a>
-                                            </li>
-                                            <li>
-                                                <a class="link-title" href="#">Revendedor de Dominios</a>
-                                                <a class="link-description" href="#">Conviértete en socio Nerdcom y genera ingresos substánciales en tu cuenta bancaria. ¡Conoce nuestra oferta!</a>
-                                            </li>
-                                            <li>
-                                                <a class="link-title" href="#">Socio Estrategico "Partner"</a>
-                                                <a class="link-description" href="#">Conviértete en socio Nerdcom y genera ingresos substánciales en tu cuenta bancaria. ¡Conoce nuestra oferta!</a>
-                                            </li>
-                                        </ul>
-                                        <div class="sub-menu-foot hide-mobile">
-                                            <a class="link-title-center" href="#"><i class="fa fa-lock fa-fw"></i>Acceso a Panel de Revendedor<span class="sm-icon-submenu cost">Certificate</span></a>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="nav-item">
-                                    <span>Seguridad y Diseño <i class="fa fa-caret-down fa-fw"></i></span>
-                                    <div class="sub-menu">
-                                        <ul class="menu list-unstyled">
-                                            <li>
-                                                <a class="link-title" href="#">Verificacion de Identidad</a>
-                                                <a class="link-description" href="#">Te brindamos un servicio especializado en incrementar la seguridad de tu empresa en línea. (República Dominicana)</a>
-                                            </li>
-                                            <li>
-                                                <a class="link-title" href="#">Diseño Web</a>
-                                                <a class="link-description" href="#">Paquetes de diseño realizados por profesionales que te permiten llegar a tus clientes en la web de manera exitosa.</a>
-                                            </li>
-                                            <li>
-                                                <a class="link-title" href="#">Identidad Corporativa</a>
-                                                <a class="link-description" href="#">Trabajamos en quipo aplicando estrategias que te permiten hacer de tus ideas una marca reconocida para el público.</a>
-                                            </li>
-                                            <li>
-                                                <a class="link-title" href="#">Site Lock</a>
-                                                <a class="link-description" href="#">Sistema de protección anti malware que asegura tu sitio web contra virus, ataques con un certificado de garantía visible.</a>
-                                            </li>
-                                            <li>
-                                                <a class="link-title" href="#">SSL</a>
-                                                <a class="link-description" href="#">Certificado de seguridad (https://) protege  tu web y tu SEO dando tranquilidad en la compra de productos a visitantes.</a>
-                                            </li>
-                                            <li class="security-design hide-mobile">
-                                                <a href="#">
-                                                    <span class="text-link text-create">Creamos</span>                                                                
-                                                    <span class="text-link text-page">Tu página</span><br>                                                                
-                                                    <span class="text-link text-since">Desde</span>                                                                
-                                                    <span class="text-link text-price">US$ 450.00</span>                                                                
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li class="nav-item">
-                                    <span>Servicios <i class="fa fa-caret-down fa-fw"></i></span>
-                                    <div class="sub-menu">
-                                        <ul class="menu list-unstyled">
-                                            <li>
-                                                <a class="link-title" href="#">Impulsa con Éxito</a>
-                                                <a class="link-description" href="#">Programa que permite a emprendedores impulsar sus negocios desde los inicios, con cientos herramientas integradas al mejor costo del mercado.</a>
-                                            </li>
-                                            <li>
-                                                <a class="link-title" href="#">Web SEO</a>
-                                                <a class="link-description" href="#">Hacemos el contenido de tu web orgánico y  atractivo a los motores de búsqueda que envían personas a tu sitio aumentando visibilidad de tu sitio.</a>
-                                            </li>
-                                            <li>
-                                                <a class="link-title" href="#">Community Manager</a>
-                                                <a class="link-description" href="#">Un profesional  dedicado a hacer que el contenido en tus redes sociales sea irresistible a tus futuros clientes. ¡Atráelos desde su lugar favorito!</a>
-                                            </li>
-                                            <li>
-                                                <a class="link-title" href="#">Cooperativas</a>
-                                                <a class="link-description" href="#">Plan diseñado para brindar las mejores herramientas que proyectan y promueven tu cooperativa como un fuerte competidor dentro y fuera de la industria.</a>
-                                            </li>
-                                            <li>
-                                                <a class="link-title" href="#">Marketing</a>
-                                                <a class="link-description" href="#">Incrementa tus ventas con estrategias creadas para aumentar la visibilidad y el atractivo de tu producto .¡Conoce los planes que ideamos pensando en ti!</a>
-                                            </li>
-                                            <li>
-                                                <a class="link-title" href="#">Inteligencia de Negocios</a>
-                                                <a class="link-description" href="#">Un especialista en medios digitales te guiara a lograr el esquema funcional, de posicionamiento y ventas para que puedas llevar a tu marca donde deseas.</a>
-                                            </li>
-                                        </ul>
-                                        <div class="sub-menu-foot hide-mobile">
-                                            <a class="link-title-center" href="#"><i class="fa fa-lock fa-fw"></i>Acceso a tus Servicios<span class="sm-icon-submenu cost">Certificate</span></a>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="nav-item">
-                                    <span>Compañia <i class="fa fa-caret-down fa-fw"></i></span>
-                                    <div class="sub-menu">
-                                        <ul class="menu list-unstyled">
-                                            <li>
-                                                <span>Empresa</span>
-                                                <ul class="list-unstyled">
-                                                    <li><a class="link-title-company" href="#">Equipo <i class="fa fa-users fa-fw"></i></a></li>
-                                                    <li><a class="link-title-company" href="#">Contacto</a></li>
-                                                    <li><a class="link-title-company" href="#">Clientes <i class="fa fa-users fa-fw"></i></a></li>
-                                                    <li><a class="link-title-company" href="#">Trabaja con nosotros <i class="fab fa-dropbox fa-fw"></i></a></li>
-                                                    <li><a class="link-title-company" href="#">Media Kit</a></li>
-                                                    <li><a class="link-title-company" href="#">KAI  <img src="./dist/images/kai.png" alt="nerdcom_kai"></a></li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <span>Noticias y Comunidad</span>
-                                                <ul class=" menu-company list-unstyled">
-                                                    <li><a class="link-title-company" href="#">Blog <i class="fa fa-comments fa-fw"></i></a></li>
-                                                    <li><a class="link-title-company" href="#">Foro</a></li>
-                                                    <li><a class="link-title-company" href="#">Kaizen Even <i class="fa fa-calendar fa-fw"></i></a></li>
-                                                    <li><a class="link-title-company" href="#">Webinars <i class="fas fa-tv fa-fw"></i></a></li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <span>Ayuda</span>
-                                                <ul class="menu-company list-unstyled">
-                                                    <li><a class="link-title-company" href="#">Área de Clientes</a></li>
-                                                    <li><a class="link-title-company" href="#">Base de Conocimientos <i class="fa fa-book fa-fw"></i></a></li>
-                                                    <li><a class="link-title-company" href="#">Abrir un Ticket</a></li>
-                                                    <li><a class="link-title-company" href="#"><i class="fa fa-phone fa-fw"></i> +1.929.273.0923</a></li>
-                                                    <li><a class="link-title-company" href="#"><i class="fa fa-phone fa-fw"></i> +1.877.280.9295</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li class="nav-item">
-                                    <span>Contacto <i class="fa fa-caret-down fa-fw"></i></span>
-                                    <div class="sub-menu">
-                                        <ul class="menu list-unstyled">
-                                            <li class="text-left  text-lg-center">
-                                                <a class="link-title-center" href="#">Ayuda y Soporte</a>
-                                                <img class="nav-img-contact hide-mobile" src="./dist/images/supp.svg" alt="support">
-                                            </li>
-                                            <li class="text-left text-lg-center">
-                                                <a class="link-title-center" href="#">Realiza una pregunta</a>
-                                                <img class="nav-img-contact hide-mobile" src="./dist/images/quest.svg" alt="quest">
-                                            </li>
-                                            <li class="text-left text-lg-center">
-                                                <a class="link-title-center" href="#">Preguntas frecuentes</a>
-                                                <img class="nav-img-contact hide-mobile" src="./dist/images/faq.svg" alt="faq">
-                                            </li>
-                                        </ul>    
-                                    </div>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-cp" href="https://panel.nerdcom.host"><i class="fa fa-lock fa-fw"></i><span>Control Panel</span></a>
-                                </li>
-                                <li class="text-center nav-item">
-                                    <a href="#" class="btn btn-blk-mobile nav-offers btn-sm">Ofertas</a>
-                                    <!-- <a href="#" class="btn-offers">Ofertas</a> -->
-                                </li>
-                                <li class="nav-item hide-mobile">
-                                    <span>&nbsp;<i class="fa fa-globe-americas"></i></span>
-                                    <div class="sub-menu worldwide-menu">
-                                        <ul class="menu list-unstyled">
-                                            <li>
-                                                <span>América</span>
-                                                <ul class="list-unstyled">
-                                                    <li><a href="#"><img class="flags" src="./dist/images/usa.png" alt="usa"> USA</a></li>
-                                                    <li><a href="#"><img class="flags" src="./dist/images/republicadominicana.png" alt="rep_dominicana"> R. Dominicana</a></li>
-                                                    <li><a href="#"><img class="flags" src="./dist/images/argentina.png" alt="argentina"> Argentina</a></li>
-                                                    <li><a href="#"><img class="flags" src="./dist/images/mex.png" alt="mexico"> México</a></li>
-                                                    <li><a href="#"><img class="flags" src="./dist/images/chile.png" alt="chile"> Chile</a></li>
-                                                    <li><a href="#"><img class="flags" src="./dist/images/venezuela.png" alt="venezuela"> Venezuela</a></li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <span>Europa</span>
-                                                <ul class="list-unstyled">
-                                                    <li><a href="#"><img class="flags" src="./dist/images/es.svg" alt="españa"> España</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </header>
+        <header id="header" class="row header mobile-header"></header>
         <!-- Hero section -->
         <div class="row hero hero--home">
             <div class="container">
@@ -340,12 +37,12 @@
             </div>
         </div>
         <!-- Services section -->
-        <div class="row services"> 
+        <div class="row services">
             <div class="container services--wrapper">
                 <div class="row no-gutters">
                     <div class="col-sm-12 col-md-6 col-lg-4 service">
                         <div class="container-fluid service-image">
-                            <a href="#"><img class="img-fluid" src="./dist/images/img-services-1.jpg" alt="services"></a>
+                            <a href="#"><img class="img-fluid" src="./images/img-services-1.jpg" alt="services"></a>
                         </div>
                         <div class="container-fluid service-content">
                             <div class="row no-gutters">
@@ -361,13 +58,14 @@
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-4 service">
                         <div class="container-fluid service-image">
-                            <a href="#"><img class="img-fluid" src="./dist/images/img-services-2.jpg" alt="services"></a>
+                            <a href="#"><img class="img-fluid" src="./images/img-services-2.jpg" alt="services"></a>
                         </div>
                         <div class="container-fluid service-content">
                             <div class="row no-gutters">
                                 <div class="col-10">
                                     <p class="service-content--title">Linux Shared Hosting</p>
-                                    <p class="service-content--description">Simple, reliable and affordable Cloud Hosting</p>
+                                    <p class="service-content--description">Simple, reliable and affordable Cloud
+                                        Hosting</p>
                                 </div>
                                 <div class="col-2">
                                     <p class="service-content--price">starts at<br><span>$4.79</span></p>
@@ -377,7 +75,7 @@
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-4 service">
                         <div class="container-fluid service-image">
-                            <a href="#"><img class="img-fluid" src="./dist/images/img-services-3.jpg" alt="services"></a>
+                            <a href="#"><img class="img-fluid" src="./images/img-services-3.jpg" alt="services"></a>
                         </div>
                         <div class="container-fluid service-content">
                             <div class="row no-gutters">
@@ -393,7 +91,7 @@
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-4 service">
                         <div class="container-fluid service-image">
-                            <a href="#"><img class="img-fluid" src="./dist/images/img-services-4.jpg" alt="services"></a>
+                            <a href="#"><img class="img-fluid" src="./images/img-services-4.jpg" alt="services"></a>
                         </div>
                         <div class="container-fluid service-content">
                             <div class="row no-gutters">
@@ -409,7 +107,7 @@
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-4 service">
                         <div class="container-fluid service-image">
-                            <a href="#"><img class="img-fluid" src="./dist/images/img-services-5.jpg" alt="services"></a>
+                            <a href="#"><img class="img-fluid" src="./images/img-services-5.jpg" alt="services"></a>
                         </div>
                         <div class="container-fluid service-content">
                             <div class="row no-gutters">
@@ -425,13 +123,14 @@
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-4 service">
                         <div class="container-fluid service-image">
-                            <a href="#"><img class="img-fluid" src="./dist/images/img-services-6.jpg" alt="services"></a>
+                            <a href="#"><img class="img-fluid" src="./images/img-services-6.jpg" alt="services"></a>
                         </div>
                         <div class="container-fluid service-content">
                             <div class="row no-gutters">
                                 <div class="col-10">
                                     <p class="service-content--title">Dedicated Servers</p>
-                                    <p class="service-content--description">Powerful & Scalable with Complete Root Access</p>
+                                    <p class="service-content--description">Powerful & Scalable with Complete Root
+                                        Access</p>
                                 </div>
                                 <div class="col-2">
                                     <p class="service-content--price">starts at<br><span>$90.00</span></p>
@@ -441,7 +140,7 @@
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-4 service">
                         <div class="container-fluid service-image">
-                            <a href="#"><img class="img-fluid" src="./dist/images/img-services-7.jpg" alt="services"></a>
+                            <a href="#"><img class="img-fluid" src="./images/img-services-7.jpg" alt="services"></a>
                         </div>
                         <div class="container-fluid service-content">
                             <div class="row no-gutters">
@@ -457,13 +156,14 @@
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-4 service">
                         <div class="container-fluid service-image">
-                            <a href="#"><img class="img-fluid" src="./dist/images/img-services-8.jpg" alt="services"></a>
+                            <a href="#"><img class="img-fluid" src="./images/img-services-8.jpg" alt="services"></a>
                         </div>
                         <div class="container-fluid service-content">
                             <div class="row no-gutters">
                                 <div class="col-10">
                                     <p class="service-content--title">GSuite</p>
-                                    <p class="service-content--description">Robust Email Solution Designed for Performance</p>
+                                    <p class="service-content--description">Robust Email Solution Designed for
+                                        Performance</p>
                                 </div>
                                 <div class="col-2">
                                     <p class="service-content--price">starts at<br><span>$3.33</span></p>
@@ -472,21 +172,21 @@
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-4 service">
-                            <div class="container-fluid service-image">
-                                <a href="#"><img class="img-fluid" src="./dist/images/img-services-4.jpg" alt="services"></a>
-                            </div>
-                            <div class="container-fluid service-content">
-                                <div class="row no-gutters">
-                                    <div class="col-10">
-                                        <p class="service-content--title">Wordpress Hosting</p>
-                                        <p class="service-content--description">Affordable solutions for WordPress Websites</p>
-                                    </div>
-                                    <div class="col-2">
-                                        <p class="service-content--price">starts at<br><span>$2.49</span></p>
-                                    </div>
+                        <div class="container-fluid service-image">
+                            <a href="#"><img class="img-fluid" src="./images/img-services-4.jpg" alt="services"></a>
+                        </div>
+                        <div class="container-fluid service-content">
+                            <div class="row no-gutters">
+                                <div class="col-10">
+                                    <p class="service-content--title">Wordpress Hosting</p>
+                                    <p class="service-content--description">Affordable solutions for WordPress Websites</p>
+                                </div>
+                                <div class="col-2">
+                                    <p class="service-content--price">starts at<br><span>$2.49</span></p>
                                 </div>
                             </div>
                         </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -496,15 +196,17 @@
                 <h2 class="text-center">Busque su nombre de dominio</h2>
                 <p class="text-center">Mueva su dominio a NerdCom por $ 3.98 y ayude a proteger la libertad de Internet</p>
                 <div class="search-box">
-                    <button type="button" class="btn btn-dropdown dropdown-toggle dropdown-toggle-split hide-mobile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Search... </button>
+                    <button type="button" class="btn btn-dropdown dropdown-toggle dropdown-toggle-split hide-mobile"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Search... </button>
                     <div class="dropdown-menu">
                         <a class="dropdown-item" href="#">Action</a>
                         <a class="dropdown-item" href="#">Another action</a>
                         <a class="dropdown-item" href="#">Something else here</a>
                         <a class="dropdown-item" href="#">Separated link</a>
                     </div>
-                    <input type="text" class="form-control input-search" aria-label="Text input with segmented dropdown button" placeholder="Go">
-                    <button type="button" class="btn btn-orange btn-search"><i class="fa fa-search"></i></button>
+                    <input type="text" class="form-control input-search" aria-label="Text input with segmented dropdown button"
+                        placeholder="Go">
+                    <button type="button" class="btn btn-orange-to-orange btn-search"><i class="fa fa-search"></i></button>
                 </div>
             </div>
         </div>
@@ -518,7 +220,7 @@
                         <div class="container-fluid">
                             <div class="row">
                                 <div class="container-fluid domain-offer-image">
-                                    <a href="#"><img class="img-fluid" src="./dist/images/img-offers-1.jpg" alt="offers"></a>
+                                    <a href="#"><img class="img-fluid" src="./images/img-offers-1.jpg" alt="offers"></a>
                                 </div>
                                 <div class="container-fluid domain-offer-content">
                                     <div class="row">
@@ -537,7 +239,7 @@
                         <div class="container-fluid">
                             <div class="row">
                                 <div class="container-fluid domain-offer-image">
-                                    <a href="#"><img class="img-fluid" src="./dist/images/img-offers-2.jpg" alt="offers"></a>
+                                    <a href="#"><img class="img-fluid" src="./images/img-offers-2.jpg" alt="offers"></a>
                                 </div>
                                 <div class="container-fluid domain-offer-content">
                                     <div class="row">
@@ -556,7 +258,7 @@
                         <div class="container-fluid">
                             <div class="row">
                                 <div class="container-fluid domain-offer-image">
-                                    <a href="#"><img class="img-fluid" src="./dist/images/img-offers-3.jpg" alt="offers"></a>
+                                    <a href="#"><img class="img-fluid" src="./images/img-offers-3.jpg" alt="offers"></a>
                                 </div>
                                 <div class="container-fluid domain-offer-content">
                                     <div class="row">
@@ -575,7 +277,7 @@
                         <div class="container-fluid">
                             <div class="row">
                                 <div class="container-fluid domain-offer-image">
-                                    <a href="#"><img class="img-fluid" src="./dist/images/img-offers-4.jpg" alt="offers"></a>
+                                    <a href="#"><img class="img-fluid" src="./images/img-offers-4.jpg" alt="offers"></a>
                                 </div>
                                 <div class="container-fluid domain-offer-content">
                                     <div class="row">
@@ -594,7 +296,7 @@
                         <div class="container-fluid">
                             <div class="row">
                                 <div class="container-fluid domain-offer-image">
-                                    <a href="#"><img class="img-fluid" src="./dist/images/img-offers-5.jpg" alt="offers"></a>
+                                    <a href="#"><img class="img-fluid" src="./images/img-offers-5.jpg" alt="offers"></a>
                                 </div>
                                 <div class="container-fluid domain-offer-content">
                                     <div class="row">
@@ -613,7 +315,7 @@
                         <div class="container-fluid">
                             <div class="row">
                                 <div class="container-fluid domain-offer-image">
-                                    <a href="#"><img class="img-fluid" src="./dist/images/img-offers-6.jpg" alt="offers"></a>
+                                    <a href="#"><img class="img-fluid" src="./images/img-offers-6.jpg" alt="offers"></a>
                                 </div>
                                 <div class="container-fluid domain-offer-content">
                                     <div class="row">
@@ -632,7 +334,7 @@
                         <div class="container-fluid">
                             <div class="row">
                                 <div class="container-fluid domain-offer-image">
-                                    <a href="#"><img class="img-fluid" src="./dist/images/img-offers-7.jpg" alt="offers"></a>
+                                    <a href="#"><img class="img-fluid" src="./images/img-offers-7.jpg" alt="offers"></a>
                                 </div>
                                 <div class="container-fluid domain-offer-content">
                                     <div class="row">
@@ -651,7 +353,7 @@
                         <div class="container-fluid">
                             <div class="row">
                                 <div class="container-fluid domain-offer-image">
-                                    <a href="#"><img class="img-fluid" src="./dist/images/img-offers-8.jpg" alt="offers"></a>
+                                    <a href="#"><img class="img-fluid" src="./images/img-offers-8.jpg" alt="offers"></a>
                                 </div>
                                 <div class="container-fluid domain-offer-content">
                                     <div class="row">
@@ -670,7 +372,7 @@
                         <div class="container-fluid">
                             <div class="row">
                                 <div class="container-fluid domain-offer-image">
-                                    <a href="#"><img class="img-fluid" src="./dist/images/img-offers-9.jpg" alt="offers"></a>
+                                    <a href="#"><img class="img-fluid" src="./images/img-offers-9.jpg" alt="offers"></a>
                                 </div>
                                 <div class="container-fluid domain-offer-content">
                                     <div class="row">
@@ -689,7 +391,7 @@
                         <div class="container-fluid">
                             <div class="row">
                                 <div class="container-fluid domain-offer-image">
-                                    <a href="#"><img class="img-fluid" src="./dist/images/img-offers-10.jpg" alt="offers"></a>
+                                    <a href="#"><img class="img-fluid" src="./images/img-offers-10.jpg" alt="offers"></a>
                                 </div>
                                 <div class="container-fluid domain-offer-content">
                                     <div class="row">
@@ -708,7 +410,7 @@
                         <div class="container-fluid">
                             <div class="row">
                                 <div class="container-fluid domain-offer-image">
-                                    <a href="#"><img class="img-fluid" src="./dist/images/img-offers-11.jpg" alt="offers"></a>
+                                    <a href="#"><img class="img-fluid" src="./images/img-offers-11.jpg" alt="offers"></a>
                                 </div>
                                 <div class="container-fluid domain-offer-content">
                                     <div class="row">
@@ -727,7 +429,7 @@
                         <div class="container-fluid">
                             <div class="row">
                                 <div class="container-fluid domain-offer-image">
-                                    <a href="#"><img class="img-fluid" src="./dist/images/img-offers-12.jpg" alt="offers"></a>
+                                    <a href="#"><img class="img-fluid" src="./images/img-offers-12.jpg" alt="offers"></a>
                                 </div>
                                 <div class="container-fluid domain-offer-content">
                                     <div class="row">
@@ -746,7 +448,7 @@
                         <div class="container-fluid">
                             <div class="row">
                                 <div class="container-fluid domain-offer-image">
-                                    <a href="#"><img class="img-fluid" src="./dist/images/img-offers-13.jpg" alt="offers"></a>
+                                    <a href="#"><img class="img-fluid" src="./images/img-offers-13.jpg" alt="offers"></a>
                                 </div>
                                 <div class="container-fluid domain-offer-content">
                                     <div class="row">
@@ -765,7 +467,7 @@
                         <div class="container-fluid">
                             <div class="row">
                                 <div class="container-fluid domain-offer-image">
-                                    <a href="#"><img class="img-fluid" src="./dist/images/img-offers-14.jpg" alt="offers"></a>
+                                    <a href="#"><img class="img-fluid" src="./images/img-offers-14.jpg" alt="offers"></a>
                                 </div>
                                 <div class="container-fluid domain-offer-content">
                                     <div class="row">
@@ -790,13 +492,15 @@
                     <div class="col-12 col-md-4 col-xl-4">
                         <h4>Conversaciones personales sin esfuerzo</h4>
                         <p><strong>Reune todos tus canales</strong></p>
-                        <p>Apoya a nuestros cliente donde sea que se encuentre, unifica tus conversaciones de correo electrónico, redes sociales y conversaciones en vivo de forma ordenada.</p>
+                        <p>Apoya a nuestros cliente donde sea que se encuentre, unifica tus conversaciones de correo
+                            electrónico, redes sociales y conversaciones en vivo de forma ordenada.</p>
                         <p><strong>Ayuda a nuestros clientes rápidamente en tiempo real.</strong></p>
-                        <p>Una experiencia de chat en vivo, incluso cuando no estás en línea. Tener conversaciones personales con mensajes modernos en tiempo real.</p>
-                        <p class="text-center text-md-left"><button class="btn btn-black btn-fat">Ordenar ahora</button></p>
+                        <p>Una experiencia de chat en vivo, incluso cuando no estás en línea. Tener conversaciones
+                            personales con mensajes modernos en tiempo real.</p>
+                        <p class="text-center text-md-left"><button class="btn btn-black-to-green btn-fat">Ordenar ahora</button></p>
                     </div>
                     <div class="col-12 col-md-8 col-xl-8 communication-channel-bg">
-                        <img class="img-fluid" src="./dist/images/communication-channel.png" alt="channel">
+                        <img class="img-fluid" src="./images/communication-channel.png" alt="channel">
                     </div>
                 </div>
             </div>
@@ -811,10 +515,12 @@
                     <div class="col-lg-8 business-admin">
                         <div class="business-description">
                             <p class="business-description--title text-center">Potencia la productividad de las ventas</p>
-                            <p class="business-description--content text-center">NerdComPro te ofrece El mejor sistema de facturacion, sin
+                            <p class="business-description--content text-center">NerdComPro te ofrece El mejor sistema
+                                de facturacion, sin
                                 retrasar a tu equipo de ventas.</p>
-                            <p class="text-center"><button class="btn btn-black btn-fat">Ordenar ahora</button></p>
-                            <p class="business-description--info text-center">Versiones gratuitas de todos los productos de NerdcomPRO.</p>
+                            <p class="text-center"><button class="btn btn-black-to-green btn-fat">Ordenar ahora</button></p>
+                            <p class="business-description--info text-center">Versiones gratuitas de todos los
+                                productos de NerdcomPRO.</p>
                         </div>
                     </div>
                 </div>
@@ -825,8 +531,11 @@
             <div class="container">
                 <div class="row">
                     <div class="container-fluid extra-padding">
-                        <h5 class="text-center">Aprende y crece de la mano de un reconocido equipo de asistencia técnica y con el apoyo de una creciente comunidad</h5>
-                        <p class="text-center">No estarás solo. Domina la metodología inbound y saca el máximo partido a tus herramientas con el valioso apoyo del equipo de asistencia técnica de HubSpot y una comunidad de miles de profesionales del marketing y las ventas.</p>
+                        <h5 class="text-center">Aprende y crece de la mano de un reconocido equipo de asistencia
+                            técnica y con el apoyo de una creciente comunidad</h5>
+                        <p class="text-center">No estarás solo. Domina la metodología inbound y saca el máximo partido
+                            a tus herramientas con el valioso apoyo del equipo de asistencia técnica de HubSpot y una
+                            comunidad de miles de profesionales del marketing y las ventas.</p>
                     </div>
                     <div class="container-fluid">
                         <div class="row">
@@ -881,139 +590,31 @@
                 <div class="row">
                     <div class="col-md-6 order-1 order-md-0">
                         <h5>Empieza a crecer <span>¡HOY!</span></h5>
-                        <p>Gracias a las múltiples herramientas de Nerdcom pro que te ayudan a centralizar cada aspecto de tu empresa y al incondicional apoyo de un equipo comprometido con tu crecimiento, Administrar tu negocio nunca había sido tan fácil.</p>
+                        <p>Gracias a las múltiples herramientas de Nerdcom pro que te ayudan a centralizar cada aspecto
+                            de tu empresa y al incondicional apoyo de un equipo comprometido con tu crecimiento,
+                            Administrar tu negocio nunca había sido tan fácil.</p>
                         <p>Da el primer paso invierte el éxito de tu empresa</p>
-                        <p class="text-center text-md-left"><button class="btn btn-red btn-fat">Comienza ahora</button></p>
-                        <p class="text-small">Versiones gratuitas de todos los productos de NerdcomPRO. Comienza ahora y actualiza cada versión en función de tu crecimiento.</p>
+                        <p class="text-center text-md-left"><button class="btn btn-red-to-red btn-fat">Comienza ahora</button></p>
+                        <p class="text-small">Versiones gratuitas de todos los productos de NerdcomPRO. Comienza ahora
+                            y actualiza cada versión en función de tu crecimiento.</p>
                     </div>
                     <div class="col-md-6 order-0 order-md-1 text-center">
-                        <img class="img-fluid" src="./dist/images/nerdcom-tools.png" alt="tools">
-                        <img class="img-fluid" src="./dist/images/burbujas.png" alt="tools">
+                        <img class="img-fluid" src="./images/nerdcom-tools.png" alt="tools">
+                        <img class="img-fluid" src="./images/burbujas.png" alt="tools">
                     </div>
                 </div>
             </div>
         </div>
         <!-- Footer section -->
-        <footer class="row footer">
-            <div class="container">
-                <div class="row footer-menus">
-                    <div class="footer-menus-wrapper col-6 col-md-4 col-lg-3 col-xl-2">
-                        <p>Productos</p>
-                        <ul class="footer-menu list-unstyled">
-                            <li><a href="#">Nerdcom PRO</a></li>
-                            <li><a href="#">Nerdcom DOC</a></li>
-                            <li><a href="#">Nerdcom LAW</a></li>
-                            <li><a href="#">Site Lock</a></li>
-                            <li><a href="#">SSL</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-menus-wrapper col-6 col-md-4 col-lg-3 col-xl-2">
-                        <p>Servicios</p>
-                        <ul class="footer-menu list-unstyled">
-                            <li><a href="#">Diseño Web</a></li>
-                            <li><a href="#">Web Hosting</a></li>
-                            <li><a href="#">Wordpress Hosting</a></li>
-                            <li><a href="#">Web SEO</a></li>
-                            <li><a href="#">Community Manager</a></li>
-                            <li><a href="#">G Suite</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-menus-wrapper col-6 col-md-4 col-lg-3 col-xl-2">
-                        <p>Soporte</p>
-                        <ul class="footer-menu list-unstyled">
-                            <li><a href="#">Área de Clientes</a></li>
-                            <li><a href="#">Foro</a></li>
-                            <li><a href="#">Preguntas Frecuentes</a></li>
-                            <li><a href="#">Ayuda</a></li>
-                            <li><a href="#">Contactar</a></li>
-                            <li><a href="#">Abrir Ticket</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-menus-wrapper col-6 col-md-4 col-lg-3 col-xl-2">
-                        <p>Recursos</p>
-                        <ul class="footer-menu list-unstyled">
-                            <li><a href="#">Herramientas Gratis</a></li>
-                            <li><a href="#">Solicitar Características</a></li>
-                            <li><a href="#">Partners</a></li>
-                            <li><a href="#">Verificación de Licencia</a></li>
-                            <li><a href="#">Programa de Afiliado</a></li>
-                            <li><a href="#">Panel de Proyectos</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-menus-wrapper col-6 col-md-4 col-lg-3 col-xl-2">
-                        <p>Programas</p>
-                        <ul class="footer-menu list-unstyled">
-                            <li><a href="#">Impulsa</a></li>
-                            <li><a href="#">Webinars</a></li>
-                            <li><a href="#">Cooperativas</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-menus-wrapper col-6 col-md-4 col-lg-3 col-xl-2">
-                        <p>Compañía</p>
-                        <ul class="footer-menu list-unstyled">
-                            <li><a href="#">Quienes Somos</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Clientes</a></li>
-                            <li><a href="#">Trabajar con Nosotros</a></li>
-                            <li><a href="#">Contactar</a></li>
-                            <li><a href="#">Kai</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="row footer-info">
-                    <div class="col-lg-6">
-                        <div class="logo"><img src="./dist/images/logon.png" alt="anerdcom" class="img-fluid"></div>
-                        <p class="text-center text-lg-left">Suplidor de tecnología, servicios Hosting, Cloud y desarrollo líder en el mundo.</p>
-                        <p class="text-center text-lg-left">Registardo con el Numero RNC: 1.31.17191.5</p>
-                    </div>
-                    <div class="col-lg-6">
-                        <ul class="footer-menu-icons nav list-unstyled">
-                            <li class="nav-item">
-                                <a href="javascript:if(window.open('https://www.trustlogo.com/ttb_searcher/trustlogo?v_querytype=W&amp;v_shortname=SC5&amp;v_search=https://k.nerdcom.host/&amp;x=6&amp;y=5','tl_wnd_credentials'+(new Date()).getTime(),'toolbar=0,scrollbars=1,location=1,status=1,menubar=1,resizable=1,width=374,height=660,left=60,top=120')){};tLlB(tLTB);"
-                                    onmouseover="tLeB(event,'https://www.trustlogo.com/ttb_searcher/trustlogo?v_querytype=C&amp;v_shortname=SC5&amp;v_search=https://k.nerdcom.host/&amp;x=6&amp;y=5','tl_popupSC5')"
-                                    onmousemove="tLXB(event)" onmouseout="tLTC('tl_popupSC5')" ondragstart="return false;">
-                                    <img src="./dist/images/comodo_secure_seal_113x59_transp.png"
-                                    onmousedown="return tLKB(event,'https://www.trustlogo.com/ttb_searcher/trustlogo?v_querytype=W&amp;v_shortname=SC5&amp;v_search=https://k.nerdcom.host/&amp;x=6&amp;y=5');"
-                                    oncontextmenu="return tLLB(event);" alt="trustlogo">
-                                </a>
-                                <div id="tl_popupSC5" class="ssl-popup"
-                                    onmouseover="tLoB('tl_popupSC5')" onmousemove="tLpC('tl_popupSC5')" onmouseout="tLpB('tl_popupSC5')">&nbsp;</div>
-                            </li>
-                            <li class="nav-item"><a href="#"><img src="./dist/images/visa.svg" alt="pay"></a></li>
-                            <li class="nav-item"><a href="#"><img src="./dist/images/mastercard.svg" alt="pay"></a></li>
-                            <li class="nav-item"><a href="#"><img src="./dist/images/amex.svg" alt="pay"></a></li>
-                        </ul>
-                        <ul class="footer-menu-links nav list-unstyled">
-                            <li class="nav-item"><a href="#">Nosotros</a></li>
-                            <li class="nav-item"><a href="#">Política de Privacidad</a></li>
-                            <li class="nav-item"><a href="#">Términos del Servicio</a></li>
-                            <li class="nav-item"><a href="#">Legal</a></li>
-                        </ul>
-                        <p class="text-center text-lg-right">Copyright © 2018 NERDCOM. Todos los derechos reservados.</p>
-                    </div>
-                </div>
-            </div>
-        </footer>
+        <footer id="footer" class="row footer"></footer>
     </div>
     <!-- STYLES -->
     <noscript id="deferred-styles">
-        <link rel="stylesheet" href="./dist/main.css">
+        <link rel="stylesheet" href="./main.css">
     </noscript>
-    <script>
-    var loadDeferredStyles = function() {
-        var addStylesNode = document.getElementById("deferred-styles");
-        var replacement = document.createElement("div");
-        replacement.innerHTML = addStylesNode.textContent;
-        document.body.appendChild(replacement)
-        addStylesNode.parentElement.removeChild(addStylesNode);
-    };
-    var raf = window.requestAnimationFrame || window.mozRequestAnimationFrame ||
-        window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
-    if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
-        else window.addEventListener('load', loadDeferredStyles);
-    </script>
 
     <!-- SCRIPTS -->
-    <script src="./dist/scripts.min.js" async></script>
+    <script src="./scripts.min.js" async></script>
 </body>
+
 </html>

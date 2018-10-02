@@ -5,6 +5,7 @@ const path = {
     'fonts': './assets/fonts',
     'images': './assets/images',
     'sass': './assets/sass',
+    'templates': './assets/templates',
     'maps': './maps',
     'node_modules': './node_modules',
     'dist': './dist'
@@ -17,8 +18,8 @@ const concat = require('gulp-concat');
 const minify = require('gulp-minify');
 const order = require('gulp-order');
 const image = require('gulp-image');
+const html = require('gulp-htmlmin');
 const sourcemaps = require('gulp-sourcemaps');
-// const runSequence = require('run-sequence');
 
 // Moving third-party lib
 gulp.task( 'third-party', function () {
@@ -101,12 +102,26 @@ gulp.task( 'scripts', function(){
 
 });
 
+// HTML minification
+gulp.task( 'html', function(){
+
+    return gulp.src( `${path.templates}/**/*.html` )
+        .pipe( html({
+            collapseWhitespace: true,
+            removeComments: true
+        }))
+        .pipe( gulp.dest( path.dist ) );
+
+});
+
 // Watch any files edition
 gulp.task('watch', function () {
+    gulp.watch( path.node_modules, [ 'third-party' ] );
     gulp.watch( `${path.sass}/**/*.{sass, scss}`, [ 'compile-sass' ] );
     gulp.watch( `${path.js}/**/*.js`, [ 'scripts' ]);
     gulp.watch( `${path.images}/**/*.*`, [ 'assets-images' ]);
     gulp.watch( `${path.fonts}/**/*.*`, [ 'assets-fonts' ]);
+    gulp.watch( `${path.templates}/**/*.html`, [ 'html' ]);
 });
 
 // Build Dist

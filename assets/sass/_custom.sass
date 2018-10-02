@@ -2,32 +2,41 @@
 body 
     font-size: 13px
 
-
 body.no-scroll 
     overflow: hidden
-
 
 a 
     text-decoration: none !important
 
+// UTILS
+.full-height
+    height: 100%
+    max-height: 100%
 
-.fa-lock
-    color: #5bc758 !important
+.no-margin
+    margin: 0
 
+.no-padding
+    padding: 0
 
-.text-orange 
-    color: #ECA93F
-
+.p-relative
+    position: relative !important
 
 .extra-padding 
     padding-left: 15px
     padding-right: 15px
 
-
 .hamburger 
     padding-bottom: 0
     float: left
 
+// BUTTONS
+.btn-blk-mobile
+    display: block !important
+    width: 100%
+
+.btn-fat 
+    padding: 20px 60px
 
 .btn-xl 
     padding: .7rem 4rem
@@ -35,54 +44,38 @@ a
     line-height: 1.7
     border-radius: .5rem
 
-
 .btn-primary-orange 
     color: white
     background: linear-gradient(131.61deg, #FF9052 0%, #FF6B17 100%)
     transition: .3s
+    &:hover 
+        background: linear-gradient(131.61deg, #CC6012 0%, #CC3814 100%)
 
-
-.btn-primary-orange:hover 
-    background: linear-gradient(131.61deg, #CC6012 0%, #CC3814 100%)
-
-
-.btn-orange 
+.btn-orange-to-orange
     color: white
     background: linear-gradient(to bottom, #fd4f00 0%, #de3723 100%)
     transition: .3s
+    &:hover 
+        background: linear-gradient(to bottom, #dd4702 0%, #b12415 100%)
 
-
-.btn-orange:hover 
-    background: linear-gradient(to bottom, #dd4702 0%, #b12415 100%)
-
-
-.btn-black 
+.btn-black-to-green
     color: white
     background: black
     transition: .3s
+    &:hover 
+        background: #5bc758
 
-
-.btn-black:hover 
-    background: #5bc758
-
-
-.btn-red 
+.btn-red-to-red
     color: white
     background: #db1b1b
     transition: .3s
+    &:hover 
+        background: #950505
 
-
-.btn-red:hover 
-    background: #950505
-
-
-.btn-blk-mobile 
-    display: block !important
-    width: 100%
-
-
-.btn-fat 
-    padding: 20px 60px
+// TEXTOS
+.text-spacing
+    line-height: 2em
+    font-size: 16px    
 
 
 /* HEADER Styles */
@@ -174,7 +167,7 @@ ul.main-menu > li span
 
 
 ul.main-menu > li span i 
-    margin-top: 5px
+    margin-top: 3px
     float: right
 
 

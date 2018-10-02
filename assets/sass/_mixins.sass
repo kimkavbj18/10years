@@ -1,0 +1,15 @@
+// MIXIN FOR TEXT BG AND BUTTONS COLORS
+@each $color-key in map-keys( $site-colors )
+    $color: map-get( $site-colors, $color-key )
+    .text-#{ $color-key }
+        color: $color
+        
+    a.text-#{ $color-key }
+        @include hover-focus
+        color: darken($color, 10%) !important
+
+    .bg-#{ $color-key }
+        background-color: $color
+
+    .btn-#{ $color-key }
+        @include button-variant($color, $color)
