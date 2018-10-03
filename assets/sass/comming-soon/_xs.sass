@@ -3,27 +3,24 @@ html
     max-height: 100%
 
 .comming-soon
-    .logo-soon
-        position: absolute
-        z-index: 20
-        width: 200px
-        top: -6em
-        left: -5px
 
     .bg-video
         position: absolute
         z-index: 10
-        top: 50%
-        left: 50%
-        transform: translate( -50%, -50% )
+        top: 0
+        bottom: 0
+        left: 0
+        right: 0
         width: auto
         min-width: 100%
         height: auto
         min-height: 100%
+        background-color: $black
         overflow: hidden
         
         video
             position: absolute
+            z-index: 10
             top: 50%
             left: 50%
             transform: translate( -50%, -50% )
@@ -32,18 +29,32 @@ html
             height: auto
             min-height: 100%
 
+        &::after 
+            content: ""
+            position: absolute
+            z-index: 20
+            top: 0
+            bottom: 0
+            left: 0
+            right: 0
+            background-color: rgba( $black,.5 )
+
     &--info
-        position: absolute
+        position: relative
         z-index: 20
-        top: 50%
-        left: 50%
-        transform: translate( -50%, -50% )
-        font-size: 2.3em
+        margin: 50px auto
+        width: 85%
+
+        .countdown
+            margin-bottom: 1.5rem
+
+    .logo-soon
+        max-width: 150px
 
     .content
         width: 80%
 
-    .countdown
+    /* .countdown
         position: absolute
         z-index: 20
         bottom: 2em
@@ -51,4 +62,15 @@ html
         width: 13%
         border-bottom: 5px solid #fd4f00
         border-radius: 5px
-        text-align: center
+        text-align: center */
+
+    .under-construction
+        margin-top: 50px 
+
+    .social-networks
+        margin-bottom: 50px
+        
+        .nav
+            .nav-link
+                padding-left: .5rem
+                padding-right: .5rem
