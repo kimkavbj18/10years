@@ -17,9 +17,12 @@
     <link rel="canonical" href="https://k.nerdcom.host/">
     <link rel="shortcut icon" href="./images/favicon.ico">
 </head>
-<body class="comming-soon full-height" onload="counter">
-    <div class="container-fluid no-padding h-100">
-        <div class="row no-gutters h-100">
+<body class="comming-soon" onload="counter">
+    <div class="container-fluid">     
+        <!-- Header section -->
+        <header id="header" class="row header mobile-header"></header>
+        
+        <div class="row margin-top-bottom">
             <div class="col-12 col-md-9 p-relative">
                 <!-- Background Vídeo -->
                 <div class="bg-video">
@@ -27,14 +30,15 @@
                 </div>
                 <!-- Comming Soon Info -->
                 <div class="content comming-soon--info text-center text-md-left">
-                    <a class="d-block" href="/"><img class="img-fluid logo-soon" src="./images/logon.png" alt="anerdcom"></a>
-                    <h1 class="display-4 font-weight-bold text-white text-uppercase">Comming Soon</h1>
+                    <h1 class="font-weight-bold text-white text-uppercase">Comming Soon</h1>
                     <p class="lead text-white">Celebrando 10 años de crear tecnología como buen dominicano</p>
                     <!-- Counterdown -->
                     <div class="countdown">
-                        <p id="countdown" class="h1 text-white">0 Días y 00 Horas</p>
+                        <p id="countdown" class="h2 text-white">0 Días y 00 Horas</p>
                     </div>
-                    <button class="btn btn-red btn-xl">Contáctenos</button>
+                    <div class="d-block d-sm-inline-block">
+                        <button class="btn btn-block btn-red btn-fat">Contáctenos</button>
+                    </div>
                 </div>
             </div>
             <!-- Aside -->
@@ -46,16 +50,17 @@
                 <!-- Social Network -->
                 <div class="content social-networks">
                     <nav class="nav justify-content-center">
-                        <a href="#" class="nav-item nav-link"><i class="fab fa-twitter fa-2x text-white"></i></a>
-                        <a href="#" class="nav-item nav-link"><i class="fab fa-facebook fa-2x text-white"></i></a>
-                        <a href="#" class="nav-item nav-link"><i class="fab fa-instagram fa-2x text-white"></i></a>
-                        <a href="#" class="nav-item nav-link"><i class="fab fa-linkedin fa-2x text-white"></i></a>
-                        <a href="#" class="nav-item nav-link"><i class="fab fa-youtube fa-2x text-white"></i></a>
-                        <a href="#" class="nav-item nav-link"><i class="fab fa-flickr fa-2x text-white"></i></a>
+                        <a href="https://twitter.com/nerdcomhost" class="nav-item nav-link"><i class="fab fa-twitter fa-2x text-white"></i></a>
+                        <a href="https://facebook.com/nerdcomllc/" class="nav-item nav-link"><i class="fab fa-facebook fa-2x text-white"></i></a>
+                        <a href="https://instagram.com/nerdcomhost" class="nav-item nav-link"><i class="fab fa-instagram fa-2x text-white"></i></a>
+                        <a href="https://instagram.com/nerdcomhost" class="nav-item nav-link"><i class="fab fa-linkedin fa-2x text-white"></i></a>
+                        <a href="https://www.youtube.com/user/nerdcomhost" class="nav-item nav-link"><i class="fab fa-youtube fa-2x text-white"></i></a>
                     </nav>
                 </div>
             </div>
         </div>
+        <!-- Footer section -->
+        <footer id="footer" class="row footer"></footer>
     </div>
     <!-- STYLES -->
     <noscript id="deferred-styles">
