@@ -89,6 +89,7 @@ gulp.task( 'scripts', function(){
             'slick.js',
             'trustlogo.js',
             '*.custom.js',
+            'chatstack.js'
         ]))
         .pipe( concat( 'scripts.js' ) )
         .pipe(minify({
