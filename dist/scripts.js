@@ -19927,18 +19927,18 @@ else window.addEventListener('load', loadDeferredStyles);
     });
 })(jQuery);
 TrustLogo("https://nerdcom.host/comodo_secure_seal_113x59_transp.png", "SC5", "none");
-// var Chatstack = {};
-// Chatstack.server = 'panel.nerdcom.host/modules';
-//
-// (function(d, $, undefined) {
-//     $(window).ready(function() {
-//         Chatstack.e = []; Chatstack.ready = function (c) { Chatstack.e.push(c); }
-//         var b = d.createElement('script'); b.type = 'text/javascript'; b.async = true;
-//         b.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + Chatstack.server + '/livehelp/scripts/jquery.livehelp.js';
-//         var s = d.getElementsByTagName('script')[0];
-//         s.parentNode.insertBefore(b, s);
-//     });
-// })(document, jQuery);
+var Chatstack = {};
+Chatstack.server = 'panel.nerdcom.host/modules';
+
+(function(d, $, undefined) {
+    $(window).ready(function() {
+        Chatstack.e = []; Chatstack.ready = function (c) { Chatstack.e.push(c); }
+        var b = d.createElement('script'); b.type = 'text/javascript'; b.async = true;
+        b.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + Chatstack.server + '/livehelp/scripts/jquery.livehelp.js';
+        var s = d.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(b, s);
+    });
+})(document, jQuery);
 
 // Set the date we're counting down to
 var countDownDate = new Date("Oct 31, 2018 00:00:00").getTime();
