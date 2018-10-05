@@ -2,26 +2,30 @@
 var countDownDate = new Date("Oct 31, 2018 00:00:00").getTime();
 
 // Update the count down every 1 second
-var x = setInterval(function() {
+var countDown = document.getElementById("countdown") || '';
 
-  // Get todays date and time
-  var now = new Date().getTime();
+if ( countDown !== '') {
+    var x = setInterval(function() {
 
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
+        // Get todays date and time
+        var now = new Date().getTime();
 
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
 
-  // Display the result in the element with id="countdown"
-  document.getElementById("countdown").innerHTML = days + " Días y " + hours + " Horas";
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  // If the count down is finished, write some text
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("countdown").innerHTML = "Finalizado";
-  }
-}, 1000);
+        // Display the result in the element with id="countdown"
+        countDown.innerHTML = days + " Días y " + hours + " Horas";
+
+        // If the count down is finished, write some text
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("countdown").innerHTML = "Finalizado";
+        }
+    }, 1000);
+}
