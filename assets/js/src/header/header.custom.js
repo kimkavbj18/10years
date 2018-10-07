@@ -8,10 +8,10 @@ var headerTemplate = `<div class="container">
                             </span>
                         </button>
                         <div class="logo">
-                            <a href="/"><img src="./images/logon.png" alt="anerdcom" class="img-fluid"></a>
+                            <a href="/"><img src="${header.dataset.pathImages}/logon.png" alt="anerdcom" class="img-fluid"></a>
                         </div>
                         <div class="logo-white">
-                            <a href="/"><img src="./images/logob.png" alt="bnerdcom" class="img-fluid"></a>
+                            <a href="/"><img src="${header.dataset.pathImages}/logob.png" alt="bnerdcom" class="img-fluid"></a>
                         </div>
                         <nav class="navigation nav-item hide-desktop">
                             <ul class="secondary-menu list-unstyled nav">
@@ -223,7 +223,7 @@ var headerTemplate = `<div class="container">
                                                     <li><a class="link-title-company" href="comming-soon.html">Clientes <i class="fa fa-users fa-fw"></i></a></li>
                                                     <li><a class="link-title-company" href="comming-soon.html">Trabaja con nosotros <i class="fab fa-dropbox fa-fw"></i></a></li>
                                                     <li><a class="link-title-company" href="comming-soon.html">Media Kit</a></li>
-                                                    <li><a class="link-title-company" href="comming-soon.html">KAI  <img src="./images/kai.png" alt="nerdcom_kai"></a></li>
+                                                    <li><a class="link-title-company" href="comming-soon.html">KAI  <img src="${header.dataset.pathImages}/kai.png" alt="nerdcom_kai"></a></li>
                                                 </ul>
                                             </li>
                                             <li>
@@ -254,15 +254,15 @@ var headerTemplate = `<div class="container">
                                         <ul class="menu list-unstyled">
                                             <li class="text-left  text-lg-center">
                                                 <a class="link-title-center" href="comming-soon.html">Ayuda y Soporte</a>
-                                                <img class="nav-img-contact hide-mobile" src="./images/supp.svg" alt="support">
+                                                <img class="nav-img-contact hide-mobile" src="${header.dataset.pathImages}/supp.svg" alt="support">
                                             </li>
                                             <li class="text-left text-lg-center">
                                                 <a class="link-title-center" href="comming-soon.html">Realiza una pregunta</a>
-                                                <img class="nav-img-contact hide-mobile" src="./images/quest.svg" alt="quest">
+                                                <img class="nav-img-contact hide-mobile" src="${header.dataset.pathImages}/quest.svg" alt="quest">
                                             </li>
                                             <li class="text-left text-lg-center">
                                                 <a class="link-title-center" href="comming-soon.html">Preguntas frecuentes</a>
-                                                <img class="nav-img-contact hide-mobile" src="./images/faq.svg" alt="faq">
+                                                <img class="nav-img-contact hide-mobile" src="${header.dataset.pathImages}/faq.svg" alt="faq">
                                             </li>
                                         </ul>    
                                     </div>
@@ -280,18 +280,18 @@ var headerTemplate = `<div class="container">
                                             <li>
                                                 <span>América</span>
                                                 <ul class="list-unstyled">
-                                                    <li><a href="comming-soon.html"><img class="flags" src="./images/usa.png" alt="usa"> USA</a></li>
-                                                    <li><a href="comming-soon.html"><img class="flags" src="./images/republicadominicana.png" alt="rep_dominicana"> R. Dominicana</a></li>
-                                                    <li><a href="comming-soon.html"><img class="flags" src="./images/argentina.png" alt="argentina"> Argentina</a></li>
-                                                    <li><a href="comming-soon.html"><img class="flags" src="./images/mex.png" alt="mexico"> México</a></li>
-                                                    <li><a href="comming-soon.html"><img class="flags" src="./images/chile.png" alt="chile"> Chile</a></li>
-                                                    <li><a href="comming-soon.html"><img class="flags" src="./images/venezuela.png" alt="venezuela"> Venezuela</a></li>
+                                                    <li><a href="comming-soon.html"><img class="flags" src="${header.dataset.pathImages}/usa.png" alt="usa"> USA</a></li>
+                                                    <li><a href="comming-soon.html"><img class="flags" src="${header.dataset.pathImages}/republicadominicana.png" alt="rep_dominicana"> R. Dominicana</a></li>
+                                                    <li><a href="comming-soon.html"><img class="flags" src="${header.dataset.pathImages}/argentina.png" alt="argentina"> Argentina</a></li>
+                                                    <li><a href="comming-soon.html"><img class="flags" src="${header.dataset.pathImages}/mex.png" alt="mexico"> México</a></li>
+                                                    <li><a href="comming-soon.html"><img class="flags" src="${header.dataset.pathImages}/chile.png" alt="chile"> Chile</a></li>
+                                                    <li><a href="comming-soon.html"><img class="flags" src="${header.dataset.pathImages}/venezuela.png" alt="venezuela"> Venezuela</a></li>
                                                 </ul>
                                             </li>
                                             <li>
                                                 <span>Europa</span>
                                                 <ul class="list-unstyled">
-                                                    <li><a href="comming-soon.html"><img class="flags" src="./images/es.svg" alt="españa"> España</a></li>
+                                                    <li><a href="comming-soon.html"><img class="flags" src="${header.dataset.pathImages}/es.svg" alt="españa"> España</a></li>
                                                 </ul>
                                             </li>
                                         </ul>

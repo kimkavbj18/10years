@@ -1,0 +1,39 @@
+.nerdcom-platform-menu
+    .nav-link
+        position: relative
+        padding: 1.3rem 1rem
+        color: $gray-700
+        font-size: 1.1em
+
+        &:not(.active):not(:first-child):before
+            position: absolute
+            top: 25%
+            bottom: 25%
+            left: 0
+            content: ""
+            border-left: 1px solid $gray-300
+
+        &.active + .nav-link:before
+            border-left: none
+
+    .active
+        color: white
+
+        &.ncp-home
+            background-color: $black
+
+        &.prices
+            background-color: $blue
+
+        &.tour
+            background-color: $orange
+
+        &.integration
+            background-color: $green
+
+        &.demo
+            background-color: $dark-orange
+
+        &.comparison
+            background-color: $red
+

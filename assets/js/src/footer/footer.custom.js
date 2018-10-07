@@ -66,7 +66,7 @@ var footerTemplate = `<div class="container">
                 </div>
                 <div class="row footer-info">
                     <div class="col-lg-6">
-                        <div class="logo"><a href="/"><img src="./images/logon.png" alt="anerdcom" class="img-fluid"></a></div>
+                        <div class="logo"><a href="/"><img src="${footer.dataset.pathImages}/logon.png" alt="anerdcom" class="img-fluid"></a></div>
                         <p class="text-center text-lg-left">Suplidor de tecnología, servicios Hosting, Cloud y desarrollo líder en el mundo.</p>
                         <p class="text-center text-lg-left">Registardo con el Numero RNC: 1.31.17191.5</p>
                     </div>
@@ -76,16 +76,16 @@ var footerTemplate = `<div class="container">
                                 <a href="javascript:if(window.open('https://www.trustlogo.com/ttb_searcher/trustlogo?v_querytype=W&amp;v_shortname=SC5&amp;v_search=https://k.nerdcom.host/&amp;x=6&amp;y=5','tl_wnd_credentials'+(new Date()).getTime(),'toolbar=0,scrollbars=1,location=1,status=1,menubar=1,resizable=1,width=374,height=660,left=60,top=120')){};tLlB(tLTB);"
                                     onmouseover="tLeB(event,'https://www.trustlogo.com/ttb_searcher/trustlogo?v_querytype=C&amp;v_shortname=SC5&amp;v_search=https://k.nerdcom.host/&amp;x=6&amp;y=5','tl_popupSC5')"
                                     onmousemove="tLXB(event)" onmouseout="tLTC('tl_popupSC5')" ondragstart="return false;">
-                                    <img src="./images/comodo_secure_seal_113x59_transp.png"
+                                    <img src="${footer.dataset.pathImages}/comodo_secure_seal_113x59_transp.png"
                                     onmousedown="return tLKB(event,'https://www.trustlogo.com/ttb_searcher/trustlogo?v_querytype=W&amp;v_shortname=SC5&amp;v_search=https://k.nerdcom.host/&amp;x=6&amp;y=5');"
                                     oncontextmenu="return tLLB(event);" alt="trustlogo">
                                 </a>
                                 <div id="tl_popupSC5" class="ssl-popup"
                                     onmouseover="tLoB('tl_popupSC5')" onmousemove="tLpC('tl_popupSC5')" onmouseout="tLpB('tl_popupSC5')">&nbsp;</div>
                             </li>
-                            <li class="nav-item"><a href="comming-soon.html"><img src="./images/visa.svg" alt="pay"></a></li>
-                            <li class="nav-item"><a href="comming-soon.html"><img src="./images/mastercard.svg" alt="pay"></a></li>
-                            <li class="nav-item"><a href="comming-soon.html"><img src="./images/amex.svg" alt="pay"></a></li>
+                            <li class="nav-item"><a href="comming-soon.html"><img src="${footer.dataset.pathImages}/visa.svg" alt="pay"></a></li>
+                            <li class="nav-item"><a href="comming-soon.html"><img src="${footer.dataset.pathImages}/mastercard.svg" alt="pay"></a></li>
+                            <li class="nav-item"><a href="comming-soon.html"><img src="${footer.dataset.pathImages}/amex.svg" alt="pay"></a></li>
                         </ul>
                         <ul class="footer-menu-links nav list-unstyled">
                             <li class="nav-item"><a href="comming-soon.html">Nosotros</a></li>
