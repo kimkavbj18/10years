@@ -14,6 +14,9 @@
     .btn-#{ $color-key }
         @include button-variant($color, $color)
 
+    .border-#{ $color-key }
+        border-color: $color !important
+
 // CREATING SPACER USING PADDING
 @function isMultiple( $i, $multiple )
     @return ( $i % $multiple == 0 )
