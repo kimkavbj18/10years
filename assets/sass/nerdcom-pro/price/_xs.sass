@@ -1,35 +1,51 @@
 .prices
-    margin-top: 4em
-    
-    .prices-plan--offer
-        padding-top: 3rem
+    &-plan
+        position: relative
+        z-index: 10
+        margin-bottom: 50px
 
-    .prices-plan--up
-        margin-top: -1.2em  
+        &-offer
+            margin-bottom: 1.5rem
+            padding:
+                top: 3rem
+                bottom: 3rem
 
-    .border-plan-up
-        border: 2px solid #de3723 !important
-        height: 46%
-        padding-top: 4.7em
-    
-    .price-off
-        display: inline-block
-        width: 40px
-        height: 40px
-        line-height: 40px 
-        border-radius: 1000px
-        color: white
-        font-weight: 700
-        margin-left: .5em
-        
-    .price 
-        
-        .sym-dollar
-            &:before
-                content: "$"
-                position: relative
-                vertical-align: top
-                top: 15px
-                font-size: 20px
-                font-weight: 700
-                
+            p
+                margin: 0
+
+            &-old
+                span
+                    display: inline-block
+                    width: 40px
+                    height: 40px
+                    line-height: 40px
+
+            &-price
+                .sym-dollar
+                    &:before
+                        content: "$"
+                        position: relative
+                        vertical-align: top
+                        top: 15px
+                        font-size: 20px
+                        font-weight: 700
+
+        &-features
+            li
+                span
+                    margin-bottom: 10px
+                    padding: 0
+
+        &--featured
+            z-index: 20
+            margin-top: 0
+
+        &--featured &-offer
+            padding:
+                top: 4.5rem
+                bottom: 4.5rem
+            margin:
+                left: -1px
+                right: -1px
+            border: 1px solid #de3723 !important
+

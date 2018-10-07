@@ -13,3 +13,33 @@
 
     .btn-#{ $color-key }
         @include button-variant($color, $color)
+
+// CREATING SPACER USING PADDING
+@function isMultiple( $i, $multiple )
+    @return ( $i % $multiple == 0 )
+
+@for $i from 5 through $spacer-limit
+    @if( isMultiple( $i, $measure ) )
+        .spacer-in-top-#{$i}
+            padding-top: 0px + $i !important
+
+        .spacer-in-bottom-#{$i}
+            padding-bottom: 0px + $i !important
+
+        .spacer-in-left-#{$i}
+            padding-left: 0px + $i !important
+
+        .spacer-in-right-#{$i}
+            padding-right: 0px + $i !important
+
+        .spacer-out-top-#{$i}
+            margin-top: 0px + $i !important
+
+        .spacer-out-bottom-#{$i}
+            margin-bottom: 0px + $i !important
+
+        .spacer-out-left-#{$i}
+            margin-left: 0px + $i !important
+
+        .spacer-out-right-#{$i}
+            margin-right: 0px + $i !important
