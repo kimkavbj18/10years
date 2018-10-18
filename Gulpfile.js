@@ -6,6 +6,7 @@ const path = {
     'images': './assets/images',
     'sass': './assets/sass',
     'templates': './assets/templates',
+    'pdf': './assets/pdf',
     'maps': './maps',
     'node_modules': './node_modules',
     'dist': './dist'
@@ -60,6 +61,14 @@ gulp.task( 'assets-fonts', function () {
 
     gulp.src( `${path.fonts}/**/*.*` )
         .pipe( gulp.dest( `${path.dist}/fonts` ));
+
+});
+
+// Moving PDF
+gulp.task( 'assets-pdf', function () {
+
+    gulp.src( `${path.pdf}/**/*.*` )
+        .pipe( gulp.dest( `${path.dist}/pdf` ));
 
 });
 
@@ -123,6 +132,7 @@ gulp.task('watch', function () {
     gulp.watch( `${path.images}/**/*.*`, [ 'assets-images' ]);
     gulp.watch( `${path.fonts}/**/*.*`, [ 'assets-fonts' ]);
     gulp.watch( `${path.templates}/**/*.html`, [ 'html' ]);
+    gulp.watch( `${path.pdf}/**/*.pdf`, [ 'assets-pdf' ]);
 });
 
 // Build Dist
