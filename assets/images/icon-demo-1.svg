@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="70px" height="70px" viewBox="0 0 70 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>icon--unified-channels</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Demo-page" transform="translate(-113.000000, -1029.000000)">
+            <g id="Group-2" transform="translate(113.000000, 921.000000)">
+                <g id="icon--unified-channels" transform="translate(0.000000, 108.000000)">
+                    <rect id="Rectangle-243" fill="#EBEEF0" x="0" y="0" width="70" height="70" rx="4"></rect>
+                    <g id="Group-4" transform="translate(17.000000, 15.000000)" stroke-width="2">
+                        <path d="M7.84621765,8.93562353 L11.9189824,14.5352118" id="Stroke-161" stroke="#444444"></path>
+                        <path d="M7.84621765,31.0643765 L11.9189824,25.4647882" id="Stroke-162" stroke="#444444"></path>
+                        <path d="M23.7058824,20 L31.1176471,20" id="Stroke-163" stroke="#444444"></path>
+                        <path d="M0,4.94117647 C0,2.21241176 2.21241176,0 4.94117647,0 C7.66994118,0 9.88235294,2.21241176 9.88235294,4.94117647 C9.88235294,7.66994118 7.66994118,9.88235294 4.94117647,9.88235294 C2.21241176,9.88235294 0,7.66994118 0,4.94117647 L0,4.94117647 Z" id="Stroke-167" stroke="#444444" stroke-linecap="square"></path>
+                        <path d="M0,35.0588235 C0,32.3300588 2.21241176,30.1176471 4.94117647,30.1176471 C7.66994118,30.1176471 9.88235294,32.3300588 9.88235294,35.0588235 C9.88235294,37.7875882 7.66994118,40 4.94117647,40 C2.21241176,40 0,37.7875882 0,35.0588235 L0,35.0588235 Z" id="Stroke-168" stroke="#444444" stroke-linecap="square"></path>
+                        <path d="M31.1176471,20 C31.1176471,17.2712353 33.3300588,15.0588235 36.0588235,15.0588235 C38.7875882,15.0588235 41,17.2712353 41,20 C41,22.7287647 38.7875882,24.9411765 36.0588235,24.9411765 C33.3300588,24.9411765 31.1176471,22.7287647 31.1176471,20 L31.1176471,20 Z" id="Stroke-169" stroke="#444444" stroke-linecap="square"></path>
+                        <path d="M17.2923528,11.5882353 C21.9367752,11.5882353 25.7023526,15.3538127 25.7023526,19.9982351 C25.7023526,24.6426576 21.9367752,28.408235 17.2923528,28.408235 C12.6479304,28.408235 8.88235294,24.6426576 8.88235294,19.9982351 C8.88235294,15.3538127 12.6479304,11.5882353 17.2923528,11.5882353 Z" id="Stroke-170" stroke="#F37070" fill="#FFFFFF" stroke-linecap="square"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
