@@ -46,3 +46,8 @@
 
         .spacer-out-right-#{$i}
             margin-right: 0px + $i !important
+
+@for $i from 1 through $border-width-limit
+    .border-width-#{$i}
+        border-width: $i + px !important
+
