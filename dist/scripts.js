@@ -20392,31 +20392,64 @@ var platform = document.getElementById('platform'),
         'ncp-home': {
             'title': 'Inicio',
             'link': './index.html',
+            'show': {
+                'pro': true,
+                'doc': true,
+                'law': true
+            }
         },
         'prices': {
             'title': 'Precios',
             'link': './prices.html',
+            'show': {
+                'pro': true,
+                'doc': true,
+                'law': true
+            }
         },
         'tour': {
             'title': 'Tour',
             'link': './tour.html',
+            'show': {
+                'pro': true,
+                'doc': true,
+                'law': true
+            }
         },
         'integration': {
             'title': 'Integración',
             'link': './integration.html',
+            'show': {
+                'pro': true,
+                'doc': false,
+                'law': false
+            }
         },
         'demo': {
             'title': 'Demo',
             'link': './demo.html',
+            'show': {
+                'pro': true,
+                'doc': true,
+                'law': true
+            }
         },
         'comparison': {
             'title': 'Comparación',
             'link': './comparison.html',
+            'show': {
+                'pro': true,
+                'doc': false,
+                'law': false
+            }
         },
     };
 
 for ( var key in menu ) {
-    menuHtml += `<a class="nav-item nav-link ${key}${ platform.dataset.active === key ? ' active' : '' }" href="${menu[key].link}">${menu[key].title}</a>\n`;
+    // console.log(menu[key].show[platform.dataset.page]);
+    if (menu[key].show[platform.dataset.page]) {
+        menuHtml += `<a class="nav-item nav-link ${key}${ platform.dataset.active === key ? ' active' : '' }" href="${menu[key].link}">${menu[key].title}</a>\n`;
+    }
 }
 
 platformTemplate = `
