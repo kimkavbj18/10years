@@ -1,4 +1,25 @@
 .nerdcom-platform-menu
+    .hamburger
+        padding: 10px 10px 6px 10px
+        float: right
+
+        .hamburger-inner,
+        .hamburger-inner::before,
+        .hamburger-inner::after
+            background-color: $gray-700
+
+    .nav
+        flex-wrap: nowrap
+        margin-left: -15px
+        margin-right: -15px
+        height: 0
+        overflow: hidden
+        transition: height .3s ease-out
+
+        &.is-active
+            height: 380px
+            transition: height .3s ease-in
+
     .nav-link
         position: relative
         padding: 1.3rem 1rem

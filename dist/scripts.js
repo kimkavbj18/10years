@@ -19874,7 +19874,7 @@ function TrustLogo(t,e,L){return host=location.host,current_code=e,tLUC(t,e,e,L)
             
         });
     
-        $('button.hamburger').on( 'click', function(){
+        $('header button.hamburger').on( 'click', function(){
     
             let windowWidth = w.width();
             
@@ -19883,6 +19883,13 @@ function TrustLogo(t,e,L){return host=location.host,current_code=e,tLUC(t,e,e,L)
     
             if ( windowWidth < 992 )
                 $('body').toggleClass('no-scroll');
+        });
+
+        $('.nerdcom-platform-menu button.hamburger').on( 'click', function(){
+
+            $(this).toggleClass('is-active');
+            $('#platform .nav').toggleClass('is-active');
+
         });
 
     });
@@ -20409,14 +20416,25 @@ var platform = document.getElementById('platform'),
     };
 
 for ( var key in menu ) {
-    menuHtml += `<a class="nav-item nav-link rounded-bottom ${key}${ platform.dataset.active === key ? ' active' : '' }" href="${menu[key].link}">${menu[key].title}</a>\n`;
+    menuHtml += `<a class="nav-item nav-link ${key}${ platform.dataset.active === key ? ' active' : '' }" href="${menu[key].link}">${menu[key].title}</a>\n`;
 }
 
-platformTemplate = `<div class="container">
+platformTemplate = `
+            <div class="container">
+                <div class="row hamburger-button spacer-in-top-20 spacer-in-bottom-20">
+                    <div class="container-fluid">
+                        <button class="hamburger hamburger--collapse border border-gray-700 rounded" type="button">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
                 <nav class="nav justify-content-center nav-fill flex-column flex-sm-row">
                     ${menuHtml}
                 </nav>
             </div>`;
 
 platform.innerHTML = platformTemplate;
+
 //# sourceMappingURL=maps/scripts.js.map
