@@ -3,3 +3,11 @@
 
 # Node Modules
 node_modules/
+
+# Sublime Text
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+*.sublime-project
+*.sublime-*.cache

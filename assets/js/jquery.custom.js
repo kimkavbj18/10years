@@ -30,7 +30,7 @@
             
         });
     
-        $('button.hamburger').on( 'click', function(){
+        $('header button.hamburger').on( 'click', function(){
     
             let windowWidth = w.width();
             
@@ -39,6 +39,13 @@
     
             if ( windowWidth < 992 )
                 $('body').toggleClass('no-scroll');
+        });
+
+        $('.nerdcom-platform-menu button.hamburger').on( 'click', function(){
+
+            $(this).toggleClass('is-active');
+            $('#platform .nav').toggleClass('is-active');
+
         });
 
     });

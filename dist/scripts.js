@@ -19874,7 +19874,7 @@ function TrustLogo(t,e,L){return host=location.host,current_code=e,tLUC(t,e,e,L)
             
         });
     
-        $('button.hamburger').on( 'click', function(){
+        $('header button.hamburger').on( 'click', function(){
     
             let windowWidth = w.width();
             
@@ -19883,6 +19883,13 @@ function TrustLogo(t,e,L){return host=location.host,current_code=e,tLUC(t,e,e,L)
     
             if ( windowWidth < 992 )
                 $('body').toggleClass('no-scroll');
+        });
+
+        $('.nerdcom-platform-menu button.hamburger').on( 'click', function(){
+
+            $(this).toggleClass('is-active');
+            $('#platform .nav').toggleClass('is-active');
+
         });
 
     });
@@ -19978,63 +19985,63 @@ var footerTemplate = `<div class="container">
                     <div class="footer-menus-wrapper col-6 col-md-4 col-lg-3 col-xl-2">
                         <p>Productos</p>
                         <ul class="footer-menu list-unstyled">
-                            <li><a href="comming-soon.html">Nerdcom PRO</a></li>
-                            <li><a href="comming-soon.html">Nerdcom DOC</a></li>
-                            <li><a href="comming-soon.html">Nerdcom LAW</a></li>
-                            <li><a href="comming-soon.html">Site Lock</a></li>
-                            <li><a href="comming-soon.html">SSL</a></li>
+                            <li><a href="../comming-soon.html">Nerdcom PRO</a></li>
+                            <li><a href="../comming-soon.html">Nerdcom DOC</a></li>
+                            <li><a href="../comming-soon.html">Nerdcom LAW</a></li>
+                            <li><a href="../comming-soon.html">Site Lock</a></li>
+                            <li><a href="../comming-soon.html">SSL</a></li>
                         </ul>
                     </div>
                     <div class="footer-menus-wrapper col-6 col-md-4 col-lg-3 col-xl-2">
                         <p>Servicios</p>
                         <ul class="footer-menu list-unstyled">
-                            <li><a href="comming-soon.html">Diseño Web</a></li>
-                            <li><a href="comming-soon.html">Web Hosting</a></li>
-                            <li><a href="comming-soon.html">Wordpress Hosting</a></li>
-                            <li><a href="comming-soon.html">Web SEO</a></li>
-                            <li><a href="comming-soon.html">Community Manager</a></li>
-                            <li><a href="comming-soon.html">G Suite</a></li>
+                            <li><a href="../comming-soon.html">Diseño Web</a></li>
+                            <li><a href="../comming-soon.html">Web Hosting</a></li>
+                            <li><a href="../comming-soon.html">Wordpress Hosting</a></li>
+                            <li><a href="../comming-soon.html">Web SEO</a></li>
+                            <li><a href="../comming-soon.html">Community Manager</a></li>
+                            <li><a href="../comming-soon.html">G Suite</a></li>
                         </ul>
                     </div>
                     <div class="footer-menus-wrapper col-6 col-md-4 col-lg-3 col-xl-2">
                         <p>Soporte</p>
                         <ul class="footer-menu list-unstyled">
-                            <li><a href="comming-soon.html">Área de Clientes</a></li>
-                            <li><a href="comming-soon.html">Foro</a></li>
-                            <li><a href="comming-soon.html">Preguntas Frecuentes</a></li>
-                            <li><a href="comming-soon.html">Ayuda</a></li>
-                            <li><a href="comming-soon.html">Contactar</a></li>
-                            <li><a href="comming-soon.html">Abrir Ticket</a></li>
+                            <li><a href="../comming-soon.html">Área de Clientes</a></li>
+                            <li><a href="../comming-soon.html">Foro</a></li>
+                            <li><a href="../comming-soon.html">Preguntas Frecuentes</a></li>
+                            <li><a href="../comming-soon.html">Ayuda</a></li>
+                            <li><a href="../comming-soon.html">Contactar</a></li>
+                            <li><a href="../comming-soon.html">Abrir Ticket</a></li>
                         </ul>
                     </div>
                     <div class="footer-menus-wrapper col-6 col-md-4 col-lg-3 col-xl-2">
                         <p>Recursos</p>
                         <ul class="footer-menu list-unstyled">
-                            <li><a href="comming-soon.html">Herramientas Gratis</a></li>
-                            <li><a href="comming-soon.html">Solicitar Características</a></li>
-                            <li><a href="comming-soon.html">Partners</a></li>
-                            <li><a href="comming-soon.html">Verificación de Licencia</a></li>
-                            <li><a href="comming-soon.html">Programa de Afiliado</a></li>
-                            <li><a href="comming-soon.html">Panel de Proyectos</a></li>
+                            <li><a href="../comming-soon.html">Herramientas Gratis</a></li>
+                            <li><a href="../comming-soon.html">Solicitar Características</a></li>
+                            <li><a href="../comming-soon.html">Partners</a></li>
+                            <li><a href="../comming-soon.html">Verificación de Licencia</a></li>
+                            <li><a href="../comming-soon.html">Programa de Afiliado</a></li>
+                            <li><a href="../comming-soon.html">Panel de Proyectos</a></li>
                         </ul>
                     </div>
                     <div class="footer-menus-wrapper col-6 col-md-4 col-lg-3 col-xl-2">
                         <p>Programas</p>
                         <ul class="footer-menu list-unstyled">
-                            <li><a href="comming-soon.html">Impulsa</a></li>
-                            <li><a href="comming-soon.html">Webinars</a></li>
-                            <li><a href="comming-soon.html">Cooperativas</a></li>
+                            <li><a href="../comming-soon.html">Impulsa</a></li>
+                            <li><a href="../comming-soon.html">Webinars</a></li>
+                            <li><a href="../comming-soon.html">Cooperativas</a></li>
                         </ul>
                     </div>
                     <div class="footer-menus-wrapper col-6 col-md-4 col-lg-3 col-xl-2">
                         <p>Compañía</p>
                         <ul class="footer-menu list-unstyled">
-                            <li><a href="comming-soon.html">Quienes Somos</a></li>
-                            <li><a href="comming-soon.html">Blog</a></li>
-                            <li><a href="comming-soon.html">Clientes</a></li>
-                            <li><a href="comming-soon.html">Trabajar con Nosotros</a></li>
-                            <li><a href="comming-soon.html">Contactar</a></li>
-                            <li><a href="comming-soon.html">Kai</a></li>
+                            <li><a href="../comming-soon.html">Quienes Somos</a></li>
+                            <li><a href="../comming-soon.html">Blog</a></li>
+                            <li><a href="../comming-soon.html">Clientes</a></li>
+                            <li><a href="../comming-soon.html">Trabajar con Nosotros</a></li>
+                            <li><a href="../comming-soon.html">Contactar</a></li>
+                            <li><a href="../comming-soon.html">Kai</a></li>
                         </ul>
                     </div>
                 </div>
@@ -20057,15 +20064,15 @@ var footerTemplate = `<div class="container">
                                 <div id="tl_popupSC5" class="ssl-popup"
                                     onmouseover="tLoB('tl_popupSC5')" onmousemove="tLpC('tl_popupSC5')" onmouseout="tLpB('tl_popupSC5')">&nbsp;</div>
                             </li>
-                            <li class="nav-item"><a href="comming-soon.html"><img src="${footer.dataset.pathImages}/visa.svg" alt="pay"></a></li>
-                            <li class="nav-item"><a href="comming-soon.html"><img src="${footer.dataset.pathImages}/mastercard.svg" alt="pay"></a></li>
-                            <li class="nav-item"><a href="comming-soon.html"><img src="${footer.dataset.pathImages}/amex.svg" alt="pay"></a></li>
+                            <li class="nav-item"><a href="../comming-soon.html"><img src="${footer.dataset.pathImages}/visa.svg" alt="pay"></a></li>
+                            <li class="nav-item"><a href="../comming-soon.html"><img src="${footer.dataset.pathImages}/mastercard.svg" alt="pay"></a></li>
+                            <li class="nav-item"><a href="../comming-soon.html"><img src="${footer.dataset.pathImages}/amex.svg" alt="pay"></a></li>
                         </ul>
                         <ul class="footer-menu-links nav list-unstyled">
-                            <li class="nav-item"><a href="comming-soon.html">Nosotros</a></li>
-                            <li class="nav-item"><a href="comming-soon.html">Política de Privacidad</a></li>
-                            <li class="nav-item"><a href="comming-soon.html">Términos del Servicio</a></li>
-                            <li class="nav-item"><a href="comming-soon.html">Legal</a></li>
+                            <li class="nav-item"><a href="../comming-soon.html">Nosotros</a></li>
+                            <li class="nav-item"><a href="../comming-soon.html">Política de Privacidad</a></li>
+                            <li class="nav-item"><a href="../comming-soon.html">Términos del Servicio</a></li>
+                            <li class="nav-item"><a href="../comming-soon.html">Legal</a></li>
                         </ul>
                         <p class="text-center text-lg-right">Copyright © 2018 NERDCOM. Todos los derechos reservados.</p>
                     </div>
@@ -20101,48 +20108,48 @@ var headerTemplate = `<div class="container">
                                     <div class="sub-menu">
                                         <ul class="menu list-unstyled">
                                             <li>
-                                                <a class="link-title" href="comming-soon.html">Alojamiento Web</a>
-                                                <a class="link-description" href="comming-soon.html">El mejor espacio para alojar tus páginas web, Seguro y disponible 24 horas.</a>
+                                                <a class="link-title" href="../comming-soon.html">Alojamiento Web</a>
+                                                <a class="link-description" href="../../comming-soon.html">El mejor espacio para alojar tus páginas web, Seguro y disponible 24 horas.</a>
                                             </li>
                                             <li>
-                                                <a class="link-title" href="comming-soon.html">Cloud Hosting</a>
-                                                <a class="link-description" href="comming-soon.html">Ofrecemos una expansión en la capacidad de recursos ilimitados de almacenamiento.</a>
+                                                <a class="link-title" href="../comming-soon.html">Cloud Hosting</a>
+                                                <a class="link-description" href="../comming-soon.html">Ofrecemos una expansión en la capacidad de recursos ilimitados de almacenamiento.</a>
                                             </li>
                                             <li>
-                                                <a class="link-title" href="comming-soon.html">Wordpress Hosting</a>
-                                                <a class="link-description" href="comming-soon.html">Plan diseñado para sitios WordPress que cuenta con un equipo especializado.</a>
+                                                <a class="link-title" href="../comming-soon.html">Wordpress Hosting</a>
+                                                <a class="link-description" href="../comming-soon.html">Plan diseñado para sitios WordPress que cuenta con un equipo especializado.</a>
                                             </li>
                                             <li>
-                                                <a class="link-title" href="comming-soon.html">Servidores Dedicados</a>
-                                                <a class="link-description" href="comming-soon.html">Web's de tráfico alto o con necesidad de amplios recursos de transferencia.</a>
+                                                <a class="link-title" href="../comming-soon.html">Servidores Dedicados</a>
+                                                <a class="link-description" href="../comming-soon.html">Web's de tráfico alto o con necesidad de amplios recursos de transferencia.</a>
                                             </li>
                                             <li>
-                                                <a class="link-title" href="comming-soon.html">Streaming Hosting</a>
-                                                <a class="link-description" href="comming-soon.html">Tecnología que lleva tu emisora en línea a tu público de manera eficiente.</a>
+                                                <a class="link-title" href="../comming-soon.html">Streaming Hosting</a>
+                                                <a class="link-description" href="../comming-soon.html">Tecnología que lleva tu emisora en línea a tu público de manera eficiente.</a>
                                             </li>
                                             <li>
-                                                <a class="link-title" href="comming-soon.html">Virtual Private Server "VPS"</a>
-                                                <a class="link-description" href="comming-soon.html">Dispone recursos que conceden más potencia que un hosting compartido.</a>
+                                                <a class="link-title" href="../comming-soon.html">Virtual Private Server "VPS"</a>
+                                                <a class="link-description" href="../comming-soon.html">Dispone recursos que conceden más potencia que un hosting compartido.</a>
                                             </li>
                                             <li>
-                                                <a class="link-title" href="comming-soon.html">Web Hosting Design</a>
-                                                <a class="link-description" href="comming-soon.html">Web hosting + Dominio + WorPress + 1 Especialista enfocado en tu web.</a>
+                                                <a class="link-title" href="../comming-soon.html">Web Hosting Design</a> 
+                                                <a class="link-description" href="../comming-soon.html">Web hosting + Dominio + WorPress + 1 Especialista enfocado en tu web.</a>
                                             </li>
                                             <li>
-                                                <a class="link-title" href="comming-soon.html">Business Email</a>
-                                                <a class="link-description" href="comming-soon.html">Web hosting + Dominio + WorPress + 1 Especialista enfocado para tu web.</a>
+                                                <a class="link-title" href="../comming-soon.html">Business Email</a>
+                                                <a class="link-description" href="../comming-soon.html">Web hosting + Dominio + WorPress + 1 Especialista enfocado para tu web.</a>
                                             </li>
                                             <li>
-                                                <a class="link-title" href="comming-soon.html">Enterprise Email</a>
-                                                <a class="link-description" href="comming-soon.html">Web hosting + Dominio + WorPress + 1 Especialista enfocado para tu web.</a>
+                                                <a class="link-title" href="../comming-soon.html">Enterprise Email</a>
+                                                <a class="link-description" href="../comming-soon.html">Web hosting + Dominio + WorPress + 1 Especialista enfocado para tu web.</a>
                                             </li>
                                             <li>
-                                                <a class="link-title" href="comming-soon.html">GSuite</a>
-                                                <a class="link-description" href="comming-soon.html">Web hosting + Dominio + WorPress + 1 Especialista enfocado para tu web.</a>
+                                                <a class="link-title" href="../comming-soon.html">GSuite</a>
+                                                <a class="link-description" href="../comming-soon.html">Web hosting + Dominio + WorPress + 1 Especialista enfocado para tu web.</a>
                                             </li>
                                         </ul>
                                         <div class="sub-menu-foot hide-mobile">
-                                            <a class = "link-title-center" href="comming-soon.html"><i class = "fa fa-lock fa-fw text-green"></i> Rápido Acceso a Control Panel</a>
+                                            <a class = "link-title-center" href="../comming-soon.html"><i class = "fa fa-lock fa-fw text-green"></i> Rápido Acceso a Control Panel</a>
                                         </div>
                                     </div>
                                 </li>
@@ -20151,25 +20158,25 @@ var headerTemplate = `<div class="container">
                                     <div class="sub-menu">
                                         <ul class="menu list-unstyled">
                                             <li>
-                                                <a class="link-title" href="comming-soon.html">Dominios</a>
-                                                <a class="link-description" href="comming-soon.html">tu empresa en línea inicia con un dominio. El nombre con el que darás a conocer tu marca en la web.</a>
+                                                <a class="link-title" href="../comming-soon.html">Dominios</a>
+                                                <a class="link-description" href="../comming-soon.html">tu empresa en línea inicia con un dominio. El nombre con el que darás a conocer tu marca en la web.</a>
                                             </li>
                                             <li>
-                                                <a class="link-title" href="comming-soon.html">Revendedor de Dominios</a>
-                                                <a class="link-description" href="comming-soon.html">Comienza a vender dominios sin inversión previa, benefíciate de nuestra oferta y genera ganancias.</a>
+                                                <a class="link-title" href="../comming-soon.html">Revendedor de Dominios</a>
+                                                <a class="link-description" href="../comming-soon.html">Comienza a vender dominios sin inversión previa, benefíciate de nuestra oferta y genera ganancias.</a>
                                             </li>
                                             <li class="domain-include hide-mobile">
                                                 <span>Incluye</span>
                                                 <ul class="list-unstyled">
-                                                    <li><a class="link-description" href="comming-soon.html">Manejo de DNS<span class="sm-icon-submenu free">Gratis</span></a></li>
-                                                    <li><a class="link-description" href="comming-soon.html">Bloqueo de Transferencia<span class="sm-icon-submenu free">Gratis</span></a></li>
-                                                    <li><a class="link-description" href="comming-soon.html">Privacidad<span class="sm-icon-submenu cost">$7.95</span></a></li>                
-                                                    <li><a class="link-description" href="comming-soon.html">Auto Renovación<span class="sm-icon-submenu free">Gratis</span></a></li>    
+                                                    <li><a class="link-description" href="../comming-soon.html">Manejo de DNS<span class="sm-icon-submenu free">Gratis</span></a></li>
+                                                    <li><a class="link-description" href="../comming-soon.html">Bloqueo de Transferencia<span class="sm-icon-submenu free">Gratis</span></a></li>
+                                                    <li><a class="link-description" href="../comming-soon.html">Privacidad<span class="sm-icon-submenu cost">$7.95</span></a></li>                
+                                                    <li><a class="link-description" href="../comming-soon.html">Auto Renovación<span class="sm-icon-submenu free">Gratis</span></a></li>    
                                                 </ul>
                                             </li>
                                         </ul>
                                         <div class="sub-menu-foot hide-mobile">
-                                            <a class="link-title-center" href="comming-soon.html"><i class="fa fa-lock fa-fw text-green"></i>Control Panel de Dominios</a>
+                                            <a class="link-title-center" href="../comming-soon.html"><i class="fa fa-lock fa-fw text-green"></i>Control Panel de Dominios</a>
                                         </div>
                                     </div>
                                 </li>
@@ -20178,20 +20185,20 @@ var headerTemplate = `<div class="container">
                                     <div class="sub-menu">
                                         <ul class="menu list-unstyled">
                                             <li>
-                                                <a class="link-title" href="comming-soon.html">Nerdcom PRO</a>
-                                                <a class="link-description" href="comming-soon.html">Plataforma de facturación y contabilidad, orientada a clientes, te permite optimizar la administrar tu empresa ahorrando tiempo y ampliando tus ganancias.</a>
+                                                <a class="link-title" href="../comming-soon.html">Nerdcom PRO</a>
+                                                <a class="link-description" href="../comming-soon.html">Plataforma de facturación y contabilidad, orientada a clientes, te permite optimizar la administrar tu empresa ahorrando tiempo y ampliando tus ganancias.</a>
                                             </li>
                                             <li>
-                                                <a class="link-title" href="comming-soon.html">Nerdcom DOC</a>
-                                                <a class="link-description" href="comming-soon.html">Plataforma médica dirigida a facilitar la administración de consultorios y mejorar la atención personalizada a tus pacientes que te protege contra demandas.</a>
+                                                <a class="link-title" href="../comming-soon.html">Nerdcom DOC</a>
+                                                <a class="link-description" href="../comming-soon.html">Plataforma médica dirigida a facilitar la administración de consultorios y mejorar la atención personalizada a tus pacientes que te protege contra demandas.</a>
                                             </li>
                                             <li>
-                                                <a class="link-title" href="comming-soon.html">Nerdcom LAW</a>
-                                                <a class="link-description" href="comming-soon.html">Diseñada para la administración de bufetes de abogados, que permite hacer una distribución eficiente de tiempo y esfuerzo mejorando la atención al cliente.</a>
+                                                <a class="link-title" href="../comming-soon.html">Nerdcom LAW</a>
+                                                <a class="link-description" href="../comming-soon.html">Diseñada para la administración de bufetes de abogados, que permite hacer una distribución eficiente de tiempo y esfuerzo mejorando la atención al cliente.</a>
                                             </li>
                                         </ul>
                                         <div class="sub-menu-foot hide-mobile">
-                                            <a class="link-title-center" href="comming-soon.html"><i class="fa fa-lock fa-fw text-green"></i>Nerdcom Academy<span class="sm-icon-submenu cost">Certificate</span></a>
+                                            <a class="link-title-center" href="../comming-soon.html"><i class="fa fa-lock fa-fw text-green"></i>Nerdcom Academy<span class="sm-icon-submenu cost">Certificate</span></a>
                                         </div> 
                                     </div>
                                 </li>
@@ -20200,20 +20207,20 @@ var headerTemplate = `<div class="container">
                                     <div class="sub-menu">
                                         <ul class="menu list-unstyled">
                                             <li>
-                                                <a class="link-title" href="comming-soon.html">Revendedor Hosting</a>
-                                                <a class="link-description" href="comming-soon.html">Invierte y comienza a producir ganancias con tu plan reseller hosting desde 19.95$ y disfruta de WHMCS Gratis.</a>
+                                                <a class="link-title" href="../comming-soon.html">Revendedor Hosting</a>
+                                                <a class="link-description" href="../comming-soon.html">Invierte y comienza a producir ganancias con tu plan reseller hosting desde 19.95$ y disfruta de WHMCS Gratis.</a>
                                             </li>
                                             <li>
-                                                <a class="link-title" href="comming-soon.html">Revendedor de Dominios</a>
-                                                <a class="link-description" href="comming-soon.html">Conviértete en socio Nerdcom y genera ingresos substánciales en tu cuenta bancaria. ¡Conoce nuestra oferta!</a>
+                                                <a class="link-title" href="../comming-soon.html">Revendedor de Dominios</a>
+                                                <a class="link-description" href="../comming-soon.html">Conviértete en socio Nerdcom y genera ingresos substánciales en tu cuenta bancaria. ¡Conoce nuestra oferta!</a>
                                             </li>
                                             <li>
-                                                <a class="link-title" href="comming-soon.html">Socio Estrategico "Partner"</a>
-                                                <a class="link-description" href="comming-soon.html">Conviértete en socio Nerdcom y genera ingresos substánciales en tu cuenta bancaria. ¡Conoce nuestra oferta!</a>
+                                                <a class="link-title" href="../comming-soon.html">Socio Estrategico "Partner"</a>
+                                                <a class="link-description" href="../comming-soon.html">Conviértete en socio Nerdcom y genera ingresos substánciales en tu cuenta bancaria. ¡Conoce nuestra oferta!</a>
                                             </li>
                                         </ul>
                                         <div class="sub-menu-foot hide-mobile">
-                                            <a class="link-title-center" href="comming-soon.html"><i class="fa fa-lock fa-fw text-green"></i>Acceso a Panel de Revendedor<span class="sm-icon-submenu cost">Certificate</span></a>
+                                            <a class="link-title-center" href="../comming-soon.html"><i class="fa fa-lock fa-fw text-green"></i>Acceso a Panel de Revendedor<span class="sm-icon-submenu cost">Certificate</span></a>
                                         </div>
                                     </div>
                                 </li>
@@ -20222,27 +20229,27 @@ var headerTemplate = `<div class="container">
                                     <div class="sub-menu">
                                         <ul class="menu list-unstyled">
                                             <li>
-                                                <a class="link-title" href="comming-soon.html">Verificacion de Identidad</a>
-                                                <a class="link-description" href="comming-soon.html">Te brindamos un servicio especializado en incrementar la seguridad de tu empresa en línea. (República Dominicana)</a>
+                                                <a class="link-title" href="../comming-soon.html">Verificacion de Identidad</a>
+                                                <a class="link-description" href="../comming-soon.html">Te brindamos un servicio especializado en incrementar la seguridad de tu empresa en línea. (República Dominicana)</a>
                                             </li>
                                             <li>
-                                                <a class="link-title" href="comming-soon.html">Diseño Web</a>
-                                                <a class="link-description" href="comming-soon.html">Paquetes de diseño realizados por profesionales que te permiten llegar a tus clientes en la web de manera exitosa.</a>
+                                                <a class="link-title" href="../comming-soon.html">Diseño Web</a>
+                                                <a class="link-description" href="../comming-soon.html">Paquetes de diseño realizados por profesionales que te permiten llegar a tus clientes en la web de manera exitosa.</a>
                                             </li>
                                             <li>
-                                                <a class="link-title" href="comming-soon.html">Identidad Corporativa</a>
-                                                <a class="link-description" href="comming-soon.html">Trabajamos en quipo aplicando estrategias que te permiten hacer de tus ideas una marca reconocida para el público.</a>
+                                                <a class="link-title" href="../comming-soon.html">Identidad Corporativa</a>
+                                                <a class="link-description" href="../comming-soon.html">Trabajamos en quipo aplicando estrategias que te permiten hacer de tus ideas una marca reconocida para el público.</a>
                                             </li>
                                             <li>
-                                                <a class="link-title" href="comming-soon.html">Site Lock</a>
-                                                <a class="link-description" href="comming-soon.html">Sistema de protección anti malware que asegura tu sitio web contra virus, ataques con un certificado de garantía visible.</a>
+                                                <a class="link-title" href="../comming-soon.html">Site Lock</a>
+                                                <a class="link-description" href="../comming-soon.html">Sistema de protección anti malware que asegura tu sitio web contra virus, ataques con un certificado de garantía visible.</a>
                                             </li>
                                             <li>
-                                                <a class="link-title" href="comming-soon.html">SSL</a>
-                                                <a class="link-description" href="comming-soon.html">Certificado de seguridad (https://) protege  tu web y tu SEO dando tranquilidad en la compra de productos a visitantes.</a>
+                                                <a class="link-title" href="../comming-soon.html">SSL</a>
+                                                <a class="link-description" href="../comming-soon.html">Certificado de seguridad (https://) protege  tu web y tu SEO dando tranquilidad en la compra de productos a visitantes.</a>
                                             </li>
                                             <li class="security-design hide-mobile">
-                                                <a href="comming-soon.html">
+                                                <a href="../comming-soon.html">
                                                     <span class="text-link text-create">Creamos</span>                                                                
                                                     <span class="text-link text-page">Tu página</span><br>                                                                
                                                     <span class="text-link text-since">Desde</span>                                                                
@@ -20257,32 +20264,32 @@ var headerTemplate = `<div class="container">
                                     <div class="sub-menu">
                                         <ul class="menu list-unstyled">
                                             <li>
-                                                <a class="link-title" href="comming-soon.html">Impulsa con Éxito</a>
-                                                <a class="link-description" href="comming-soon.html">Programa que permite a emprendedores impulsar sus negocios desde los inicios, con cientos herramientas integradas al mejor costo del mercado.</a>
+                                                <a class="link-title" href="../comming-soon.html">Impulsa con Éxito</a>
+                                                <a class="link-description" href="../comming-soon.html">Programa que permite a emprendedores impulsar sus negocios desde los inicios, con cientos herramientas integradas al mejor costo del mercado.</a>
                                             </li>
                                             <li>
-                                                <a class="link-title" href="comming-soon.html">Web SEO</a>
-                                                <a class="link-description" href="comming-soon.html">Hacemos el contenido de tu web orgánico y  atractivo a los motores de búsqueda que envían personas a tu sitio aumentando visibilidad de tu sitio.</a>
+                                                <a class="link-title" href="../comming-soon.html">Web SEO</a>
+                                                <a class="link-description" href="../comming-soon.html">Hacemos el contenido de tu web orgánico y  atractivo a los motores de búsqueda que envían personas a tu sitio aumentando visibilidad de tu sitio.</a>
                                             </li>
                                             <li>
-                                                <a class="link-title" href="comming-soon.html">Community Manager</a>
-                                                <a class="link-description" href="comming-soon.html">Un profesional  dedicado a hacer que el contenido en tus redes sociales sea irresistible a tus futuros clientes. ¡Atráelos desde su lugar favorito!</a>
+                                                <a class="link-title" href="../comming-soon.html">Community Manager</a>
+                                                <a class="link-description" href="../comming-soon.html">Un profesional  dedicado a hacer que el contenido en tus redes sociales sea irresistible a tus futuros clientes. ¡Atráelos desde su lugar favorito!</a>
                                             </li>
                                             <li>
-                                                <a class="link-title" href="comming-soon.html">Cooperativas</a>
-                                                <a class="link-description" href="comming-soon.html">Plan diseñado para brindar las mejores herramientas que proyectan y promueven tu cooperativa como un fuerte competidor dentro y fuera de la industria.</a>
+                                                <a class="link-title" href="../comming-soon.html">Cooperativas</a>
+                                                <a class="link-description" href="../comming-soon.html">Plan diseñado para brindar las mejores herramientas que proyectan y promueven tu cooperativa como un fuerte competidor dentro y fuera de la industria.</a>
                                             </li>
                                             <li>
-                                                <a class="link-title" href="comming-soon.html">Marketing</a>
-                                                <a class="link-description" href="comming-soon.html">Incrementa tus ventas con estrategias creadas para aumentar la visibilidad y el atractivo de tu producto .¡Conoce los planes que ideamos pensando en ti!</a>
+                                                <a class="link-title" href="../comming-soon.html">Marketing</a>
+                                                <a class="link-description" href="../comming-soon.html">Incrementa tus ventas con estrategias creadas para aumentar la visibilidad y el atractivo de tu producto .¡Conoce los planes que ideamos pensando en ti!</a>
                                             </li>
                                             <li>
-                                                <a class="link-title" href="comming-soon.html">Inteligencia de Negocios</a>
-                                                <a class="link-description" href="comming-soon.html">Un especialista en medios digitales te guiara a lograr el esquema funcional, de posicionamiento y ventas para que puedas llevar a tu marca donde deseas.</a>
+                                                <a class="link-title" href="../comming-soon.html">Inteligencia de Negocios</a>
+                                                <a class="link-description" href="../comming-soon.html">Un especialista en medios digitales te guiara a lograr el esquema funcional, de posicionamiento y ventas para que puedas llevar a tu marca donde deseas.</a>
                                             </li>
                                         </ul>
                                         <div class="sub-menu-foot hide-mobile">
-                                            <a class="link-title-center" href="comming-soon.html"><i class="fa fa-lock fa-fw text-green"></i>Acceso a tus Servicios<span class="sm-icon-submenu cost">Certificate</span></a>
+                                            <a class="link-title-center" href="../comming-soon.html"><i class="fa fa-lock fa-fw text-green"></i>Acceso a tus Servicios<span class="sm-icon-submenu cost">Certificate</span></a>
                                         </div>
                                     </div>
                                 </li>
@@ -20293,31 +20300,31 @@ var headerTemplate = `<div class="container">
                                             <li>
                                                 <span>Empresa</span>
                                                 <ul class="list-unstyled">
-                                                    <li><a class="link-title-company" href="comming-soon.html">Equipo <i class="fa fa-users fa-fw"></i></a></li>
-                                                    <li><a class="link-title-company" href="comming-soon.html">Contacto</a></li>
-                                                    <li><a class="link-title-company" href="comming-soon.html">Clientes <i class="fa fa-users fa-fw"></i></a></li>
-                                                    <li><a class="link-title-company" href="comming-soon.html">Trabaja con nosotros <i class="fab fa-dropbox fa-fw"></i></a></li>
-                                                    <li><a class="link-title-company" href="comming-soon.html">Media Kit</a></li>
-                                                    <li><a class="link-title-company" href="comming-soon.html">KAI  <img src="${header.dataset.pathImages}/kai.png" alt="nerdcom_kai"></a></li>
+                                                    <li><a class="link-title-company" href="../comming-soon.html">Equipo <i class="fa fa-users fa-fw"></i></a></li>
+                                                    <li><a class="link-title-company" href="../comming-soon.html">Contacto</a></li>
+                                                    <li><a class="link-title-company" href="../comming-soon.html">Clientes <i class="fa fa-users fa-fw"></i></a></li>
+                                                    <li><a class="link-title-company" href="../comming-soon.html">Trabaja con nosotros <i class="fab fa-dropbox fa-fw"></i></a></li>
+                                                    <li><a class="link-title-company" href="../comming-soon.html">Media Kit</a></li>
+                                                    <li><a class="link-title-company" href="../comming-soon.html">KAI  <img src="${header.dataset.pathImages}/kai.png" alt="nerdcom_kai"></a></li>
                                                 </ul>
                                             </li>
                                             <li>
                                                 <span>Noticias y Comunidad</span>
                                                 <ul class=" menu-company list-unstyled">
-                                                    <li><a class="link-title-company" href="comming-soon.html">Blog <i class="fa fa-comments fa-fw"></i></a></li>
-                                                    <li><a class="link-title-company" href="comming-soon.html">Foro</a></li>
-                                                    <li><a class="link-title-company" href="comming-soon.html">Kaizen Even <i class="fa fa-calendar fa-fw"></i></a></li>
-                                                    <li><a class="link-title-company" href="comming-soon.html">Webinars <i class="fas fa-tv fa-fw"></i></a></li>
+                                                    <li><a class="link-title-company" href="../comming-soon.html">Blog <i class="fa fa-comments fa-fw"></i></a></li>
+                                                    <li><a class="link-title-company" href="../comming-soon.html">Foro</a></li>
+                                                    <li><a class="link-title-company" href="../comming-soon.html">Kaizen Even <i class="fa fa-calendar fa-fw"></i></a></li>
+                                                    <li><a class="link-title-company" href="../comming-soon.html">Webinars <i class="fas fa-tv fa-fw"></i></a></li>
                                                 </ul>
                                             </li>
                                             <li>
                                                 <span>Ayuda</span>
                                                 <ul class="menu-company list-unstyled">
-                                                    <li><a class="link-title-company" href="comming-soon.html">Área de Clientes</a></li>
-                                                    <li><a class="link-title-company" href="comming-soon.html">Base de Conocimientos <i class="fa fa-book fa-fw"></i></a></li>
-                                                    <li><a class="link-title-company" href="comming-soon.html">Abrir un Ticket</a></li>
-                                                    <li><a class="link-title-company" href="comming-soon.html"><i class="fa fa-phone fa-fw"></i> +1.929.273.0923</a></li>
-                                                    <li><a class="link-title-company" href="comming-soon.html"><i class="fa fa-phone fa-fw"></i> +1.877.280.9295</a></li>
+                                                    <li><a class="link-title-company" href="../comming-soon.html">Área de Clientes</a></li>
+                                                    <li><a class="link-title-company" href="../comming-soon.html">Base de Conocimientos <i class="fa fa-book fa-fw"></i></a></li>
+                                                    <li><a class="link-title-company" href="../comming-soon.html">Abrir un Ticket</a></li>
+                                                    <li><a class="link-title-company" href="../comming-soon.html"><i class="fa fa-phone fa-fw"></i> +1.929.273.0923</a></li>
+                                                    <li><a class="link-title-company" href="../comming-soon.html"><i class="fa fa-phone fa-fw"></i> +1.877.280.9295</a></li>
                                                 </ul>
                                             </li>
                                         </ul>
@@ -20328,15 +20335,15 @@ var headerTemplate = `<div class="container">
                                     <div class="sub-menu">
                                         <ul class="menu list-unstyled">
                                             <li class="text-left  text-lg-center">
-                                                <a class="link-title-center" href="comming-soon.html">Ayuda y Soporte</a>
+                                                <a class="link-title-center" href="../comming-soon.html">Ayuda y Soporte</a>
                                                 <img class="nav-img-contact hide-mobile" src="${header.dataset.pathImages}/supp.svg" alt="support">
                                             </li>
                                             <li class="text-left text-lg-center">
-                                                <a class="link-title-center" href="comming-soon.html">Realiza una pregunta</a>
+                                                <a class="link-title-center" href="../comming-soon.html">Realiza una pregunta</a>
                                                 <img class="nav-img-contact hide-mobile" src="${header.dataset.pathImages}/quest.svg" alt="quest">
                                             </li>
                                             <li class="text-left text-lg-center">
-                                                <a class="link-title-center" href="comming-soon.html">Preguntas frecuentes</a>
+                                                <a class="link-title-center" href="../comming-soon.html">Preguntas frecuentes</a>
                                                 <img class="nav-img-contact hide-mobile" src="${header.dataset.pathImages}/faq.svg" alt="faq">
                                             </li>
                                         </ul>    
@@ -20346,7 +20353,7 @@ var headerTemplate = `<div class="container">
                                     <a class="nav-cp" href="https://panel.nerdcom.host"><i class="fa fa-lock fa-fw"></i><span>Control Panel</span></a>
                                 </li>
                                 <li class="text-center nav-item">
-                                    <a href="comming-soon.html" class="btn btn-blk-mobile nav-offers btn-sm">Ofertas</a>
+                                    <a href="../comming-soon.html" class="btn btn-blk-mobile nav-offers btn-sm">Ofertas</a>
                                 </li>
                                 <li class="nav-item hide-mobile">
                                     <span>&nbsp;<i class="fa fa-globe-americas"></i></span>
@@ -20355,18 +20362,18 @@ var headerTemplate = `<div class="container">
                                             <li>
                                                 <span>América</span>
                                                 <ul class="list-unstyled">
-                                                    <li><a href="comming-soon.html"><img class="flags" src="${header.dataset.pathImages}/usa.png" alt="usa"> USA</a></li>
-                                                    <li><a href="comming-soon.html"><img class="flags" src="${header.dataset.pathImages}/republicadominicana.png" alt="rep_dominicana"> R. Dominicana</a></li>
-                                                    <li><a href="comming-soon.html"><img class="flags" src="${header.dataset.pathImages}/argentina.png" alt="argentina"> Argentina</a></li>
-                                                    <li><a href="comming-soon.html"><img class="flags" src="${header.dataset.pathImages}/mex.png" alt="mexico"> México</a></li>
-                                                    <li><a href="comming-soon.html"><img class="flags" src="${header.dataset.pathImages}/chile.png" alt="chile"> Chile</a></li>
-                                                    <li><a href="comming-soon.html"><img class="flags" src="${header.dataset.pathImages}/venezuela.png" alt="venezuela"> Venezuela</a></li>
+                                                    <li><a href="../comming-soon.html"><img class="flags" src="${header.dataset.pathImages}/usa.png" alt="usa"> USA</a></li>
+                                                    <li><a href="../comming-soon.html"><img class="flags" src="${header.dataset.pathImages}/republicadominicana.png" alt="rep_dominicana"> R. Dominicana</a></li>
+                                                    <li><a href="../comming-soon.html"><img class="flags" src="${header.dataset.pathImages}/argentina.png" alt="argentina"> Argentina</a></li>
+                                                    <li><a href="../comming-soon.html"><img class="flags" src="${header.dataset.pathImages}/mex.png" alt="mexico"> México</a></li>
+                                                    <li><a href="../comming-soon.html"><img class="flags" src="${header.dataset.pathImages}/chile.png" alt="chile"> Chile</a></li>
+                                                    <li><a href="../comming-soon.html"><img class="flags" src="${header.dataset.pathImages}/venezuela.png" alt="venezuela"> Venezuela</a></li>
                                                 </ul>
                                             </li>
                                             <li>
                                                 <span>Europa</span>
                                                 <ul class="list-unstyled">
-                                                    <li><a href="comming-soon.html"><img class="flags" src="${header.dataset.pathImages}/es.svg" alt="españa"> España</a></li>
+                                                    <li><a href="../comming-soon.html"><img class="flags" src="${header.dataset.pathImages}/es.svg" alt="españa"> España</a></li>
                                                 </ul>
                                             </li>
                                         </ul>
@@ -20385,38 +20392,82 @@ var platform = document.getElementById('platform'),
         'ncp-home': {
             'title': 'Inicio',
             'link': './index.html',
+            'show': {
+                'pro': true,
+                'doc': true,
+                'law': true
+            }
         },
         'prices': {
             'title': 'Precios',
             'link': './prices.html',
+            'show': {
+                'pro': true,
+                'doc': true,
+                'law': true
+            }
         },
         'tour': {
             'title': 'Tour',
             'link': './tour.html',
+            'show': {
+                'pro': true,
+                'doc': true,
+                'law': true
+            }
         },
         'integration': {
             'title': 'Integración',
             'link': './integration.html',
+            'show': {
+                'pro': true,
+                'doc': false,
+                'law': false
+            }
         },
         'demo': {
             'title': 'Demo',
             'link': './demo.html',
+            'show': {
+                'pro': true,
+                'doc': true,
+                'law': true
+            }
         },
         'comparison': {
             'title': 'Comparación',
             'link': './comparison.html',
+            'show': {
+                'pro': true,
+                'doc': false,
+                'law': false
+            }
         },
     };
 
 for ( var key in menu ) {
-    menuHtml += `<a class="nav-item nav-link rounded-bottom ${key}${ platform.dataset.active === key ? ' active' : '' }" href="${menu[key].link}">${menu[key].title}</a>\n`;
+    // console.log(menu[key].show[platform.dataset.page]);
+    if (menu[key].show[platform.dataset.page]) {
+        menuHtml += `<a class="nav-item nav-link ${key}${ platform.dataset.active === key ? ' active' : '' }" href="${menu[key].link}">${menu[key].title}</a>\n`;
+    }
 }
 
-platformTemplate = `<div class="container">
+platformTemplate = `
+            <div class="container">
+                <div class="row hamburger-button spacer-in-top-20 spacer-in-bottom-20">
+                    <div class="container-fluid">
+                        <button class="hamburger hamburger--collapse border border-gray-700 rounded" type="button">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
                 <nav class="nav justify-content-center nav-fill flex-column flex-sm-row">
                     ${menuHtml}
                 </nav>
             </div>`;
 
 platform.innerHTML = platformTemplate;
+
 //# sourceMappingURL=maps/scripts.js.map
