@@ -17,7 +17,7 @@ var footerTemplate = `<div class="container">
                             <li><a href="https://www.nerdcom.host/webdesign/">Diseño Web</a></li>
                             <li><a href="https://www.nerdcom.host/webhosting/">Web Hosting</a></li>
                             <li><a href="https://www.nerdcom.host/wordpress/">Wordpress Hosting</a></li>
-                            <li><a href="https://www.nerdcom.host/webseo">Web SEO</a></li>
+                            <li><a href="../comming-soon.html">Web SEO</a></li>
                             <li><a href="https://www.nerdcom.host/communitymanager/">Community Manager</a></li>
                             <li><a href="../comming-soon.html">G Suite</a></li>
                         </ul>
@@ -48,7 +48,7 @@ var footerTemplate = `<div class="container">
                         <p>Programas</p>
                         <ul class="footer-menu list-unstyled">
                             <li><a href="https://www.nerdcom.pro/impulsa.php">Impulsa</a></li>
-                            <li><a href="https://www.nerdcom.host/webinar/">Webinars</a></li>
+                            <li><a href="../comming-soon.html">Webinars</a></li>
                             <li><a href="https://www.nerdcom.host/cooperativas/">Cooperativas</a></li>
                         </ul>
                     </div>

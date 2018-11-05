@@ -19998,7 +19998,7 @@ var footerTemplate = `<div class="container">
                             <li><a href="https://www.nerdcom.host/webdesign/">Diseño Web</a></li>
                             <li><a href="https://www.nerdcom.host/webhosting/">Web Hosting</a></li>
                             <li><a href="https://www.nerdcom.host/wordpress/">Wordpress Hosting</a></li>
-                            <li><a href="https://www.nerdcom.host/webseo">Web SEO</a></li>
+                            <li><a href="../comming-soon.html">Web SEO</a></li>
                             <li><a href="https://www.nerdcom.host/communitymanager/">Community Manager</a></li>
                             <li><a href="../comming-soon.html">G Suite</a></li>
                         </ul>
@@ -20029,7 +20029,7 @@ var footerTemplate = `<div class="container">
                         <p>Programas</p>
                         <ul class="footer-menu list-unstyled">
                             <li><a href="https://www.nerdcom.pro/impulsa.php">Impulsa</a></li>
-                            <li><a href="https://www.nerdcom.host/webinar/">Webinars</a></li>
+                            <li><a href="../comming-soon.html">Webinars</a></li>
                             <li><a href="https://www.nerdcom.host/cooperativas/">Cooperativas</a></li>
                         </ul>
                     </div>
@@ -20186,7 +20186,7 @@ var headerTemplate = `<div class="container">
                                         <ul class="menu list-unstyled">
                                             <li>
                                                 <a class="link-title" href="../comming-soon.html">Nerdcom PRO</a>
-                                                <a class="link-description" href="../comming-soon.html">Plataforma de facturación y contabilidad, orientada a clientes, te permite optimizar la administrar tu empresa ahorrando tiempo y ampliando tus ganancias.</a>
+                                                <a class="link-description" href="./nerdcom-pro/index.html">Plataforma de facturación y contabilidad, orientada a clientes, te permite optimizar la administrar tu empresa ahorrando tiempo y ampliando tus ganancias.</a>
                                             </li>
                                             <li>
                                                 <a class="link-title" href="../comming-soon.html">Nerdcom DOC</a>
@@ -20268,8 +20268,8 @@ var headerTemplate = `<div class="container">
                                                 <a class="link-description" href="https://www.nerdcom.pro/impulsa.php">Programa que permite a emprendedores impulsar sus negocios desde los inicios, con cientos herramientas integradas al mejor costo del mercado.</a>
                                             </li>
                                             <li>
-                                                <a class="link-title" href="https://www.nerdcom.host/webseo">Web SEO</a>
-                                                <a class="link-description" href="https://www.nerdcom.host/webseo">Hacemos el contenido de tu web orgánico y  atractivo a los motores de búsqueda que envían personas a tu sitio aumentando visibilidad de tu sitio.</a>
+                                                <a class="link-title" href="../comming-soon.html">Web SEO</a>
+                                                <a class="link-description" href="../comming-soon.html">Hacemos el contenido de tu web orgánico y  atractivo a los motores de búsqueda que envían personas a tu sitio aumentando visibilidad de tu sitio.</a>
                                             </li>
                                             <li>
                                                 <a class="link-title" href="https://www.nerdcom.host/communitymanager/">Community Manager</a>
@@ -20277,11 +20277,11 @@ var headerTemplate = `<div class="container">
                                             </li>
                                             <li>
                                                 <a class="link-title" href="https://www.nerdcom.host/cooperativas/">Cooperativas</a>
-                                                <a class="link-description" href="../comming-soon.html">Plan diseñado para brindar las mejores herramientas que proyectan y promueven tu cooperativa como un fuerte competidor dentro y fuera de la industria.</a>
+                                                <a class="link-description" href="https://www.nerdcom.host/cooperativas/">Plan diseñado para brindar las mejores herramientas que proyectan y promueven tu cooperativa como un fuerte competidor dentro y fuera de la industria.</a>
                                             </li>
                                             <li>
-                                                <a class="link-title" href="https://www.nerdcom.host/marketing">Marketing</a>
-                                                <a class="link-description" href="https://www.nerdcom.host/marketing">Incrementa tus ventas con estrategias creadas para aumentar la visibilidad y el atractivo de tu producto .¡Conoce los planes que ideamos pensando en ti!</a>
+                                                <a class="link-title" href="../comming-soon.html">Marketing</a>
+                                                <a class="link-description" href="../comming-soon.html">Incrementa tus ventas con estrategias creadas para aumentar la visibilidad y el atractivo de tu producto .¡Conoce los planes que ideamos pensando en ti!</a>
                                             </li>
                                             <li>
                                                 <a class="link-title" href="../comming-soon.html">Inteligencia de Negocios</a>
@@ -20302,10 +20302,10 @@ var headerTemplate = `<div class="container">
                                                 <ul class="list-unstyled">
                                                     <li><a class="link-title-company" href="https://www.nerdcom.host/nosotros/">Equipo <i class="fa fa-users fa-fw"></i></a></li>
                                                     <li><a class="link-title-company" href="https://www.nerdcom.pro/contacto.php">Contacto</a></li>
-                                                    <li><a class="link-title-company" href="https://www.nerdcom.host/clientes">Clientes <i class="fa fa-users fa-fw"></i></a></li>
+                                                    <li><a class="link-title-company" href="../comming-soon.html">Clientes <i class="fa fa-users fa-fw"></i></a></li>
                                                     <li><a class="link-title-company" href="../comming-soon.html">Trabaja con nosotros <i class="fab fa-dropbox fa-fw"></i></a></li>
                                                     <li><a class="link-title-company" href="https://www.nerdcom.pro/mediak.php">Media Kit</a></li>
-                                                    <li><a class="link-title-company" href="https://www.nerdcom.host/kai">KAI  <img src="${header.dataset.pathImages}/kai.png" alt="nerdcom_kai"></a></li>
+                                                    <li><a class="link-title-company" href="../comming-soon.html">KAI  <img src="${header.dataset.pathImages}/kai.png" alt="nerdcom_kai"></a></li>
                                                 </ul>
                                             </li>
                                             <li>
@@ -20314,7 +20314,7 @@ var headerTemplate = `<div class="container">
                                                     <li><a class="link-title-company" href="https://blog.nerdcom.host/">Blog <i class="fa fa-comments fa-fw"></i></a></li>
                                                     <li><a class="link-title-company" href="forum.nerdcom.host">Foro</a></li>
                                                     <li><a class="link-title-company" href="../comming-soon.html">Kaizen Even <i class="fa fa-calendar fa-fw"></i></a></li>
-                                                    <li><a class="link-title-company" href="https://www.nerdcom.host/webinar">Webinars <i class="fas fa-tv fa-fw"></i></a></li>
+                                                    <li><a class="link-title-company" href="../comming-soon.html">Webinars <i class="fas fa-tv fa-fw"></i></a></li>
                                                 </ul>
                                             </li>
                                             <li>
@@ -20339,7 +20339,7 @@ var headerTemplate = `<div class="container">
                                                 <img class="nav-img-contact hide-mobile" src="${header.dataset.pathImages}/supp.svg" alt="support">
                                             </li>
                                             <li class="text-left text-lg-center">
-                                                <a class="link-title-center" href="dev.nerdcom.host">Realiza una pregunta</a>
+                                                <a class="link-title-center" href="../comming-soon.html">Realiza una pregunta</a>
                                                 <img class="nav-img-contact hide-mobile" src="${header.dataset.pathImages}/quest.svg" alt="quest">
                                             </li>
                                             <li class="text-left text-lg-center">
