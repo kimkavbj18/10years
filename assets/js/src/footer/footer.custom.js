@@ -7,30 +7,30 @@ var footerTemplate = `<div class="container">
                             <li><a href="../comming-soon.html">Nerdcom PRO</a></li>
                             <li><a href="../comming-soon.html">Nerdcom DOC</a></li>
                             <li><a href="../comming-soon.html">Nerdcom LAW</a></li>
-                            <li><a href="../comming-soon.html">Site Lock</a></li>
-                            <li><a href="../comming-soon.html">SSL</a></li>
+                            <li><a href="https://www.nerdcom.host/sitelock/">Site Lock</a></li>
+                            <li><a href="https://www.nerdcom.host/ssl/">SSL</a></li>
                         </ul>
                     </div>
                     <div class="footer-menus-wrapper col-6 col-md-4 col-lg-3 col-xl-2">
                         <p>Servicios</p>
                         <ul class="footer-menu list-unstyled">
-                            <li><a href="../comming-soon.html">Diseño Web</a></li>
-                            <li><a href="../comming-soon.html">Web Hosting</a></li>
-                            <li><a href="../comming-soon.html">Wordpress Hosting</a></li>
-                            <li><a href="../comming-soon.html">Web SEO</a></li>
-                            <li><a href="../comming-soon.html">Community Manager</a></li>
+                            <li><a href="https://www.nerdcom.host/webdesign/">Diseño Web</a></li>
+                            <li><a href="https://www.nerdcom.host/webhosting/">Web Hosting</a></li>
+                            <li><a href="https://www.nerdcom.host/wordpress/">Wordpress Hosting</a></li>
+                            <li><a href="https://www.nerdcom.host/webseo">Web SEO</a></li>
+                            <li><a href="https://www.nerdcom.host/communitymanager/">Community Manager</a></li>
                             <li><a href="../comming-soon.html">G Suite</a></li>
                         </ul>
                     </div>
                     <div class="footer-menus-wrapper col-6 col-md-4 col-lg-3 col-xl-2">
                         <p>Soporte</p>
                         <ul class="footer-menu list-unstyled">
-                            <li><a href="../comming-soon.html">Área de Clientes</a></li>
-                            <li><a href="../comming-soon.html">Foro</a></li>
+                            <li><a href="https://panel.nerdcom.host/clientarea.php">Área de Clientes</a></li>
+                            <li><a href="forum.nerdcom.host">Foro</a></li>
                             <li><a href="../comming-soon.html">Preguntas Frecuentes</a></li>
-                            <li><a href="../comming-soon.html">Ayuda</a></li>
-                            <li><a href="../comming-soon.html">Contactar</a></li>
-                            <li><a href="../comming-soon.html">Abrir Ticket</a></li>
+                            <li><a href="https://panel.nerdcom.host/submitticket.php">Ayuda</a></li>
+                            <li><a href="https://www.nerdcom.host/contact/">Contactar</a></li>
+                            <li><a href="https://panel.nerdcom.host/submitticket.php">Abrir Ticket</a></li>
                         </ul>
                     </div>
                     <div class="footer-menus-wrapper col-6 col-md-4 col-lg-3 col-xl-2">
@@ -39,27 +39,27 @@ var footerTemplate = `<div class="container">
                             <li><a href="../comming-soon.html">Herramientas Gratis</a></li>
                             <li><a href="../comming-soon.html">Solicitar Características</a></li>
                             <li><a href="../comming-soon.html">Partners</a></li>
-                            <li><a href="../comming-soon.html">Verificación de Licencia</a></li>
-                            <li><a href="../comming-soon.html">Programa de Afiliado</a></li>
-                            <li><a href="../comming-soon.html">Panel de Proyectos</a></li>
+                            <li><a href="https://panel.nerdcom.host/index.php?m=licensing">Verificación de Licencia</a></li>
+                            <li><a href="https://www.nerdcom.host/afiliacion/">Programa de Afiliado</a></li>
+                            <li><a href="https://panel.nerdcom.host/index.php?m=project_management">Panel de Proyectos</a></li>
                         </ul>
                     </div>
                     <div class="footer-menus-wrapper col-6 col-md-4 col-lg-3 col-xl-2">
                         <p>Programas</p>
                         <ul class="footer-menu list-unstyled">
-                            <li><a href="../comming-soon.html">Impulsa</a></li>
-                            <li><a href="../comming-soon.html">Webinars</a></li>
-                            <li><a href="../comming-soon.html">Cooperativas</a></li>
+                            <li><a href="https://www.nerdcom.pro/impulsa.php">Impulsa</a></li>
+                            <li><a href="https://www.nerdcom.host/webinar/">Webinars</a></li>
+                            <li><a href="https://www.nerdcom.host/cooperativas/">Cooperativas</a></li>
                         </ul>
                     </div>
                     <div class="footer-menus-wrapper col-6 col-md-4 col-lg-3 col-xl-2">
                         <p>Compañía</p>
                         <ul class="footer-menu list-unstyled">
-                            <li><a href="../comming-soon.html">Quienes Somos</a></li>
-                            <li><a href="../comming-soon.html">Blog</a></li>
+                            <li><a href="https://www.nerdcom.host/nosotros/">Quienes Somos</a></li>
+                            <li><a href="https://blog.nerdcom.host/">Blog</a></li>
                             <li><a href="../comming-soon.html">Clientes</a></li>
                             <li><a href="../comming-soon.html">Trabajar con Nosotros</a></li>
-                            <li><a href="../comming-soon.html">Contactar</a></li>
+                            <li><a href="https://www.nerdcom.pro/contacto.php">Contactar</a></li>
                             <li><a href="../comming-soon.html">Kai</a></li>
                         </ul>
                     </div>
