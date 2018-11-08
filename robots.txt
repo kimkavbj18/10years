@@ -2,4 +2,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: http://www.k.nerdcom.host/sitemap.xml
+Sitemap: http://www.nerdcom.host/sitemap.xml

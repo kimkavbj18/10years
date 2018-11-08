@@ -50,20 +50,20 @@ var headerTemplate = `<div class="container">
                                                 <a class="link-description" href="https://www.nerdcom.host/vps/">Dispone recursos que conceden más potencia que un hosting compartido.</a>
                                             </li>
                                             <li>
-                                                <a class="link-title" href="../comming-soon.html">Web Hosting Design</a> 
-                                                <a class="link-description" href="../comming-soon.html">Web hosting + Dominio + WorPress + 1 Especialista enfocado en tu web.</a>
+                                                <a class="link-title" href="https://www.nerdcom.host/webhostingdesign/">Web Hosting Design</a> 
+                                                <a class="link-description" href="https://www.nerdcom.host/webhostingdesign/">Web hosting + Dominio + WorPress + 1 Especialista enfocado en tu web.</a>
                                             </li>
                                             <li>
                                                 <a class="link-title" href="https://www.nerdcom.host/emailhosting/">Business Email</a>
                                                 <a class="link-description" href="https://www.nerdcom.host/emailhosting/">Web hosting + Dominio + WorPress + 1 Especialista enfocado para tu web.</a>
                                             </li>
                                             <li>
-                                                <a class="link-title" href="../comming-soon.html">Enterprise Email</a>
-                                                <a class="link-description" href="../comming-soon.html">Web hosting + Dominio + WorPress + 1 Especialista enfocado para tu web.</a>
+                                                <a class="link-title" href="https://www.nerdcom.host/emailenterprise/">Enterprise Email</a>
+                                                <a class="link-description" href="https://www.nerdcom.host/emailenterprise/">Web hosting + Dominio + WorPress + 1 Especialista enfocado para tu web.</a>
                                             </li>
                                             <li>
-                                                <a class="link-title" href="../comming-soon.html">GSuite</a>
-                                                <a class="link-description" href="../comming-soon.html">Web hosting + Dominio + WorPress + 1 Especialista enfocado para tu web.</a>
+                                                <a class="link-title" href="https://www.nerdcom.host/gsuite/">GSuite</a>
+                                                <a class="link-description" href="https://www.nerdcom.host/gsuite/">Web hosting + Dominio + WorPress + 1 Especialista enfocado para tu web.</a>
                                             </li>
                                         </ul>
                                         <div class="sub-menu-foot hide-mobile">
@@ -76,8 +76,8 @@ var headerTemplate = `<div class="container">
                                     <div class="sub-menu">
                                         <ul class="menu list-unstyled">
                                             <li>
-                                                <a class="link-title" href="../comming-soon.html">Dominios</a>
-                                                <a class="link-description" href="../comming-soon.html">tu empresa en línea inicia con un dominio. El nombre con el que darás a conocer tu marca en la web.</a>
+                                                <a class="link-title" href="https://www.nerdcom.host/domains/">Dominios</a>
+                                                <a class="link-description" href="https://www.nerdcom.host/domains/">tu empresa en línea inicia con un dominio. El nombre con el que darás a conocer tu marca en la web.</a>
                                             </li>
                                             <li>
                                                 <a class="link-title" href="https://www.nerdcom.host/dominio/domainreseller.php">Revendedor de Dominios</a>
@@ -94,7 +94,7 @@ var headerTemplate = `<div class="container">
                                             </li>
                                         </ul>
                                         <div class="sub-menu-foot hide-mobile">
-                                            <a class="link-title-center" href="../comming-soon.html"><i class="fa fa-lock fa-fw text-green"></i>Control Panel de Dominios</a>
+                                            <a class="link-title-center" href="https://panel.nerdcom.host/clientarea.php?action=domains"><i class="fa fa-lock fa-fw text-green"></i>Control Panel de Dominios</a>
                                         </div>
                                     </div>
                                 </li>
@@ -103,20 +103,20 @@ var headerTemplate = `<div class="container">
                                     <div class="sub-menu">
                                         <ul class="menu list-unstyled">
                                             <li>
-                                                <a class="link-title" href="../comming-soon.html">Nerdcom PRO</a>
-                                                <a class="link-description" href="./nerdcom-pro/index.html">Plataforma de facturación y contabilidad, orientada a clientes, te permite optimizar la administrar tu empresa ahorrando tiempo y ampliando tus ganancias.</a>
+                                                <a class="link-title" href="https://www.nerdcom.host/nerdcompro/">Nerdcom PRO</a>
+                                                <a class="link-description" href="https://www.nerdcom.host/nerdcompro/">Plataforma de facturación y contabilidad, orientada a clientes, te permite optimizar la administrar tu empresa ahorrando tiempo y ampliando tus ganancias.</a>
                                             </li>
                                             <li>
-                                                <a class="link-title" href="../comming-soon.html">Nerdcom DOC</a>
-                                                <a class="link-description" href="../comming-soon.html">Plataforma médica dirigida a facilitar la administración de consultorios y mejorar la atención personalizada a tus pacientes que te protege contra demandas.</a>
+                                                <a class="link-title" href="https://www.nerdcom.host/nerdcomdoc/">Nerdcom DOC</a>
+                                                <a class="link-description" href="https://www.nerdcom.host/nerdcomdoc/">Plataforma médica dirigida a facilitar la administración de consultorios y mejorar la atención personalizada a tus pacientes que te protege contra demandas.</a>
                                             </li>
                                             <li>
-                                                <a class="link-title" href="../comming-soon.html">Nerdcom LAW</a>
-                                                <a class="link-description" href="../comming-soon.html">Diseñada para la administración de bufetes de abogados, que permite hacer una distribución eficiente de tiempo y esfuerzo mejorando la atención al cliente.</a>
+                                                <a class="link-title" href="https://www.nerdcom.host/nerdcomlaw/">Nerdcom LAW</a>
+                                                <a class="link-description" href="https://www.nerdcom.host/nerdcomlaw/">Diseñada para la administración de bufetes de abogados, que permite hacer una distribución eficiente de tiempo y esfuerzo mejorando la atención al cliente.</a>
                                             </li>
                                         </ul>
                                         <div class="sub-menu-foot hide-mobile">
-                                            <a class="link-title-center" href="../comming-soon.html"><i class="fa fa-lock fa-fw text-green"></i>Nerdcom Academy<span class="sm-icon-submenu cost">Certificate</span></a>
+                                            <a class="link-title-center" href="http://www.nerdcom.host/nerdcomacademy/"><i class="fa fa-lock fa-fw text-green"></i>Nerdcom Academy<span class="sm-icon-submenu cost">Certificate</span></a>
                                         </div> 
                                     </div>
                                 </li>
@@ -126,7 +126,7 @@ var headerTemplate = `<div class="container">
                                         <ul class="menu list-unstyled">
                                             <li>
                                                 <a class="link-title" href="https://www.nerdcom.host/resellerhosting/">Revendedor Hosting</a>
-                                                <a class="link-description" href="../comming-soon.html">Invierte y comienza a producir ganancias con tu plan reseller hosting desde 19.95$ y disfruta de WHMCS Gratis.</a>
+                                                <a class="link-description" href="https://www.nerdcom.host/resellerhosting/">Invierte y comienza a producir ganancias con tu plan reseller hosting desde 19.95$ y disfruta de WHMCS Gratis.</a>
                                             </li>
                                             <li>
                                                 <a class="link-title" href="https://www.nerdcom.host/dominio/domainreseller.php">Revendedor de Dominios</a>
@@ -147,8 +147,8 @@ var headerTemplate = `<div class="container">
                                     <div class="sub-menu">
                                         <ul class="menu list-unstyled">
                                             <li>
-                                                <a class="link-title" href="../comming-soon.html">Verificacion de Identidad</a>
-                                                <a class="link-description" href="../comming-soon.html">Te brindamos un servicio especializado en incrementar la seguridad de tu empresa en línea. (República Dominicana)</a>
+                                                <a class="link-title" href="https://www.nerdcom.host/verifyidentity/">Verificacion de Identidad</a>
+                                                <a class="link-description" href="https://www.nerdcom.host/verifyidentity/">Te brindamos un servicio especializado en incrementar la seguridad de tu empresa en línea. (República Dominicana)</a>
                                             </li>
                                             <li>
                                                 <a class="link-title" href="https://www.nerdcom.host/webdesign/">Diseño Web</a>
@@ -167,7 +167,7 @@ var headerTemplate = `<div class="container">
                                                 <a class="link-description" href="https://www.nerdcom.host/ssl/">Certificado de seguridad (https://) protege  tu web y tu SEO dando tranquilidad en la compra de productos a visitantes.</a>
                                             </li>
                                             <li class="security-design hide-mobile">
-                                                <a href="../comming-soon.html">
+                                                <a href="https://www.nerdcom.host/webdesign/">
                                                     <span class="text-link text-create">Creamos</span>                                                                
                                                     <span class="text-link text-page">Tu página</span><br>                                                                
                                                     <span class="text-link text-since">Desde</span>                                                                
@@ -182,12 +182,12 @@ var headerTemplate = `<div class="container">
                                     <div class="sub-menu">
                                         <ul class="menu list-unstyled">
                                             <li>
-                                                <a class="link-title" href="https://www.nerdcom.pro/impulsa.php">Impulsa con Éxito</a>
+                                                <a class="link-title" href="https://www.nerdcom.host/impulsa/">Impulsa con Éxito</a>
                                                 <a class="link-description" href="https://www.nerdcom.pro/impulsa.php">Programa que permite a emprendedores impulsar sus negocios desde los inicios, con cientos herramientas integradas al mejor costo del mercado.</a>
                                             </li>
                                             <li>
-                                                <a class="link-title" href="../comming-soon.html">Web SEO</a>
-                                                <a class="link-description" href="../comming-soon.html">Hacemos el contenido de tu web orgánico y  atractivo a los motores de búsqueda que envían personas a tu sitio aumentando visibilidad de tu sitio.</a>
+                                                <a class="link-title" href="https://www.nerdcom.host/webseo/">Web SEO</a>
+                                                <a class="link-description" href="https://www.nerdcom.host/webseo/">Hacemos el contenido de tu web orgánico y  atractivo a los motores de búsqueda que envían personas a tu sitio aumentando visibilidad de tu sitio.</a>
                                             </li>
                                             <li>
                                                 <a class="link-title" href="https://www.nerdcom.host/communitymanager/">Community Manager</a>
@@ -198,16 +198,16 @@ var headerTemplate = `<div class="container">
                                                 <a class="link-description" href="https://www.nerdcom.host/cooperativas/">Plan diseñado para brindar las mejores herramientas que proyectan y promueven tu cooperativa como un fuerte competidor dentro y fuera de la industria.</a>
                                             </li>
                                             <li>
-                                                <a class="link-title" href="../comming-soon.html">Marketing</a>
-                                                <a class="link-description" href="../comming-soon.html">Incrementa tus ventas con estrategias creadas para aumentar la visibilidad y el atractivo de tu producto .¡Conoce los planes que ideamos pensando en ti!</a>
+                                                <a class="link-title" href="https://www.nerdcom.host/marketing/">Marketing</a>
+                                                <a class="link-description" href="//www.nerdcom.host/marketing/">Incrementa tus ventas con estrategias creadas para aumentar la visibilidad y el atractivo de tu producto .¡Conoce los planes que ideamos pensando en ti!</a>
                                             </li>
                                             <li>
-                                                <a class="link-title" href="../comming-soon.html">Inteligencia de Negocios</a>
-                                                <a class="link-description" href="../comming-soon.html">Un especialista en medios digitales te guiara a lograr el esquema funcional, de posicionamiento y ventas para que puedas llevar a tu marca donde deseas.</a>
+                                                <a class="link-title" href="https://www.nerdcom.host/businessinteligence/">Inteligencia de Negocios</a>
+                                                <a class="link-description" href="https://www.nerdcom.host/businessinteligence/">Un especialista en medios digitales te guiara a lograr el esquema funcional, de posicionamiento y ventas para que puedas llevar a tu marca donde deseas.</a>
                                             </li>
                                         </ul>
                                         <div class="sub-menu-foot hide-mobile">
-                                            <a class="link-title-center" href="../comming-soon.html"><i class="fa fa-lock fa-fw text-green"></i>Acceso a tus Servicios<span class="sm-icon-submenu cost">Certificate</span></a>
+                                            <a class="link-title-center" href="https://www.nerdcom.host/accesservices/"><i class="fa fa-lock fa-fw text-green"></i>Acceso a tus Servicios<span class="sm-icon-submenu cost">Certificate</span></a>
                                         </div>
                                     </div>
                                 </li>
@@ -219,27 +219,27 @@ var headerTemplate = `<div class="container">
                                                 <span>Empresa</span>
                                                 <ul class="list-unstyled">
                                                     <li><a class="link-title-company" href="https://www.nerdcom.host/nosotros/">Equipo <i class="fa fa-users fa-fw"></i></a></li>
-                                                    <li><a class="link-title-company" href="https://www.nerdcom.pro/contacto.php">Contacto</a></li>
-                                                    <li><a class="link-title-company" href="../comming-soon.html">Clientes <i class="fa fa-users fa-fw"></i></a></li>
-                                                    <li><a class="link-title-company" href="../comming-soon.html">Trabaja con nosotros <i class="fab fa-dropbox fa-fw"></i></a></li>
-                                                    <li><a class="link-title-company" href="https://www.nerdcom.pro/mediak.php">Media Kit</a></li>
-                                                    <li><a class="link-title-company" href="../comming-soon.html">KAI  <img src="${header.dataset.pathImages}/kai.png" alt="nerdcom_kai"></a></li>
+                                                    <li><a class="link-title-company" href="https://www.nerdcom.host/contact/">Contacto</a></li>
+                                                    <li><a class="link-title-company" href="https://www.nerdcom.host/clients/">Clientes <i class="fa fa-users fa-fw"></i></a></li>
+                                                    <li><a class="link-title-company" href="https://www.nerdcom.host/workwithus/">Trabaja con nosotros <i class="fab fa-dropbox fa-fw"></i></a></li>
+                                                    <li><a class="link-title-company" href="https://www.nerdcom.host/mediakit/">Media Kit</a></li>
+                                                    <li><a class="link-title-company" href="https://www.nerdcom.host/kai/">KAI  <img src="${header.dataset.pathImages}/kai.png" alt="nerdcom_kai"></a></li>
                                                 </ul>
                                             </li>
                                             <li>
                                                 <span>Noticias y Comunidad</span>
                                                 <ul class=" menu-company list-unstyled">
                                                     <li><a class="link-title-company" href="https://blog.nerdcom.host/">Blog <i class="fa fa-comments fa-fw"></i></a></li>
-                                                    <li><a class="link-title-company" href="forum.nerdcom.host">Foro</a></li>
-                                                    <li><a class="link-title-company" href="../comming-soon.html">Kaizen Even <i class="fa fa-calendar fa-fw"></i></a></li>
-                                                    <li><a class="link-title-company" href="../comming-soon.html">Webinars <i class="fas fa-tv fa-fw"></i></a></li>
+                                                    <li><a class="link-title-company" href="https://forum.nerdcom.host">Foro</a></li>
+                                                    <li><a class="link-title-company" href="https://www.nerdcom.host/kaizeneven/">Kaizen Even <i class="fa fa-calendar fa-fw"></i></a></li>
+                                                    <li><a class="link-title-company" href="https://www.nerdcom.host/webinars/">Webinars <i class="fas fa-tv fa-fw"></i></a></li>
                                                 </ul>
                                             </li>
                                             <li>
                                                 <span>Ayuda</span>
                                                 <ul class="menu-company list-unstyled">
                                                     <li><a class="link-title-company" href="https://panel.nerdcom.host/clientarea.php">Área de Clientes</a></li>
-                                                    <li><a class="link-title-company" href="https://panel.nerdcom.host/knowledgebase">Base de Conocimientos <i class="fa fa-book fa-fw"></i></a></li>
+                                                    <li><a class="link-title-company" href="https://panel.nerdcom.host/knowledgebase/">Base de Conocimientos <i class="fa fa-book fa-fw"></i></a></li>
                                                     <li><a class="link-title-company" href="https://panel.nerdcom.host/submitticket.php">Abrir un Ticket</a></li>
                                                     <li><a class="link-title-company" href="#"><i class="fa fa-phone fa-fw"></i> +1.929.273.0923</a></li>
                                                     <li><a class="link-title-company" href="#"><i class="fa fa-phone fa-fw"></i> +1.877.280.9295</a></li>
@@ -257,11 +257,11 @@ var headerTemplate = `<div class="container">
                                                 <img class="nav-img-contact hide-mobile" src="${header.dataset.pathImages}/supp.svg" alt="support">
                                             </li>
                                             <li class="text-left text-lg-center">
-                                                <a class="link-title-center" href="../comming-soon.html">Realiza una pregunta</a>
+                                                <a class="link-title-center" href="https://www.nerdcom.host/questions/">Realiza una pregunta</a>
                                                 <img class="nav-img-contact hide-mobile" src="${header.dataset.pathImages}/quest.svg" alt="quest">
                                             </li>
                                             <li class="text-left text-lg-center">
-                                                <a class="link-title-center" href="../comming-soon.html">Preguntas frecuentes</a>
+                                                <a class="link-title-center" href="https://www.nerdcom.host/faq/">Preguntas frecuentes</a>
                                                 <img class="nav-img-contact hide-mobile" src="${header.dataset.pathImages}/faq.svg" alt="faq">
                                             </li>
                                         </ul>    

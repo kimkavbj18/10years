@@ -3,10 +3,10 @@ var footerTemplate = `<div class="container">
                 <div class="row footer-menus">
                     <div class="footer-menus-wrapper col-6 col-md-4 col-lg-3 col-xl-2">
                         <p>Productos</p>
-                        <ul class="footer-menu list-unstyled">
-                            <li><a href="../comming-soon.html">Nerdcom PRO</a></li>
-                            <li><a href="../comming-soon.html">Nerdcom DOC</a></li>
-                            <li><a href="../comming-soon.html">Nerdcom LAW</a></li>
+                        <ul class="footer-menu list-unstyled"> 
+                            <li><a href="https://www.nerdcom.host/nerdcompro/">Nerdcom PRO</a></li>
+                            <li><a href="https://www.nerdcom.host/nerdcomdoc/">Nerdcom DOC</a></li>
+                            <li><a href="https://www.nerdcom.host/nerdcomlaw/">Nerdcom LAW</a></li>
                             <li><a href="https://www.nerdcom.host/sitelock/">Site Lock</a></li>
                             <li><a href="https://www.nerdcom.host/ssl/">SSL</a></li>
                         </ul>
@@ -17,9 +17,9 @@ var footerTemplate = `<div class="container">
                             <li><a href="https://www.nerdcom.host/webdesign/">Diseño Web</a></li>
                             <li><a href="https://www.nerdcom.host/webhosting/">Web Hosting</a></li>
                             <li><a href="https://www.nerdcom.host/wordpress/">Wordpress Hosting</a></li>
-                            <li><a href="../comming-soon.html">Web SEO</a></li>
+                            <li><a href="https://www.nerdcom.host/webseo/">Web SEO</a></li>
                             <li><a href="https://www.nerdcom.host/communitymanager/">Community Manager</a></li>
-                            <li><a href="../comming-soon.html">G Suite</a></li>
+                            <li><a href="https://www.nerdcom.host/gsuite/">G Suite</a></li>
                         </ul>
                     </div>
                     <div class="footer-menus-wrapper col-6 col-md-4 col-lg-3 col-xl-2">
@@ -27,7 +27,7 @@ var footerTemplate = `<div class="container">
                         <ul class="footer-menu list-unstyled">
                             <li><a href="https://panel.nerdcom.host/clientarea.php">Área de Clientes</a></li>
                             <li><a href="forum.nerdcom.host">Foro</a></li>
-                            <li><a href="../comming-soon.html">Preguntas Frecuentes</a></li>
+                            <li><a href="https://www.nerdcom.host/faq/">Preguntas Frecuentes</a></li>
                             <li><a href="https://panel.nerdcom.host/submitticket.php">Ayuda</a></li>
                             <li><a href="https://www.nerdcom.host/contact/">Contactar</a></li>
                             <li><a href="https://panel.nerdcom.host/submitticket.php">Abrir Ticket</a></li>
@@ -36,9 +36,9 @@ var footerTemplate = `<div class="container">
                     <div class="footer-menus-wrapper col-6 col-md-4 col-lg-3 col-xl-2">
                         <p>Recursos</p>
                         <ul class="footer-menu list-unstyled">
-                            <li><a href="../comming-soon.html">Herramientas Gratis</a></li>
-                            <li><a href="../comming-soon.html">Solicitar Características</a></li>
-                            <li><a href="../comming-soon.html">Partners</a></li>
+                            <li><a href="https://www.nerdcom.host/freetools/">Herramientas Gratis</a></li>
+                            <li><a href="https://www.nerdcom.host/requestfeatures/">Solicitar Características</a></li>
+                            <li><a href="https://www.nerdcom.host/partners/">Partners</a></li>
                             <li><a href="https://panel.nerdcom.host/index.php?m=licensing">Verificación de Licencia</a></li>
                             <li><a href="https://www.nerdcom.host/afiliacion/">Programa de Afiliado</a></li>
                             <li><a href="https://panel.nerdcom.host/index.php?m=project_management">Panel de Proyectos</a></li>
@@ -47,8 +47,8 @@ var footerTemplate = `<div class="container">
                     <div class="footer-menus-wrapper col-6 col-md-4 col-lg-3 col-xl-2">
                         <p>Programas</p>
                         <ul class="footer-menu list-unstyled">
-                            <li><a href="https://www.nerdcom.pro/impulsa.php">Impulsa</a></li>
-                            <li><a href="../comming-soon.html">Webinars</a></li>
+                            <li><a href="https://www.nerdcom.host/impulsa/">Impulsa</a></li>
+                            <li><a href="https://www.nerdcom.host/webinars/">Webinars</a></li>
                             <li><a href="https://www.nerdcom.host/cooperativas/">Cooperativas</a></li>
                         </ul>
                     </div>
@@ -57,10 +57,10 @@ var footerTemplate = `<div class="container">
                         <ul class="footer-menu list-unstyled">
                             <li><a href="https://www.nerdcom.host/nosotros/">Quienes Somos</a></li>
                             <li><a href="https://blog.nerdcom.host/">Blog</a></li>
-                            <li><a href="../comming-soon.html">Clientes</a></li>
-                            <li><a href="../comming-soon.html">Trabajar con Nosotros</a></li>
-                            <li><a href="https://www.nerdcom.pro/contacto.php">Contactar</a></li>
-                            <li><a href="../comming-soon.html">Kai</a></li>
+                            <li><a href="https://www.nerdcom.host/clients/">Clientes</a></li>
+                            <li><a href="https://www.nerdcom.host/workwithus/">Trabajar con Nosotros</a></li>
+                            <li><a href="https://www.nerdcom.host/contact/">Contactar</a></li>
+                            <li><a href="https://www.nerdcom.host/kai/">Kai</a></li>
                         </ul>
                     </div>
                 </div>
@@ -88,10 +88,10 @@ var footerTemplate = `<div class="container">
                             <li class="nav-item"><a href="../comming-soon.html"><img src="${footer.dataset.pathImages}/amex.svg" alt="pay"></a></li>
                         </ul>
                         <ul class="footer-menu-links nav list-unstyled">
-                            <li class="nav-item"><a href="../comming-soon.html">Nosotros</a></li>
-                            <li class="nav-item"><a href="../comming-soon.html">Política de Privacidad</a></li>
-                            <li class="nav-item"><a href="../comming-soon.html">Términos del Servicio</a></li>
-                            <li class="nav-item"><a href="../comming-soon.html">Legal</a></li>
+                            <li class="nav-item"><a href="https://www.nerdcom.host/nosotros/">Nosotros</a></li>
+                            <li class="nav-item"><a href="https://www.nerdcom.host/policyprivacy/">Política de Privacidad</a></li>
+                            <li class="nav-item"><a href="https://www.nerdcom.host/termsofservice/">Términos del Servicio</a></li>
+                            <li class="nav-item"><a href="https://www.nerdcom.host/legal/">Legal</a></li>
                         </ul>
                         <p class="text-center text-lg-right">Copyright © 2018 NERDCOM. Todos los derechos reservados.</p>
                     </div>
