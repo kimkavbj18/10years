@@ -19851,11 +19851,14 @@ function TrustLogo(t,e,L){return host=location.host,current_code=e,tLUC(t,e,e,L)
         if ( w.width() >= 992 ) {
             w.scroll(function(){
 
-                if ( w.scrollTop() > 0 )
+                if ( w.scrollTop() > 0 ){ 
                     $('header').addClass('header-white');
-                else
+                    $('.cta-advertising').addClass('cta-advertising-white');
+                }    
+                else{
                     $('header').removeClass('header-white');
-
+                    $('.cta-advertising').removeClass('cta-advertising-white');
+                }   
             });
         }
 
