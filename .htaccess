@@ -20,7 +20,7 @@ Redirect 302 /domains/ https://www.nerdcom.host/commingsoon.html
 Redirect 302 /dominio/domainreseller.php https://www.nerdcom.host/commingsoon.html
 #Redirect 302 https://panel.nerdcom.host/clientarea.php?action=domains https://www.nerdcom.host/commingsoon.html
 Redirect 302 /dominio/dominioprivacidad.php https://www.nerdcom.host/commingsoon.html
-Redirect 302 /nerdcompro/ https://www.nerdcom.host/commingsoon.html
+#Redirect 302 /nerdcompro/ https://www.nerdcom.host/commingsoon.html
 Redirect 302 /nerdcomdoc/ https://www.nerdcom.host/commingsoon.html
 Redirect 302 /nerdcomlaw/ https://www.nerdcom.host/commingsoon.html
 Redirect 302 /nerdcomacademy/ https://www.nerdcom.host/commingsoon.html
