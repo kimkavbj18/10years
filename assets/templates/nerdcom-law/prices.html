@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-102297130-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);} 
+        gtag('js', new Date());
+
+        gtag('config', 'UA-102297130-1');
+    </script>
+    <!-- End Global site tag -->
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MGPDMVB');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
+    <meta name="author" content="nerdcom.us">
+    <meta name="replay" content="rjavier@nerdcomhost.com">
+    <meta name="description" content="Plataforma de administración de bufetes de abogados, casos, expedientes, acceso a clientes, pagos en línea desde cualquier equipo móvil con acceso a la nube.">
+    <meta name="keywords" content="Sistema Para Bufetes de abogados. Administrar tus clientes, desde tu pequeña, mediana o grande oficina de abogados nunca fue tan fácil, casos, expedientes, abogados, bufetes, buffet, sistema para abogados">
+    <meta name="Resource-type" content="Homepage">
+    <meta name="Revisit-after" content="1 days">
+    <meta name="robots" content="all">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nerdcom Law - Plataforma de administración de abogados.</title>
+
+    <!-- STYLES -->
+    <style>
+        @font-face{font-family:'Open Sans';font-style:italic;font-weight:400;src:local("Open Sans Italic"),local("OpenSans-Italic"),url(./fonts/OpenSans-Italic.ttf) format("ttf");unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F}@font-face{font-family:'Open Sans';font-style:italic;font-weight:400;src:local("Open Sans Italic"),local("OpenSans-Italic"),url(./fonts/OpenSans-Italic.ttf) format("ttf");unicode-range:U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}@font-face{font-family:'Open Sans';font-style:italic;font-weight:400;src:local("Open Sans Italic"),local("OpenSans-Italic"),url(./fonts/OpenSans-Italic.ttf) format("ttf");unicode-range:U+1F00-1FFF}@font-face{font-family:'Open Sans';font-style:italic;font-weight:400;src:local("Open Sans Italic"),local("OpenSans-Italic"),url(./fonts/OpenSans-Italic.ttf) format("ttf");unicode-range:U+0370-03FF}@font-face{font-family:'Open Sans';font-style:italic;font-weight:400;src:local("Open Sans Italic"),local("OpenSans-Italic"),url(./fonts/OpenSans-Italic.ttf) format("ttf");unicode-range:U+0102-0103,U+0110-0111,U+1EA0-1EF9,U+20AB}@font-face{font-family:'Open Sans';font-style:italic;font-weight:400;src:local("Open Sans Italic"),local("OpenSans-Italic"),url(./fonts/OpenSans-Italic.ttf) format("ttf");unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Open Sans';font-style:italic;font-weight:400;src:local("Open Sans Italic"),local("OpenSans-Italic"),url(./fonts/OpenSans-Italic.ttf) format("ttf");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Open Sans';font-style:italic;font-weight:700;src:local("Open Sans Bold Italic"),local("OpenSans-BoldItalic"),url(./fonts/OpenSans-BoldItalic.ttf) format("ttf");unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F}@font-face{font-family:'Open Sans';font-style:italic;font-weight:700;src:local("Open Sans Bold Italic"),local("OpenSans-BoldItalic"),url(./fonts/OpenSans-BoldItalic.ttf) format("ttf");unicode-range:U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}@font-face{font-family:'Open Sans';font-style:italic;font-weight:700;src:local("Open Sans Bold Italic"),local("OpenSans-BoldItalic"),url(./fonts/OpenSans-BoldItalic.ttf) format("ttf");unicode-range:U+1F00-1FFF}@font-face{font-family:'Open Sans';font-style:italic;font-weight:700;src:local("Open Sans Bold Italic"),local("OpenSans-BoldItalic"),url(./fonts/OpenSans-BoldItalic.ttf) format("ttf");unicode-range:U+0370-03FF}@font-face{font-family:'Open Sans';font-style:italic;font-weight:700;src:local("Open Sans Bold Italic"),local("OpenSans-BoldItalic"),url(./fonts/OpenSans-BoldItalic.ttf) format("ttf");unicode-range:U+0102-0103,U+0110-0111,U+1EA0-1EF9,U+20AB}@font-face{font-family:'Open Sans';font-style:italic;font-weight:700;src:local("Open Sans Bold Italic"),local("OpenSans-BoldItalic"),url(./fonts/OpenSans-BoldItalic.ttf) format("ttf");unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Open Sans';font-style:italic;font-weight:700;src:local("Open Sans Bold Italic"),local("OpenSans-BoldItalic"),url(./fonts/OpenSans-BoldItalic.ttf) format("ttf");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Open Sans';font-style:normal;font-weight:400;src:local("Open Sans Regular"),local("OpenSans-Regular"),url(./fonts/OpenSans-Regular.ttf) format("ttf");unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F}@font-face{font-family:'Open Sans';font-style:normal;font-weight:400;src:local("Open Sans Regular"),local("OpenSans-Regular"),url(./fonts/OpenSans-Regular.ttf) format("ttf");unicode-range:U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}@font-face{font-family:'Open Sans';font-style:normal;font-weight:400;src:local("Open Sans Regular"),local("OpenSans-Regular"),url(./fonts/OpenSans-Regular.ttf) format("ttf");unicode-range:U+1F00-1FFF}@font-face{font-family:'Open Sans';font-style:normal;font-weight:400;src:local("Open Sans Regular"),local("OpenSans-Regular"),url(./fonts/OpenSans-Regular.ttf) format("ttf");unicode-range:U+0370-03FF}@font-face{font-family:'Open Sans';font-style:normal;font-weight:400;src:local("Open Sans Regular"),local("OpenSans-Regular"),url(./fonts/OpenSans-Regular.ttf) format("ttf");unicode-range:U+0102-0103,U+0110-0111,U+1EA0-1EF9,U+20AB}@font-face{font-family:'Open Sans';font-style:normal;font-weight:400;src:local("Open Sans Regular"),local("OpenSans-Regular"),url(./fonts/OpenSans-Regular.ttf) format("ttf");unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Open Sans';font-style:normal;font-weight:400;src:local("Open Sans Regular"),local("OpenSans-Regular"),url(./fonts/OpenSans-Regular.ttf) format("ttf");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Open Sans';font-style:normal;font-weight:700;src:local("Open Sans Bold"),local("OpenSans-Bold"),url(./fonts/OpenSans-Bold.ttf) format("ttf");unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F}@font-face{font-family:'Open Sans';font-style:normal;font-weight:700;src:local("Open Sans Bold"),local("OpenSans-Bold"),url(./fonts/OpenSans-Bold.ttf) format("ttf");unicode-range:U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}@font-face{font-family:'Open Sans';font-style:normal;font-weight:700;src:local("Open Sans Bold"),local("OpenSans-Bold"),url(./fonts/OpenSans-Bold.ttf) format("ttf");unicode-range:U+1F00-1FFF}@font-face{font-family:'Open Sans';font-style:normal;font-weight:700;src:local("Open Sans Bold"),local("OpenSans-Bold"),url(./fonts/OpenSans-Bold.ttf) format("ttf");unicode-range:U+0370-03FF}@font-face{font-family:'Open Sans';font-style:normal;font-weight:700;src:local("Open Sans Bold"),local("OpenSans-Bold"),url(./fonts/OpenSans-Bold.ttf) format("ttf");unicode-range:U+0102-0103,U+0110-0111,U+1EA0-1EF9,U+20AB}@font-face{font-family:'Open Sans';font-style:normal;font-weight:700;src:local("Open Sans Bold"),local("OpenSans-Bold"),url(./fonts/OpenSans-Bold.ttf) format("ttf");unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Open Sans';font-style:normal;font-weight:700;src:local("Open Sans Bold"),local("OpenSans-Bold"),url(./fonts/OpenSans-Bold.ttf) format("ttf");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}.fa,.fas,.fab{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;display:inline-block;font-style:normal;font-variant:normal;text-rendering:auto;line-height:1}.fa-fw{text-align:center;width:1.25em}.fa-book:before{content:"\f02d"}.fa-calendar:before{content:"\f133"}.fa-caret-down:before{content:"\f0d7"}.fa-comments:before{content:"\f086"}.fa-dropbox:before{content:"\f16b"}.fa-globe-americas:before{content:"\f57d"}.fa-lock:before{content:"\f023"}.fa-phone:before{content:"\f095"}.fa-question-circle:before{content:"\f059"}.fa-shopping-cart:before{content:"\f07a"}.fa-tv:before{content:"\f26c"}.fa-user:before{content:"\f007"}.fa-users:before{content:"\f0c0"}@font-face{font-family:'Font Awesome 5 Free';font-style:normal;font-weight:400;src:url("./fonts/fa-regular-400.eot");src:url("./fonts/fa-regular-400.eot?#iefix") format("embedded-opentype"),url("./fonts/fa-regular-400.woff2") format("woff2"),url("./fonts/fa-regular-400.woff") format("woff"),url("./fonts/fa-regular-400.ttf") format("truetype"),url("./fonts/fa-regular-400.svg#fontawesome") format("svg")}@font-face{font-family:'Font Awesome 5 Free';font-style:normal;font-weight:900;src:url("./fonts/fa-solid-900.eot");src:url("./fonts/fa-solid-900.eot?#iefix") format("embedded-opentype"),url("./fonts/fa-solid-900.woff2") format("woff2"),url("./fonts/fa-solid-900.woff") format("woff"),url("./fonts/fa-solid-900.ttf") format("truetype"),url("./fonts/fa-solid-900.svg#fontawesome") format("svg")}.fa,.fas{font-family:'Font Awesome 5 Free';font-weight:900}@font-face{font-family:'Font Awesome 5 Brands';font-style:normal;font-weight:normal;src:url("./fonts/fa-brands-400.eot");src:url("./fonts/fa-brands-400.eot?#iefix") format("embedded-opentype"),url("./fonts/fa-brands-400.woff2") format("woff2"),url("./fonts/fa-brands-400.woff") format("woff"),url("./fonts/fa-brands-400.ttf") format("truetype"),url("./fonts/fa-brands-400.svg#fontawesome") format("svg")}.fab{font-family:'Font Awesome 5 Brands'}.hamburger{padding:25px 15px;display:inline-block;font:inherit;color:inherit;text-transform:none;background-color:transparent;border:0;margin:0;overflow:visible}.hamburger-box{width:25px;height:18px;display:inline-block;position:relative}.hamburger-inner{display:block;top:50%;margin-top:-1px}.hamburger-inner,.hamburger-inner::before,.hamburger-inner::after{width:25px;height:2px;background-color:#fff;border-radius:4px;position:absolute}.hamburger-inner::before,.hamburger-inner::after{content:"";display:block}.hamburger-inner::before{top:-8px}.hamburger-inner::after{bottom:-8px}.hamburger--collapse .hamburger-inner{top:auto;bottom:0}.hamburger--collapse .hamburger-inner::after{top:-16px}:root{--blue: #007bff;--indigo: #6610f2;--purple: #6f42c1;--pink: #e83e8c;--red: #dc3545;--orange: #fd7e14;--yellow: #ffc107;--green: #28a745;--teal: #20c997;--cyan: #17a2b8;--white: #fff;--gray: #6c757d;--gray-dark: #343a40;--primary: #007bff;--secondary: #6c757d;--success: #28a745;--info: #17a2b8;--warning: #ffc107;--danger: #dc3545;--light: #f8f9fa;--dark: #343a40;--breakpoint-xs: 0;--breakpoint-sm: 576px;--breakpoint-md: 768px;--breakpoint-lg: 992px;--breakpoint-xl: 1200px;--font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";--font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace}*,*::before,*::after{box-sizing:border-box}html{font-family:sans-serif;line-height:1.15;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;-ms-overflow-style:scrollbar}@-ms-viewport{width:device-width}header,nav{display:block}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";font-size:1rem;font-weight:400;line-height:1.5;color:#212529;text-align:left;background-color:#fff}h1{margin-top:0;margin-bottom:.5rem}p{margin-top:0;margin-bottom:1rem}ul{margin-top:0;margin-bottom:1rem}ul ul{margin-bottom:0}a{color:#007bff;text-decoration:none;background-color:transparent;-webkit-text-decoration-skip:objects}img{vertical-align:middle;border-style:none}button{border-radius:0}button{margin:0;font-family:inherit;font-size:inherit;line-height:inherit}button{overflow:visible}button{text-transform:none}button,html [type="button"]{-webkit-appearance:button}button::-moz-focus-inner,[type="button"]::-moz-focus-inner{padding:0;border-style:none}::-webkit-file-upload-button{font:inherit;-webkit-appearance:button}h1{margin-bottom:.5rem;font-family:inherit;font-weight:500;line-height:1.2;color:inherit}h1{font-size:2.5rem}.list-unstyled{padding-left:0;list-style:none}.img-fluid{max-width:100%;height:auto}.container{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}@media (min-width:576px){.container{max-width:540px}}@media (min-width:768px){.container{max-width:720px}}@media (min-width:992px){.container{max-width:960px}}@media (min-width:1200px){.container{max-width:1140px}}.container-fluid{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}.row{display:flex;flex-wrap:wrap;margin-right:-15px;margin-left:-15px}.no-gutters{margin-right:0;margin-left:0}.no-gutters>[class*="col-"]{padding-right:0;padding-left:0}.col-sm-12,.col-md-6,.col-lg-4{position:relative;width:100%;min-height:1px;padding-right:15px;padding-left:15px}@media (min-width:576px){.col-sm-12{flex:0 0 100%;max-width:100%}}@media (min-width:768px){.col-md-6{flex:0 0 50%;max-width:50%}}@media (min-width:992px){.col-lg-4{flex:0 0 33.33333333%;max-width:33.33333333%}}.btn{display:inline-block;font-weight:400;text-align:center;white-space:nowrap;vertical-align:middle;border:1px solid transparent;padding:.375rem .75rem;font-size:1rem;line-height:1.5;border-radius:.25rem}.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}.dropdown-menu{position:absolute;top:100%;left:0;z-index:1000;display:none;float:left;min-width:10rem;padding:.5rem 0;margin:.125rem 0 0;font-size:1rem;color:#212529;text-align:left;list-style:none;background-color:#fff;background-clip:padding-box;border:1px solid rgba(0,0,0,0.15);border-radius:.25rem}.dropdown-item{display:block;width:100%;padding:.25rem 1.5rem;clear:both;font-weight:400;color:#212529;text-align:inherit;white-space:nowrap;background-color:transparent;border:0}.nav{display:flex;flex-wrap:wrap;padding-left:0;margin-bottom:0;list-style:none}.text-left{text-align:left!important}.text-center{text-align:center!important}@media (min-width:992px){.text-lg-center{text-align:center!important}}body{font-size:13px}a{text-decoration:none!important}.fa-lock{color:#5bc758!important}.text-orange{color:#ECA93F}.hamburger{padding-bottom:0;float:left}.btn-xl{padding:.7rem 4rem;font-size:1.5rem;line-height:1.7;border-radius:.5rem}.btn-primary-orange{color:white;background:linear-gradient(131.61deg,#FF9052 0%,#FF6B17 100%)}.btn-blk-mobile{display:block!important;width:100%}header.header{position:fixed;z-index:99999;top:0;left:0;right:0;background-color:black;box-shadow:1px 1px 5px black}.header .logo{margin-top:5px;margin-bottom:5px;max-width:90px;float:left}.header .logo-white{display:none}.header .navigation{float:right}ul.secondary-menu{margin-top:20px}ul.secondary-menu li{padding-right:15px;line-height:1}ul.secondary-menu li span i{font-size:1.3em;color:#999}ul.main-menu{position:fixed;top:56px;bottom:0;left:-100%;right:0;display:flex;flex-direction:row;max-width:100%;background-color:white;overflow:auto}ul.main-menu>li{display:block;padding:22px;width:100%;background-color:transparent;border-bottom:1px solid #ddd}ul.main-menu>li span{margin-top:5px}ul.main-menu>li span i{margin-top:5px;float:right}ul.main-menu>li .sub-menu{padding:0}ul.main-menu li .sub-menu ul.menu{display:none;margin-top:22px;background-color:white}ul.main-menu li .sub-menu ul.menu li{display:block;padding:15px;border-bottom:1px solid white}ul.main-menu li .sub-menu ul.menu li a,ul.main-menu li .sub-menu ul.menu li span{color:#555;text-decoration:none}ul.main-menu li .sub-menu ul.menu li span{display:block;margin-top:-22px;font-weight:700}ul.main-menu li .sub-menu ul.menu li>a.link-title{display:block;border-right:3px solid #ddd}ul.main-menu li .sub-menu ul.menu li a.link-description{display:none}ul.main-menu li .sub-menu ul.menu li ul{display:block}ul.main-menu li .sub-menu ul.menu li ul li{display:block;margin-bottom:0;padding:0!important;width:auto;border-bottom:none}ul.main-menu li .sub-menu ul.menu li span,ul.main-menu li .sub-menu ul.menu li ul li a{display:block;padding:5px 10px}ul.main-menu .nav-offers{color:white;background-color:#e23d31;border-color:#fe0606;padding:5px 10px;font-size:13px;margin-top:-5px}.worldwide-menu{left:65%!important;width:auto}.worldwide-menu ul.menu{display:flex!important;flex-direction:column}.worldwide-menu ul.menu>li{margin:0!important;padding:0!important;float:unset;width:auto!important}.worldwide-menu ul.menu li:after{content:"";width:auto!important}.worldwide-menu ul.menu li span{display:block;margin-bottom:10px;color:#333;font-weight:700}.worldwide-menu ul.menu li ul{display:flex;flex-direction:row;flex-wrap:wrap}.worldwide-menu ul.menu li ul li{margin-bottom:5px!important;padding:5px!important;width:50%}ul.main-menu li span,ul.menu li a{font-family:'Open Sans',sans-serif}.hero{margin-top:55px;height:109.375vw}.hero--home{padding-top:20px;border-bottom:50px solid #0D3250;background-color:#0D3250;background-image:url(./images/hero_art_screens.png);background-repeat:no-repeat;background-size:contain;background-position:center bottom}.hero--home h1,.hero--home p{color:white}.hero--home h1{font-size:9.35vw}.hero--home .description{margin-bottom:6.25vw;font-size:5.625vw;font-weight:300}.hero--home .price{font-size:4.6875vw;font-weight:300}.hero--home .price span{font-weight:900}.services{position:relative;padding-bottom:50px;background-color:white}.services--wrapper{margin-top:-50px;padding-top:30px;background-color:white;border:1px solid #eee}.services .service{margin-bottom:30px;background-color:white}.services .service .service-image{margin-bottom:10px;text-align:center}.hide-mobile{display:none!important}@media (min-width:576px){.hero{height:112.84722222222223vw}.hero--home h1{font-size:8.680555555555555vw}.hero--home .description{margin-bottom:6.25vw;font-size:5.208333333333334vw;font-weight:300}.services--wrapper{margin-top:-100px}}@media (min-width:768px){.hero{height:800px}.hero--home{padding-top:100px;background-size:auto}.hero--home h1{font-size:4em}.hero--home .description{margin-bottom:50px;font-size:2.2em;font-weight:300}.hero--home .price{font-size:1.5em;font-weight:300}.hero--home .price span{font-weight:900}}@media (min-width:992px){.hide-mobile{display:initial!important}.hide-desktop{display:none}header.header{position:fixed;z-index:99999;top:0;left:0;right:0;background-color:black;box-shadow:1px 1px 5px black}.header .logo,.header .logo-white{margin-top:15px;margin-bottom:15px;max-width:100px;float:left}.header .logo-white{display:none}.header .navigation{display:flex;flex-direction:column;align-items:flex-end}.header .container-fluid{position:relative}ul.secondary-menu{display:none}ul.main-menu{position:relative;top:auto;bottom:auto;left:auto;right:auto;display:block;margin-top:30px;max-width:initial;background:transparent;overflow:unset}ul.main-menu>li{display:initial;margin-left:3px;padding:5px 0 20px 0;width:auto;float:left;background-color:transparent;border-bottom:none}ul.main-menu li span{position:relative;color:#ccc;font-size:.85em}ul.main-menu li>.sub-menu{display:none}ul.main-menu>li .sub-menu{padding-left:15px;padding-right:15px}ul.main-menu .nav-cp,ul.main-menu .nav-cp span{color:#5bc758!important;font-weight:700!important;text-decoration:none}ul.main-menu .nav-offers{color:white;background-color:#e23d31;border-color:#fe0606;padding:5px 10px;font-size:13px;margin-top:-5px}ul.main-menu .nav-img-contact{width:10%}.sub-menu ul.menu{display:flex!important;flex-direction:row;flex-wrap:wrap;margin-top:15px;background-color:transparent!important}.sub-menu ul.menu li{position:relative;margin-left:0;margin-bottom:10px;padding:10px!important;width:33.33333%;background-color:transparent}.sub-menu ul.menu li a{display:block;color:#333;text-decoration:none}.sub-menu ul.menu li a.link-title{font-size:1em;font-weight:700;border-right:none!important;border-bottom:none}.sub-menu-foot a.link-title-center{font-size:1.2em;font-weight:700;border-right:none!important;border-bottom:none}.sub-menu ul.menu li a.link-description{display:block!important;font-size:.85em}.sub-menu ul.menu li ul li span{width:15%!important}.sub-menu .sm-icon-submenu::before,.free,.cost{background-color:transparent;position:relative!important;color:#fff!important;font-size:0.625rem!important;font-weight:700;line-height:7px;border-radius:.1875rem;box-sizing:content-box;height:0.5rem;padding:0.3rem 0.1rem!important;opacity:1;left:5px!important;text-align:center}.sub-menu .free{background-color:#5bc758}.sub-menu .cost{background-color:#db1b1b}.sub-menu .security-design{font-size:22px;font-weight:bold;text-transform:uppercase;line-height:35px;text-align:center;background-color:#e6f5f8!important}.sub-menu .security-design span{display:initial!important}.sub-menu .text-link{font-size:inherit;text-transform:inherit}.sub-menu .text-page{background:#00b0ea;color:#fff!important;padding:2px 5px}.sub-menu .text-since{color:#00b0ea!important}.sub-menu .text-price{color:#000334!important;font-style:italic}.sub-menu .flags{height:28px;width:38px;display:inline-block}.sub-menu .flags::before,.sub-menu .flags::after{box-sizing:border-box}.sub-menu a.link-title-center{text-align:center;text-decoration:none;color:#555;font-size:13px}ul.main-menu li .sub-menu ul.menu li ul{display:block}ul.main-menu li .sub-menu ul.menu li span,ul.main-menu li .sub-menu ul.menu li ul li a{display:block;margin:0;padding:5px 10px}ul.main-menu li .sub-menu ul.menu li.domain-include>span{padding-top:0}ul.main-menu li .sub-menu ul.menu li.domain-include ul li a span{display:initial}.sub-menu-foot{display:block!important;padding:15px 15px 15px;text-align:center;border-top:1px solid #ccc}}@media (min-width:1200px){.header .logo,.header .logo-white{margin-top:5px;margin-bottom:5px;max-width:140px}ul.main-menu li{margin-left:5px}ul.main-menu li span{font-size:1em}}
+        :root{--blue: #007bff;--indigo: #6610f2;--purple: #6f42c1;--pink: #e83e8c;--red: #dc3545;--orange: #fd7e14;--yellow: #ffc107;--green: #28a745;--teal: #20c997;--cyan: #17a2b8;--white: #fff;--gray: #6c757d;--gray-dark: #343a40;--primary: #007bff;--secondary: #6c757d;--success: #28a745;--info: #17a2b8;--warning: #ffc107;--danger: #dc3545;--light: #f8f9fa;--dark: #343a40;--breakpoint-xs: 0;--breakpoint-sm: 576px;--breakpoint-md: 768px;--breakpoint-lg: 992px;--breakpoint-xl: 1200px;--font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";--font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace}*,*::before,*::after{box-sizing:border-box}html{font-family:sans-serif;line-height:1.15;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;-ms-overflow-style:scrollbar}@-ms-viewport{width:device-width}header{display:block}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";font-size:1rem;font-weight:400;line-height:1.5;color:#212529;text-align:left;background-color:#fff}h1,h2{margin-top:0;margin-bottom:.5rem}p{margin-top:0;margin-bottom:1rem}a{color:#007bff;text-decoration:none;background-color:transparent;-webkit-text-decoration-skip:objects}::-webkit-file-upload-button{font:inherit;-webkit-appearance:button}h1,h2{margin-bottom:.5rem;font-family:inherit;font-weight:500;line-height:1.2;color:inherit}h1{font-size:2.5rem}h2{font-size:2rem}.lead{font-size:1.25rem;font-weight:300}.container{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}@media (min-width:576px){.container{max-width:540px}}@media (min-width:768px){.container{max-width:720px}}@media (min-width:992px){.container{max-width:960px}}@media (min-width:1200px){.container{max-width:1140px}}.container-fluid{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}.row{display:flex;flex-wrap:wrap;margin-right:-15px;margin-left:-15px}.col-12,.col-lg-6{position:relative;width:100%;min-height:1px;padding-right:15px;padding-left:15px}.col-12{flex:0 0 100%;max-width:100%}@media (min-width:992px){.col-lg-6{flex:0 0 50%;max-width:50%}}.btn{display:inline-block;font-weight:400;text-align:center;white-space:nowrap;vertical-align:middle;border:1px solid transparent;padding:.375rem .75rem;font-size:1rem;line-height:1.5;border-radius:.25rem}.mb-3{margin-bottom:1rem!important}.mb-4{margin-bottom:1.5rem!important}.pt-5{padding-top:3rem!important}.text-center{text-align:center!important}@media (min-width:992px){.text-lg-left{text-align:left!important}}.text-capitalize{text-transform:capitalize!important}.font-weight-normal{font-weight:400!important}.font-weight-bold{font-weight:700!important}.text-white{color:#fff!important}.text-white{color:#fff}.btn-white{color:#212529;background-color:#fff;border-color:#fff}.bg-gray-100{background-color:#f8f9fa}.text-gray-700{color:#212529}a.text-gray-700{color:#0a0c0d!important}.spacer-in-top-50{padding-top:50px!important}.spacer-in-bottom-50{padding-bottom:50px!important}.spacer-in-top-80{padding-top:80px!important}body{font-size:13px}a{text-decoration:none!important}.btn-fat{padding:20px 60px}.text-spacing{line-height:2em;font-size:16px}.lead{font-size:1.2em;font-weight:300}header.header{position:fixed;z-index:99999;top:0;left:0;right:0;background-color:black;box-shadow:1px 1px 5px rgba(0,0,0,0.3)}@media (min-width:992px){header.header{position:fixed;z-index:99999;top:0;left:0;right:0;background-color:black}}@media (min-width:0px){.nerdcom-platform-hero{margin-top:55px;background-image:url(./images/nerdcomProAll.png),url(./images/NerdcomPro-Background.png);background-size:contain;height:780px;background-repeat:no-repeat,repeat;background-position:center bottom,center}}@media (min-width:992px){.nerdcom-platform-hero{margin-top:80px;background-size:cover;height:670px}}
+    </style>
+    <link rel="canonical" href="https://nerdcom.host/">
+    <link rel="shortcut icon" href="../images/favicon.ico">
+</head>
+
+<body>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MGPDMVB" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div class="container-fluid">
+        <!-- Header section -->
+        <header id="header" class="row header mobile-header" data-path-images="../images/"></header>
+        
+        <!-- Hero section -->
+        <div class="row nerdcomLaw-platform-hero spacer-in-bottom-80">
+            <div class="container">
+                <div class="row">
+                    <div class="nerdcom-info-hero col-12 col-lg-5 pt-5 text-white text-center">
+                        <h1 class="font-weight-normal text-center fadein"><span class="text-red">NERDCOMLAW</span></h1>
+                        <h3 class="mt-4 text-center text-lg-left fadein">Administra tu <span class="text-red">bufete de abogados</span> desde tu equipo móvil, los <span class="text-red">expedientes</span> de tus casos <span class="text-red">donde quiera que estés</span>, así como tus clientes podrán subir la <span class="text-red">información digitalizada</span> sin importar el lugar donde se encuentren.</span></h3>
+                        <a href="./prices.html" class="btn btn-black btn-fat mt-4 text-center text-lg-left text-xl-center text-white fadein">Pruébalo ahora</a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- NERDCOM Platform Menu -->
+        <div id="platform" class="row nerdcom-platform-menu bg-gray-100" data-active="prices" data-page="law"></div>
+
+        <!-- Prices section -->
+        <div class="row prices bg-gray-100 spacer-in-top-40">
+            <div class="container">
+                <div class="row no-gutters">
+                    <div class="col-12 spacer-in-bottom-50 text-center">
+                        <h1>Simple and transparent pricing</h1>
+                        <p class="lead">Plans for teams and businesses of every stage, shape and size</p>
+                    </div>
+                    <div class="col-12 col-lg-4 prices-plan text-center">
+                        <div class="prices-plan-offer border rounded bg-white">
+                            <p class="h4 text-capitalize mb-3 text-gray-700">Plan Independiente</p>
+                            <p class="font-weight-normal mb-5 text-gray-700">Te permite administrar tu negocio.</p>
+                            <div class="prices-plan-offer-old mb-2">
+                                <p class="d-inline text-gray-700"><del>$15.00</del></p>
+                                <span class="bg-black rounded-circle text-white font-weight-bold spacer-out-left-5">30%</span>
+                            </div>
+                            <div class="prices-plan-offer-price">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-7 no-padding text-right">
+                                            <span class="sym-dollar display-4">24</span>
+                                        </div>
+                                        <div class="col-5 align-self-center no-padding pl-2 text-left text-gray-700">
+                                            <div class="d-block"><span>95</span></div>
+                                            <div class="d-block"><span>/MES</span></div>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                            <p class="text-gray-700 mb-5">Ahorra 30% al pagar 12 meses*</p>
+                            <a href="#" class="btn mb-3 btn-black btn-fat">Pruébalo ahora</a>
+                            <p class="">ó</p>
+                            <p class=""><a href="#">30 días de prueba.</a></p>
+                            <p class="">(excluye descuento)</p>
+                        </div>
+                        <ul class="prices-plan-features nav flex-column text-center text-gray-700 list-unstyled">
+                            <li class="nav-item"><span class="nav-link">2 Usuarios</span></li>
+                            <li class="nav-item"><span class="nav-link">Clientes</span></li>
+                            <li class="nav-item"><span class="nav-link">Casos</span></li>
+                            <li class="nav-item"><span class="nav-link">Casos especiales</span></li>
+                            <li class="nav-item"><span class="nav-link">Casos archivados</span></li>
+                            <li class="nav-item"><span class="nav-link">Casos del día</span></li>
+                            <li class="nav-item"><span class="nav-link">Calendarios</span></li>
+                            <li class="nav-item"><span class="nav-link">Recordatorios</span></li>
+                            <li class="nav-item"><span class="nav-link">Espacio para videos, fotos y notas de voz</span><span class="font-weight-bold">5 GB</span></li>
+                            <li class="nav-item"><span class="nav-link">Informes</span></li>
+                            <li class="nav-item"><span class="nav-link">Mensajes / E-Mail/SMS</span></li>
+                            <li class="nav-item"><span class="nav-link">lista de Tareas</span></li>
+                            <li class="nav-item"><span class="nav-link">Manejo de contactos</span></li>
+                            <li class="nav-item"><span class="nav-link">Equipo de trabajo</span></li>
+                            <li class="nav-item"><span class="nav-link">Actos - Cortes - Etapas</span></li>
+                            <li class="nav-item"><span class="nav-link">Responsive</span></li>
+                            <li class="nav-item"><span class="nav-link">Facturación</span></li>
+                            <li class="nav-item"><span class="nav-link d-inline-block">Instalación si es de pago mensual &nbsp;</span><span class="font-weight-bold">$45.95</span></li>
+                        </ul>
+                        <!-- <a href="#" class="btn btn-blue text-uppercase">Ordenar ahora</a> -->
+                        <p class="text-gray-700">30 Días devolución garantizada.</p>
+                        <p class="text-gray-700"><i class="fa fa-lock fa-fw"></i> Compra Segura</p>
+                    </div>
+
+                    <div class="col-12 col-lg-4 prices-plan text-center prices-plan--featured">
+                        <div class="prices-plan-offer border rounded bg-white">
+                            <h2 class="h4 text-capitalize mb-3 text-green">Plan Estandard</h2>
+                            <p class="font-weight-normal mb-5 text-gray-700">Adaptado a las necesidades de tu negocio.</p>
+                            <div class="prices-plan-offer-old mb-2">
+                                <p class="d-inline text-gray-700"><del>$25.00</del></p>
+                                <span class="bg-gree rounded-circle text-white font-weight-bold spacer-out-left-5">30%</span>
+                            </div>
+                            <div class="prices-plan-offer-price">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-7 no-padding text-right">
+                                            <span class="sym-dollar display-4">44</span>
+                                        </div>
+                                        <div class="col-5 align-self-center no-padding pl-2 text-left text-gray-700">
+                                            <div class="d-block"><span>95</span></div>
+                                            <div class="d-block"><span>/MES</span></div>
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                            <p class="text-gray-700 mb-5">Ahorra 30% al pagar 12 meses*</p>
+                            <a href="#" class="btn mb-3 btn-green btn-fat text-white">Pruébalo ahora</a>
+                            <p class="">ó</p>
+                            <p class=""><a href="#">30 días de prueba.</a></p>
+                            <p class="">(excluye descuento)</p>
+                        </div>
+                        <ul class="prices-plan-features nav flex-column text-center text-gray-700 list-unstyled">
+                            <li class="nav-item"><span class="nav-link">6 Usuarios</span></li>
+                            <li class="nav-item"><span class="nav-link">Clientes</span></li>
+                            <li class="nav-item"><span class="nav-link">Casos</span></li>
+                            <li class="nav-item"><span class="nav-link">Casos especiales</span></li>
+                            <li class="nav-item"><span class="nav-link">Casos archivados</span></li>
+                            <li class="nav-item"><span class="nav-link">Casos del día</span></li>
+                            <li class="nav-item"><span class="nav-link">Calendarios</span></li>
+                            <li class="nav-item"><span class="nav-link">Recordatorios</span></li>
+                            <li class="nav-item"><span class="nav-link">Espacio para videos, fotos y notas de voz</span><span class="font-weight-bold">10 GB</span></li>
+                            <li class="nav-item"><span class="nav-link">Informes</span></li>
+                            <li class="nav-item"><span class="nav-link">Mensajes / E-Mail/SMS</span></li>
+                            <li class="nav-item"><span class="nav-link">lista de Tareas</span></li>
+                            <li class="nav-item"><span class="nav-link">Manejo de contactos</span></li>
+                            <li class="nav-item"><span class="nav-link">Equipo de trabajo</span></li>
+                            <li class="nav-item"><span class="nav-link">Actos - Cortes - Etapas</span></li>
+                            <li class="nav-item"><span class="nav-link">Responsive</span></li>
+                            <li class="nav-item"><span class="nav-link">Facturación</span></li>
+                            <li class="nav-item"><span class="nav-link">Pagos en línea</span></li>
+                            <li class="nav-item"><span class="nav-link d-inline-block">Instalación si es de pago mensual &nbsp;</span><span class="font-weight-bold">$74.95</span></li>
+                        </ul>
+                        <!-- <a href="#" class="btn btn-red text-uppercase">Ordenar ahora</a> -->
+                        <p class="text-gray-700">30 Días devolución garantizada.</p>
+                        <p class="text-gray-700"><i class="fa fa-lock fa-fw"></i> Compra Segura</p>
+                    </div>
+
+                    <div class="col-12 col-lg-4 prices-plan text-center">
+                        <div class="prices-plan-offer border rounded bg-white">
+                            <h2 class="h4 text-capitalize mb-3 text-gray-700">Plan Pymes</h2>
+                            <p class="font-weight-normal mb-5 text-gray-700">Orientado Posicionar y dejar huella con tu marca.</p>
+                            <div class="prices-plan-offer-old mb-2">
+                                <p class="d-inline text-gray-700"><del>$35.00</del></p>
+                                <span class="bg-black rounded-circle text-white font-weight-bold spacer-out-left-5">30%</span>
+                            </div>
+                            <div class="prices-plan-offer-price ">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-7 no-padding text-right">
+                                            <span class="sym-dollar display-4">49</span>
+                                        </div>
+                                        <div class="col-5 align-self-center no-padding pl-2 text-left text-gray-700">
+                                            <div class="d-block"><span>95</span></div>
+                                            <div class="d-block"><span>/MES</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-gray-700 mb-5">Ahorra 30% al pagar 12 meses*</p>
+                            <a href="#" class="btn mb-3 btn-black btn-fat">Pruébalo ahora</a>
+                            <p class="">ó</p>
+                            <p class=""><a href="#">30 días de prueba.</a></p>
+                            <p class="">(excluye descuento)</p>
+                        </div>
+                        <ul class="prices-plan-features nav flex-column text-center text-gray-700 list-unstyled">
+                            <li class="nav-item"><span class="nav-link">10 Usuarios</span></li>
+                            <li class="nav-item"><span class="nav-link">Clientes</span></li>
+                            <li class="nav-item"><span class="nav-link">Casos</span></li>
+                            <li class="nav-item"><span class="nav-link">Casos especiales</span></li>
+                            <li class="nav-item"><span class="nav-link">Casos archivados</span></li>
+                            <li class="nav-item"><span class="nav-link">Casos del día</span></li>
+                            <li class="nav-item"><span class="nav-link">Calendarios</span></li>
+                            <li class="nav-item"><span class="nav-link">Recordatorios</span></li>
+                            <li class="nav-item"><span class="nav-link">Espacio para videos, fotos y notas de voz</span><span class="font-weight-bold">30 GB</span></li>
+                            <li class="nav-item"><span class="nav-link">Informes</span></li>
+                            <li class="nav-item"><span class="nav-link">Mensajes / E-Mail/SMS</span></li>
+                            <li class="nav-item"><span class="nav-link">lista de Tareas</span></li>
+                            <li class="nav-item"><span class="nav-link">Manejo de contactos</span></li>
+                            <li class="nav-item"><span class="nav-link">Equipo de trabajo</span></li>
+                            <li class="nav-item"><span class="nav-link">Actos - Cortes - Etapas</span></li>
+                            <li class="nav-item"><span class="nav-link">Responsive</span></li>
+                            <li class="nav-item"><span class="nav-link">Facturación</span></li>
+                            <li class="nav-item"><span class="nav-link">Pagos en línea</span></li>
+                            <li class="nav-item"><span class="nav-link d-inline-block">Instalación si es de pago mensual &nbsp;</span><span class="font-weight-bold">$99.95</span></li>
+                        </ul>
+                        <!-- <a href="#" class="btn btn-blue text-uppercase">Ordenar ahora</a> -->
+                        <p class="font-weight-bold">Nota: Contrato mínimo un año</p>
+                        <p class="text-gray-700">30 Días devolución garantizada.</p>
+                        <p class="text-gray-700"><i class="fa fa-lock fa-fw"></i> Compra Segura</p>
+                    </div>
+
+                    <div class="container-fluid">
+                        <p class="text-center small text-blue">Si eres una fundación que ayuda a la comunidad o una institución educativa, puedes utilizar NerdcomPRO sin costo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQs section -->
+        <div class="row spacer-in-top-50 spacer-in-bottom-50 border-top border-bottom border-blue-light">
+            <div class="container text-gray-700">
+                <h2 class="text-center mb-1 text-gray-700">Preguntas Frecuentes</h2>
+                <p class="text-center text-gray-700 mb-5 lead">Si necesitas más información, <a href="#">hablemos!</a></p>
+                <div class="row justify-content-center">
+                    <div class="col-9 col-md-6">
+                        <p class="h5">¿Cómo funciona el Demo de 30 días de NerdcomPRO?</p>
+                        <p class="text-small">Disfruta de nuestro plan full junto a 1 hora de entrenamiento con nuestros expertos, aclara tus dudas en nuestros webinard y descubre los beneficios que te brinda NerdcomPro.</p>
+                    </div>
+                    <div class="col-9 col-md-6">
+                        <p class="h5">¿Puedo cambiar de Plan en cualquier momento?</p>
+                        <p class="text-small">Puedes cambiar de Plan cada mes si así lo requieres, accede desde nuestra plataforma de clientes y permítenos orientarte hacia el plan que más se adapte a las necesidades de tu negocio.</p>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-9 col-md-6">
+                        <p class="h5">¿Cuándo puedo Cancelar el plan que tengo?</p>
+                        <p class="text-small">Puede cancelar en cualquier momento. Nuestra plataforma tiene la ventaja de poder extraer la información almacenada en archivos de  Microsoft Excel y que usted pueda llevarla a donde desee.</p>
+                    </div>
+                    <div class="col-9 col-md-6">
+                        <p class="h5"> ¿Qué tipo de tecnología deben tener mis dispositivos?</p>
+                        <p class="text-small">NerdcomPRO almacena su información en la nube por lo cual no utilizara el espacio valioso de sus equipos y gracias a su diseño responsive podrá acceder desde cualquier dispositivo conectado a internet.</p>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-9 col-md-6">
+                        <p class="h5">¿En caso de fallas como me comunico con ustedes?</p>
+                        <p class="text-small">Trabajamos con un sistema de tickets en el cual usted podrá comunicar sus dudas e inquietudes a nuestro equipo que labora 24 horas los 7 días de la semana los 365 días del año.</p>
+                    </div>
+                    <div class="col-9 col-md-6">
+                        <p class="h5">¿El sistema de facturación tiene punto de venta?</p>
+                        <p class="text-small">Nuestro sistema te permite gestionar tus cuentas bancarias con total seguridad, administra tus ingresos, realiza reportes e Invierte tus ganancias para incrementar tu productividad.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Colaborators section -->
+        <div class="row collaborators bg-blue-dark spacer-in-top-50 spacer-in-bottom-50">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-5 text-center text-spacing text-white">
+                        <h2 class="text-left spacer-in-top-40">Bring all hands on deck with Collaborators</h2>
+                        <p class="lead text-left spacer-in-top-20 spacer-in-bottom-20">It's easy to invite colleagues to Kayako and bring them in the loop. Collaborators can see conversations, leave private notes and draft Help Center articles while your agents handle the conversation. </p>
+                        <a href="./prices.html" class="btn btn-fat btn-green text-white text-center mb-5">Pruébalo ahora</a>
+                    </div>
+                    <div class="col-12 col-md-7">
+                        <img src="../images/_prices-collaborator-1.svg" alt="collaborators-1">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Collaborators Info section -->
+        <div class="row collaborators-info spacer-in-top-50 spacer-in-bottom-50">
+            <div class="container">
+                <div class="row text-gray-700">
+                    <div class="col-12 col-md-6">
+                        <p class="lead">We built Kayako because we believe traditional helpdesks just aren’t helpful anymore. Customer service software needs to be beautifully simple - but if it doesn’t help you get better, you can’t improve. You need a platform that will help you build closer relationships with your customers, work better together as a team, and deliver experiences that go beyond delight. Not just do more of the same.</p>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <p class="lead">Kayako is an investment in your customer experience to build a competitive advantage: effortless, delightful customer service. We set our pricing at a level that lets us grow as you grow, so we too can continuously improve and innovate, and fulfill our goal of helping every business get better at customer service.</p>
+                    </div>
+                    <div class="col-12 text-center">
+                        <img src="../images/price-collaborators-2.png" alt="collaborators-2">
+                    </div>
+                </div>
+            </div>
+        </div>        
+
+        <!-- Comparison Table section -->
+        <div class="row nerdcom-comparison-table spacer-in-top-50 spacer-in-bottom-50">
+            <div class="container">
+                <div class="row">
+                    <div class="container-fluid">
+                        <h2 class="text-center mb-4 text-gray-700">Compare plans: find the perfect one for you</h2>
+                        <div class="table-responsive">
+                            <table class="table table-bordered text-gray-700">
+                                <thead>
+                                    <tr>
+                                        <th class="borderless" scope="col"><p class="text-uppercase text-center no-margin">&nbsp;</p></th>
+                                        <th scope="col">
+                                            <p class="h5 text-center text-black no-margin lead font-weight-bold">Plan Inicia</p>
+                                            <!-- <a href="#" class="btn btn-blue btn-sm btn-block">30 Días de prueba</a> -->
+                                        </th>
+                                        <th scope="col">
+                                            <p class="h5 text-center text-green no-margin lead font-weight-bold">Plan Startup</p>
+                                            <!-- <a href="#" class="btn btn-dark-orange btn-sm btn-block">30 Días de prueba</a> -->
+                                        </th>
+                                        <th scope="col">
+                                            <p class="h5 text-center text-black no-margin lead font-weight-bold">Plan Pro Full</p>
+                                            <!-- <a href="#" class="btn btn-blue btn-sm btn-block">30 Días de prueba</a> -->
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="bg-gray-100" colspan="4"><span class="d-block text-uppercase font-weight-bold">Ingresos</span></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col"><p class="font-weight-normal no-margin">Facturación</p></th>
+                                        <td><p class="text-center no-margin"><i class="fa fa-check"></i></p></td>
+                                        <td><p class="text-center no-margin"><i class="fa fa-check"></i></p></td>
+                                        <td><p class="text-center no-margin"><i class="fa fa-check"></i></p></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col"><p class="font-weight-normal no-margin">Cotizaciones</p></th>
+                                        <td><p class="text-center no-margin"><i class="fa fa-check"></i></p></td>
+                                        <td><p class="text-center no-margin"><i class="fa fa-check"></i></p></td>
+                                        <td><p class="text-center no-margin"><i class="fa fa-check"></i></p></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col"><p class="font-weight-normal no-margin">Recurrencia</p></th>
+                                        <td><p class="text-center no-margin"><i class="fa fa-check"></i></p></td>
+                                        <td><p class="text-center no-margin"><i class="fa fa-check"></i></p></td>
+                                        <td><p class="text-center no-margin"><i class="fa fa-check"></i></p></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col"><p class="font-weight-normal no-margin">Conduces</p></th>
+                                        <td><p class="text-center no-margin"><i class="fa fa-check"></i></p></td>
+                                        <td><p class="text-center no-margin"><i class="fa fa-check"></i></p></td>
+                                        <td><p class="text-center no-margin"><i class="fa fa-check"></i></p></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col"><p class="font-weight-normal no-margin">Recibo de Pago</p></th>
+                                        <td><p class="text-center no-margin"><i class="fa fa-check"></i></p></td>
+                                        <td><p class="text-center no-margin"><i class="fa fa-check"></i></p></td>
+                                        <td><p class="text-center no-margin"><i class="fa fa-check"></i></p></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col"><p class="font-weight-normal no-margin">Notas de Crédito</p></th>
+                                        <td><p class="text-center no-margin"><i class="fa fa-check"></i></p></td>
+                                        <td><p class="text-center no-margin"><i class="fa fa-check"></i></p></td>
+                                        <td><p class="text-center no-margin"><i class="fa fa-check"></i></p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bg-gray-100" colspan="4"><span class="d-block text-uppercase font-weight-bold">Gastos y Control</span></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col"><p class="font-weight-normal no-margin">Gastos / Compras</p></th>
+                                        <td><p class="text-center no-margin"><i class="fa fa-check"></i></p></td>
+                                        <td><p class="text-center no-margin"><i class="fa fa-check"></i></p></td>
+                                        <td><p class="text-center no-margin"><i class="fa fa-check"></i></p></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col"><p class="font-weight-normal no-margin">Gastos menores</p></th>
+                                        <td><p class="text-center no-margin"><i class="fa fa-check"></i></p></td>
+                                        <td><p class="text-center no-margin"><i class="fa fa-check"></i></p></td>
+                                        <td><p class="text-center no-margin"><i class="fa fa-check"></i></p></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col"><p class="font-weight-normal no-margin">Presupuesto</p></th>
+                                        <td><p class="text-center no-margin"><i class="fa fa-check"></i></p></td>
+                                        <td><p class="text-center no-margin"><i class="fa fa-check"></i></p></td>
+                                        <td><p class="text-center no-margin"><i class="fa fa-check"></i></p></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col"><p class="font-weight-normal no-margin">Ordenes de Compras</p></th>
+                                        <td><p class="text-center no-margin"><i class="fa fa-check"></i></p></td>
+                                        <td><p class="text-center no-margin"><i class="fa fa-check"></i></p></td>
+                                        <td><p class="text-center no-margin"><i class="fa fa-check"></i></p></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col"><p class="font-weight-normal no-margin">Cheques</p></th>
+                                        <td><p class="text-center no-margin"><i class="fa fa-check"></i></p></td>
+                                        <td><p class="text-center no-margin"><i class="fa fa-check"></i></p></td>
+                                        <td><p class="text-center no-margin"><i class="fa fa-check"></i></p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bg-gray-100" colspan="4"><span class="d-block text-uppercase font-weight-bold">Banking</span></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col"><p class="font-weight-normal no-margin">Cuentas de Banco</p></th>
+                                        <td><p class="text-center no-margin"><i class="fa fa-check"></i></p></td>
+                                        <td><p class="text-center no-margin"><i class="fa fa-check"></i></p></td>
+                                        <td><p class="text-center no-margin"><i class="fa fa-check"></i></p></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col"><p class="font-weight-normal no-margin">Transacciones y Pagos</p></th>
+                                        <td><p class="text-center no-margin"><i class="fa fa-check"></i></p></td>
+                                        <td><p class="text-center no-margin"><i class="fa fa-check"></i></p></td>
+                                        <td><p class="text-center no-margin"><i class="fa fa-check"></i></p></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col"><p class="font-weight-normal no-margin">Conciliación Bancaria</p></th>
+                                        <td><p class="text-center no-margin"><i class="fa fa-check"></i></p></td>
+                                        <td><p class="text-center no-margin"><i class="fa fa-check"></i></p></td>
+                                        <td><p class="text-center no-margin"><i class="fa fa-check"></i></p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bg-gray-100" colspan="4"><span class="d-block text-uppercase font-weight-bold">Contabilidad</span></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col"><p class="font-weight-normal no-margin">Catálogo de Cuentas</p></th>
+                                        <td><p class="text-center no-margin"><i class="fa fa-check"></i></p></td>
+                                        <td><p class="text-center no-margin"><i class="fa fa-check"></i></p></td>
+                                        <td><p class="text-center no-margin"><i class="fa fa-check"></i></p></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col"><p class="font-weight-normal no-margin">Diario General</p></th>
+                                        <td><p class="text-center no-margin"><i class="fa fa-check"></i></p></td>
+                                        <td><p class="text-center no-margin"><i class="fa fa-check"></i></p></td>
+                                        <td><p class="text-center no-margin"><i class="fa fa-check"></i></p></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col"><p class="font-weight-normal no-margin">Reportes Financieros</p></th>
+                                        <td><p class="text-center no-margin">15</p></td>
+                                        <td><p class="text-center no-margin">+45</p></td>
+                                        <td><p class="text-center no-margin">+75</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bg-gray-100" colspan="4"><span class="d-block text-uppercase font-weight-bold">Impuestos</span></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col"><p class="font-weight-normal no-margin">Reportes: 606, 607, 608, TXT, IT1, IR17, NCF</p></th>
+                                        <td><p class="text-center no-margin"><i class="fa fa-check"></i></p></td>
+                                        <td><p class="text-center no-margin"><i class="fa fa-check"></i></p></td>
+                                        <td><p class="text-center no-margin"><i class="fa fa-check"></i></p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bg-gray-100" colspan="4"><span class="d-block text-uppercase font-weight-bold">Otros</span></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col"><p class="font-weight-normal no-margin">CRM</p></th>
+                                        <td><p class="text-center no-margin"><i class="fa fa-lock"></i></p></td>
+                                        <td><p class="text-center no-margin"><i class="fa fa-lock"></i></p></td>
+                                        <td><p class="text-center no-margin"><i class="fa fa-check"></i></p></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col"><p class="font-weight-normal no-margin">Tickets</p></th>
+                                        <td><p class="text-center no-margin"><i class="fa fa-lock"></i></p></td>
+                                        <td><p class="text-center no-margin"><i class="fa fa-lock"></i></p></td>
+                                        <td><p class="text-center no-margin"><i class="fa fa-check"></i></p></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col"><p class="font-weight-normal no-margin">Live Chat</p></th>
+                                        <td><p class="text-center no-margin"><i class="fa fa-lock"></i></p></td>
+                                        <td><p class="text-center no-margin"><i class="fa fa-lock"></i></p></td>
+                                        <td><p class="text-center no-margin"><i class="fa fa-check"></i></p></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col"><p class="font-weight-normal no-margin">Área de Clientes</p></th>
+                                        <td><p class="text-center no-margin"><i class="fa fa-lock"></i></p></td>
+                                        <td><p class="text-center no-margin"><i class="fa fa-lock"></i></p></td>
+                                        <td><p class="text-center no-margin"><i class="fa fa-check"></i></p></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col"><p class="font-weight-normal no-margin">POS</p></th>
+                                        <td><p class="text-center no-margin"><i class="fa fa-lock"></i></p></td>
+                                        <td><p class="text-center no-margin"><i class="fa fa-lock"></i></p></td>
+                                        <td><p class="text-center no-margin">1*</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bg-gray-100" colspan="4"><span class="d-block text-uppercase font-weight-bold">Accesos</span></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col"><p class="font-weight-normal no-margin">Usuarios *</p></th>
+                                        <td><p class="text-center no-margin">1</p></td>
+                                        <td><p class="text-center no-margin">5</p></td>
+                                        <td><p class="text-center no-margin">15*</p></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col"><p class="font-weight-normal no-margin">Clientes *</p></th>
+                                        <td><p class="text-center no-margin">500</p></td>
+                                        <td><p class="text-center no-margin">2500</p></td>
+                                        <td><p class="text-center no-margin">Ilimitados</p></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col"><p class="font-weight-normal no-margin">Almacenes *</p></th>
+                                        <td><p class="text-center no-margin">1</p></td>
+                                        <td><p class="text-center no-margin">2</p></td>
+                                        <td><p class="text-center no-margin">Ilimitados</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bg-gray-100" colspan="4"><span class="text-uppercase font-weight-bold">Integraciones </span><span  class="small">Disponible para la versión 5, Julio 2018</span></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="align-middle" scope="col"><p class="font-weight-normal no-margin">MessageBird</p></th>
+                                        <td class="align-middle"><p class="text-center no-margin"><i class="fa fa-lock"></i></p></td>
+                                        <td><p class="text-center no-margin"><img src="../../images/message-bird.png" alt="MessageBird"></p></td>
+                                        <td><p class="text-center no-margin"><img src="../../images/message-bird.png" alt="MessageBird"></p></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="align-middle" scope="col"><p class="font-weight-normal no-margin">HubSpot</p></th>
+                                        <td class="align-middle"><p class="text-center no-margin"><i class="fa fa-lock"></i></p></td>
+                                        <td class="align-middle"><p class="text-center no-margin"><i class="fa fa-lock"></i></p></td>
+                                        <td><p class="text-center no-margin"><img src="../../images/hubspot.jpg" alt="Hubspot"></p></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="align-middle" scope="col"><p class="font-weight-normal no-margin">SalesForce</p></th>
+                                        <td class="align-middle"><p class="text-center no-margin"><i class="fa fa-lock"></i></p></td>
+                                        <td class="align-middle"><p class="text-center no-margin"><i class="fa fa-lock"></i></p></td>
+                                        <td><p class="text-center no-margin"><img src="../../images/salesforge.png" alt="SalesForce"></p></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="align-middle" scope="col"><p class="font-weight-normal no-margin">MailChimp</p></th>
+                                        <td class="align-middle"><p class="text-center no-margin"><i class="fa fa-lock"></i></p></td>
+                                        <td class="align-middle"><p class="text-center no-margin"><img class="w-25" src="../../images/mailchip.png" alt="MailChimp"></p></td>
+                                        <td class="align-middle"><p class="text-center no-margin"><img class="w-25" src="../../images/mailchip.png" alt="MailChimp"></p></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col"><span class="d-block text-center font-weight-bold">¡Ordena un año y obtén un 30% descuento!</span></th>
+                                        <td><p class="text-center no-margin"><a href="./prices.html" class="btn btn-black btn-fat btn-block">Pruébalo ahora</a></p></td>
+                                        <td><p class="text-center no-margin"><a href="./prices.html" class="btn btn-green btn-fat btn-block text-white">Pruébalo ahora</a></p></td>
+                                        <td><p class="text-center no-margin"><a href="./prices.html" class="btn btn-black btn-fat btn-block">Pruébalo ahora</a></p></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="row justify-content-md-center text-gray-700">
+                            <div class="col-12 col-md-auto"><i class="fa fa-check fa-fw"></i> Funcionalidad incluidad en el plan.</div>
+                            <div class="col-12 col-md-auto"><i class="fa fa-lock fa-fw"></i> No está incluido en el plan.</div>
+                            <div class="col-12 col-md-auto">* Puedes adquirir más cantidades.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CallCenter section -->
+        <div class="row call-center spacer-in-top-20">
+            <div class="container">
+                <div class="row align-items-center text-gray-700 spacer-out-bottom-30">
+                    <div class="call-center--info col-12 col-md-8">
+                        <i class="far fa-lightbulb fa-fw text-gray-600"></i>
+                        <h4 class="text-left"><span class="call-center--primary-info text-center text-md-left"><span class="text-blue-help font-weight-light">¿Listo para </span><span class="text-blue-help font-weight-bold">comenzar?</span></h4>
+                        <h6 class="call-center--secundary-info text-center text-md-left text-gray-600">Estamos tan seguros de que le encantará nuestro producto, si no lo hace, ¡le devolveremos su dinero!</h6>
+                    </div>
+                    <div class="col-12 col-md-4 text-right">
+                        <a href="./prices.html" class="btn btn-fat btn-green text-white spacer-out-bottom-15">Pruébalo ahora</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer section -->
+        <footer id="footer" class="row footer" data-path-images="../images/"></footer>
+    </div>
+    <!-- STYLES -->
+    <noscript id="deferred-styles">
+        <link rel="stylesheet" href="../main.css">
+    </noscript>
+    
+    <!-- SCRIPTS -->
+    <script src="../scripts.min.js" async></script>
+    <!-- Start of HubSpot Embed Code -->
+    <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/4378772.js"></script>
+    <!-- End of HubSpot Embed Code -->
+</body>
+
+</html>

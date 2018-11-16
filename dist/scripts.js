@@ -19935,6 +19935,24 @@ else window.addEventListener('load', loadDeferredStyles);
             },
         ]
     });
+
+    $('.carousel-webdesign-hero').slick({ 
+        autoplay: true,
+        dots: true, 
+        arrows: false,
+        infinite: true, 
+        speed: 500, 
+        fade: true, 
+        cssEase: 'linear' 
+    });
+
+    $('.carousel-sample-design').slick({ 
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        draggable: true,
+        cssEase: 'linear'
+    });
+
 })(jQuery);
 TrustLogo("https://nerdcom.host/comodo_secure_seal_113x59_transp.png", "SC5", "none");
 var Chatstack = {};
@@ -20013,7 +20031,7 @@ var footerTemplate = `<div class="container">
                             <li><a href="forum.nerdcom.host">Foro</a></li>
                             <li><a href="https://www.nerdcom.host/faq/">Preguntas Frecuentes</a></li>
                             <li><a href="https://panel.nerdcom.host/submitticket.php">Ayuda</a></li>
-                            <li><a href="https://www.nerdcom.host/contact/">Contactar</a></li>
+                            <li><a href="https://www.nerdcom.host/contacto/">Contactar</a></li>
                             <li><a href="https://panel.nerdcom.host/submitticket.php">Abrir Ticket</a></li>
                         </ul>
                     </div>
@@ -20032,7 +20050,7 @@ var footerTemplate = `<div class="container">
                         <p>Programas</p>
                         <ul class="footer-menu list-unstyled">
                             <li><a href="https://www.nerdcom.host/impulsa/">Impulsa</a></li>
-                            <li><a href="https://www.nerdcom.host/webinars/">Webinars</a></li>
+                            <li><a href="https://www.nerdcom.host/webinar/">Webinars</a></li>
                             <li><a href="https://www.nerdcom.host/cooperativas/">Cooperativas</a></li>
                         </ul>
                     </div>
@@ -20041,9 +20059,9 @@ var footerTemplate = `<div class="container">
                         <ul class="footer-menu list-unstyled">
                             <li><a href="https://www.nerdcom.host/nosotros/">Quienes Somos</a></li>
                             <li><a href="https://blog.nerdcom.host/">Blog</a></li>
-                            <li><a href="https://www.nerdcom.host/clients/">Clientes</a></li>
-                            <li><a href="https://www.nerdcom.host/workwithus/">Trabajar con Nosotros</a></li>
-                            <li><a href="https://www.nerdcom.host/contact/">Contactar</a></li>
+                            <li><a href="https://www.nerdcom.host/clientes/">Clientes</a></li>
+                            <li><a href="https://www.nerdcom.host/jobs/">Trabajar con Nosotros</a></li>
+                            <li><a href="https://www.nerdcom.host/contacto/">Contactar</a></li>
                             <li><a href="https://www.nerdcom.host/kai/">Kai</a></li>
                         </ul>
                     </div>
@@ -20135,8 +20153,8 @@ var headerTemplate = `<div class="container">
                                                 <a class="link-description" href="https://www.nerdcom.host/vps/">Dispone recursos que conceden más potencia que un hosting compartido.</a>
                                             </li>
                                             <li>
-                                                <a class="link-title" href="https://www.nerdcom.host/webhostingdesign/">Web Hosting Design</a> 
-                                                <a class="link-description" href="https://www.nerdcom.host/webhostingdesign/">Web hosting + Dominio + WorPress + 1 Especialista enfocado en tu web.</a>
+                                                <a class="link-title" href="https://www.nerdcom.host/webdesign/">Web Hosting Design</a> 
+                                                <a class="link-description" href="https://www.nerdcom.host/webdesign/">Web hosting + Dominio + WorPress + 1 Especialista enfocado en tu web.</a>
                                             </li>
                                             <li>
                                                 <a class="link-title" href="https://www.nerdcom.host/emailhosting/">Business Email</a>
@@ -20161,19 +20179,19 @@ var headerTemplate = `<div class="container">
                                     <div class="sub-menu">
                                         <ul class="menu list-unstyled">
                                             <li>
-                                                <a class="link-title" href="https://www.nerdcom.host/domains/">Dominios</a>
-                                                <a class="link-description" href="https://www.nerdcom.host/domains/">tu empresa en línea inicia con un dominio. El nombre con el que darás a conocer tu marca en la web.</a>
+                                                <a class="link-title" href="https://www.nerdcom.host/dominio/">Dominios</a>
+                                                <a class="link-description" href="https://www.nerdcom.host/dominio/">tu empresa en línea inicia con un dominio. El nombre con el que darás a conocer tu marca en la web.</a>
                                             </li>
                                             <li>
-                                                <a class="link-title" href="https://www.nerdcom.host/dominio/domainreseller.php">Revendedor de Dominios</a>
-                                                <a class="link-description href="https://www.nerdcom.host/dominio/domainreseller.php">Comienza a vender dominios sin inversión previa, benefíciate de nuestra oferta y genera ganancias.</a>
+                                                <a class="link-title" href="https://www.nerdcom.host/dominio/domainreseller.html">Revendedor de Dominios</a>
+                                                <a class="link-description href="https://www.nerdcom.host/dominio/domainreseller.html">Comienza a vender dominios sin inversión previa, benefíciate de nuestra oferta y genera ganancias.</a>
                                             </li>
                                             <li class="domain-include hide-mobile">
                                                 <span>Incluye</span>
                                                 <ul class="list-unstyled">
                                                     <li><a class="link-description" href="https://panel.nerdcom.host/clientarea.php?action=domains">Manejo de DNS<span class="sm-icon-submenu free">Gratis</span></a></li>
                                                     <li><a class="link-description" href="https://panel.nerdcom.host/clientarea.php?action=domains">Bloqueo de Transferencia<span class="sm-icon-submenu free">Gratis</span></a></li>
-                                                    <li><a class="link-description" href="https://www.nerdcom.host/dominio/dominioprivacidad.php">Privacidad<span class="sm-icon-submenu cost">$7.95</span></a></li>                
+                                                    <li><a class="link-description" href="https://www.nerdcom.host/dominio/dominioprivacidad.html">Privacidad<span class="sm-icon-submenu cost">$7.95</span></a></li>                
                                                     <li><a class="link-description" href="https://panel.nerdcom.host/clientarea.php?action=domains">Auto Renovación<span class="sm-icon-submenu free">Gratis</span></a></li>    
                                                 </ul>
                                             </li>
@@ -20214,8 +20232,8 @@ var headerTemplate = `<div class="container">
                                                 <a class="link-description" href="https://www.nerdcom.host/resellerhosting/">Invierte y comienza a producir ganancias con tu plan reseller hosting desde 19.95$ y disfruta de WHMCS Gratis.</a>
                                             </li>
                                             <li>
-                                                <a class="link-title" href="https://www.nerdcom.host/dominio/domainreseller.php">Revendedor de Dominios</a>
-                                                <a class="link-description" href=" https://www.nerdcom.host/dominio/domainreseller.php">Conviértete en socio Nerdcom y genera ingresos substánciales en tu cuenta bancaria. ¡Conoce nuestra oferta!</a>
+                                                <a class="link-title" href="https://www.nerdcom.host/dominio/domainreseller.html">Revendedor de Dominios</a>
+                                                <a class="link-description" href=" https://www.nerdcom.host/dominio/domainreseller.html">Conviértete en socio Nerdcom y genera ingresos substánciales en tu cuenta bancaria. ¡Conoce nuestra oferta!</a>
                                             </li>
                                             <li>
                                                 <a class="link-title" href="https://www.nerdcom.host/resellerpartner/">Socio Estrategico "Partner"</a>
@@ -20287,8 +20305,8 @@ var headerTemplate = `<div class="container">
                                                 <a class="link-description" href="//www.nerdcom.host/marketing/">Incrementa tus ventas con estrategias creadas para aumentar la visibilidad y el atractivo de tu producto .¡Conoce los planes que ideamos pensando en ti!</a>
                                             </li>
                                             <li>
-                                                <a class="link-title" href="https://www.nerdcom.host/businessinteligence/">Inteligencia de Negocios</a>
-                                                <a class="link-description" href="https://www.nerdcom.host/businessinteligence/">Un especialista en medios digitales te guiara a lograr el esquema funcional, de posicionamiento y ventas para que puedas llevar a tu marca donde deseas.</a>
+                                                <a class="link-title" href="https://www.nerdcom.host/inteligenciadenegocios/">Inteligencia de Negocios</a>
+                                                <a class="link-description" href="https://www.nerdcom.host/inteligenciadenegocios/">Un especialista en medios digitales te guiara a lograr el esquema funcional, de posicionamiento y ventas para que puedas llevar a tu marca donde deseas.</a>
                                             </li>
                                         </ul>
                                         <div class="sub-menu-foot hide-mobile">
@@ -20304,9 +20322,9 @@ var headerTemplate = `<div class="container">
                                                 <span>Empresa</span>
                                                 <ul class="list-unstyled">
                                                     <li><a class="link-title-company" href="https://www.nerdcom.host/nosotros/">Equipo <i class="fa fa-users fa-fw"></i></a></li>
-                                                    <li><a class="link-title-company" href="https://www.nerdcom.host/contact/">Contacto</a></li>
-                                                    <li><a class="link-title-company" href="https://www.nerdcom.host/clients/">Clientes <i class="fa fa-users fa-fw"></i></a></li>
-                                                    <li><a class="link-title-company" href="https://www.nerdcom.host/workwithus/">Trabaja con nosotros <i class="fab fa-dropbox fa-fw"></i></a></li>
+                                                    <li><a class="link-title-company" href="https://www.nerdcom.host/contacto/">Contacto</a></li>
+                                                    <li><a class="link-title-company" href="https://www.nerdcom.host/clientes/">Clientes <i class="fa fa-users fa-fw"></i></a></li>
+                                                    <li><a class="link-title-company" href="https://www.nerdcom.host/jobs/">Trabaja con nosotros <i class="fab fa-dropbox fa-fw"></i></a></li>
                                                     <li><a class="link-title-company" href="https://www.nerdcom.host/mediakit/">Media Kit</a></li>
                                                     <li><a class="link-title-company" href="https://www.nerdcom.host/kai/">KAI  <img src="${header.dataset.pathImages}/kai.png" alt="nerdcom_kai"></a></li>
                                                 </ul>
@@ -20317,7 +20335,7 @@ var headerTemplate = `<div class="container">
                                                     <li><a class="link-title-company" href="https://blog.nerdcom.host/">Blog <i class="fa fa-comments fa-fw"></i></a></li>
                                                     <li><a class="link-title-company" href="https://forum.nerdcom.host">Foro</a></li>
                                                     <li><a class="link-title-company" href="https://www.nerdcom.host/kaizeneven/">Kaizen Even <i class="fa fa-calendar fa-fw"></i></a></li>
-                                                    <li><a class="link-title-company" href="https://www.nerdcom.host/webinars/">Webinars <i class="fas fa-tv fa-fw"></i></a></li>
+                                                    <li><a class="link-title-company" href="https://www.nerdcom.host/webinar/">Webinars <i class="fas fa-tv fa-fw"></i></a></li>
                                                 </ul>
                                             </li>
                                             <li>
@@ -20367,18 +20385,18 @@ var headerTemplate = `<div class="container">
                                                 <ul class="list-unstyled">
                                                     <li><a href="../comming-soon.html"><img class="flags" src="${header.dataset.pathImages}/usa.png" alt="usa"> USA</a></li>
                                                     <li><a href="../comming-soon.html"><img class="flags" src="${header.dataset.pathImages}/republicadominicana.png" alt="rep_dominicana"> R. Dominicana</a></li>
-                                                    <li><a href="../comming-soon.html"><img class="flags" src="${header.dataset.pathImages}/argentina.png" alt="argentina"> Argentina</a></li>
+                                                    <!-- <li><a href="../comming-soon.html"><img class="flags" src="${header.dataset.pathImages}/argentina.png" alt="argentina"> Argentina</a></li>
                                                     <li><a href="../comming-soon.html"><img class="flags" src="${header.dataset.pathImages}/mex.png" alt="mexico"> México</a></li>
                                                     <li><a href="../comming-soon.html"><img class="flags" src="${header.dataset.pathImages}/chile.png" alt="chile"> Chile</a></li>
-                                                    <li><a href="../comming-soon.html"><img class="flags" src="${header.dataset.pathImages}/venezuela.png" alt="venezuela"> Venezuela</a></li>
+                                                    <li><a href="../comming-soon.html"><img class="flags" src="${header.dataset.pathImages}/venezuela.png" alt="venezuela"> Venezuela</a></li> -->
                                                 </ul>
                                             </li>
-                                            <li>
+                                            <!-- <li>
                                                 <span>Europa</span>
                                                 <ul class="list-unstyled">
                                                     <li><a href="../comming-soon.html"><img class="flags" src="${header.dataset.pathImages}/es.svg" alt="españa"> España</a></li>
                                                 </ul>
-                                            </li>
+                                            </li> -->
                                         </ul>
                                     </div>
                                 </li>
@@ -20473,4 +20491,32 @@ platformTemplate = `
 
 platform.innerHTML = platformTemplate;
 
+        document.addEventListener("DOMContentLoaded",
+        function() {
+            var div, n,
+            v = document.getElementsByClassName("youtube-player");
+            for (n = 0; n < v.length; n++) {
+            div = document.createElement("div");
+            div.setAttribute("data-id", v[n].dataset.id);
+            div.innerHTML = labnolThumb(v[n].dataset.id);
+            div.onclick = labnolIframe;
+            v[n].appendChild(div);
+            }
+        });
+        
+        function labnolThumb(id) {
+            var thumb = '<img src="https://i.ytimg.com/vi/ID/hqdefault.jpg">',
+            play = '<div class="play"></div>';
+            return thumb.replace("ID", id) + play;
+        }
+        
+        function labnolIframe() {
+            var iframe = document.createElement("iframe");
+            var embed = "https://www.youtube.com/embed/ID?autoplay=1";
+            iframe.setAttribute("id", "iVideo");
+            iframe.setAttribute("src", embed.replace("ID", this.dataset.id));
+            iframe.setAttribute("frameborder", "0");
+            iframe.setAttribute("allowfullscreen", "1");
+            this.parentNode.replaceChild(iframe, this);      
+        }
 //# sourceMappingURL=maps/scripts.js.map

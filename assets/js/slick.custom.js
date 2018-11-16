@@ -21,4 +21,22 @@
             },
         ]
     });
+
+    $('.carousel-webdesign-hero').slick({ 
+        autoplay: true,
+        dots: true, 
+        arrows: false,
+        infinite: true, 
+        speed: 500, 
+        fade: true, 
+        cssEase: 'linear' 
+    });
+
+    $('.carousel-sample-design').slick({ 
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        draggable: true,
+        cssEase: 'linear'
+    });
+
 })(jQuery);

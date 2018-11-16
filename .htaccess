@@ -1,66 +1,77 @@
+# HTTPS
+
+RewriteEngine On
+RewriteCond %{HTTPS} off
+# First rewrite to HTTPS:
+# Don't put www. here. If it is already there it will be included, if not
+# the subsequent rule will catch it.
+RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# Now, rewrite any request to the wrong domain to use www.
+# [NC] is a case-insensitive match
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteRule .* https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
 # Redirect
 
 # MENU HEADER
 
-Redirect 302 /support https://www.nerdcom.host/commingsoon.html
+#Redirect 302 /support https://www.nerdcom.host/commingsoon.html
 #Redirect 302 https://www.panel.nerdcom.host/ https://www.nerdcom.host/commingsoon.html
 #Redirect 302 https://panel.nerdcom.host/cart.php?a=view https://www.nk.erdcom.host/commingsoon.html
-Redirect 302 /webhosting/ https://www.nerdcom.host/commingsoon.html
-Redirect 302 /cloudhosting/ https://www.nerdcom.host/commingsoon.html
-Redirect 302 /wordpress/ https://www.nerdcom.host/commingsoon.html
-Redirect 302 /dedicados/ https://www.nerdcom.host/commingsoon.html
-Redirect 302 /streaming/ https://www.nerdcom.host/commingsoon.html
-Redirect 302 /vps/ https://www.nerdcom.host/commingsoon.html
-Redirect 302 /webhostingdesign/ https://www.nerdcom.host/commingsoon.html
-Redirect 302 /emailhosting/ https://www.nerdcom.host/commingsoon.html
-Redirect 302 /emailenterprise/ https://www.nerdcom.host/commingsoon.html
-Redirect 302 /gsuite/ https://www.nerdcom.host/commingsoon.html
+#Redirect 302 /webhosting/ https://www.nerdcom.host/commingsoon.html
+#Redirect 302 /cloudhosting/ https://www.nerdcom.host/commingsoon.html
+#Redirect 302 /wordpress/ https://www.nerdcom.host/commingsoon.html
+#Redirect 302 /dedicados/ https://www.nerdcom.host/commingsoon.html
+#Redirect 302 /streaming/ https://www.nerdcom.host/commingsoon.html
+#Redirect 302 /vps/ https://www.nerdcom.host/commingsoon.html
+#Redirect 302 /webhostingdesign/ https://www.nerdcom.host/commingsoon.html
+#Redirect 302 /emailhosting/ https://www.nerdcom.host/commingsoon.html
+#Redirect 302 /emailenterprise/ https://www.nerdcom.host/commingsoon.html
+#Redirect 302 /gsuite/ https://www.nerdcom.host/commingsoon.html
 #Redirect 302 https://panel.nerdcom.host/clientarea.php" https://www.nerdcom.host/commingsoon.html
-Redirect 302 /domains/ https://www.nerdcom.host/commingsoon.html
-Redirect 302 /dominio/domainreseller.php https://www.nerdcom.host/commingsoon.html
+#Redirect 302 /domains/ https://www.nerdcom.host/commingsoon.html
+#Redirect 302 /dominio/domainreseller.php https://www.nerdcom.host/commingsoon.html
 #Redirect 302 https://panel.nerdcom.host/clientarea.php?action=domains https://www.nerdcom.host/commingsoon.html
-Redirect 302 /dominio/dominioprivacidad.php https://www.nerdcom.host/commingsoon.html
+#Redirect 302 /dominio/dominioprivacidad.php https://www.nerdcom.host/commingsoon.html
 #Redirect 302 /nerdcompro/ https://www.nerdcom.host/commingsoon.html
-Redirect 302 /nerdcomdoc/ https://www.nerdcom.host/commingsoon.html
-Redirect 302 /nerdcomlaw/ https://www.nerdcom.host/commingsoon.html
-Redirect 302 /nerdcomacademy/ https://www.nerdcom.host/commingsoon.html
-Redirect 302 /resellerhosting/ https://www.nerdcom.host/commingsoon.html
-Redirect 302 /resellerpartner/ https://www.nerdcom.host/commingsoon.html
-Redirect 302 /verifyidentity/ https://www.nerdcom.host/commingsoon.html
-Redirect 302 /identidadcorporativa/ https://www.nerdcom.host/commingsoon.html
-Redirect 302 /sitelock/ https://www.nerdcom.host/commingsoon.html
-Redirect 302 /webdesign/ https://www.nerdcom.host/commingsoon.html
-Redirect 302 /impulsa/ https://www.nerdcom.host/commingsoon.html
-Redirect 302 /webseo/ https://www.nerdcom.host/commingsoon.html
-Redirect 302 /communitymanager/ https://www.nerdcom.host/commingsoon.html
-Redirect 302 /marketing/ https://www.nerdcom.host/commingsoon.html
-Redirect 302 /businessinteligence/ https://www.nerdcom.host/commingsoon.html
-Redirect 302 /accesservices/ https://www.nerdcom.host/commingsoon.html
-Redirect 302 /nosotros/ https://www.nerdcom.host/commingsoon.html
-Redirect 302 /clients/ https://www.nerdcom.host/commingsoon.html
-Redirect 302 /workwithus/ https://www.nerdcom.host/commingsoon.html
-Redirect 302 /kai/ https://www.nerdcom.host/commingsoon.html
+#Redirect 302 /nerdcomdoc/ https://www.nerdcom.host/commingsoon.html
+#Redirect 302 /nerdcomlaw/ https://www.nerdcom.host/commingsoon.html
+#Redirect 302 /nerdcomacademy/ https://www.nerdcom.host/commingsoon.html
+#Redirect 302 /resellerhosting/ https://www.nerdcom.host/commingsoon.html
+#Redirect 302 /resellerpartner/ https://www.nerdcom.host/commingsoon.html
+#Redirect 302 /verifyidentity/ https://www.nerdcom.host/commingsoon.html
+#Redirect 302 /identidadcorporativa/ https://www.nerdcom.host/commingsoon.html
+#Redirect 302 /impulsa/ https://www.nerdcom.host/commingsoon.html
+#Redirect 302 /webseo/ https://www.nerdcom.host/commingsoon.html
+#Redirect 302 /communitymanager/ https://www.nerdcom.host/commingsoon.html
+#Redirect 302 /marketing/ https://www.nerdcom.host/commingsoon.html
+#Redirect 302 /businessinteligence/ https://www.nerdcom.host/commingsoon.html
+#Redirect 302 /accesservices/ https://www.nerdcom.host/commingsoon.html
+#Redirect 302 /nosotros/ https://www.nerdcom.host/commingsoon.html
+#Redirect 302 /clients/ https://www.nerdcom.host/commingsoon.html
+#Redirect 302 /workwithus/ https://www.nerdcom.host/commingsoon.html
+#Redirect 302 /kai/ https://www.nerdcom.host/commingsoon.html
 #Redirect 302 https://www.forum.nerdcom.host/ https://wwwk..k.nerdcom.host/commingsoon.html
-Redirect 302 /kaizeneven/ https://www.nerdcom.host/commingsoon.html
-Redirect 302 /webinars/ https://www.nerdcom.host/commingsoon.html
+#Redirect 302 /kaizeneven/ https://www.nerdcom.host/commingsoon.html
+#Redirect 302 /webinars/ https://www.nerdcom.host/commingsoon.html
 #Redirect 302 https://panel.nerdcom.host/knowledgebase/ https://www.nerdcom.host/commingsoon.html
 #Redirect 302 https://panel.nerdcom.host/submitticket.php https://www.nerdcom.host/commingsoon.html 
-Redirect 302 /questions/ https://www.nerdcom.host/commingsoon.html
-Redirect 302 /faq/ https://www.nerdcom.host/commingsoon.html
+#Redirect 302 /questions/ https://www.nerdcom.host/commingsoon.html
+#Redirect 302 /faq/ https://www.nerdcom.host/commingsoon.html
 #Redirect 302 https://panel.nerdcom.host https://www.nerdcom.host/commingsoon.html
 
 # MENU FOOTER
 
-Redirect 302 /freetools/ https://www.nerdcom.host/commingsoon.html
-Redirect 302 /requestfeatures/ https://www.nerdcom.host/commingsoon.html
-Redirect 302 /partners/ https://www.nerdcom.host/commingsoon.html
+#Redirect 302 /freetools/ https://www.nerdcom.host/commingsoon.html
+#Redirect 302 /requestfeatures/ https://www.nerdcom.host/commingsoon.html
+#Redirect 302 /partners/ https://www.nerdcom.host/commingsoon.html
 #Redirect 302 https://panel.nerdcom.host/index.php?m=licensing https://www.nerdcom.host/commingsoon.html
-Redirect 302 /afiliacion/ https://www.nerdcom.host/commingsoon.html
+#Redirect 302 /afiliacion/ https://www.nerdcom.host/commingsoon.html
 #Redirect 302 https://panel.nerdcom.host/index.php?m=project_management https://www.nerdcom.host/commingsoon.html
-Redirect 302 /nosotros/ https://www.nerdcom.host/commingsoon.html
-Redirect 302 /policyprivacy/ https://www.nerdcom.host/commingsoon.html
-Redirect 302 /termsofservice/ https://www.nerdcom.host/commingsoon.html
-Redirect 302 /legal/ https://www.nerdcom.host/commingsoon.html
+#Redirect 302 /nosotros/ https://www.nerdcom.host/commingsoon.html
+#Redirect 302 /policyprivacy/ https://www.nerdcom.host/commingsoon.html
+#Redirect 302 /termsofservice/ https://www.nerdcom.host/commingsoon.html
+#Redirect 302 /legal/ https://www.nerdcom.host/commingsoon.html
 
 # Rules Leverage Browser Caching
 

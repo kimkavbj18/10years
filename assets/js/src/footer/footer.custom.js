@@ -29,7 +29,7 @@ var footerTemplate = `<div class="container">
                             <li><a href="forum.nerdcom.host">Foro</a></li>
                             <li><a href="https://www.nerdcom.host/faq/">Preguntas Frecuentes</a></li>
                             <li><a href="https://panel.nerdcom.host/submitticket.php">Ayuda</a></li>
-                            <li><a href="https://www.nerdcom.host/contact/">Contactar</a></li>
+                            <li><a href="https://www.nerdcom.host/contacto/">Contactar</a></li>
                             <li><a href="https://panel.nerdcom.host/submitticket.php">Abrir Ticket</a></li>
                         </ul>
                     </div>
@@ -48,7 +48,7 @@ var footerTemplate = `<div class="container">
                         <p>Programas</p>
                         <ul class="footer-menu list-unstyled">
                             <li><a href="https://www.nerdcom.host/impulsa/">Impulsa</a></li>
-                            <li><a href="https://www.nerdcom.host/webinars/">Webinars</a></li>
+                            <li><a href="https://www.nerdcom.host/webinar/">Webinars</a></li>
                             <li><a href="https://www.nerdcom.host/cooperativas/">Cooperativas</a></li>
                         </ul>
                     </div>
@@ -57,9 +57,9 @@ var footerTemplate = `<div class="container">
                         <ul class="footer-menu list-unstyled">
                             <li><a href="https://www.nerdcom.host/nosotros/">Quienes Somos</a></li>
                             <li><a href="https://blog.nerdcom.host/">Blog</a></li>
-                            <li><a href="https://www.nerdcom.host/clients/">Clientes</a></li>
-                            <li><a href="https://www.nerdcom.host/workwithus/">Trabajar con Nosotros</a></li>
-                            <li><a href="https://www.nerdcom.host/contact/">Contactar</a></li>
+                            <li><a href="https://www.nerdcom.host/clientes/">Clientes</a></li>
+                            <li><a href="https://www.nerdcom.host/jobs/">Trabajar con Nosotros</a></li>
+                            <li><a href="https://www.nerdcom.host/contacto/">Contactar</a></li>
                             <li><a href="https://www.nerdcom.host/kai/">Kai</a></li>
                         </ul>
                     </div>

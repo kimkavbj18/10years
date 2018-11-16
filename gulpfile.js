@@ -50,8 +50,11 @@ gulp.task( 'third-party', function () {
 // Moving Images
 gulp.task( 'assets-images', function () {
 
-    gulp.src( `${path.images}/**/*.*` )
+    gulp.src( [`${path.images}/**/*.*`, `!**/_*.*`] )
         .pipe( image() )
+        .pipe( gulp.dest( `${path.dist}/images` ));
+
+    gulp.src( `${path.images}/**/_*.*` )
         .pipe( gulp.dest( `${path.dist}/images` ));
 
 });
