@@ -34,8 +34,15 @@
 
     $('.carousel-sample-design').slick({ 
         slidesToShow: 5,
-        slidesToScroll: 1,
-        draggable: true,
+        touchMove: true,
+    });
+
+    $('.carousel-howtowork').slick({ 
+        infinite: true, 
+        speed: 500, 
+        fade: true, 
+        prevArrow: '<i class="carousel-prev-btn fa fa-chevron-left"></i>',
+        nextArrow: '<i class="carousel-next-btn fa fa-chevron-right"></i>',
         cssEase: 'linear'
     });
 
