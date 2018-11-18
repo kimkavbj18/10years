@@ -19944,12 +19944,33 @@ else window.addEventListener('load', loadDeferredStyles);
         speed: 500, 
         fade: true, 
         cssEase: 'linear' 
+    }).on('beforeChange', (slick, currentSlide) => {
+        const cSlide = currentSlide.currentSlide;
+
+        $('.info-hero .random-color').each((k, el) => {
+            const element = $(el);
+            let colors = {
+                '0': 'green',
+                '1': 'blue',
+                '2': 'red'
+            };
+            let prevColor = colors[cSlide], nextColor = (cSlide + 1 < Object.keys(colors).length) ? colors[cSlide + 1] : colors[0];
+            if (element.prop('tagName') === 'A') {
+                $(el).removeClass(`btn-${prevColor}`);
+                $(el).addClass(`btn-${nextColor}`);
+            } else {
+                $(el).removeClass(`text-${prevColor}`);
+                $(el).addClass(`text-${nextColor}`);
+            }
+
+        })
+
     });
 
-    $('.carousel-sample-design').slick({ 
-        slidesToShow: 5,
-        touchMove: true,
-    });
+    // $('.carousel-sample-design').slick({
+    //     slidesToShow: 5,
+    //     touchMove: true,
+    // });
 
     $('.carousel-howtowork').slick({ 
         infinite: true, 
