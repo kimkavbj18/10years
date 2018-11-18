@@ -5,4 +5,72 @@
 		margin-top: 50px
 
 .webdesign-hero-image
-	max-width: 100%	
+	max-width: 100%
+
+// ADDITIONAL INFO Section
+.additional-info
+    .col-12:nth-child(1)
+        .additional-box
+            margin-top: 0
+            float: right
+
+        img
+            top: 0
+            right: 110px
+            left: auto
+            transform: scaleX(-1)
+            max-width: 150px
+            transition: .5s
+
+        &:hover img
+            right: 230px
+
+    .col-12:nth-child(2)
+        .additional-box
+            margin-top: 30px
+            float: left
+
+        img
+            top: auto
+            bottom: 60px
+            right: auto
+            left: 100px
+            max-width: 150px
+            transition: .5s
+
+        &:hover img
+            left: 210px
+
+    .col-12:nth-child(3)
+        .additional-box
+            margin-top: 120px
+            float: right
+
+        img
+            top: 120px
+            right: 20px
+            left: auto
+            max-width: 150px
+            transition: .5s
+
+        &:hover img
+            top: -40px
+
+    .col-12:nth-child(4)
+        .additional-box
+            margin-top: 60px
+            float: left
+
+        img
+            top: auto
+            bottom: 60px
+            right: auto
+            left: 110px
+            max-width: 150px
+            transition: .5s
+
+        &:hover img
+            bottom: -60px
+
+    .additional-box
+        padding: 30px

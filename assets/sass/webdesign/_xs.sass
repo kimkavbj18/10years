@@ -6,9 +6,6 @@
 	.carousel-webdesign-hero
 		margin-top: 100px
 
-//.slick-arrow
-//	display: none
-
 .webdesign-hero-image
 	max-width: 100%
 
@@ -16,11 +13,34 @@
 	max-width: 100%
 	display: block
 
-.additional-box
-	width: 250px
-	height: 300px
-	padding: 50px
-	margin: 10px auto
+// ADDITIONAL INFO Section
+.additional-info
+    .col-12
+        position: relative
+
+        & img
+            position: absolute
+            z-index: 10
+            top: 30px
+            left: 50%
+            transform: translateX(-50%)
+
+        &:first-child img
+            top: -60px
+
+    .additional-box
+        position: relative
+        z-index: 20
+        margin-top: 100px
+        margin-left: auto
+        margin-right: auto
+        padding: 50px
+        height: 300px
+        max-width: 250px
+        background-color: $white
+
+    .col-12:first-child .additional-box
+        margin-top: 0
 
 .carousel-howtowork
 	max-width: 100%

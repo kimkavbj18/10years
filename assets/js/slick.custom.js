@@ -31,6 +31,7 @@
         fade: true, 
         cssEase: 'linear' 
     }).on('beforeChange', (slick, currentSlide) => {
+        console.log(slick);
         const cSlide = currentSlide.currentSlide;
 
         $('.info-hero .random-color').each((k, el) => {

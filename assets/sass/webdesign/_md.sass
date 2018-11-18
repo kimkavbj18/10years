@@ -1,2 +1,29 @@
 .webdesigns-hero
 	height: 970px
+
+// ADDITIONAL INFO Section
+.additional-info
+	.col-12
+		position: relative
+
+		&:nth-child(odd)
+			.additional-box
+				float: left
+
+			& img
+				position: absolute
+				z-index: 10
+				top: 30px
+				left: 220px
+				transform: initial
+
+		&:nth-child(even)
+			.additional-box
+				float: right
+
+			& img
+				position: absolute
+				z-index: 10
+				top: 30px
+				right: 300px
+				transform: initial
