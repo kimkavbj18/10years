@@ -19945,7 +19945,6 @@ else window.addEventListener('load', loadDeferredStyles);
         fade: true, 
         cssEase: 'linear' 
     }).on('beforeChange', (slick, currentSlide) => {
-        console.log(slick);
         const cSlide = currentSlide.currentSlide;
 
         $('.info-hero .random-color').each((k, el) => {
@@ -19973,10 +19972,12 @@ else window.addEventListener('load', loadDeferredStyles);
     //     touchMove: true,
     // });
 
-    $('.carousel-howtowork').slick({ 
+    $('.carousel-howtowork').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
         infinite: true, 
         speed: 500, 
-        fade: true, 
+        fade: false,
         prevArrow: '<i class="carousel-prev-btn fa fa-chevron-left"></i>',
         nextArrow: '<i class="carousel-next-btn fa fa-chevron-right"></i>',
         cssEase: 'linear'

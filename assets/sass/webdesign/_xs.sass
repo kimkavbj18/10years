@@ -42,11 +42,42 @@
     .col-12:first-child .additional-box
         margin-top: 0
 
-.carousel-howtowork
-	max-width: 100%
-	display: block
-
 .random-color
-	transition-duration: .5s
-	transition-timing-function: ease-in-out
-	transition-property: color, background-color
+    transition-duration: .5s
+    transition-timing-function: ease-in-out
+    transition-property: color, background-color
+
+// HOW TO WORK Section
+.howtowork
+    .howtowork-carousel-bg
+        max-width: 290px
+        height: 162px
+        background-image: url(./images/howtowork-carousel-bg.png)
+        background-repeat: no-repeat
+        background-size: contain
+        background-position: center top
+
+    .carousel-howtowork
+        position: relative
+        display: block
+        margin: 12px auto 0
+        width: 205px
+
+        .slick-arrow
+            position: absolute
+            z-index: 10
+            top: 50%
+            transform: translateY(-50%)
+            color: $gray-500
+            font-size: 2em
+
+        .carousel-prev-btn
+            left: -40px
+
+        .carousel-next-btn
+            right: -40px
+
+        //.slick-list
+        //    margin: 0 auto
+        //    width: 80%
+        //    height: 505px
