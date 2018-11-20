@@ -19983,6 +19983,14 @@ else window.addEventListener('load', loadDeferredStyles);
         cssEase: 'linear'
     });
 
+    $('.carousel-howtowork .slick-arrow').on('click', (e) => {
+        const cSlide = $('.carousel-howtowork').slick('slickCurrentSlide');
+        const boxes = $('.howtowork-box--info');
+        
+        boxes.removeClass('text-blue');
+        boxes.eq(cSlide).addClass('text-blue');
+    });
+
 })(jQuery);
 TrustLogo("https://nerdcom.host/comodo_secure_seal_113x59_transp.png", "SC5", "none");
 var Chatstack = {};

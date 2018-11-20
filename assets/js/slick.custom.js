@@ -69,4 +69,12 @@
         cssEase: 'linear'
     });
 
+    $('.carousel-howtowork .slick-arrow').on('click', (e) => {
+        const cSlide = $('.carousel-howtowork').slick('slickCurrentSlide');
+        const boxes = $('.howtowork-box--info');
+
+        boxes.removeClass('text-blue');
+        boxes.eq(cSlide).addClass('text-blue');
+    });
+
 })(jQuery);
