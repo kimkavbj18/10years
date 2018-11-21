@@ -9,7 +9,8 @@ const path = {
     'pdf': './assets/pdf',
     'maps': './maps',
     'node_modules': './node_modules',
-    'dist': './dist'
+    'dist': './dist',
+    'services': './dist/services'
 };
 
 // Requirements
@@ -78,7 +79,7 @@ gulp.task( 'assets-pdf', function () {
 // Compiling Sass files
 gulp.task( 'compile-sass', function () {
 
-    gulp.src( `${path.sass}/**/*.{sass, scss}` )
+    gulp.src( [`${path.sass}/**/*.{sass, scss}`, `!/header-footer`] )
         .pipe( sourcemaps.init() )
         .pipe(sass({
             outputStyle: 'compressed',
@@ -90,6 +91,21 @@ gulp.task( 'compile-sass', function () {
 
 });
 
+// Compiling Sass files for services
+gulp.task( 'compile-sass-services', function () {
+
+    gulp.src( `${path.sass}/header-footer/*.{sass, scss}` )
+        .pipe( sourcemaps.init() )
+        .pipe(sass({
+            outputStyle: 'compressed',
+            precision: 8
+        }))
+        .on( 'error', sass.logError )
+        .pipe( sourcemaps.write( './maps' ) )
+        .pipe( gulp.dest( path.services ) );
+
+});
+-
 // Concat and Uglify js files
 gulp.task( 'scripts', function(){
 
@@ -115,6 +131,31 @@ gulp.task( 'scripts', function(){
 
 });
 
+// Concat and Uglify js files for services
+gulp.task( 'scripts-services', function(){
+
+    return gulp.src( `${path.js}/**/*.js` )
+        .pipe( sourcemaps.init() )
+        .pipe(order([
+            'jquery.js',
+            'bootstrap.bundle.js',
+            'trustlogo.js',
+            'getsitecontrol.custom.js',
+            'trustlogo.custom.js',
+            'jquery.custom.js',
+        ]))
+        .pipe( concat( 'scripts.js' ) )
+        .pipe(minify({
+            ext: {
+                src: '.js',
+                min: '.min.js'
+            }
+        }))
+        .pipe( sourcemaps.write( './maps' ) )
+        .pipe( gulp.dest( path.services ) );
+
+});
+
 // HTML minification
 gulp.task( 'html', function(){
 
@@ -130,7 +171,7 @@ gulp.task( 'html', function(){
 // Watch any files edition
 gulp.task('watch', function () {
     gulp.watch( path.node_modules, [ 'third-party' ] );
-    gulp.watch( `${path.sass}/**/*.{sass, scss}`, [ 'compile-sass' ] );
+    gulp.watch( `${path.sass}/**/*.{sass, scss}`, [ 'compile-sass', 'compile-sass-services' ] );
     gulp.watch( `${path.js}/**/*.js`, [ 'scripts' ]);
     gulp.watch( `${path.images}/**/*.*`, [ 'assets-images' ]);
     gulp.watch( `${path.fonts}/**/*.*`, [ 'assets-fonts' ]);
