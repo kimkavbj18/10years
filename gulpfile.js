@@ -79,7 +79,7 @@ gulp.task( 'assets-pdf', function () {
 // Compiling Sass files
 gulp.task( 'compile-sass', function () {
 
-    gulp.src( [`${path.sass}/**/*.{sass, scss}`, `!/header-footer`] )
+    gulp.src( [`${path.sass}/**/*.{sass, scss}`, '!/header-footer'] )
         .pipe( sourcemaps.init() )
         .pipe(sass({
             outputStyle: 'compressed',
@@ -134,7 +134,16 @@ gulp.task( 'scripts', function(){
 // Concat and Uglify js files for services
 gulp.task( 'scripts-services', function(){
 
-    return gulp.src( `${path.js}/**/*.js` )
+    return gulp.src([
+            `${path.js}/jquery.js`,
+            `${path.js}/bootstrap.bundle.js`,
+            `${path.js}/trustlogo.js`,
+            `${path.js}/getsitecontrol.custom.js`,
+            `${path.js}/trustlogo.custom.js`,
+            `${path.js}/jquery.custom.js`,
+            `${path.js}/src/header/*.js`,
+            `${path.js}/src/footer/*.js`
+        ])
         .pipe( sourcemaps.init() )
         .pipe(order([
             'jquery.js',
