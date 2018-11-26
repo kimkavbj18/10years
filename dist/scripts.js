@@ -19986,7 +19986,7 @@ else window.addEventListener('load', loadDeferredStyles);
     $('.carousel-howtowork .slick-arrow').on('click', (e) => {
         const cSlide = $('.carousel-howtowork').slick('slickCurrentSlide');
         const boxes = $('.howtowork-box--info');
-        
+
         boxes.removeClass('text-blue');
         boxes.eq(cSlide).addClass('text-blue');
     });
@@ -20038,6 +20038,46 @@ if ( countDown !== '') {
     }, 1000);
 }
 
+function openTabs(evt, sectionName) {
+    // Declare all variables
+    var i, tabcontent, tablinks;
+
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(sectionName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+function openTabsPrices(evt, sectionName) {
+    // Declare all variables
+    var i, tabcontentPrices, tablinksPrices;
+
+    // Get all elements with class="tabcontent" and hide them
+    tabcontentPrices = document.getElementsByClassName("tabcontentPrices");
+    for (i = 0; i < tabcontentPrices.length; i++) {
+        tabcontentPrices[i].style.display = "none";
+    }
+
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinksPrices = document.getElementsByClassName("tablinksPrices");
+    for (i = 0; i < tablinksPrices.length; i++) {
+        tablinksPrices[i].className = tablinksPrices[i].className.replace(" active", "");
+    }
+
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(sectionName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
 var footer = document.getElementById('footer');
 var footerTemplate = `<div class="container">
                 <div class="row footer-menus">
