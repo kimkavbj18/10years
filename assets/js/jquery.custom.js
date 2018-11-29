@@ -51,6 +51,28 @@
 
         });
 
+        /**
+         * CLOUDHOSTING Tabs
+         */
+        $('.tabBtn').on( 'click', function(){
+            const btn = $(this);
+            const toActivate = btn.data('to-activate');
+            const role= btn.data('role');
+
+            if ( typeof toActivate !== 'undefined' && typeof role !== 'undefined' ) {
+
+                console.log(toActivate, role);
+
+                $(`[data-role='${role}']`).removeClass('active');
+                btn.addClass('active');
+
+                $(`.${role}`).removeClass('active');
+                $(`.${toActivate}`).addClass('active');
+            }
+
+        });
+
+
     });
 
 

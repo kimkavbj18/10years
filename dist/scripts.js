@@ -19895,6 +19895,28 @@ function TrustLogo(t,e,L){return host=location.host,current_code=e,tLUC(t,e,e,L)
 
         });
 
+        /**
+         * CLOUDHOSTING Tabs
+         */
+        $('.tabBtn').on( 'click', function(){
+            const btn = $(this);
+            const toActivate = btn.data('to-activate');
+            const role= btn.data('role');
+
+            if ( typeof toActivate !== 'undefined' && typeof role !== 'undefined' ) {
+
+                console.log(toActivate, role);
+
+                $(`[data-role='${role}']`).removeClass('active');
+                btn.addClass('active');
+
+                $(`.${role}`).removeClass('active');
+                $(`.${toActivate}`).addClass('active');
+            }
+
+        });
+
+
     });
 
 
@@ -20058,26 +20080,26 @@ function openTabs(evt, sectionName) {
     document.getElementById(sectionName).style.display = "block";
     evt.currentTarget.className += " active";
 }
-function openTabsInstance(evt, sectionName) {
-    // Declare all variables
-    var i, tabcontentInstance, tablinksInstance;
-
-    // Get all elements with class="tabcontent" and hide them
-    tabcontentInstance = document.getElementsByClassName("tabcontentInstance");
-    for (i = 0; i < tabcontentInstance.length; i++) {
-        tabcontentInstance[i].style.display = "none";
-    }
-
-    // Get all elements with class="tablinks" and remove the class "active"
-    tablinksInstance = document.getElementsByClassName("tablinksInstance");
-    for (i = 0; i < tablinksInstance.length; i++) {
-        tablinksInstance[i].className = tablinksInstance[i].className.replace(" active", "");
-    }
-
-    // Show the current tab, and add an "active" class to the button that opened the tab
-    document.getElementById(sectionName).style.display = "block";
-    evt.currentTarget.className += " active";
-}
+// function openTabsInstance(evt, sectionName) {
+//     // Declare all variables
+//     var i, tabcontentInstance, tablinksInstance;
+//
+//     // Get all elements with class="tabcontent" and hide them
+//     tabcontentInstance = document.getElementsByClassName("tabcontentInstance");
+//     for (i = 0; i < tabcontentInstance.length; i++) {
+//         tabcontentInstance[i].style.display = "none";
+//     }
+//
+//     // Get all elements with class="tablinks" and remove the class "active"
+//     tablinksInstance = document.getElementsByClassName("tablinksInstance");
+//     for (i = 0; i < tablinksInstance.length; i++) {
+//         tablinksInstance[i].className = tablinksInstance[i].className.replace(" active", "");
+//     }
+//
+//     // Show the current tab, and add an "active" class to the button that opened the tab
+//     document.getElementById(sectionName).style.display = "block";
+//     evt.currentTarget.className += " active";
+// }
 function openTabsPrices(evt, sectionName) {
     // Declare all variables
     var i, tabcontentPrices, tablinksPrices;
@@ -20098,26 +20120,933 @@ function openTabsPrices(evt, sectionName) {
     document.getElementById(sectionName).style.display = "block";
     evt.currentTarget.className += " active";
 }
-function openTabsSO(evt, sectionName) {
-    // Declare all variables
-    var i, tabcontentSO, tablinksSO;
+// function openTabsSO(evt, sectionName) {
+//     // Declare all variables
+//     var i, tabcontentSO, tablinksSO;
+//
+//     // Get all elements with class="tabcontent" and hide them
+//     tabcontentSO = document.getElementsByClassName("tabcontentSO");
+//     for (i = 0; i < tabcontentSO.length; i++) {
+//         tabcontentSO[i].style.display = "none";
+//     }
+//
+//     // Get all elements with class="tablinks" and remove the class "active"
+//     tablinksSO = document.getElementsByClassName("tablinksSO");
+//     for (i = 0; i < tablinksSO.length; i++) {
+//         tablinksSO[i].className = tablinksSO[i].className.replace(" active", "");
+//     }
+//
+//     // Show the current tab, and add an "active" class to the button that opened the tab
+//     document.getElementById(sectionName).style.display = "block";
+//     evt.currentTarget.className += " active";
+// }
 
-    // Get all elements with class="tabcontent" and hide them
-    tabcontentSO = document.getElementsByClassName("tabcontentSO");
-    for (i = 0; i < tabcontentSO.length; i++) {
-        tabcontentSO[i].style.display = "none";
-    }
+const data = {
+    'linux': {
+        0: {
+            'name': 'GENERAL PURPOSE Instances - Guaranteed resources, a balance of CPU/RAM',
+            'models': {
+                0: {
+                    'name': '',
+                    'features': {
+                        'ram': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'processor': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'frequency': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'storage': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'bandwidth': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'price': {
+                            'hourly': '',
+                            'monthly': '',
+                        }
+                    }
+                },
+                1: {
+                    'name': '',
+                    'features': {
+                        'ram': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'processor': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'frequency': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'storage': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'bandwidth': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'price': {
+                            'hourly': '',
+                            'monthly': '',
+                        }
+                    }
+                },
+                2: {
+                    'name': '',
+                    'features': {
+                        'ram': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'processor': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'frequency': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'storage': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'bandwidth': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'price': {
+                            'hourly': '',
+                            'monthly': '',
+                        }
+                    }
+                },
+                3: {
+                    'name': '',
+                    'features': {
+                        'ram': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'processor': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'frequency': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'storage': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'bandwidth': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'price': {
+                            'hourly': '',
+                            'monthly': '',
+                        }
+                    }
+                },
+                4: {
+                    'name': '',
+                    'features': {
+                        'ram': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'processor': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'frequency': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'storage': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'bandwidth': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'price': {
+                            'hourly': '',
+                            'monthly': '',
+                        }
+                    }
+                },
+            }
+        },
+        1: {
+            'name': 'CPU Instances - Guaranteed resources, very high frequency CPU',
+            'models': {
+                0: {
+                    'name': '',
+                    'features': {
+                        'ram': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'processor': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'frequency': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'storage': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'bandwidth': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'price': {
+                            'hourly': '',
+                            'monthly': '',
+                        }
+                    }
+                },
+                1: {
+                    'name': '',
+                    'features': {
+                        'ram': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'processor': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'frequency': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'storage': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'bandwidth': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'price': {
+                            'hourly': '',
+                            'monthly': '',
+                        }
+                    }
+                },
+                2: {
+                    'name': '',
+                    'features': {
+                        'ram': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'processor': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'frequency': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'storage': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'bandwidth': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'price': {
+                            'hourly': '',
+                            'monthly': '',
+                        }
+                    }
+                },
+                3: {
+                    'name': '',
+                    'features': {
+                        'ram': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'processor': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'frequency': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'storage': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'bandwidth': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'price': {
+                            'hourly': '',
+                            'monthly': '',
+                        }
+                    }
+                },
+                4: {
+                    'name': '',
+                    'features': {
+                        'ram': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'processor': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'frequency': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'storage': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'bandwidth': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'price': {
+                            'hourly': '',
+                            'monthly': '',
+                        }
+                    }
+                },
+            }
+        },
+        2: {
+            'name': 'b2-30',
+            'models': {
+                0: {
+                    'name': '',
+                    'features': {
+                        'ram': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'processor': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'frequency': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'storage': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'bandwidth': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'price': {
+                            'hourly': '',
+                            'monthly': '',
+                        }
+                    }
+                },
+                1: {
+                    'name': '',
+                    'features': {
+                        'ram': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'processor': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'frequency': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'storage': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'bandwidth': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'price': {
+                            'hourly': '',
+                            'monthly': '',
+                        }
+                    }
+                },
+                2: {
+                    'name': '',
+                    'features': {
+                        'ram': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'processor': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'frequency': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'storage': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'bandwidth': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'price': {
+                            'hourly': '',
+                            'monthly': '',
+                        }
+                    }
+                },
+                3: {
+                    'name': '',
+                    'features': {
+                        'ram': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'processor': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'frequency': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'storage': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'bandwidth': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'price': {
+                            'hourly': '',
+                            'monthly': '',
+                        }
+                    }
+                },
+                4: {
+                    'name': '',
+                    'features': {
+                        'ram': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'processor': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'frequency': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'storage': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'bandwidth': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'price': {
+                            'hourly': '',
+                            'monthly': '',
+                        }
+                    }
+                },
+            }
+        },
+        3: {
+            'name': 'b2-60',
+            'models': {
+                0: {
+                    'name': '',
+                    'features': {
+                        'ram': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'processor': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'frequency': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'storage': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'bandwidth': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'price': {
+                            'hourly': '',
+                            'monthly': '',
+                        }
+                    }
+                },
+                1: {
+                    'name': '',
+                    'features': {
+                        'ram': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'processor': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'frequency': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'storage': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'bandwidth': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'price': {
+                            'hourly': '',
+                            'monthly': '',
+                        }
+                    }
+                },
+                2: {
+                    'name': '',
+                    'features': {
+                        'ram': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'processor': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'frequency': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'storage': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'bandwidth': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'price': {
+                            'hourly': '',
+                            'monthly': '',
+                        }
+                    }
+                },
+                3: {
+                    'name': '',
+                    'features': {
+                        'ram': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'processor': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'frequency': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'storage': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'bandwidth': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'price': {
+                            'hourly': '',
+                            'monthly': '',
+                        }
+                    }
+                },
+                4: {
+                    'name': '',
+                    'features': {
+                        'ram': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'processor': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'frequency': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'storage': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'bandwidth': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'price': {
+                            'hourly': '',
+                            'monthly': '',
+                        }
+                    }
+                },
+            }
+        },
+        4: {
+            'name': 'b2-120',
+            'models': {
+                0: {
+                    'name': '',
+                    'features': {
+                        'ram': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'processor': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'frequency': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'storage': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'bandwidth': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'price': {
+                            'hourly': '',
+                            'monthly': '',
+                        }
+                    }
+                },
+                1: {
+                    'name': '',
+                    'features': {
+                        'ram': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'processor': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'frequency': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'storage': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'bandwidth': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'price': {
+                            'hourly': '',
+                            'monthly': '',
+                        }
+                    }
+                },
+                2: {
+                    'name': '',
+                    'features': {
+                        'ram': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'processor': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'frequency': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'storage': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'bandwidth': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'price': {
+                            'hourly': '',
+                            'monthly': '',
+                        }
+                    }
+                },
+                3: {
+                    'name': '',
+                    'features': {
+                        'ram': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'processor': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'frequency': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'storage': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'bandwidth': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'price': {
+                            'hourly': '',
+                            'monthly': '',
+                        }
+                    }
+                },
+                4: {
+                    'name': '',
+                    'features': {
+                        'ram': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'processor': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'frequency': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'storage': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'bandwidth': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'price': {
+                            'hourly': '',
+                            'monthly': '',
+                        }
+                    }
+                },
+            }
+        },
+        5: {
+            'name': '',
+            'models': {
+                0: {
+                    'name': '',
+                    'features': {
+                        'ram': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'processor': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'frequency': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'storage': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'bandwidth': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'price': {
+                            'hourly': '',
+                            'monthly': '',
+                        }
+                    }
+                },
+                1: {
+                    'name': '',
+                    'features': {
+                        'ram': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'processor': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'frequency': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'storage': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'bandwidth': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'price': {
+                            'hourly': '',
+                            'monthly': '',
+                        }
+                    }
+                },
+                2: {
+                    'name': '',
+                    'features': {
+                        'ram': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'processor': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'frequency': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'storage': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'bandwidth': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'price': {
+                            'hourly': '',
+                            'monthly': '',
+                        }
+                    }
+                },
+                3: {
+                    'name': '',
+                    'features': {
+                        'ram': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'processor': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'frequency': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'storage': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'bandwidth': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'price': {
+                            'hourly': '',
+                            'monthly': '',
+                        }
+                    }
+                },
+                4: {
+                    'name': '',
+                    'features': {
+                        'ram': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'processor': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'frequency': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'storage': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'bandwidth': {
+                            'hourly': '',
+                            'monthly': '',
+                        },
+                        'price': {
+                            'hourly': '',
+                            'monthly': '',
+                        }
+                    }
+                },
+            }
+        }
+    },
 
-    // Get all elements with class="tablinks" and remove the class "active"
-    tablinksSO = document.getElementsByClassName("tablinksSO");
-    for (i = 0; i < tablinksSO.length; i++) {
-        tablinksSO[i].className = tablinksSO[i].className.replace(" active", "");
-    }
-
-    // Show the current tab, and add an "active" class to the button that opened the tab
-    document.getElementById(sectionName).style.display = "block";
-    evt.currentTarget.className += " active";
-}
+    'windows': {},
+};
 var footer = document.getElementById('footer');
 var footerTemplate = `<div class="container">
                 <div class="row footer-menus">

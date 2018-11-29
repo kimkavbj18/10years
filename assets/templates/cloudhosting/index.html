@@ -117,32 +117,42 @@
                 <div class="row">
                     <div class="container-fluid">
                         <h2 class="text-center mb-5 text-gray-700">Available instances</h2>
+
                         <div class="row options-table mb-5 text-gray-700">
+
                             <div class="tab col-4 align-self-left">
                                 <p class="lead font-weight-bold ml-lg-4">Choice of operating system</p>
                                 <div class="row justify-content-left text-gray-700">
                                     <div class="col-12 col-sm-6 col-lg-4 border-right align-self-left">
-                                        <button class="tablinksSO h5" onclick="openTabsSO(event, 'linux')">Linux</button>
+                                        <!--<button class="tablinksSO h5" onclick="openTabsSO(event, 'linux')">Linux</button>-->
+                                        <button class="tabBtn h5 active" data-to-activate="linux" data-role="tabcontentOS">Linux</button>
                                     </div>
                                     <div class="col-12 col-sm-6 col-lg-4 align-self-left">
-                                        <button class="tablinksSO h5" onclick="openTabsSO(event, 'windows')">Windows</button>
+                                        <!--<button class="tablinksSO h5" onclick="openTabsSO(event, 'windows')">Windows</button>-->
+                                        <button class="tabBtn h5" data-to-activate="windows" data-role="tabcontentOS">Windows</button>
                                     </div>
                                 </div>
                             </div>
+
                             <div class="tab col-4 align-self-left">
                                 <p class="lead font-weight-bold ml-lg-5">Instance price</p>
                                 <div class="row justify-content-left">
                                     <div class="col-12 col-sm-6 col-lg-4 border-right align-self-left">
-                                        <button class="tablinksInstance h5" onclick="openTabsInstance(event, 'hourly')">Hourly</button>
+                                        <!--<button class="tablinksInstance h5" onclick="openTabsInstance(event, 'hourly')">Hourly</button>-->
+                                        <button class="tabBtn h5 active" data-to-activate="hourly" data-role="tabcontentInstance">Hourly</button>
                                     </div>
                                     <div class="col-12 col-sm-6 col-lg-4 align-self-left">
-                                        <button class="tablinksInstance h5" onclick="openTabsInstance(event, 'month')">Monthly</button>
+                                        <!--<button class="tablinksInstance h5" onclick="openTabsInstance(event, 'month')">Monthly</button>-->
+                                        <button class="tabBtn h5" data-to-activate="monthly" data-role="tabcontentInstance">Monthly</button>
                                     </div>
                                 </div>
                             </div>
+
                         </div>
-                        <div id="linux" class="tabcontentSO">
-                            <div id="hourly" class="tabcontentInstance">
+
+                        <div class="linux tabcontentOS active">
+
+                            <div class="tabcontentInstance hourly active">
                                 <div class="table-responsive">
                                     <p class="lead font-weight-bold text-center ml-lg-5">GENERAL PURPOSE Instances - Guaranteed resources, a balance of CPU/RAM</p>
                                     <table class="table table-bordered text-gray-700">
@@ -650,7 +660,7 @@
                                     </table>
                                 </div>
                             </div>    
-                            <div id="month" class="tabcontentInstance">
+                            <div class="tabcontentInstance monthly">
                                 <div class="table-responsive">
                                     <p class="lead font-weight-bold text-center ml-lg-5">GENERAL PURPOSE Instances - Guaranteed resources, a balance of CPU/RAM</p>
                                     <table class="table table-bordered text-gray-700">
@@ -1159,8 +1169,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div id="windows" class="tabcontentSO">
-                            <div id="hourlyW" class="tabcontentInstance">    
+
+                        <div class="windows tabcontentOS">
+                            <div class="tabcontentInstance hourly active">
                                 <div class="table-responsive">
                                     <p class="lead font-weight-bold text-center ml-lg-5">GENERAL PURPOSE Instances - Guaranteed resources, a balance of CPU/RAM</p>
                                     <table class="table table-bordered text-gray-700">
@@ -1681,7 +1692,526 @@
                                     </table>
                                 </div>
                             </div>
-                            <div id="month" class="tabcontentInstance">                                
+                            <div class="tabcontentInstance monthly">
+                                <div class="table-responsive">
+                                    <p class="lead font-weight-bold text-center ml-lg-5">GENERAL PURPOSE Instances - Guaranteed resources, a balance of CPU/RAM</p>
+                                    <table class="table table-bordered text-gray-700">
+                                        <thead>
+                                        <tr>
+                                            <th class="borderless" scope="col"><p class="text-uppercase text-center no-margin">Model</p></th>
+                                            <th class="align-middle" scope="col">
+                                                <p class="h5 text-center text-black no-margin lead font-weight-bold">B2-7</p>
+                                                <!-- <a href="#" class="btn btn-blue btn-sm btn-block">30 Días de prueba</a> -->
+                                            </th>
+                                            <th class="align-middle" scope="col">
+                                                <p class="h5 text-center text-black no-margin lead font-weight-bold">B2-15</p>
+                                                <!-- <a href="#" class="btn btn-dark-orange btn-sm btn-block">30 Días de prueba</a> -->
+                                            </th>
+                                            <th class="align-middle" scope="col">
+                                                <p class="h5 text-center text-black no-margin lead font-weight-bold">B2-30</p>
+                                                <!-- <a href="#" class="btn btn-blue btn-sm btn-block">30 Días de prueba</a> -->
+                                            </th>
+                                            <th class="align-middle" scope="col">
+                                                <p class="h5 text-center text-black no-margin lead font-weight-bold">B2-60</p>
+                                                <!-- <a href="#" class="btn btn-blue btn-sm btn-block">30 Días de prueba</a> -->
+                                            </th>
+                                            <th class="align-middle" scope="col">
+                                                <p class="h5 text-center text-black no-margin lead font-weight-bold">B2-120</p>
+                                                <!-- <a href="#" class="btn btn-blue btn-sm btn-block">30 Días de prueba</a> -->
+                                            </th>
+                                            <th class="align-middle" scope="col">
+                                                <p class="h5 text-center text-black no-margin lead font-weight-bold">&nbsp;</p>
+                                                <!-- <a href="#" class="btn btn-blue btn-sm btn-block">30 Días de prueba</a> -->
+                                            </th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td class="bg-gray-100" colspan="7"><span class="d-block text-uppercase font-weight-bold"></span></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="align-middle" scope="col"><p class="font-weight-normal no-margin">RAM</p></th>
+                                            <td class="align-middle"><p class="text-center no-margin">7 GB of RAM</p></td>
+                                            <td class="align-middle"><p class="text-center no-margin">15 GB of RAM</p></td>
+                                            <td class="align-middle"><p class="text-center no-margin">30 GB of RAM</p></td>
+                                            <td class="align-middle"><p class="text-center no-margin">60 GB of RAM</p></td>
+                                            <td class="align-middle"><p class="text-center no-margin">120 GB of RAM</p></td>
+                                            <td class="align-middle text-center"><a href="./prices.html" class="btn btn-black btn-small align-middle">+</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="align-middle" scope="col"><p class="font-weight-normal no-margin">Processor</p></th>
+                                            <td class="align-middle"><p class="text-center no-margin">2 vCores</p></td>
+                                            <td class="align-middle"><p class="text-center no-margin">4 vCores</p></td>
+                                            <td class="align-middle"><p class="text-center no-margin">8 vCores</p></td>
+                                            <td class="align-middle"><p class="text-center no-margin">16 vCores</p></td>
+                                            <td class="align-middle"><p class="text-center no-margin">32 vCores</p></td>
+                                            <td class="align-middle text-center"><a href="./prices.html" class="btn btn-black btn-small">+</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="align-middle" scope="col"><p class="font-weight-normal no-margin">Frequency per core</p></th>
+                                            <td class="align-middle"><p class="text-center no-margin">2.3 GHz</p></td>
+                                            <td class="align-middle"><p class="text-center no-margin">2.3 GHz</p></td>
+                                            <td class="align-middle"><p class="text-center no-margin">2.3 GHz</p></td>
+                                            <td class="align-middle"><p class="text-center no-margin">2.3 GHz</p></td>
+                                            <td class="align-middle"><p class="text-center no-margin">2.3 GHz</p></td>
+                                            <td class="align-middle text-center"><a href="./prices.html" class="btn btn-black btn-small">+</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="align-middle" scope="col"><p class="font-weight-normal no-margin">Storage</p></th>
+                                            <td class="align-middle"><p class="text-center no-margin">50 GB Local SSD RAID</p></td>
+                                            <td class="align-middle"><p class="text-center no-margin">100 GB Local SSD RAID</p></td>
+                                            <td class="align-middle"><p class="text-center no-margin">200 GB Local SSD RAID</p></td>
+                                            <td class="align-middle"><p class="text-center no-margin">400 GB Local SSD RAID</p></td>
+                                            <td class="align-middle"><p class="text-center no-margin">400 GB Local SSD RAID</p></td>
+                                            <td class="align-middle text-center"><a href="./prices.html" class="btn btn-black btn-small">+</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="align-middle" scope="col"><p class="font-weight-normal no-margin">Bandwidth</p></th>
+                                            <td class="align-middle"><p class="text-center no-margin">250 Mbps public guaranteed Up to 300 Mbps vRack </p></td>
+                                            <td class="align-middle"><p class="text-center no-margin">250 Mbps public guaranteed Up to 300 Mbps vRack </p></td>
+                                            <td class="align-middle"><p class="text-center no-margin">500 Mbps public guaranteed Up to 300 Mbps vRack </p></td>
+                                            <td class="align-middle"><p class="text-center no-margin">500 Mbps public guaranteed Up to 300 Mbps vRack </p></td>
+                                            <td class="align-middle"><p class="text-center no-margin">500 Mbps public guaranteed Up to 300 Mbps vRack </p></td>
+                                            <td class="align-middle text-center"><a href="./prices.html" class="btn btn-black btn-small">+</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="align-middle" scope="col"><p class="font-weight-normal no-margin">Price</p></th>
+                                            <td class="align-middle"><p class="text-center no-margin">$0.074/hour - windows</p></td>
+                                            <td class="align-middle"><p class="text-center no-margin">
+                                                $0.140/hour - windows</p></td>
+                                            <td class="align-middle"><p class="text-center no-margin">$0.284/hour - windows</p></td>
+                                            <td class="align-middle"><p class="text-center no-margin">$0.551/hour - windows</p></td>
+                                            <td class="align-middle"><p class="text-center no-margin">$1.084/hour - windows</p></td>
+                                            <td class="align-middle text-center"><a href="./prices.html" class="btn btn-black btn-small">+</a></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="table-responsive">
+                                    <p class="lead font-weight-bold text-center ml-lg-5 mt-5">CPU Instances - Guaranteed resources, very high frequency CPU</p>
+                                    <table class="table table-bordered text-gray-700">
+                                        <thead>
+                                        <tr>
+                                            <th class="borderless" scope="col"><p class="text-uppercase text-center no-margin">Model</p></th>
+                                            <th class="align-middle" scope="col">
+                                                <p class="h5 text-center text-black no-margin lead font-weight-bold">C2-7</p>
+                                                <!-- <a href="#" class="btn btn-blue btn-sm btn-block">30 Días de prueba</a> -->
+                                            </th>
+                                            <th class="align-middle" scope="col">
+                                                <p class="h5 text-center text-black no-margin lead font-weight-bold">C2-15</p>
+                                                <!-- <a href="#" class="btn btn-dark-orange btn-sm btn-block">30 Días de prueba</a> -->
+                                            </th>
+                                            <th class="align-middle" scope="col">
+                                                <p class="h5 text-center text-black no-margin lead font-weight-bold">C2-30</p>
+                                                <!-- <a href="#" class="btn btn-blue btn-sm btn-block">30 Días de prueba</a> -->
+                                            </th>
+                                            <th class="align-middle" scope="col">
+                                                <p class="h5 text-center text-black no-margin lead font-weight-bold">C2-60</p>
+                                                <!-- <a href="#" class="btn btn-blue btn-sm btn-block">30 Días de prueba</a> -->
+                                            </th>
+                                            <th class="align-middle" scope="col">
+                                                <p class="h5 text-center text-black no-margin lead font-weight-bold">C2-120</p>
+                                                <!-- <a href="#" class="btn btn-blue btn-sm btn-block">30 Días de prueba</a> -->
+                                            </th>
+                                            <th class="align-middle" scope="col">
+                                                <p class="h5 text-center text-black no-margin lead font-weight-bold">&nbsp;</p>
+                                                <!-- <a href="#" class="btn btn-blue btn-sm btn-block">30 Días de prueba</a> -->
+                                            </th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td class="bg-gray-100" colspan="7"><span class="d-block text-uppercase font-weight-bold"></span></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="align-middle" scope="col"><p class="font-weight-normal no-margin">RAM</p></th>
+                                            <td class="align-middle"><p class="text-center no-margin">7 GB of RAM</p></td>
+                                            <td class="align-middle"><p class="text-center no-margin">15 GB of RAM</p></td>
+                                            <td class="align-middle"><p class="text-center no-margin">30 GB of RAM</p></td>
+                                            <td class="align-middle"><p class="text-center no-margin">60 GB of RAM</p></td>
+                                            <td class="align-middle"><p class="text-center no-margin">120 GB of RAM</p></td>
+                                            <td class="align-middle text-center"><a href="./prices.html" class="btn btn-black btn-small align-middle">+</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="align-middle" scope="col"><p class="font-weight-normal no-margin">Processor</p></th>
+                                            <td class="align-middle"><p class="text-center no-margin">2 vCores</p></td>
+                                            <td class="align-middle"><p class="text-center no-margin">4 vCores</p></td>
+                                            <td class="align-middle"><p class="text-center no-margin">8 vCores</p></td>
+                                            <td class="align-middle"><p class="text-center no-margin">16 vCores</p></td>
+                                            <td class="align-middle"><p class="text-center no-margin">32 vCores</p></td>
+                                            <td class="align-middle text-center"><a href="./prices.html" class="btn btn-black btn-small">+</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="align-middle" scope="col"><p class="font-weight-normal no-margin">Frequency per core</p></th>
+                                            <td class="align-middle"><p class="text-center no-margin">3.1 GHz</p></td>
+                                            <td class="align-middle"><p class="text-center no-margin">3.1 GHz</p></td>
+                                            <td class="align-middle"><p class="text-center no-margin">3.1 GHz</p></td>
+                                            <td class="align-middle"><p class="text-center no-margin">3.1 GHz</p></td>
+                                            <td class="align-middle"><p class="text-center no-margin">3.1 GHz</p></td>
+                                            <td class="align-middle text-center"><a href="./prices.html" class="btn btn-black btn-small">+</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="align-middle" scope="col"><p class="font-weight-normal no-margin">Storage</p></th>
+                                            <td class="align-middle"><p class="text-center no-margin">50 GB Local SSD RAID</p></td>
+                                            <td class="align-middle"><p class="text-center no-margin">100 GB Local SSD RAID</p></td>
+                                            <td class="align-middle"><p class="text-center no-margin">200 GB Local SSD RAID</p></td>
+                                            <td class="align-middle"><p class="text-center no-margin">400 GB Local SSD RAID</p></td>
+                                            <td class="align-middle"><p class="text-center no-margin">400 GB Local SSD RAID</p></td>
+                                            <td class="align-middle text-center"><a href="./prices.html" class="btn btn-black btn-small">+</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="align-middle" scope="col"><p class="font-weight-normal no-margin">Bandwidth</p></th>
+                                            <td class="align-middle"><p class="text-center no-margin">250 Mbps public guaranteed Up to 300 Mbps vRack </p></td>
+                                            <td class="align-middle"><p class="text-center no-margin">250 Mbps public guaranteed Up to 300 Mbps vRack </p></td>
+                                            <td class="align-middle"><p class="text-center no-margin">500 Mbps public guaranteed Up to 300 Mbps vRack </p></td>
+                                            <td class="align-middle"><p class="text-center no-margin">500 Mbps public guaranteed Up to 300 Mbps vRack </p></td>
+                                            <td class="align-middle"><p class="text-center no-margin">500 Mbps public guaranteed Up to 300 Mbps vRack </p></td>
+                                            <td class="align-middle text-center"><a href="./prices.html" class="btn btn-black btn-small">+</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="align-middle" scope="col"><p class="font-weight-normal no-margin">Price</p></th>
+                                            <td class="align-middle"><p class="text-center no-margin">$0.207/hour - Windows</p></td>
+                                            <td class="align-middle"><p class="text-center no-margin">
+                                                $0.307/hour - Windows</p></td>
+                                            <td class="align-middle"><p class="text-center no-margin">$0.517/hour - Windows</p></td>
+                                            <td class="align-middle"><p class="text-center no-margin">$0.917/hour - Windows</p></td>
+                                            <td class="align-middle"><p class="text-center no-margin">$1.817/hour - Windows</p></td>
+                                            <td class="align-middle text-center"><a href="./prices.html" class="btn btn-black btn-small">+</a></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="table-responsive">
+                                    <p class="lead font-weight-bold text-center ml-lg-5 mt-5">RAM Instances - Guaranteed resources, designed to deliver high-performance RAM and IOPS.</p>
+                                    <table class="table table-bordered text-gray-700">
+                                        <thead>
+                                        <tr>
+                                            <th class="borderless" scope="col"><p class="text-uppercase text-center no-margin">Model</p></th>
+                                            <th class="align-middle" scope="col">
+                                                <p class="h5 text-center text-black no-margin lead font-weight-bold">R2-15</p>
+                                                <!-- <a href="#" class="btn btn-blue btn-sm btn-block">30 Días de prueba</a> -->
+                                            </th>
+                                            <th class="align-middle" scope="col">
+                                                <p class="h5 text-center text-black no-margin lead font-weight-bold">R2-30</p>
+                                                <!-- <a href="#" class="btn btn-dark-orange btn-sm btn-block">30 Días de prueba</a> -->
+                                            </th>
+                                            <th class="align-middle" scope="col">
+                                                <p class="h5 text-center text-black no-margin lead font-weight-bold">R2-60</p>
+                                                <!-- <a href="#" class="btn btn-blue btn-sm btn-block">30 Días de prueba</a> -->
+                                            </th>
+                                            <th class="align-middle" scope="col">
+                                                <p class="h5 text-center text-black no-margin lead font-weight-bold">R2-120</p>
+                                                <!-- <a href="#" class="btn btn-blue btn-sm btn-block">30 Días de prueba</a> -->
+                                            </th>
+                                            <th class="align-middle" scope="col">
+                                                <p class="h5 text-center text-black no-margin lead font-weight-bold">R2-240</p>
+                                                <!-- <a href="#" class="btn btn-blue btn-sm btn-block">30 Días de prueba</a> -->
+                                            </th>
+                                            <th class="align-middle" scope="col">
+                                                <p class="h5 text-center text-black no-margin lead font-weight-bold">&nbsp;</p>
+                                                <!-- <a href="#" class="btn btn-blue btn-sm btn-block">30 Días de prueba</a> -->
+                                            </th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td class="bg-gray-100" colspan="7"><span class="d-block text-uppercase font-weight-bold"></span></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="align-middle" scope="col"><p class="font-weight-normal no-margin">RAM</p></th>
+                                            <td class="align-middle"><p class="text-center no-margin">15 GB of RAM</p></td>
+                                            <td class="align-middle"><p class="text-center no-margin">30 GB of RAM</p></td>
+                                            <td class="align-middle"><p class="text-center no-margin">60 GB of RAM</p></td>
+                                            <td class="align-middle"><p class="text-center no-margin">120 GB of RAM</p></td>
+                                            <td class="align-middle"><p class="text-center no-margin">240 GB of RAM</p></td>
+                                            <td class="align-middle text-center"><a href="./prices.html" class="btn btn-black btn-small align-middle">+</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="align-middle" scope="col"><p class="font-weight-normal no-margin">Processor</p></th>
+                                            <td class="align-middle"><p class="text-center no-margin">2 vCores</p></td>
+                                            <td class="align-middle"><p class="text-center no-margin">2 vCores</p></td>
+                                            <td class="align-middle"><p class="text-center no-margin">4 vCores</p></td>
+                                            <td class="align-middle"><p class="text-center no-margin">8 vCores</p></td>
+                                            <td class="align-middle"><p class="text-center no-margin">16 vCores</p></td>
+                                            <td class="align-middle text-center"><a href="./prices.html" class="btn btn-black btn-small">+</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="align-middle" scope="col"><p class="font-weight-normal no-margin">Frequency per core</p></th>
+                                            <td class="align-middle"><p class="text-center no-margin">2.4 GHz</p></td>
+                                            <td class="align-middle"><p class="text-center no-margin">2.4 GHz</p></td>
+                                            <td class="align-middle"><p class="text-center no-margin">2.4 GHz</p></td>
+                                            <td class="align-middle"><p class="text-center no-margin">2.4 GHz</p></td>
+                                            <td class="align-middle"><p class="text-center no-margin">2.4 GHz</p></td>
+                                            <td class="align-middle text-center"><a href="./prices.html" class="btn btn-black btn-small">+</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="align-middle" scope="col"><p class="font-weight-normal no-margin">Storage</p></th>
+                                            <td class="align-middle"><p class="text-center no-margin">50 GB Local SSD RAID</p></td>
+                                            <td class="align-middle"><p class="text-center no-margin">50 GB Local SSD RAID</p></td>
+                                            <td class="align-middle"><p class="text-center no-margin">100 GB Local SSD RAID</p></td>
+                                            <td class="align-middle"><p class="text-center no-margin">200 GB Local SSD RAID</p></td>
+                                            <td class="align-middle"><p class="text-center no-margin">400 GB Local SSD RAID</p></td>
+                                            <td class="align-middle text-center"><a href="./prices.html" class="btn btn-black btn-small">+</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="align-middle" scope="col"><p class="font-weight-normal no-margin">Bandwidth</p></th>
+                                            <td class="align-middle"><p class="text-center no-margin">250 Mbps public guaranteed Up to 300 Mbps vRack </p></td>
+                                            <td class="align-middle"><p class="text-center no-margin">250 Mbps public guaranteed Up to 300 Mbps vRack </p></td>
+                                            <td class="align-middle"><p class="text-center no-margin">250 Mbps public guaranteed Up to 300 Mbps vRack </p></td>
+                                            <td class="align-middle"><p class="text-center no-margin">500 Mbps public guaranteed Up to 300 Mbps vRack </p></td>
+                                            <td class="align-middle"><p class="text-center no-margin">500 Mbps public guaranteed Up to 300 Mbps vRack </p></td>
+                                            <td class="align-middle text-center"><a href="./prices.html" class="btn btn-black btn-small">+</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="align-middle" scope="col"><p class="font-weight-normal no-margin">Price</p></th>
+                                            <td class="align-middle"><p class="text-center no-margin">$0.207/hour - Linux</p></td>
+                                            <td class="align-middle"><p class="text-center no-margin">
+                                                $0.224/hour - Linux</p></td>
+                                            <td class="align-middle"><p class="text-center no-margin">$0.340/hour - Linux</p></td>
+                                            <td class="align-middle"><p class="text-center no-margin">$0.584/hour - Linux</p></td>
+                                            <td class="align-middle"><p class="text-center no-margin">$1.150/hour - Linux</p></td>
+                                            <td class="align-middle text-center"><a href="./prices.html" class="btn btn-black btn-small">+</a></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="table-responsive">
+                                    <p class="lead font-weight-bold text-center ml-lg-5 mt-5">IOPS instances - Guaranteed resources, designed to deliver very high read/write performance</p>
+                                    <p class="small text-center ml-lg-5">More than 10 times quicker in IOPS, they have direct access to NVMe cards that offer high volumes of storage, perfect for large databases and big data. See details </p>
+                                    <table class="table table-bordered text-gray-700">
+                                        <thead>
+                                        <tr>
+                                            <th class="borderless" scope="col"><p class="text-uppercase text-center no-margin">Model</p></th>
+                                            <th class="align-middle" scope="col">
+                                                <p class="h5 text-center text-black no-margin lead font-weight-bold"></p>
+                                                <!-- <a href="#" class="btn btn-blue btn-sm btn-block">30 Días de prueba</a> -->
+                                            </th>
+                                            <th class="align-middle" scope="col">
+                                                <p class="h5 text-center text-black no-margin lead font-weight-bold"></p>
+                                                <!-- <a href="#" class="btn btn-dark-orange btn-sm btn-block">30 Días de prueba</a> -->
+                                            </th>
+                                            <th class="align-middle" scope="col">
+                                                <p class="h5 text-center text-black no-margin lead font-weight-bold"></p>
+                                                <!-- <a href="#" class="btn btn-blue btn-sm btn-block">30 Días de prueba</a> -->
+                                            </th>
+                                            <th class="align-middle" scope="col">
+                                                <p class="h5 text-center text-black no-margin lead font-weight-bold"></p>
+                                                <!-- <a href="#" class="btn btn-blue btn-sm btn-block">30 Días de prueba</a> -->
+                                            </th>
+                                            <th class="align-middle" scope="col">
+                                                <p class="h5 text-center text-black no-margin lead font-weight-bold"></p>
+                                                <!-- <a href="#" class="btn btn-blue btn-sm btn-block">30 Días de prueba</a> -->
+                                            </th>
+                                            <th class="align-middle" scope="col">
+                                                <p class="h5 text-center text-black no-margin lead font-weight-bold">&nbsp;</p>
+                                                <!-- <a href="#" class="btn btn-blue btn-sm btn-block">30 Días de prueba</a> -->
+                                            </th>
+                                        </tr>
+                                        </thead>
+                                        <!-- <tbody>
+                                            <tr>
+                                                <td class="bg-gray-100" colspan="7"><span class="d-block text-uppercase font-weight-bold"></span></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="align-middle" scope="col"><p class="font-weight-normal no-margin">RAM</p></th>
+                                                <td class="align-middle"><p class="text-center no-margin">7 GB of RAM</p></td>
+                                                <td class="align-middle"><p class="text-center no-margin">15 GB of RAM</p></td>
+                                                <td class="align-middle"><p class="text-center no-margin">30 GB of RAM</p></td>
+                                                <td class="align-middle"><p class="text-center no-margin">60 GB of RAM</p></td>
+                                                <td class="align-middle"><p class="text-center no-margin">120 GB of RAM</p></td>
+                                                <td class="align-middle text-center"><a href="./prices.html" class="btn btn-black btn-small align-middle">+</a></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="align-middle" scope="col"><p class="font-weight-normal no-margin">Processor</p></th>
+                                                <td class="align-middle"><p class="text-center no-margin">2 vCores</p></td>
+                                                <td class="align-middle"><p class="text-center no-margin">4 vCores</p></td>
+                                                <td class="align-middle"><p class="text-center no-margin">8 vCores</p></td>
+                                                <td class="align-middle"><p class="text-center no-margin">16 vCores</p></td>
+                                                <td class="align-middle"><p class="text-center no-margin">32 vCores</p></td>
+                                                <td class="align-middle text-center"><a href="./prices.html" class="btn btn-black btn-small">+</a></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="align-middle" scope="col"><p class="font-weight-normal no-margin">Frequency per core</p></th>
+                                                <td class="align-middle"><p class="text-center no-margin">2.4 GHz</p></td>
+                                                <td class="align-middle"><p class="text-center no-margin">2.4 GHz</p></td>
+                                                <td class="align-middle"><p class="text-center no-margin">2.4 GHz</p></td>
+                                                <td class="align-middle"><p class="text-center no-margin">2.4 GHz</p></td>
+                                                <td class="align-middle"><p class="text-center no-margin">2.4 GHz</p></td>
+                                                <td class="align-middle text-center"><a href="./prices.html" class="btn btn-black btn-small">+</a></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="align-middle" scope="col"><p class="font-weight-normal no-margin">Storage</p></th>
+                                                <td class="align-middle"><p class="text-center no-margin">50 GB Local SSD RAID</p></td>
+                                                <td class="align-middle"><p class="text-center no-margin">50 GB Local SSD RAID</p></td>
+                                                <td class="align-middle"><p class="text-center no-margin">100 GB Local SSD RAID</p></td>
+                                                <td class="align-middle"><p class="text-center no-margin">200 GB Local SSD RAID</p></td>
+                                                <td class="align-middle"><p class="text-center no-margin">400 GB Local SSD RAID</p></td>
+                                                <td class="align-middle text-center"><a href="./prices.html" class="btn btn-black btn-small">+</a></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="align-middle" scope="col"><p class="font-weight-normal no-margin">Bandwidth</p></th>
+                                                <td class="align-middle"><p class="text-center no-margin">250 Mbps public guaranteed Up to 300 Mbps vRack </p></td>
+                                                <td class="align-middle"><p class="text-center no-margin">250 Mbps public guaranteed Up to 300 Mbps vRack </p></td>
+                                                <td class="align-middle"><p class="text-center no-margin">500 Mbps public guaranteed Up to 300 Mbps vRack </p></td>
+                                                <td class="align-middle"><p class="text-center no-margin">500 Mbps public guaranteed Up to 300 Mbps vRack </p></td>
+                                                <td class="align-middle"><p class="text-center no-margin">500 Mbps public guaranteed Up to 300 Mbps vRack </p></td>
+                                                <td class="align-middle text-center"><a href="./prices.html" class="btn btn-black btn-small">+</a></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="align-middle" scope="col"><p class="font-weight-normal no-margin">Price</p></th>
+                                                <td class="align-middle"><p class="text-center no-margin">$0.107/hour - Linux</p></td>
+                                                <td class="align-middle"><p class="text-center no-margin">
+                                                $0.124/hour - Linux</p></td>
+                                                <td class="align-middle"><p class="text-center no-margin">$0.240/hour - Linux</p></td>
+                                                <td class="align-middle"><p class="text-center no-margin">$0.484/hour - Linux</p></td>
+                                                <td class="align-middle"><p class="text-center no-margin">$0.950/hour - Linux</p></td>
+                                                <td class="align-middle text-center"><a href="./prices.html" class="btn btn-black btn-small">+</a></td>
+                                            </tr>
+                                        </tbody> -->
+                                    </table>
+                                </div>
+                                <div class="table-responsive">
+                                    <p class="lead font-weight-bold text-center ml-lg-5 mt-5">CPU Instances - Guaranteed resources, very high frequency CPU</p>
+                                    <p class="small text-center ml-lg-5">NGC integration is up to 1,000 times quicker than a CPU for parallel computing, and allows Tensorflow, Caffe, Mxnet etc. to be used easily. See details </p>
+                                    <table class="table table-bordered text-gray-700">
+                                        <thead>
+                                        <tr>
+                                            <th class="borderless" scope="col"><p class="text-uppercase text-center no-margin">Model</p></th>
+                                            <th class="align-middle" scope="col">
+                                                <p class="h5 text-center text-black no-margin lead font-weight-bold"></p>
+                                            </th>
+                                            <th class="align-middle" scope="col">
+                                                <p class="h5 text-center text-black no-margin lead font-weight-bold"></p>
+                                            </th>
+                                            <th class="align-middle" scope="col">
+                                                <p class="h5 text-center text-black no-margin lead font-weight-bold"></p>
+                                            </th>
+                                            <th class="align-middle" scope="col">
+                                                <p class="h5 text-center text-black no-margin lead font-weight-bold"></p>
+                                            </th>
+                                            <th class="align-middle" scope="col">
+                                                <p class="h5 text-center text-black no-margin lead font-weight-bold"></p>
+                                            </th>
+                                        </tr>
+                                        </thead>
+                                        <!-- <tbody>
+                                            <tr>
+                                                <td class="bg-gray-100" colspan="7"><span class="d-block text-uppercase font-weight-bold"></span></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="align-middle" scope="col"><p class="font-weight-normal no-margin">RAM</p></th>
+                                                <td class="align-middle"><p class="text-center no-margin">45 GB of RAM</p></td>
+                                                <td class="align-middle"><p class="text-center no-margin">90 GB of RAM</p></td>
+                                                <td class="align-middle text-center"><a href="./prices.html" class="btn btn-black btn-small align-middle">+</a></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="align-middle" scope="col"><p class="font-weight-normal no-margin">Processor</p></th>
+                                                <td class="align-middle"><p class="text-center no-margin">8 vCores</p></td>
+                                                <td class="align-middle"><p class="text-center no-margin">16 vCores</p></td>
+                                                <td class="align-middle text-center"><a href="./prices.html" class="btn btn-black btn-small">+</a></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="align-middle" scope="col"><p class="font-weight-normal no-margin">Frequency per core</p></th>
+                                                <td class="align-middle"><p class="text-center no-margin">2.2 GHz</p></td>
+                                                <td class="align-middle"><p class="text-center no-margin">2.2 GHz</p></td>
+                                                <td class="align-middle text-center"><a href="./prices.html" class="btn btn-black btn-small">+</a></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="align-middle" scope="col"><p class="font-weight-normal no-margin">Storage</p></th>
+                                                <td class="align-middle"><p class="text-center no-margin">400 GB Local SSD RAID</p></td>
+                                                <td class="align-middle"><p class="text-center no-margin">800 GB Local SSD RAID</p></td>
+                                                <td class="align-middle text-center"><a href="./prices.html" class="btn btn-black btn-small">+</a></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="align-middle" scope="col"><p class="font-weight-normal no-margin">Bandwidth</p></th>
+                                                <td class="align-middle"><p class="text-center no-margin">250 Mbps public guaranteed Up to 300 Mbps vRack </p></td>
+                                                <td class="align-middle"><p class="text-center no-margin">500 Mbps public guaranteed Up to 300 Mbps vRack </p></td>
+                                                <td class="align-middle text-center"><a href="./prices.html" class="btn btn-black btn-small">+</a></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="align-middle" scope="col"><p class="font-weight-normal no-margin">Price</p></th>
+                                                <td class="align-middle"><p class="text-center no-margin">$2.661/hour - Linux</p></td>
+                                                <td class="align-middle"><p class="text-center no-margin">
+                                                $5.440/hour - Linux</p></td>
+                                                <td class="align-middle text-center"><a href="./prices.html" class="btn btn-black btn-small">+</a></td>
+                                            </tr>
+                                        </tbody> -->
+                                    </table>
+                                </div>
+                                <div class="table-responsive">
+                                    <p class="lead font-weight-bold text-center ml-lg-5 mt-5">SANDBOX Instances - Shared resources</p>
+                                    <p class="small text-center ml-lg-5">NGC integration is up to 1,000 times quicker than a CPU for parallel computing, and allows Tensorflow, Caffe, Mxnet etc. to be used easily. See details </p>
+                                    <table class="table table-bordered text-gray-700">
+                                        <thead>
+                                        <tr>
+                                            <th class="borderless" scope="col"><p class="text-uppercase text-center no-margin">Model</p></th>
+                                            <th class="align-middle" scope="col">
+                                                <p class="h5 text-center text-black no-margin lead font-weight-bold"></p>
+                                            </th>
+                                            <th class="align-middle" scope="col">
+                                                <p class="h5 text-center text-black no-margin lead font-weight-bold"></p>
+                                            </th>
+                                            <th class="align-middle" scope="col">
+                                                <p class="h5 text-center text-black no-margin lead font-weight-bold"></p>
+                                            </th>
+                                            <th class="align-middle" scope="col">
+                                                <p class="h5 text-center text-black no-margin lead font-weight-bold"></p>
+                                            </th>
+                                            <th class="align-middle" scope="col">
+                                                <p class="h5 text-center text-black no-margin lead font-weight-bold"></p>
+                                            </th>
+                                        </tr>
+                                        </thead>
+                                        <!-- <tbody>
+                                            <tr>
+                                                <td class="bg-gray-100" colspan="7"><span class="d-block text-uppercase font-weight-bold"></span></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="align-middle" scope="col"><p class="font-weight-normal no-margin">RAM</p></th>
+                                                <td class="align-middle"><p class="text-center no-margin">2 GB of RAM</p></td>
+                                                <td class="align-middle"><p class="text-center no-margin">4 GB of RAM</p></td>
+                                                <td class="align-middle"><p class="text-center no-margin">8 GB of RAM</p></td>
+                                                <td class="align-middle text-center"><a href="./prices.html" class="btn btn-black btn-small align-middle">+</a></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="align-middle" scope="col"><p class="font-weight-normal no-margin">Processor</p></th>
+                                                <td class="align-middle"><p class="text-center no-margin">1 vCores</p></td>
+                                                <td class="align-middle"><p class="text-center no-margin">1 vCores</p></td>
+                                                <td class="align-middle"><p class="text-center no-margin">2 vCores</p></td>
+                                                <td class="align-middle text-center"><a href="./prices.html" class="btn btn-black btn-small">+</a></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="align-middle" scope="col"><p class="font-weight-normal no-margin">Frequency per core</p></th>
+                                                <td class="align-middle"><p class="text-center no-margin">2.4 GHz</p></td>
+                                                <td class="align-middle"><p class="text-center no-margin">2.4 GHz</p></td>
+                                                <td class="align-middle"><p class="text-center no-margin">2.4 GHz</p></td>
+                                                <td class="align-middle text-center"><a href="./prices.html" class="btn btn-black btn-small">+</a></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="align-middle" scope="col"><p class="font-weight-normal no-margin">Storage</p></th>
+                                                <td class="align-middle"><p class="text-center no-margin">10 GB Local SSD RAID</p></td>
+                                                <td class="align-middle"><p class="text-center no-margin">20 GB Local SSD RAID</p></td>
+                                                <td class="align-middle"><p class="text-center no-margin">40 GB Local SSD RAID</p></td>
+                                                <td class="align-middle text-center"><a href="./prices.html" class="btn btn-black btn-small">+</a></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="align-middle" scope="col"><p class="font-weight-normal no-margin">Bandwidth</p></th>
+                                                <td class="align-middle"><p class="text-center no-margin">100 Mbps public guaranteed Up to 300 Mbps vRack </p></td>
+                                                <td class="align-middle"><p class="text-center no-margin">100 Mbps public guaranteed Up to 300 Mbps vRack </p></td>
+                                                <td class="align-middle"><p class="text-center no-margin">100 Mbps public guaranteed Up to 300 Mbps vRack </p></td>
+                                                <td class="align-middle text-center"><a href="./prices.html" class="btn btn-black btn-small">+</a></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="align-middle" scope="col"><p class="font-weight-normal no-margin">Price</p></th>
+                                                <td class="align-middle"><p class="text-center no-margin">$0.009/hour - Linux</p></td>
+                                                <td class="align-middle"><p class="text-center no-margin">
+                                                $0.024/hour - Linux</p></td>
+                                                <td class="align-middle"><p class="text-center no-margin">$0.044/hour - Linux</p></td>
+                                                <td class="align-middle text-center"><a href="./prices.html" class="btn btn-black btn-small">+</a></td>
+                                            </tr>
+                                        </tbody> -->
+                                    </table>
+                                </div>
                             </div>    
                         </div>    
                     </div>
@@ -1806,10 +2336,10 @@
     
     <!-- SCRIPTS -->
     <script src="../scripts.min.js" async></script>
-    <script>
-        document.getElementById("linux").style.display = "block";
-        document.getElementById("month").style.display = "none";        
-    </script>
+    <!--<script>-->
+        <!--document.getElementById("linux").style.display = "block";-->
+        <!--document.getElementById("month").style.display = "none";        -->
+    <!--</script>-->
     <!-- Start of HubSpot Embed Code -->
     <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/4378772.js"></script>    
 </body>
