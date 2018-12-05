@@ -21122,11 +21122,11 @@ var footerTemplate = `<div class="container">
                     <div class="col-lg-6">
                         <ul class="footer-menu-icons nav list-unstyled">
                             <li class="nav-item">
-                                <a href="javascript:if(window.open('https://www.trustlogo.com/ttb_searcher/trustlogo?v_querytype=W&amp;v_shortname=SC5&amp;v_search=https://k.nerdcom.host/&amp;x=6&amp;y=5','tl_wnd_credentials'+(new Date()).getTime(),'toolbar=0,scrollbars=1,location=1,status=1,menubar=1,resizable=1,width=374,height=660,left=60,top=120')){};tLlB(tLTB);"
-                                    onmouseover="tLeB(event,'https://www.trustlogo.com/ttb_searcher/trustlogo?v_querytype=C&amp;v_shortname=SC5&amp;v_search=https://k.nerdcom.host/&amp;x=6&amp;y=5','tl_popupSC5')"
+                                <a href="javascript:if(window.open('https://www.trustlogo.com/ttb_searcher/trustlogo?v_querytype=W&amp;v_shortname=SC5&amp;v_search=https://nerdcom.host/&amp;x=6&amp;y=5','tl_wnd_credentials'+(new Date()).getTime(),'toolbar=0,scrollbars=1,location=1,status=1,menubar=1,resizable=1,width=374,height=660,left=60,top=120')){};tLlB(tLTB);"
+                                    onmouseover="tLeB(event,'https://www.trustlogo.com/ttb_searcher/trustlogo?v_querytype=C&amp;v_shortname=SC5&amp;v_search=https://nerdcom.host/&amp;x=6&amp;y=5','tl_popupSC5')"
                                     onmousemove="tLXB(event)" onmouseout="tLTC('tl_popupSC5')" ondragstart="return false;">
                                     <img src="${footer.dataset.pathImages}/comodo_secure_seal_113x59_transp.png"
-                                    onmousedown="return tLKB(event,'https://www.trustlogo.com/ttb_searcher/trustlogo?v_querytype=W&amp;v_shortname=SC5&amp;v_search=https://k.nerdcom.host/&amp;x=6&amp;y=5');"
+                                    onmousedown="return tLKB(event,'https://www.trustlogo.com/ttb_searcher/trustlogo?v_querytype=W&amp;v_shortname=SC5&amp;v_search=https://nerdcom.host/&amp;x=6&amp;y=5');"
                                     oncontextmenu="return tLLB(event);" alt="trustlogo">
                                 </a>
                                 <div id="tl_popupSC5" class="ssl-popup"
@@ -21205,15 +21205,15 @@ var headerTemplate = `<div class="container">
                                             </li>
                                             <li>
                                                 <a class="link-title" href="https://www.nerdcom.host/emailhosting/">Business Email</a>
-                                                <a class="link-description" href="https://www.nerdcom.host/emailhosting/">Web hosting + Dominio + WorPress + 1 Especialista enfocado para tu web.</a>
+                                                <a class="link-description" href="https://www.nerdcom.host/emailhosting/">Correo de negocios con el nombre de tu marca permite a tus clientes identificarte.</a>
                                             </li>
                                             <li>
                                                 <a class="link-title" href="https://www.nerdcom.host/emailenterprise/">Enterprise Email</a>
-                                                <a class="link-description" href="https://www.nerdcom.host/emailenterprise/">Web hosting + Dominio + WorPress + 1 Especialista enfocado para tu web.</a>
+                                                <a class="link-description" href="https://www.nerdcom.host/emailenterprise/">Un correo corporativo con mayor capacidad de almacenamiento para llevar a tu empresa.</a>
                                             </li>
                                             <li>
                                                 <a class="link-title" href="https://www.nerdcom.host/gsuite/">GSuite</a>
-                                                <a class="link-description" href="https://www.nerdcom.host/gsuite/">Web hosting + Dominio + WorPress + 1 Especialista enfocado para tu web.</a>
+                                                <a class="link-description" href="https://www.nerdcom.host/gsuite/">Colaboración, comunicación y almacenamiento seguro en tiempo real entre grupos de trabajo de cualquier tamaño.</a>
                                             </li>
                                         </ul>
                                         <div class="sub-menu-foot hide-mobile">
@@ -21227,7 +21227,7 @@ var headerTemplate = `<div class="container">
                                         <ul class="menu list-unstyled">
                                             <li>
                                                 <a class="link-title" href="https://www.nerdcom.host/dominio/">Dominios</a>
-                                                <a class="link-description" href="https://www.nerdcom.host/dominio/">tu empresa en línea inicia con un dominio. El nombre con el que darás a conocer tu marca en la web.</a>
+                                                <a class="link-description" href="https://www.nerdcom.host/dominio/">Tu empresa en línea inicia con un dominio. El nombre con el que darás a conocer tu marca en la web.</a>
                                             </li>
                                             <li>
                                                 <a class="link-title" href="https://www.nerdcom.host/dominio/domainreseller.html">Revendedor de Dominios</a>
@@ -21254,7 +21254,7 @@ var headerTemplate = `<div class="container">
                                         <ul class="menu list-unstyled">
                                             <li>
                                                 <a class="link-title" href="https://www.nerdcom.host/nerdcompro/">Nerdcom PRO</a>
-                                                <a class="link-description" href="https://www.nerdcom.host/nerdcompro/">Plataforma de facturación y contabilidad, orientada a clientes, te permite optimizar la administrar tu empresa ahorrando tiempo y ampliando tus ganancias.</a>
+                                                <a class="link-description" href="https://www.nerdcom.host/nerdcompro/">Plataforma de facturación y contabilidad, orientada a clientes, te permite optimizar la administración de tu empresa ahorrando tiempo y ampliando tus ganancias.</a>
                                             </li>
                                             <li>
                                                 <a class="link-title" href="https://www.nerdcom.host/nerdcomdoc/">Nerdcom DOC</a>
@@ -21276,11 +21276,11 @@ var headerTemplate = `<div class="container">
                                         <ul class="menu list-unstyled">
                                             <li>
                                                 <a class="link-title" href="https://www.nerdcom.host/resellerhosting/">Revendedor Hosting</a>
-                                                <a class="link-description" href="https://www.nerdcom.host/resellerhosting/">Invierte y comienza a producir ganancias con tu plan reseller hosting desde 19.95$ y disfruta de WHMCS Gratis.</a>
+                                                <a class="link-description" href="https://www.nerdcom.host/resellerhosting/">nvierte y comienza a producir ganancias con tu plan reseller hosting desde 19.95$ y disfruta de WHMCS Gratis.</a>
                                             </li>
                                             <li>
                                                 <a class="link-title" href="https://www.nerdcom.host/dominio/domainreseller.html">Revendedor de Dominios</a>
-                                                <a class="link-description" href=" https://www.nerdcom.host/dominio/domainreseller.html">Conviértete en socio Nerdcom y genera ingresos substánciales en tu cuenta bancaria. ¡Conoce nuestra oferta!</a>
+                                                <a class="link-description" href=" https://www.nerdcom.host/dominio/domainreseller.html">Inicia o complementa tu emprendimiento con nuestros paquetes para la venta de dominios e incrementa tú capital.</a>
                                             </li>
                                             <li>
                                                 <a class="link-title" href="https://www.nerdcom.host/resellerpartner/">Socio Estrategico "Partner"</a>
@@ -21310,18 +21310,18 @@ var headerTemplate = `<div class="container">
                                             </li>
                                             <li>
                                                 <a class="link-title" href="https://www.nerdcom.host/sitelock/">Site Lock</a>
-                                                <a class="link-description" href="https://www.nerdcom.host/sitelock/">Sistema de protección anti malware que asegura tu sitio web contra virus, ataques con un certificado de garantía visible.</a>
+                                                <a class="link-description" href="https://www.nerdcom.host/sitelock/">Sistema de protección anti malware que asegura tu sitio web contra virus y ataques con un certificado de garantía visible.</a>
                                             </li>
                                             <li>
                                                 <a class="link-title" href="https://www.nerdcom.host/ssl/">SSL</a>
-                                                <a class="link-description" href="https://www.nerdcom.host/ssl/">Certificado de seguridad (https://) protege  tu web y tu SEO dando tranquilidad en la compra de productos a visitantes.</a>
+                                                <a class="link-description" href="https://www.nerdcom.host/ssl/">Certificado de seguridad (https://) protege tu web y tu SEO dando tranquilidad en la compra de productos a visitantes.</a>
                                             </li>
                                             <li class="security-design hide-mobile">
                                                 <a href="https://www.nerdcom.host/webdesign/">
                                                     <span class="text-link text-create">Creamos</span>                                                                
                                                     <span class="text-link text-page">Tu página</span><br>                                                                
                                                     <span class="text-link text-since">Desde</span>                                                                
-                                                    <span class="text-link text-price">US$ 450.00</span>                                                                
+                                                    <span class="text-link text-price">US$ 800.00</span>                                                                
                                                 </a>
                                             </li>
                                         </ul>
@@ -21337,11 +21337,11 @@ var headerTemplate = `<div class="container">
                                             </li>
                                             <li>
                                                 <a class="link-title" href="https://www.nerdcom.host/webseo/">Web SEO</a>
-                                                <a class="link-description" href="https://www.nerdcom.host/webseo/">Hacemos el contenido de tu web orgánico y  atractivo a los motores de búsqueda que envían personas a tu sitio aumentando visibilidad de tu sitio.</a>
+                                                <a class="link-description" href="https://www.nerdcom.host/webseo/">Hacemos el contenido de tu web orgánico y atractivo a los motores de búsqueda que envían personas a tu sitio aumentando visibilidad de tu sitio.</a>
                                             </li>
                                             <li>
                                                 <a class="link-title" href="https://www.nerdcom.host/communitymanager/">Community Manager</a>
-                                                <a class="link-description" href="https://www.nerdcom.host/communitymanager/">Un profesional  dedicado a hacer que el contenido en tus redes sociales sea irresistible a tus futuros clientes. ¡Atráelos desde su lugar favorito!</a>
+                                                <a class="link-description" href="https://www.nerdcom.host/communitymanager/">Un profesional dedicado a hacer que el contenido en tus redes sociales sea irresistible a tus futuros clientes. ¡Atráelos desde su lugar favorito!</a>
                                             </li>
                                             <li>
                                                 <a class="link-title" href="https://www.nerdcom.host/cooperativas/">Cooperativas</a>
@@ -21349,7 +21349,7 @@ var headerTemplate = `<div class="container">
                                             </li>
                                             <li>
                                                 <a class="link-title" href="https://www.nerdcom.host/marketing/">Marketing</a>
-                                                <a class="link-description" href="//www.nerdcom.host/marketing/">Incrementa tus ventas con estrategias creadas para aumentar la visibilidad y el atractivo de tu producto .¡Conoce los planes que ideamos pensando en ti!</a>
+                                                <a class="link-description" href="//www.nerdcom.host/marketing/">Incrementa tus ventas con estrategias creadas para aumentar la visibilidad y el atractivo de tu producto. ¡Conoce los planes que ideamos pensando en ti!</a>
                                             </li>
                                             <li>
                                                 <a class="link-title" href="https://www.nerdcom.host/inteligenciadenegocios/">Inteligencia de Negocios</a>
