@@ -1,4 +1,81 @@
+/* ODOMETER */
 
+// $unit-of-speed: 50ms; // crazy fast
+$unit-of-speed: 500ms // normal
+// $unit-of-speed: 1000ms; // boring
+
+@mixin animation($single-animation)
+    -webkit-animation: $single-animation
+    animation: $single-animation
+
+@mixin animation-duration($duration)
+    -webkit-animation-duration: $duration
+    animation-duration: $duration
+
+.odometer
+    height: 1.65em
+    margin: 0.70em
+    display: inline-block
+    position: absolute
+
+.digit 
+    display: inline-block
+    height: 1em
+    width: 0.70em
+    overflow: hidden
+    font-size: 24px
+    background: white
+
+    span
+        position: absolute
+        margin-left: 13px    
+
+.digit-container 
+    line-height: 1em
+    @include animation(slide infinite linear)
+
+.digit-one
+    @include animation-duration(5 * $unit-of-speed)
+
+.digit-ten
+    @include animation-duration(100 * $unit-of-speed)
+
+.digit-hundred
+    @include animation-duration(1000 * $unit-of-speed)
+
+.count-sales
+    margin-left: 120px
+    
+    .digit
+        color: #3498db
+
+.count-client
+    margin-top: 137px
+    margin-left: 170px
+    
+    .digit
+        color: #35b18d
+
+.count-billing
+    margin-top: 263px
+    margin-left: 115px
+    
+    .digit
+        color: #db1b1b      
+
+@-webkit-keyframes slide
+  from
+    -webkit-transform: translateY(-10em)
+  to 
+    -webkit-transform: translateY(0)
+
+@keyframes slide
+  from
+    transform: translateY(0)
+  to 
+    transform: translateY(0)
+
+/*ICONS*/
 .icons--images p
     font-size: 12px
     font-weight: 400
@@ -6,12 +83,13 @@
     letter-spacing: 1px
     margin-top: 10px
 
+/* TOOLS */
 .tools
     background-image: url(./images/new-2017__state3-circles-bg.svg)
     background-repeat: no-repeat
     background-size: cover
 
-
+/*NERDCOM PUBLCITY*/
 .nerdcom-publicity,
 .nerdcom-publicity-tour 
     position: relative

@@ -54,8 +54,8 @@ var headerTemplate = `<div class="container">
                                                 <a class="link-description" href="https://www.nerdcom.host/webdesign/">Web hosting + Dominio + WorPress + 1 Especialista enfocado en tu web.</a>
                                             </li>
                                             <li>
-                                                <a class="link-title" href="https://www.nerdcom.host/emailhosting/">Business Email</a>
-                                                <a class="link-description" href="https://www.nerdcom.host/emailhosting/">Correo de negocios con el nombre de tu marca permite a tus clientes identificarte.</a>
+                                                <a class="link-title" href="https://www.nerdcom.host/emailbusiness/">Business Email</a>
+                                                <a class="link-description" href="https://www.nerdcom.host/emailbusiness/">Correo de negocios con el nombre de tu marca permite a tus clientes identificarte.</a>
                                             </li>
                                             <li>
                                                 <a class="link-title" href="https://www.nerdcom.host/emailenterprise/">Enterprise Email</a>
@@ -113,6 +113,31 @@ var headerTemplate = `<div class="container">
                                             <li>
                                                 <a class="link-title" href="https://www.nerdcom.host/nerdcomlaw/">Nerdcom LAW</a>
                                                 <a class="link-description" href="https://www.nerdcom.host/nerdcomlaw/">Diseñada para la administración de bufetes de abogados, que permite hacer una distribución eficiente de tiempo y esfuerzo mejorando la atención al cliente.</a>
+                                            </li>
+                                            <li class="platform-modules">
+                                                <a class="link-title" href="#">Módulos Profesionales</a>
+                                                <a class="link-description" href="#">Convierte a NerdcomPRO en el modelo de negocio que se ajusta a tu empresa y necesidades con un solo click.</a>
+                                                <ul class="list-unstyled font-weight-bold float-lg-left mt-3 mt-lg-0">
+                                                    <li><a class="link-title-company" href="https://www.nerdcom.host/agenciadeviajes/">Agencias de Viajes</a></li>
+                                                    <li><a class="link-title-company" href="https://www.nerdcom.host/colmados/">Colmados</a></li>
+                                                    <li><a class="link-title-company" href="https://www.nerdcom.host/comidarapida/">Comida Rápida</a></li>
+                                                    <li><a class="link-title-company" href="https://www.nerdcom.host/crm/">CRM</a></li>
+                                                    <li><a class="link-title-company" href="https://www.nerdcom.host/ferreteria/">Ferretería</a></li>
+                                                </ul>
+                                                <ul class="list-unstyled font-weight-bold float-lg-right text-left">
+                                                    <li><a class="link-title-company" href="https://www.nerdcom.host/gestionhumana/">Gestión Humana</a></li>
+                                                    <li><a class="link-title-company" href="https://www.nerdcom.host/gps/">GPS</a></li>
+                                                    <li><a class="link-title-company" href="https://www.nerdcom.host/hospitalesclinicas/">Hospitales & Clínicas</a></li>
+                                                    <li><a class="link-title-company" href="https://www.nerdcom.host/laboratorios/">Laboratorios</a></li>
+                                                    <li><a class="link-title-company" href="https://www.nerdcom.host/nomina/">Nómina</a></li>
+                                                </ul>
+                                                <ul class="list-unstyled font-weight-bold float-lg-right text-left">
+                                                    <li><a class="link-title-company" href="https://www.nerdcom.host/prestamosfinanciamientos/">Prestamos y Financiamientos</a></li>
+                                                    <li><a class="link-title-company" href="https://www.nerdcom.host/repuestos/">Repuestos</a></li>
+                                                    <li><a class="link-title-company" href="https://www.nerdcom.host/restaurantes/">Restaurantes</a></li>
+                                                    <li><a class="link-title-company" href="https://www.nerdcom.host/supermercados/">Supermercados</a></li>
+                                                    <li><a class="link-title-company" href="https://www.nerdcom.host/ticketsoporte/">Tickets de soporte</a></li>
+                                                </ul>
                                             </li>
                                         </ul>
                                         <div class="sub-menu-foot hide-mobile">
@@ -261,10 +286,10 @@ var headerTemplate = `<div class="container">
                                                 <img class="nav-img-contact hide-mobile" src="${header.dataset.pathImages}/quest.svg" alt="quest">
                                             </li>
                                             <li class="text-left text-lg-center">
-                                                <a class="link-title-center" href="https://www.nerdcom.host/faq/">Preguntas frecuentes</a>
+                                                <a class="link-title-center" target="_new" href="https://panel.nerdcom.host/knowledgebase">Preguntas frecuentes</a>
                                                 <img class="nav-img-contact hide-mobile" src="${header.dataset.pathImages}/faq.svg" alt="faq">
                                             </li>
-                                        </ul>    
+                                        </ul>
                                     </div>
                                 </li>
                                 <li class="nav-item">

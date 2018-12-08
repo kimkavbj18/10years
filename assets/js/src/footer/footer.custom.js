@@ -37,7 +37,7 @@ var footerTemplate = `<div class="container">
                         <p>Recursos</p>
                         <ul class="footer-menu list-unstyled">
                             <li><a href="https://www.nerdcom.host/freetools/">Herramientas Gratis</a></li>
-                            <li><a href="https://www.nerdcom.host/requestfeatures/">Solicitar Características</a></li>
+                            <li><a href="https://caracteristicas.nerdcom.host" target="_new">Solicitar Características</a></li>
                             <li><a href="https://www.nerdcom.host/partners/">Partners</a></li>
                             <li><a href="https://panel.nerdcom.host/index.php?m=licensing">Verificación de Licencia</a></li>
                             <li><a href="https://www.nerdcom.host/afiliacion/">Programa de Afiliado</a></li>
