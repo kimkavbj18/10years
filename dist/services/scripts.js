@@ -16825,10 +16825,6 @@ return jQuery;
 })));
 //# sourceMappingURL=bootstrap.bundle.js.map
 
-(function (w,i,d,g,e,t,s) {w[d] = w[d]||[];t= i.createElement(g);
-    t.async=1;t.src=e;s=i.getElementsByTagName(g)[0];s.parentNode.insertBefore(t, s);
-})(window, document, '_gscq','script','//widgets.getsitecontrol.com/88962/script.js');
-
 (function($){
 
     $(document).ready(function(){
@@ -17263,7 +17259,7 @@ var headerTemplate = `<div class="container">
                                                 <span>Ayuda</span>
                                                 <ul class="menu-company list-unstyled">
                                                     <li><a class="link-title-company" href="https://panel.nerdcom.host/clientarea.php">Área de Clientes</a></li>
-                                                    <li><a class="link-title-company" href="https://panel.nerdcom.host/knowledgebase/">Base de Conocimientos <i class="fa fa-book fa-fw"></i></a></li>
+                                                    <li><a class="link-title-company" target="_new" href="https://panel.nerdcom.host/knowledgebase/">Base de Conocimientos <i class="fa fa-book fa-fw"></i></a></li>
                                                     <li><a class="link-title-company" href="https://panel.nerdcom.host/submitticket.php">Abrir un Ticket</a></li>
                                                     <li><a class="link-title-company" href="#"><i class="fa fa-phone fa-fw"></i> +1.929.273.0923</a></li>
                                                     <li><a class="link-title-company" href="#"><i class="fa fa-phone fa-fw"></i> +1.877.280.9295</a></li>

@@ -20015,20 +20015,17 @@ else window.addEventListener('load', loadDeferredStyles);
 })(jQuery);
 TrustLogo("https://nerdcom.host/comodo_secure_seal_113x59_transp.png", "SC5", "none");
 var Chatstack = {};
-Chatstack.server = 'panel.nerdcom.host/modules';
-
-(function(d, $, undefined) {
-    $(window).ready(function() {
-        Chatstack.e = []; Chatstack.ready = function (c) { Chatstack.e.push(c); }
-        var b = d.createElement('script'); b.type = 'text/javascript'; b.async = true;
-        b.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + Chatstack.server + '/livehelp/scripts/jquery.livehelp.js';
-        var s = d.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(b, s);
-    });
-})(document, jQuery);
-
+ Chatstack.server = 'panel.nerdcom.host/modules';  (function(d, $, undefined) {
+   $(window).ready(function() {
+     Chatstack.e = []; Chatstack.ready = function (c) { Chatstack.e.push(c); }
+     var b = d.createElement('script'); b.type = 'text/javascript'; b.async = true;
+     b.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + Chatstack.server + '/livehelp/scripts/js.min.js';
+     var s = d.getElementsByTagName('script')[0];
+     s.parentNode.insertBefore(b, s);
+   });
+ })(document, jQuery);
 // Set the date we're counting down to
-var countDownDate = new Date("Dec 10, 2018 00:00:00").getTime();
+var countDownDate = new Date("Dec 14, 2018 00:00:00").getTime();
 var countDownDate2 = new Date("Jan 30, 2019 00:00:00").getTime();
 
 // Update the count down every 1 second
@@ -21442,7 +21439,7 @@ var headerTemplate = `<div class="container">
                                                 <span>Ayuda</span>
                                                 <ul class="menu-company list-unstyled">
                                                     <li><a class="link-title-company" href="https://panel.nerdcom.host/clientarea.php">Área de Clientes</a></li>
-                                                    <li><a class="link-title-company" href="https://panel.nerdcom.host/knowledgebase/">Base de Conocimientos <i class="fa fa-book fa-fw"></i></a></li>
+                                                    <li><a class="link-title-company" target="_new" href="https://panel.nerdcom.host/knowledgebase/">Base de Conocimientos <i class="fa fa-book fa-fw"></i></a></li>
                                                     <li><a class="link-title-company" href="https://panel.nerdcom.host/submitticket.php">Abrir un Ticket</a></li>
                                                     <li><a class="link-title-company" href="#"><i class="fa fa-phone fa-fw"></i> +1.929.273.0923</a></li>
                                                     <li><a class="link-title-company" href="#"><i class="fa fa-phone fa-fw"></i> +1.877.280.9295</a></li>

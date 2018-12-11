@@ -1,3 +1,6 @@
+
+Header set Access-Control-Allow-Origin "https://blog.nerdcom.host"
+
 # HTTPS
 
 RewriteEngine On

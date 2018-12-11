@@ -17,6 +17,21 @@
     .border-#{ $color-key }
         border-color: $color !important
 
+    .no-border
+        border: none !important    
+
+    .no-border-left
+        border-left: none !important        
+
+    .no-border-right
+        border-right: none !important            
+
+    .no-border-top
+        border-top: none !important            
+
+    .no-border-bottom
+        border-bottom: none !important            
+
 // CREATING SPACER USING PADDING
 @function isMultiple( $i, $multiple )
     @return ( $i % $multiple == 0 )
@@ -49,7 +64,7 @@
 
 @for $i from 1 through $border-width-limit
     .border-width-#{$i}
-        border-width: $i + px !important
+        border-width: $i + px !important   
 
 @keyframes fadein
     from
