@@ -72,6 +72,21 @@
 
         });
 
+        /**
+        * CLOSE ICON MESSENGER 
+        */
+
+        $('.closeImg').on( 'click', function(){
+            const btn = $(this);
+            const img = $('.floating-messenger');
+            const close = btn.data('close');
+
+            if(typeof close !== 'undefined'){
+                btn.addClass('closeImgOff');
+                img.addClass('closeImgOff');
+            }
+        });
+
     });
 
 

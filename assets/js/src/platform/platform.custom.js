@@ -56,28 +56,30 @@ var platform = document.getElementById('platform'),
             }
         },
     };
-
-for ( var key in menu ) {
-    // console.log(menu[key].show[platform.dataset.page]);
-    if (menu[key].show[platform.dataset.page]) {
-        menuHtml += `<a class="nav-item nav-link ${key}${ platform.dataset.active === key ? ' active' : '' }" href="${menu[key].link}">${menu[key].title}</a>\n`;
+//console.log(document.getElementById('platform'));
+if (platform && platform !== 'null') {
+    for ( var key in menu ) {
+        // console.log(menu[key].show[platform.dataset.page]);
+        if (menu[key].show[platform.dataset.page]) {
+            menuHtml += `<a class="nav-item nav-link ${key}${ platform.dataset.active === key ? ' active' : '' }" href="${menu[key].link}">${menu[key].title}</a>\n`;
+        }
     }
-}
 
-platformTemplate = `
-            <div class="container">
-                <div class="row hamburger-button spacer-in-top-20 spacer-in-bottom-20">
-                    <div class="container-fluid">
-                        <button class="hamburger hamburger--collapse border border-gray-700 rounded" type="button">
-                            <span class="hamburger-box">
-                                <span class="hamburger-inner"></span>
-                            </span>
-                        </button>
+    platformTemplate = `
+                <div class="container">
+                    <div class="row hamburger-button spacer-in-top-20 spacer-in-bottom-20">
+                        <div class="container-fluid">
+                            <button class="hamburger hamburger--collapse border border-gray-700 rounded" type="button">
+                                <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                </span>
+                            </button>
+                        </div>
                     </div>
-                </div>
-                <nav class="nav justify-content-center nav-fill flex-column flex-sm-row">
-                    ${menuHtml}
-                </nav>
-            </div>`;
+                    <nav class="nav justify-content-center nav-fill flex-column flex-sm-row">
+                        ${menuHtml}
+                    </nav>
+                </div>`;
 
-platform.innerHTML = platformTemplate;
+    platform.innerHTML = platformTemplate;
+}

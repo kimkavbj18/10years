@@ -19916,6 +19916,21 @@ function TrustLogo(t,e,L){return host=location.host,current_code=e,tLUC(t,e,e,L)
 
         });
 
+        /**
+        * CLOSE ICON MESSENGER 
+        */
+
+        $('.closeImg').on( 'click', function(){
+            const btn = $(this);
+            const img = $('.floating-messenger');
+            const close = btn.data('close');
+
+            if(typeof close !== 'undefined'){
+                btn.addClass('closeImgOff');
+                img.addClass('closeImgOff');
+            }
+        });
+
     });
 
 
@@ -21190,10 +21205,11 @@ var headerTemplate = `<div class="container">
                         </div>
                         <nav class="navigation nav-item hide-desktop">
                             <ul class="secondary-menu list-unstyled nav">
-                                <li class="nav-item hide-desktop"><a href="tel:+1.929.273.0923"><i class="fas fa-phone text-white"></i></a></li>
+                                <li class="nav-item hide-desktop"><a href="tel:+1.829.946.0068"><i class="fas fa-phone text-white"></i></a></li>
                                 <li class="nav-item hide-desktop"><a href="https://www.nerdcom.host/support"><i class="fa fa-question-circle text-white"></i></a></li>
                                 <li class="nav-item hide-desktop"><a href="https://www.panel.nerdcom.host/"><i class="fa fa-user text-white"></i></a></li>
                                 <li class="nav-item hide-desktop"><a href="https://panel.nerdcom.host/cart.php?a=view"><i class="fa fa-shopping-cart fa-fw text-white"></i></a></li>   
+                                <li class="nav-item hide-desktop"><a target="_new" href="https://api.whatsapp.com/send?phone=18299460068"><i class="fab fa-whatsapp text-white"></i></a></li>   
                             </ul>
                             <ul class="main-menu list-unstyled nav">
                                 <li class="nav-item">
@@ -21562,32 +21578,50 @@ var platform = document.getElementById('platform'),
             }
         },
     };
-
-for ( var key in menu ) {
-    // console.log(menu[key].show[platform.dataset.page]);
-    if (menu[key].show[platform.dataset.page]) {
-        menuHtml += `<a class="nav-item nav-link ${key}${ platform.dataset.active === key ? ' active' : '' }" href="${menu[key].link}">${menu[key].title}</a>\n`;
+//console.log(document.getElementById('platform'));
+if (platform && platform !== 'null') {
+    for ( var key in menu ) {
+        // console.log(menu[key].show[platform.dataset.page]);
+        if (menu[key].show[platform.dataset.page]) {
+            menuHtml += `<a class="nav-item nav-link ${key}${ platform.dataset.active === key ? ' active' : '' }" href="${menu[key].link}">${menu[key].title}</a>\n`;
+        }
     }
+
+    platformTemplate = `
+                <div class="container">
+                    <div class="row hamburger-button spacer-in-top-20 spacer-in-bottom-20">
+                        <div class="container-fluid">
+                            <button class="hamburger hamburger--collapse border border-gray-700 rounded" type="button">
+                                <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <nav class="nav justify-content-center nav-fill flex-column flex-sm-row">
+                        ${menuHtml}
+                    </nav>
+                </div>`;
+
+    platform.innerHTML = platformTemplate;
 }
 
-platformTemplate = `
-            <div class="container">
-                <div class="row hamburger-button spacer-in-top-20 spacer-in-bottom-20">
-                    <div class="container-fluid">
-                        <button class="hamburger hamburger--collapse border border-gray-700 rounded" type="button">
-                            <span class="hamburger-box">
-                                <span class="hamburger-inner"></span>
-                            </span>
-                        </button>
-                    </div>
-                </div>
-                <nav class="nav justify-content-center nav-fill flex-column flex-sm-row">
-                    ${menuHtml}
-                </nav>
-            </div>`;
+var smedia = document.getElementById('smedia');
+var smediaTemplate = `<div class="smedia">
+				<div class="d-block d-lg-none">
+					<button class="closeImg" data-close="close">X Close</button>
+				</div>	
+				<div class="smedia-icons">
+					<div class="mt-1 mt-lg-0 floating-messenger">
+			            <a target="_new" href="https://m.me/nerdcomllc"><img src="${smedia.dataset.pathImages}/icon-messenger.png" alt="icon-messenger"></a>
+			        </div>
+		        <div class="d-none d-lg-block floating-whatsapp">
+		            <a target="_new" href="https://api.whatsapp.com/send?phone=18299460068"><img src="${smedia.dataset.pathImages}/icon-whatsapp.png" alt="icon-whatsapp"></a>
+		        </div>
+		    <div>    
+        </div>`;
 
-platform.innerHTML = platformTemplate;
-
+ smedia.innerHTML = smediaTemplate;
         document.addEventListener("DOMContentLoaded",
         function() {
             var div, n,

@@ -15,10 +15,11 @@ var headerTemplate = `<div class="container">
                         </div>
                         <nav class="navigation nav-item hide-desktop">
                             <ul class="secondary-menu list-unstyled nav">
-                                <li class="nav-item hide-desktop"><a href="tel:+1.929.273.0923"><i class="fas fa-phone text-white"></i></a></li>
+                                <li class="nav-item hide-desktop"><a href="tel:+1.829.946.0068"><i class="fas fa-phone text-white"></i></a></li>
                                 <li class="nav-item hide-desktop"><a href="https://www.nerdcom.host/support"><i class="fa fa-question-circle text-white"></i></a></li>
                                 <li class="nav-item hide-desktop"><a href="https://www.panel.nerdcom.host/"><i class="fa fa-user text-white"></i></a></li>
                                 <li class="nav-item hide-desktop"><a href="https://panel.nerdcom.host/cart.php?a=view"><i class="fa fa-shopping-cart fa-fw text-white"></i></a></li>   
+                                <li class="nav-item hide-desktop"><a target="_new" href="https://api.whatsapp.com/send?phone=18299460068"><i class="fab fa-whatsapp text-white"></i></a></li>   
                             </ul>
                             <ul class="main-menu list-unstyled nav">
                                 <li class="nav-item">
