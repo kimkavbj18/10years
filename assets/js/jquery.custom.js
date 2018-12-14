@@ -87,6 +87,12 @@
             }
         });
 
+        $('.smedia').removeClass('d-none');
+        $('.smedia').addClass('d-block');
+
+        $('#smedia').removeClass('d-none');
+        $('#smedia').addClass('d-block');
+
     });
 
 

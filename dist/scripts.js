@@ -19931,6 +19931,12 @@ function TrustLogo(t,e,L){return host=location.host,current_code=e,tLUC(t,e,e,L)
             }
         });
 
+        $('.smedia').removeClass('d-none');
+        $('.smedia').addClass('d-block');
+
+        $('#smedia').removeClass('d-none');
+        $('#smedia').addClass('d-block');
+
     });
 
 
