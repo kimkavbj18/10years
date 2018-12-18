@@ -1,3 +1,11 @@
+/* cambiar clases para menú de plataformas con boostrap 3
+    header -> header-bf
+    container -> container-bf
+    row -> row-bf
+    btn -> btn-bf
+    container-fluid -> container-fluid-bf
+    cambiar las url de las imagenes a nerdcom.host
+*/
 var header = document.getElementById('header');
 var headerTemplate = `<div class="container">
                 <div class="row">

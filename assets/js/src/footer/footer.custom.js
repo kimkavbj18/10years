@@ -1,3 +1,10 @@
+/* cambiar clases para menú de plataformas con boostrap 3
+    container -> container-bf
+    row -> row-bf
+    container-fluid -> container-fluid-bf
+    quitar el logo de trustlogo
+    colocar las url apuntando a nerdcom.host
+*/
 var footer = document.getElementById('footer');
 var footerTemplate = `<div class="container">
                 <div class="row footer-menus">

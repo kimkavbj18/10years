@@ -136,7 +136,6 @@ gulp.task( 'scripts-services', function(){
 
     return gulp.src([
             `${path.js}/jquery.js`,
-            `${path.js}/bootstrap.bundle.js`,
             `${path.js}/jquery.custom.js`,
             `${path.js}/src/header/*.js`,
             `${path.js}/src/footer/*.js`
@@ -144,7 +143,6 @@ gulp.task( 'scripts-services', function(){
         .pipe( sourcemaps.init() )
         .pipe(order([
             'jquery.js',
-            'bootstrap.bundle.js',
             'jquery.custom.js',
         ]))
         .pipe( concat( 'scripts.js' ) )

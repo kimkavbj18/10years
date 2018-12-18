@@ -1,5 +1,5 @@
 
-Header set Access-Control-Allow-Origin "https://blog.nerdcom.host"
+Header set Access-Control-Allow-Origin https://blog.nerdcom.host,https://panel.nerdcom.host/
 
 # HTTPS
 

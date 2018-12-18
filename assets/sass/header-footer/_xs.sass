@@ -1,17 +1,44 @@
 /* GENERAL Styles */
-body
-    font-size: 13px
-
-body.no-scroll 
-    overflow: hidden     
 
 .hide-mobile 
     display: none !important
 
 a 
     text-decoration: none !important
+
+.list-unstyled
+    padding-left: 0
+    list-style: none    
+
+ol, ul, dl
+    margin-top: 0
+    margin-bottom: 1rem
+
+*, ::before, ::after 
+    box-sizing: border-box    
   
-// UTILS
+// UTILS "sufijos bf corresponden a estilos boostrap 4 - no son los estilos originales"
+
+.container-bf
+    width: 100%
+    padding-right: 15px
+    padding-left: 15px
+    margin-right: auto
+    margin-left: auto
+
+.container-fluid-bf
+    width: 100%
+    padding-right: 15px
+    padding-left: 15px
+    margin-right: auto
+    margin-left: auto
+
+.row-bf
+    display: flex
+    flex-wrap: wrap
+    margin-right: -15px
+    margin-left: -15px    
+
 .full-height
     height: 100%
     max-height: 100%
@@ -32,6 +59,13 @@ a
 .hamburger 
     padding-bottom: 0
     float: left
+
+.img-fluid
+    max-width: 100%
+    height: auto   
+
+.font-weight-bold
+    font-weight: bold       
 
 // BUTTONS
 .btn-blk-mobile
@@ -269,11 +303,15 @@ ul.menu li a
     font-family: 'Open Sans', sans-serif
 
 /* FOOTER */
-footer 
+section#footer
+    padding: 0
+    
+.footer-bf
     padding-top: 50px
     padding-bottom: 50px
     background-color: #0e0e0e
-
+    line-height: 20px
+    font-size: 13px
 
 .footer-menus 
     margin-bottom: 50px
@@ -342,9 +380,12 @@ ul.footer-menu-icons li
 ul.footer-menu-icons li img 
     max-width: 50px
 
-
 ul.footer-menu-icons li:first-child img 
     max-width: 70px
+
+ul.footer-menu-icons li a 
+    background-color: transparent !important
+    padding: 0
 
 ul.footer-menu-links 
     margin-top: 10px
@@ -353,6 +394,8 @@ ul.footer-menu-links
 
 ul.footer-menu-links li 
     margin-left: 5px
+    display: inline
+    padding: 0
 
 
 ul.footer-menu-links li:before 
@@ -368,3 +411,6 @@ ul.footer-menu-links li:first-child:before
 ul.footer-menu-links li a 
     color: white
     font-size: .9em
+    background-color: transparent !important
+    display: inline
+    padding: 0

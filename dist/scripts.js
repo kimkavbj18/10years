@@ -21093,6 +21093,13 @@ const data = {
 
     'windows': {},
 };
+/* cambiar clases para menú de plataformas con boostrap 3
+    container -> container-bf
+    row -> row-bf
+    container-fluid -> container-fluid-bf
+    quitar el logo de trustlogo
+    colocar las url apuntando a nerdcom.host
+*/
 var footer = document.getElementById('footer');
 var footerTemplate = `<div class="container">
                 <div class="row footer-menus">
@@ -21194,6 +21201,14 @@ var footerTemplate = `<div class="container">
             </div>`;
 
 footer.innerHTML = footerTemplate;
+/* cambiar clases para menú de plataformas con boostrap 3
+    header -> header-bf
+    container -> container-bf
+    row -> row-bf
+    btn -> btn-bf
+    container-fluid -> container-fluid-bf
+    cambiar las url de las imagenes a nerdcom.host
+*/
 var header = document.getElementById('header');
 var headerTemplate = `<div class="container">
                 <div class="row">
